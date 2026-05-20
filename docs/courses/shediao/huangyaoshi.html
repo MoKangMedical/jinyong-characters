@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黄药师 — 东邪 · 桃花岛主 | 金庸人物志</title>
+<meta name="description" content="深度解读黄药师：正中带有七分邪，邪中带有三分正。琴棋书画、奇门遁甲、医卜星相无一不精的江湖全才。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a24;
+  --card:#1a1a26;--card2:#222230;--card3:#2a2a3a;
+  --border:#252535;--border2:#3a3a50;
+  --text:#f0ede5;--text2:#a09888;--text3:#6b6560;
+  --gold:#d4a574;--gold2:#e8c9a0;--gold3:#c08552;
+  --red:#c41e3a;--jade:#5b8c5a;
+  --serif:'Noto Serif SC',serif;
+  --sans:'Noto Sans SC',sans-serif;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+a{color:var(--gold);text-decoration:none}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--gold)}
+.nav-back{font-size:.85rem;color:var(--text2);transition:color .2s}
+.nav-back:hover{color:var(--gold)}
+.course-hero{padding:120px 0 60px;text-align:center;position:relative}
+.course-hero .novel-tag{display:inline-block;background:rgba(212,165,116,.1);color:var(--gold);padding:4px 14px;border-radius:100px;font-size:.78rem;margin-bottom:16px}
+.course-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:900;margin-bottom:8px}
+.course-hero .subtitle{font-size:1.1rem;color:var(--gold);margin-bottom:8px}
+.course-hero .brief-intro{font-size:1rem;color:var(--text2);max-width:600px;margin:16px auto 0;line-height:1.8}
+.course-meta{display:flex;justify-content:center;gap:32px;margin-top:28px;flex-wrap:wrap}
+.course-meta-item{text-align:center}
+.course-meta-item .meta-val{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--gold)}
+.course-meta-item .meta-label{font-size:.72rem;color:var(--text3);margin-top:4px;letter-spacing:.05em}
+.section{padding:48px 0}
+.section-header{border-left:3px solid var(--gold);padding-left:16px;margin-bottom:28px}
+.section-header h2{font-family:var(--serif);font-size:1.5rem;margin-bottom:4px}
+.section-header .en{font-size:.72rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase}
+.content-block{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:20px}
+.content-block h3{font-size:1.1rem;color:var(--gold);margin-bottom:16px;font-family:var(--serif)}
+.content-block p{color:var(--text2);font-size:.92rem;line-height:1.9;margin-bottom:12px}
+.highlight-box{background:rgba(212,165,116,.05);border:1px solid rgba(212,165,116,.15);border-radius:10px;padding:20px;margin:20px 0}
+.highlight-box .hl-title{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:8px;letter-spacing:.08em}
+.highlight-box p{font-size:.9rem;color:var(--text);line-height:1.8}
+.quote-block{border-left:2px solid var(--gold);padding:12px 20px;margin:20px 0;background:rgba(212,165,116,.03);font-style:italic}
+.quote-block .quote-text{font-family:var(--serif);font-size:1.05rem;color:var(--gold2);line-height:1.7}
+.quote-block .quote-source{font-size:.78rem;color:var(--text3);margin-top:8px}
+.info-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.88rem}
+.info-table td{padding:10px 16px;border-bottom:1px solid var(--border);color:var(--text2)}
+.info-table td:first-child{color:var(--gold);font-weight:600;width:120px;white-space:nowrap}
+.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
+.tag.gold{background:rgba(212,165,116,.1);color:var(--gold)}
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--border2)}
+.timeline-item{position:relative;margin-bottom:28px}
+.timeline-item::before{content:'';position:absolute;left:-28px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
+.timeline-item .tl-year{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:4px}
+.timeline-item .tl-event{font-size:.9rem;color:var(--text2)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:32px 0;border-top:1px solid var(--border);margin-top:40px}
+.bottom-nav a,.bottom-nav span{font-size:.9rem;color:var(--text2)}
+.bottom-nav .nav-prev,.bottom-nav .nav-next{display:flex;align-items:center;gap:8px}
+.bottom-nav .back-all{color:var(--gold);font-weight:600}
+.footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
+.footer .brand{font-family:var(--serif);color:var(--gold);font-size:1rem;margin-bottom:4px}
+.footer p{font-size:.78rem;color:var(--text3)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">\u2694 金庸人物志</a>
+    <a href="../index.html#characters" class="nav-back">\u2190 返回人物总览</a>
+  </div>
+</nav>
+<!-- COURSE HEADER -->
+<section class="course-hero">
+  <div class="container">
+    <span class="novel-tag">🏹 射雕英雄传</span>
+    <h1>黄药师</h1>
+    <div class="subtitle">东邪 · 桃花岛主</div>
+    <p class="brief-intro">金庸笔下最全才的人物。"正中带有七分邪，邪中带有三分正"。琴棋书画、奇门遁甲、医卜星相无一不精，武功之高足以位列五绝。他的孤独，是因为世上无人能懂他的全部。</p>
+  </div>
+</section>
+
+<div class="container"><!-- 01 人物小传 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 01</div>
+    <h2>人物小传</h2>
+  </div>  <div class="content-block">
+    <table class="info-table">
+      <tr><td>姓名</td><td>黄药师</td></tr>
+      <tr><td>别名</td><td>东邪、黄老邪、桃花岛主</td></tr>
+      <tr><td>身份</td><td>五绝之一（东邪）</td></tr>
+      <tr><td>居所</td><td>东海桃花岛</td></tr>
+      <tr><td>妻室</td><td>冯蘅（因默写《九阴真经》心力交瘁而死）</td></tr>
+      <tr><td>子女</td><td>黄蓉（独女）</td></tr>
+      <tr><td>弟子</td><td>陈玄风、梅超风（叛徒）、曲灵风、陆乘风、武罡风、冯默风、程英</td></tr>
+      <tr><td>主要武功</td><td>弹指神通、落英神剑掌、玉箫剑法、碧海潮生曲</td></tr>
+      <tr><td>特长</td><td>琴棋书画、奇门遁甲、五行八卦、医卜星相、农田水利、经济兵略</td></tr>
+      <tr><td>性格标签</td><td>孤傲、偏激、深情、多才、亦正亦邪</td></tr>
+    </table>
+  </div></section><!-- 02 性格分析 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 02</div>
+    <h2>性格分析</h2>
+  </div>  <div class="content-block">
+    <h3>亦正亦邪的孤傲天才</h3>
+    <p>黄药师是金庸笔下最复杂的人物之一。他的"邪"，不是邪恶，而是不按常理出牌。他行事全凭喜好，从不在乎世俗评价。杀了人可以说"我东邪行事，何必向你解释"；救了人也可以不求任何回报。</p>
+    <p>他的性格核心是<strong>极度的自信与孤独</strong>。他太聪明了——聪明到任何人在他眼中都显得平庸。这种天才的孤独让他既高傲又脆弱。冯蘅的死是他一生最大的打击，从此更加封闭内心。</p>
+    <p>他是一个<strong>矛盾体</strong>：外表冷酷内心火热；嘴上说不在乎礼法，却最重承诺；扬言杀尽天下人，却对女儿百般宠爱。正是这些矛盾，让黄药师成为金庸笔下最有魅力的"邪派正人"。</p>
+  </div>  <div class="content-block">
+    <h3>人格类型类比</h3>
+    <p>黄药师最接近<strong>INTJ（建筑师）</strong>人格：极端理性、独立、追求完美、不屑于平庸。他是典型的"精英主义"——认为庸人不值得关注，只有真正的才华才能入他法眼。</p>
+    <p>他的另一面是<strong>回避型依恋</strong>。冯蘅的死让他从此不敢再爱——不是不爱，而是害怕再次失去。他用冷漠筑起高墙，把所有人都挡在外面。</p>
+  </div>  <div class="quote-block">
+    <div class="quote-text">"我黄药师行事，从来只凭一己好恶，不问是非。旁人要说我好，那也由得他；要说我歹，那也由得他。"</div>
+    <div class="quote-source">——黄药师自述</div>
+  </div></section><!-- 03 命运轨迹 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 03</div>
+    <h2>命运轨迹</h2>
+  </div>  <div class="content-block">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-year">青年时期</div>
+        <div class="tl-event">才华横溢，学贯古今。闯荡江湖，以超强实力跻身五绝之列，获封"东邪"。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">成家</div>
+        <div class="tl-event">在桃花岛迎娶冯蘅。冯蘅过目不忘，为黄药师默写《九阴真经》下部，心力交瘁而死。黄药师悲痛欲绝。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">弟子叛逃</div>
+        <div class="tl-event">陈玄风与梅超风偷走《九阴真经》下部私奔。黄药师大怒，打断其他弟子的腿逐出师门。从此性情更加孤僻。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">中年</div>
+        <div class="tl-event">独自抚养黄蓉长大。因黄蓉离家而踏上寻女之路，在江湖中与郭靖、杨康等人相遇。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">比武招亲</div>
+        <div class="tl-event">郭靖上桃花岛求亲。黄药师百般刁难，但最终认可了这个"笨女婿"。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">第二次华山论剑</div>
+        <div class="tl-event">与郭靖、洪七公等交手。虽然武功盖世，但对名利已无执念。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">晚年（神雕时期）</div>
+        <div class="tl-event">与杨过惺惺相惜——两个都是行事不拘常规的"邪"人。黄药师收程英为关门弟子。</div>
+      </div>
+    </div>
+  </div></section><!-- 04 奇遇与转折 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 04</div>
+    <h2>奇遇与转折</h2>
+  </div>  <div class="content-block">
+    <h3>博学而非奇遇</h3>
+    <p>与其他五绝不同，黄药师的武功几乎没有"奇遇"——他的强大来自于<strong>天赋与博学</strong>。他的武功大多是自创的：弹指神通是暗器与指法的完美结合；落英神剑掌是从桃花中悟出的掌法；碧海潮生曲是音律与内功的融合。</p>
+    <p>他真正的"奇遇"是<strong>遇到冯蘅</strong>——一个和他一样过目不忘的才女。两人在桃花岛上的时光是黄药师一生中最温暖的日子。冯蘅的死也是他一生最大的转折——从此"东邪"变得更加邪气逼人。</p>
+    <p>另一个重要的相遇是<strong>杨过</strong>。黄药师从杨过身上看到了年轻时的自己——叛逆、不屑世俗、却心怀赤诚。两人的忘年之交是《神雕侠侣》中最精彩的章节之一。</p>
+  </div></section><!-- 05 武功绝学 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 05</div>
+    <h2>武功绝学</h2>
+  </div>  <div class="content-block">
+    <h3>弹指神通</h3>
+    <p>黄药师的招牌武功。以手指弹出石子，力道之强可与暗器高手一较高下。这招的精妙在于"举重若轻"——看起来只是轻轻一弹，实则蕴含着深厚内力。在第二次华山论剑上，黄药师曾用这一招与杨过的黯然销魂掌对敌。</p>
+  </div>  <div class="content-block">
+    <h3>碧海潮生曲</h3>
+    <p>以箫声为武器，将内力融入音律之中。听者会不由自主地心神荡漾、内力失控。这是金庸武侠中最有"艺术感"的武功——将音乐与武功完美结合，只有黄药师这样的全才才能创造出来。</p>
+  </div>  <div class="content-block">
+    <h3>奇门五行</h3>
+    <p>桃花岛上的桃花阵是黄药师奇门遁甲之术的集中体现。不懂五行八卦的人进去了就出不来。他在这方面的造诣在金庸世界中无人能及——"五行八卦"对他来说不是玄学，而是可以被精确计算和应用的学问。</p>
+  </div>  <div class="tag-list">
+      <span class="tag gold">弹指神通</span>
+      <span class="tag">落英神剑掌</span>
+      <span class="tag">玉箫剑法</span>
+      <span class="tag gold">碧海潮生曲</span>
+      <span class="tag">旋风扫叶腿</span>
+      <span class="tag">兰花拂穴手</span>
+      <span class="tag">奇门五行</span>
+      <span class="tag">桃花阵</span>
+  </div></section><!-- 06 情感世界 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 06</div>
+    <h2>情感世界</h2>
+  </div>  <div class="content-block">
+    <h3>对冯蘅：一生挚爱</h3>
+    <p>黄药师一生只爱过一个人——冯蘅。这个能过目不忘的女子，为了帮丈夫得到《九阴真经》，强行默写经文，耗尽心力而死。黄药师对此悔恨终生，从此不再离开桃花岛，守着亡妻的墓。</p>
+    <p>他的爱是极端的——冯蘅死后，他造了一艘花船，准备带着妻子的遗体出海自沉。这个计划被黄蓉阻止了，但他对妻子的执念从未消减。在《神雕侠侣》中，已是老年的黄药师仍然时常在亡妻墓前吹箫。</p>
+  </div>  <div class="content-block">
+    <h3>对黄蓉：铁汉柔情</h3>
+    <p>黄药师对女儿的爱是深沉而笨拙的。他嘴上说不在乎，但黄蓉离家后他立刻追了出去。知道郭靖和黄蓉的关系后百般刁难——不是真的反对，而是不愿女儿离开自己。这种"口是心非"的父爱，让人又好气又好笑。</p>
+  </div>  <div class="quote-block">
+    <div class="quote-text">"世间多少痴儿女，情到深处无怨尤。"</div>
+    <div class="quote-source">——黄药师在冯蘅墓前</div>
+  </div></section><!-- 07 趣事典故 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 07</div>
+    <h2>趣事典故</h2>
+  </div>  <div class="content-block">
+    <h3>名场面：黑风双煞</h3>
+    <p>陈玄风和梅超风偷走《九阴真经》是黄药师一生最大的"打脸"时刻。他一怒之下打断其他四名弟子的腿逐出师门——这完全是个"迁怒"行为，但他就是这种极端的人。有趣的是，多年后他在《神雕侠侣》中见到傻姑（曲灵风之女）时，竟破例收她为徒孙——残酷外表下终究是重情之人。</p>
+  </div>  <div class="content-block">
+    <h3>冷知识：黄药师为什么住桃花岛</h3>
+    <p>桃花岛并不是黄药师的祖产，而是他<strong>自己选的地方</strong>。他喜欢桃花，就在岛上种满了桃花。这个细节说明黄药师本质上是一个<strong>浪漫主义者</strong>——他追求的是一种"世外桃源"式的理想生活。可惜的是，理想终究被现实打破——冯蘅的死让这个桃花源变成了伤心地。</p>
+  </div>  <div class="content-block">
+    <h3>妙语金句</h3>
+    <p>"我东邪行事，何必向你解释？"</p>
+    <p>"天下之人，能入我黄药师法眼的，不过寥寥数人而已。"</p>
+    <p>"我最恨的就是礼教大防。什么师徒不能成婚，纯粹是狗屁。"</p>
+  </div></section><!-- 08 现实启示 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 08</div>
+    <h2>现实启示</h2>
+  </div>  <div class="content-block">
+    <h3>专才与通才</h3>
+    <p>黄药师是金庸世界中最接近<strong>"文艺复兴人"</strong>的存在。他告诉我们：真正的竞争力不是单一技能，而是<strong>跨领域的知识融合</strong>。他的武功之所以独特，正是因为融入了音律、五行、数学等多学科知识。在AI时代，这种"通才思维"越来越重要。</p>
+  </div>  <div class="content-block">
+    <h3>不按规则出牌的智慧</h3>
+    <p>黄药师的"邪"是一种<strong>创造性破坏</strong>。当局势陷入僵局时，往往是那些"不按常理出牌"的人找到突破口。在职场上，不是所有规则都需要遵守——关键是要判断哪些规则是本质的，哪些只是惯例。</p>
+  </div>  <div class="highlight-box">
+    <div class="hl-title">🎯 黄药师给现代人的启示</div>
+    <p>1. <strong>不要只做专才</strong>——跨领域融合才是创新的源泉。</p>
+    <p>2. <strong>孤独不是弱点</strong>——能享受独处的人才有深度。</p>
+    <p>3. <strong>珍惜眼前人</strong>——黄药师一生最大的遗憾，就是没能保护好冯蘅。</p>
+      </div></section><!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <a href="yangkang.html" class="nav-prev">\u2190 杨康</a>
+  <a href="../index.html#characters" class="back-all">金庸人物志</a>
+  <a href="hongqigong.html" class="nav-next">洪七公 \u2192</a>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="brand">金庸人物志</div>
+  <p>Jin Yong Character Chronicles — 江湖百态，尽在其中</p>
+</footer>
+</body>
+</html>

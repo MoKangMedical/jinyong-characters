@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>杨过 — 一见杨过误终身 | 金庸人物志</title>
+<meta name="description" content="深度解读杨过：从孤苦顽童到神雕大侠的传奇一生。性格分析、命运转折、黯然销魂掌、与小龙女的旷世绝恋、现实启示。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════ RESET ═══════════════ */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a24;
+  --card:#1a1a26;--card2:#222230;--card3:#2a2a3a;
+  --border:#252535;--border2:#3a3a50;
+  --text:#f0ede5;--text2:#a09888;--text3:#6b6560;
+  --gold:#d4a574;--gold2:#e8c9a0;--gold3:#c08552;
+  --red:#c41e3a;--jade:#5b8c5a;
+  --serif:'Noto Serif SC',serif;
+  --sans:'Noto Sans SC',sans-serif;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+a{color:var(--gold);text-decoration:none}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+
+/* ═══════════════ NAV ═══════════════ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--gold)}
+.nav-back{font-size:.85rem;color:var(--text2);transition:color .2s}
+.nav-back:hover{color:var(--gold)}
+
+/* ═══════════════ COURSE HEADER ═══════════════ */
+.course-hero{padding:120px 0 60px;text-align:center;position:relative}
+.course-hero .novel-tag{display:inline-block;background:rgba(212,165,116,.1);color:var(--gold);padding:4px 14px;border-radius:100px;font-size:.78rem;margin-bottom:16px}
+.course-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:900;margin-bottom:8px}
+.course-hero .subtitle{font-size:1.1rem;color:var(--gold);margin-bottom:8px}
+.course-hero .brief-intro{font-size:1rem;color:var(--text2);max-width:600px;margin:16px auto 0;line-height:1.8}
+.course-meta{display:flex;justify-content:center;gap:32px;margin-top:28px;flex-wrap:wrap}
+.course-meta-item{text-align:center}
+.course-meta-item .meta-val{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--gold)}
+.course-meta-item .meta-label{font-size:.72rem;color:var(--text3);margin-top:4px;letter-spacing:.05em}
+
+/* ═══════════════ SECTION STYLES ═══════════════ */
+.section{padding:48px 0}
+.section-header{border-left:3px solid var(--gold);padding-left:16px;margin-bottom:28px}
+.section-header h2{font-family:var(--serif);font-size:1.5rem;margin-bottom:4px}
+.section-header .en{font-size:.72rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase}
+.content-block{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:20px}
+.content-block h3{font-size:1.1rem;color:var(--gold);margin-bottom:16px;font-family:var(--serif)}
+.content-block p{color:var(--text2);font-size:.92rem;line-height:1.9;margin-bottom:12px}
+.content-block p:last-child{margin-bottom:0}
+
+/* ═══════════════ HIGHLIGHTS ═══════════════ */
+.highlight-box{background:rgba(212,165,116,.05);border:1px solid rgba(212,165,116,.15);border-radius:10px;padding:20px;margin:20px 0}
+.highlight-box .hl-title{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:8px;letter-spacing:.08em}
+.highlight-box p{font-size:.9rem;color:var(--text);line-height:1.8}
+.quote-block{border-left:2px solid var(--gold);padding:12px 20px;margin:20px 0;background:rgba(212,165,116,.03);font-style:italic}
+.quote-block .quote-text{font-family:var(--serif);font-size:1.05rem;color:var(--gold2);line-height:1.7}
+.quote-block .quote-source{font-size:.78rem;color:var(--text3);margin-top:8px}
+
+/* ═══════════════ TABLE ═══════════════ */
+.info-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.88rem}
+.info-table td{padding:10px 16px;border-bottom:1px solid var(--border);color:var(--text2)}
+.info-table td:first-child{color:var(--gold);font-weight:600;width:120px;white-space:nowrap}
+
+/* ═══════════════ TAG LIST ═══════════════ */
+.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
+.tag.gold{background:rgba(212,165,116,.1);color:var(--gold)}
+
+/* ═══════════════ TIMELINE ═══════════════ */
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--border2)}
+.timeline-item{position:relative;margin-bottom:28px}
+.timeline-item::before{content:'';position:absolute;left:-28px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
+.timeline-item .tl-year{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:4px}
+.timeline-item .tl-event{font-size:.9rem;color:var(--text2)}
+
+/* ═══════════════ BOTTOM NAV ═══════════════ */
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:32px 0;border-top:1px solid var(--border);margin-top:40px}
+.bottom-nav a{font-size:.9rem;color:var(--text2);transition:color .2s}
+.bottom-nav a:hover{color:var(--gold)}
+.bottom-nav .nav-prev,.bottom-nav .nav-next{display:flex;align-items:center;gap:8px}
+.bottom-nav .back-all{color:var(--gold);font-weight:600}
+
+/* ═══════════════ FOOTER ═══════════════ */
+.footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
+.footer .brand{font-family:var(--serif);color:var(--gold);font-size:1rem;margin-bottom:4px}
+.footer p{font-size:.78rem;color:var(--text3)}
+
+/* ═══════════════ SCROLLBAR ═══════════════ */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">⚔ 金庸人物志</a>
+    <a href="index.html#characters" class="nav-back">← 返回人物总览</a>
+  </div>
+</nav>
+
+<!-- COURSE HEADER -->
+<section class="course-hero">
+  <div class="container">
+    <span class="novel-tag">🦅 神雕侠侣</span>
+    <h1>杨过</h1>
+    <div class="subtitle">神雕大侠 · 西狂</div>
+    <p class="brief-intro">他一生孤苦，半世流离，却以最炽烈的情感活成了江湖上最独特的传奇。断臂、别离、十六年之约——杨过的故事，是金庸笔下最浓墨重彩的成长史诗。</p>
+    <div class="course-meta">
+      <div class="course-meta-item">
+        <div class="meta-val">8</div>
+        <div class="meta-label">深度维度</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">主角</div>
+        <div class="meta-label">人物级别</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">25分钟</div>
+        <div class="meta-label">阅读时长</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+<!-- 01 人物小传 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 01</div>
+    <h2>人物小传</h2>
+  </div>
+  <div class="content-block">
+    <table class="info-table">
+      <tr><td>姓名</td><td>杨过（字改之，郭靖所取，取"有过则改之"之意）</td></tr>
+      <tr><td>别名</td><td>神雕大侠、西狂、过儿、傻蛋（小龙女昵称）</td></tr>
+      <tr><td>出身</td><td>嘉兴（父母流落至此）</td></tr>
+      <tr><td>父亲</td><td>杨康（认贼作父、卖国求荣，死于铁枪庙）</td></tr>
+      <tr><td>母亲</td><td>穆念慈（温柔贤淑，独自抚养杨过至十一岁病逝）</td></tr>
+      <tr><td>师父</td><td>小龙女（古墓派）、欧阳锋（义父，传蛤蟆功）、洪七公（传打狗棒法口诀）</td></tr>
+      <tr><td>配偶</td><td>小龙女（古墓派掌门，十六年分离后终成眷属）</td></tr>
+      <tr><td>子女</td><td>无明确记载（《倚天屠龙记》中黄衫女子疑为其后人）</td></tr>
+      <tr><td>红颜知己</td><td>郭芙、陆无双、程英、公孙绿萼、郭襄（皆对杨过倾心）</td></tr>
+      <tr><td>主要武功</td><td>黯然销魂掌、玄铁剑法、蛤蟆功、打狗棒法口诀、玉女心经、九阴真经片段、独孤九剑雏形</td></tr>
+      <tr><td>神雕伙伴</td><td>与神雕为友，获赠玄铁重剑，剑冢悟剑</td></tr>
+      <tr><td>最终归宿</td><td>第三次华山论剑位列"西狂"，与小龙女归隐终南山活死人墓</td></tr>
+    </table>
+  </div>
+  <div class="highlight-box">
+    <div class="hl-title">📖 一句话定位</div>
+    <p>杨过是金庸笔下最具反抗精神和情感张力的男主角——他反抗礼教、反抗命运、反抗一切不公。他的成长不是被规训的过程，而是在痛苦和孤独中自我锻造的过程。他是"情"的极致化身。</p>
+  </div>
+</section>
+
+<!-- 02 性格分析 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 02</div>
+    <h2>性格分析</h2>
+  </div>
+  <div class="content-block">
+    <h3>核心性格特质</h3>
+    <p>杨过性格的核心是<strong>"至情至性"</strong>——他的一切行为都源于情感，而非理性计算。他对小龙女的爱情至死不渝，对郭靖既敬又恨的复杂心理、对黄蓉始终存有的戒备、对杀父仇人的执着追寻——所有的行为逻辑都围绕着"情"字展开。</p>
+    <p>杨过是金庸笔下<strong>智商最高、情商最复杂</strong>的男主角之一。他继承了父亲杨康的机敏狡黠，又继承了母亲穆念慈的善良底色。这种矛盾的血脉造就了一个既聪明绝顶又敏感多疑、既偏激冲动又情深义重的复杂人格。</p>
+    <p>他的另一个核心特质是<strong>叛逆与反抗</strong>。全真教道士欺辱他，他就逃跑；世俗礼教反对师徒之恋，他偏要坚持；命运夺走他的手臂和爱人，他用自己的方式重新站起来。杨过从不逆来顺受——这是他与郭靖最根本的不同。</p>
+  </div>
+  <div class="content-block">
+    <h3>人格类型类比</h3>
+    <p>杨过最接近<strong>ENFP（竞选者）</strong>人格：热情、富有想象力、情感驱动、天性自由不羁。他不喜欢被规则束缚，崇尚真实的感受和表达。同时他也具备<strong>反英雄（Anti-Hero）</strong>的特质——他不是传统意义上的"好人"，他睚眦必报、偏激易怒，但正是这些"缺点"让他无比真实。</p>
+    <p>从心理学角度看，杨过有明显的<strong>"弃儿情结"</strong>——幼年丧母、父亲是叛徒、在桃花岛被排斥、在全真教被虐待。这种被抛弃的创伤让他对小龙女产生了极度依恋，因为小龙女是第一个无条件接纳他的人。理解了这一点，就理解了杨过一切行为的底层逻辑。</p>
+  </div>
+  <div class="content-block">
+    <h3>性格弧线：从偏激到通透</h3>
+    <p>杨过的性格经历了三个阶段的蜕变：<strong>少年时期</strong>（敏感偏激、睚眦必报）→ <strong>断臂后</strong>（痛苦淬炼、孤独成长、神雕相伴悟剑）→ <strong>十六年后</strong>（深沉内敛、侠义心肠、行事洒脱）。断臂是他身体上的残缺，但精神上反而更加完整——失去了一条手臂，却放下了心中的戾气。</p>
+    <p>最妙的是，杨过始终没有变成郭靖那样"完美"的大侠。他依然会愤怒、会悲伤、会做出出人意料的事。他的"侠"是发自内心的，不是为了符合谁的期待。第三次华山论剑时黄蓉给他的评语"西狂"——"狂"不是贬义，而是对他不受拘束、率性而为的最高赞美。</p>
+  </div>
+  <div class="quote-block">
+    <div class="quote-text">"人生不如意事十之八九，既已如此，也是无可奈何了。"</div>
+    <div class="quote-source">——杨过十六年后在断肠崖前的感叹，《神雕侠侣》第三十八回</div>
+  </div>
+</section>
+
+<!-- 03 命运轨迹 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 03</div>
+    <h2>命运轨迹</h2>
+  </div>
+  <div class="content-block">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-year">出生</div>
+        <div class="tl-event">杨过生于杨康流亡途中。父亲杨康是郭靖的结义兄弟之子，认贼作父完颜洪烈，一生阴险狡诈。母亲穆念慈温柔善良，在杨康死后独自在铁枪庙生下杨过。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">0-11岁</div>
+        <div class="tl-event">母亲穆念慈独自抚养，生活清贫。穆念慈临终前嘱咐杨过不要为父亲报仇，但杨过始终不知道父亲死亡的真相。母亲死后，杨过成为孤儿，流浪嘉兴街头。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">12-13岁</div>
+        <div class="tl-event">郭靖黄蓉在嘉兴遇到流浪的杨过，将其带回桃花岛。但在桃花岛上，杨过与郭芙、武氏兄弟多有摩擦，郭靖授他武功但黄蓉只教他读书识字。后被送往全真教学艺，因不堪师父赵志敬的虐待而出逃。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">13-18岁</div>
+        <div class="tl-event">误入终南山活死人墓，被小龙女收留，成为古墓派传人。与小龙女朝夕相处四年，从师徒情谊中萌生了男女之情。学习玉女心经、天罗地网势等古墓武功。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">18-20岁</div>
+        <div class="tl-event">因尹志平玷污小龙女的误会，小龙女愤而出走。杨过下山寻找，途中结识陆无双、程英、公孙绿萼等红颜知己。在绝情谷与小龙女重逢，却双双身中情花之毒。小龙女为救杨过跳下断肠崖，留下"十六年后在此重逢"的约定。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">20-36岁</div>
+        <div class="tl-event">被郭芙断去右臂后，遇神雕、得玄铁重剑、在剑冢悟剑。十六年间浪迹江湖，做了无数行侠仗义之事，却不留姓名，被江湖尊称为"神雕大侠"。创立"黯然销魂掌"，武功臻入化境。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">36岁</div>
+        <div class="tl-event">十六年之期已到。杨过在断肠崖发现小龙女并未出现，悲痛欲绝跳下悬崖——却在谷底找到了依靠寒潭白鱼为生、奇迹生还的小龙女。二人重逢，恍若隔世。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">36岁以后</div>
+        <div class="tl-event">襄阳大战中，杨过以飞石击毙蒙古大汗蒙哥，解了襄阳之围。第三次华山论剑被列为"西狂"，与小龙女携手归隐终南山。其后人（黄衫女子）在《倚天屠龙记》中偶现江湖。</div>
+      </div>
+    </div>
+  </div>
+  <div class="highlight-box">
+    <div class="hl-title">🔑 关键转折点</div>
+    <p><strong>断臂</strong>：郭芙一剑斩断杨过右臂，看似灾难，实则是杨过人生的最大转折。断臂迫使他放弃杂乱的武学，在神雕引导下专精玄铁重剑，以简驭繁，从此武功大进。金庸用断臂隐喻了一个残酷的道理：有时候，失去才是获得的开始。</p>
+    <p><strong>十六年之约</strong>：小龙女跳崖时留下的十六年之约，是杨过成长的催化剂。这十六年不是等待，而是淬炼——他把对小龙女的思念化作了行侠仗义的力量，从狭隘的"为爱而活"走向了更广阔的侠义人生。</p>
+  </div>
+</section>
+
+<!-- 04 奇遇与转折 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 04</div>
+    <h2>奇遇与转折</h2>
+  </div>
+  <div class="content-block">
+    <h3>武功奇遇：从杂到精的蜕变</h3>
+    <p><strong>义父欧阳锋传蛤蟆功</strong>：杨过幼年在嘉兴流浪时，欧阳锋误将他认作儿子欧阳克，收为义子并传授蛤蟆功基础。这段奇遇让杨过早早就接触到了顶级武学，但也正因为使用蛤蟆功被柯镇恶识破，导致他在桃花岛被排斥。</p>
+    <p><strong>与神雕相遇</strong>：断臂后的杨过在山谷中遇到了一只巨大的神雕。这只雕是昔日剑魔独孤求败的伙伴，它带杨过来到独孤求败的剑冢，让杨过领悟了"重剑无锋，大巧不工"的武学至理。这是杨过武功体系从"多而杂"转向"精而纯"的关键。</p>
+    <p><strong>自创黯然销魂掌</strong>：十六年等待中，杨过将对小龙女的思念与自身的武学融会贯通，创出了一套天下无双的掌法——黯然销魂掌。这套掌法共十七招，每一招都蕴含着至深的忧伤与思念：徘徊空谷、行尸走肉、拖泥带水、倒行逆施……招式之名皆是杨过心境的写照。</p>
+  </div>
+  <div class="content-block">
+    <h3>红颜奇遇：一见杨过误终身</h3>
+    <p>杨过一生有五位女子对他情深义重：小龙女是他的至爱，陆无双是他扮傻相救的"媳妇儿"，程英是默默守护的红颜知己，公孙绿萼是为他付出生命的痴情女子，郭襄是风陵渡口一见倾心却终生未嫁的遗憾。但他的心从来只属于小龙女一个人——这份专一，在处处留情的江湖中尤为珍贵。</p>
+  </div>
+  <div class="highlight-box">
+    <div class="hl-title">💡 奇遇背后的玄机</div>
+    <p>杨过的"奇遇"都有一种独特的模式：<strong>总是在最绝望的时候得到最关键的帮助</strong>。被全真教追杀时遇到小龙女、断臂后遇到神雕、以为小龙女已死时在谷底重逢……金庸似乎在用杨过的故事告诉我们：命运给你的每一次打击，都是为了让你走上更正确的路。</p>
+  </div>
+</section>
+
+<!-- 05 武功绝学 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 05</div>
+    <h2>武功绝学</h2>
+  </div>
+  <div class="content-block">
+    <h3>黯然销魂掌</h3>
+    <p>杨过自创的绝世掌法，集毕生所学之大成。共十七招：徘徊空谷、行尸走肉、拖泥带水、倒行逆施、废寝忘食、孤形只影、饮恨吞声、六神不安、穷途末路、面无人色、想入非非、呆若木鸡、力不从心、神不守舍、若有所失、心惊肉跳、魂不守舍。每一招的名字都是一段心痛，每一掌的威力都来自十六年的思念。</p>
+    <p>黯然销魂掌最神奇之处在于：<strong>只有真正处于"黯然销魂"心境时才能发挥最大威力</strong>。襄阳大战中，杨过以为小龙女未至，心中悲苦之时将这套掌法发挥到了极致——相思之苦，化作了最强的力量。</p>
+  </div>
+  <div class="content-block">
+    <h3>玄铁剑法</h3>
+    <p>在独孤求败的剑冢中悟出。使用一柄重达六十四斤的玄铁重剑，剑法要义是"重剑无锋，大巧不工"——当力量达到极致，技巧反而成为累赘。杨过在瀑布中练剑，在潮水中悟道，将玄铁剑法练到了"不滞于物"的境界。</p>
+  </div>
+  <div class="content-block">
+    <h3>玉女心经与古墓武功</h3>
+    <p>小龙女传授的古墓派核心武学。玉女心经需二人合练，分为外功和内功。杨过与小龙女朝夕相对练功，肌肤相亲而不涉淫邪——这种"以情入武、以武养情"的模式，让他们的感情在练武中逐渐加深。古墓派的天罗地网势、美人拳法、玉女剑法，杨过无一不精。</p>
+  </div>
+  <div class="content-block">
+    <h3>九阴真经与打狗棒法</h3>
+    <p>在古墓中从王重阳刻下的九阴真经片段中学到了部分精髓（解穴法、疗伤篇等）。在华山之巅偶遇洪七公与欧阳锋比武，洪七公将打狗棒法的口诀传给了杨过。虽然杨过不会打狗棒法的招式，但"绊"字诀等口诀为他后来创出黯然销魂掌提供了灵感。</p>
+  </div>
+  <div class="tag-list">
+    <span class="tag gold">黯然销魂掌</span>
+    <span class="tag gold">玄铁剑法</span>
+    <span class="tag gold">玉女心经</span>
+    <span class="tag">蛤蟆功</span>
+    <span class="tag">天罗地网势</span>
+    <span class="tag">九阴真经片段</span>
+    <span class="tag">打狗棒法口诀</span>
+    <span class="tag">全真剑法</span>
+    <span class="tag">弹指神通</span>
+  </div>
+</section>
+
+<!-- 06 情感世界 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 06</div>
+    <h2>情感世界</h2>
+  </div>
+  <div class="content-block">
+    <h3>与小龙女：十六年生死两茫茫</h3>
+    <p>杨过与小龙女的爱情，是金庸武侠中最美的旷世绝恋。他们的感情始于活死人墓中的朝夕相处——一个从小在古墓长大、不谙世事的白衣女子，一个孤苦无依、渴望被爱的倔强少年。他们的爱情经历了三重考验：<strong>礼教的反对</strong>（师徒之恋为世俗所不容）、<strong>命运的捉弄</strong>（尹志平的玷污、绝情谷的中毒）、<strong>时间的煎熬</strong>（十六年的漫长等待）。</p>
+    <p>但正是这些磨难，让他们的感情愈发坚不可摧。杨过对小龙女说："我这一生，只爱你一个人。"这句话他没有食言——十六年间，无数红颜对他倾心，但他的心里始终只有那个白影。小龙女跳崖时想的不是自己会死，而是杨过"十六年后会来找我"——这种信任，比任何海誓山盟都更动人。</p>
+  </div>
+  <div class="content-block">
+    <h3>与郭靖黄蓉：恩怨交织的复杂情感</h3>
+    <p>杨过对郭靖的感情极其复杂。郭靖是父亲杨康的结义兄弟，对杨过有抚养之恩，又是名满天下的大侠。但杨过也得知郭靖间接导致了父亲杨康的死亡。敬仰与仇恨交织在一起，让杨过一度想要刺杀郭靖。然而当他看到郭靖镇守襄阳、为国为民的赤诚后，仇恨逐渐化解——他理解了父亲之死的真相，也真正认同了郭靖的"侠之大者"。</p>
+    <p>对黄蓉，杨过始终心存芥蒂。黄蓉在桃花岛时只教他读书不教武功，让他感到被防备。但后来他才明白，黄蓉是怕他走上父亲杨康的路——"教他读书明理，是救他"。</p>
+  </div>
+  <div class="content-block">
+    <h3>与郭芙：爱与恨的一线之隔</h3>
+    <p>杨过和郭芙的关系是小说中最微妙的。两人从小就不对付——郭芙骄纵任性，杨过敏感倔强。但金庸在字里行间暗示了一种可能性：如果两人的性格稍微不同，也许会有不一样的故事。郭芙对杨过的"恨"，某种程度上来源于一种未被察觉的"在意"。而杨过对郭芙的宽容——即便被她断去一臂也没有真正报复——也透着复杂的意味。</p>
+  </div>
+  <div class="quote-block">
+    <div class="quote-text">"过儿，你瞧天上那些白云，聚了又散，散了又聚，人生离合，亦复如斯。"</div>
+    <div class="quote-source">——小龙女与杨过十六年后重逢时所言，《神雕侠侣》第三十九回</div>
+  </div>
+</section>
+
+<!-- 07 趣事典故 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 07</div>
+    <h2>趣事典故</h2>
+  </div>
+  <div class="content-block">
+    <h3>名场面：风陵渡口初相遇</h3>
+    <p>十六岁的郭襄在风陵渡口第一次遇到杨过，当时他戴着人皮面具，以"神雕侠"的身份出现。郭襄被他的气度和神秘吸引，一路追随。杨过给她三枚金针，许她三个愿望——第一个愿望是看他的脸，第二个愿望是来襄阳给她过生日。杨过如约而至，在郭襄十六岁生日时送出三件惊世大礼：斩首蒙古先锋、火烧蒙古粮草、揭露霍都的阴谋。这场"生日派对"让郭襄终身难忘。</p>
+  </div>
+  <div class="content-block">
+    <h3>冷知识：杨过的武器变迁</h3>
+    <p>杨过一生用过多种武器：幼年使用普通长剑，古墓中学玉女剑法时用轻灵长剑，断臂后在剑冢获得玄铁重剑（六十四斤），归隐前将玄铁剑赠予郭靖黄蓉（后被熔铸成倚天剑和屠龙刀）。杨过的武器变迁恰恰反映了他的武功境界变化——从"器"到"不滞于物"。</p>
+  </div>
+  <div class="content-block">
+    <h3>妙语金句</h3>
+    <p>"我杨过，谁对我好，我便对谁好；谁对我坏，我便对他坏。如此而已。"</p>
+    <p>"姑姑，你若死了，我便随你而去。这世界没有了你，活着又有什么趣？"</p>
+    <p>"我这一生，只爱你一个。"</p>
+    <p>"做人不用太聪明，太聪明的人，往往活得太累。"</p>
+  </div>
+  <div class="highlight-box">
+    <div class="hl-title">🎬 影视经典演绎</div>
+    <p>1983版刘德华的杨过青涩但忠厚，是很多人心中的初恋杨过。1995版古天乐的杨过被誉为"最帅杨过"，完美诠释了"一见杨过误终身"的气质。2006版黄晓明的杨过争议较大，但将杨过的狂傲演绎得淋漓尽致。2014版陈晓的杨过清秀灵气，有少年感。其中古天乐版被广泛公认为最经典的影视杨过形象。</p>
+  </div>
+</section>
+
+<!-- 08 现实启示 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 08</div>
+    <h2>现实启示</h2>
+  </div>
+  <div class="content-block">
+    <h3>创伤是成长的养料</h3>
+    <p>杨过的一生充满了创伤——被父母抛弃（精神上的）、被师门虐待、被断去右臂、与爱人分离十六年。但他从未被这些创伤压垮，反而将每一次痛苦转化为成长的养料。断臂让他领悟了更高级的剑法，分离让他创出了更强大的掌法。这对现代人的启示是：<strong>你受过的伤，可以成为你最强的地方</strong>。</p>
+  </div>
+  <div class="content-block">
+    <h3>不必取悦所有人</h3>
+    <p>杨过的人生哲学非常简单：对我好的人，我加倍对他好；对我坏的人，我也不客气。他不像郭靖那样以德报怨，也不像黄蓉那样精于算计。这种"爱憎分明"的态度在现实生活中很有参考价值——<strong>你不需要讨好所有人，把精力留给值得的人</strong>。</p>
+  </div>
+  <div class="content-block">
+    <h3>极致的专注创造奇迹</h3>
+    <p>杨过的武功成就，源于极致的专注。十六年等一个人、十六年想一个人——这种专注度在现代社会中极为稀缺。在职业发展中，<strong>找到一个让你愿意"等十六年"的方向，比在多个方向上浅尝辄止更重要</strong>。杨过的"黯然销魂掌"告诉我们：当情感与技能结合到极致时，创造力会迸发出惊人的力量。</p>
+  </div>
+  <div class="content-block">
+    <h3>真正的自由是做自己</h3>
+    <p>杨过被称为"西狂"，这个"狂"不是狂妄，而是对内心真实的忠诚。他不在乎别人怎么看他——师徒之恋也好、断臂之丑也好、独来独往也好——他从来没有为了迎合别人而改变自己。在一个人人都在"表演"的时代，<strong>做真实的自己，就是一种反叛，也是一种自由</strong>。</p>
+  </div>
+  <div class="highlight-box">
+    <div class="hl-title">🎯 杨过给现代人的三句话</div>
+    <p>1. <strong>忠于内心</strong>——别人怎么看你不重要，重要的是你如何看待自己。</p>
+    <p>2. <strong>在等待中成长</strong>——不要只把等待当成煎熬，它可以是你最强的加速器。</p>
+    <p>3. <strong>爱憎分明</strong>——善良要有底线，宽容要有原则。不是每个人都值得你的好。</p>
+  </div>
+</section>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <a href="index.html#characters" class="nav-prev">← 返回人物总览</a>
+  <a href="index.html" class="back-all">金庸人物志</a>
+  <a href="xiaolongnv.html" class="nav-next">下一人物：小龙女 →</a>
+</div>
+
+</div>
+
+<footer class="footer">
+  <div class="brand">金庸人物志</div>
+  <p>Jin Yong Character Chronicles — 江湖百态，尽在其中</p>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if(target) target.scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+
+</body>
+</html>

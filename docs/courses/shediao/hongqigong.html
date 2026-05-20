@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>洪七公 — 北丐 · 九指神丐 | 金庸人物志</title>
+<meta name="description" content="深度解读洪七公：天下第一大帮丐帮帮主，降龙十八掌的绝代宗师。贪吃却不误事，逍遥却不失大义。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a24;
+  --card:#1a1a26;--card2:#222230;--card3:#2a2a3a;
+  --border:#252535;--border2:#3a3a50;
+  --text:#f0ede5;--text2:#a09888;--text3:#6b6560;
+  --gold:#d4a574;--gold2:#e8c9a0;--gold3:#c08552;
+  --red:#c41e3a;--jade:#5b8c5a;
+  --serif:'Noto Serif SC',serif;
+  --sans:'Noto Sans SC',sans-serif;
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+a{color:var(--gold);text-decoration:none}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--gold)}
+.nav-back{font-size:.85rem;color:var(--text2);transition:color .2s}
+.nav-back:hover{color:var(--gold)}
+.course-hero{padding:120px 0 60px;text-align:center;position:relative}
+.course-hero .novel-tag{display:inline-block;background:rgba(212,165,116,.1);color:var(--gold);padding:4px 14px;border-radius:100px;font-size:.78rem;margin-bottom:16px}
+.course-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:900;margin-bottom:8px}
+.course-hero .subtitle{font-size:1.1rem;color:var(--gold);margin-bottom:8px}
+.course-hero .brief-intro{font-size:1rem;color:var(--text2);max-width:600px;margin:16px auto 0;line-height:1.8}
+.course-meta{display:flex;justify-content:center;gap:32px;margin-top:28px;flex-wrap:wrap}
+.course-meta-item{text-align:center}
+.course-meta-item .meta-val{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--gold)}
+.course-meta-item .meta-label{font-size:.72rem;color:var(--text3);margin-top:4px;letter-spacing:.05em}
+.section{padding:48px 0}
+.section-header{border-left:3px solid var(--gold);padding-left:16px;margin-bottom:28px}
+.section-header h2{font-family:var(--serif);font-size:1.5rem;margin-bottom:4px}
+.section-header .en{font-size:.72rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase}
+.content-block{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:20px}
+.content-block h3{font-size:1.1rem;color:var(--gold);margin-bottom:16px;font-family:var(--serif)}
+.content-block p{color:var(--text2);font-size:.92rem;line-height:1.9;margin-bottom:12px}
+.highlight-box{background:rgba(212,165,116,.05);border:1px solid rgba(212,165,116,.15);border-radius:10px;padding:20px;margin:20px 0}
+.highlight-box .hl-title{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:8px;letter-spacing:.08em}
+.highlight-box p{font-size:.9rem;color:var(--text);line-height:1.8}
+.quote-block{border-left:2px solid var(--gold);padding:12px 20px;margin:20px 0;background:rgba(212,165,116,.03);font-style:italic}
+.quote-block .quote-text{font-family:var(--serif);font-size:1.05rem;color:var(--gold2);line-height:1.7}
+.quote-block .quote-source{font-size:.78rem;color:var(--text3);margin-top:8px}
+.info-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.88rem}
+.info-table td{padding:10px 16px;border-bottom:1px solid var(--border);color:var(--text2)}
+.info-table td:first-child{color:var(--gold);font-weight:600;width:120px;white-space:nowrap}
+.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
+.tag.gold{background:rgba(212,165,116,.1);color:var(--gold)}
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--border2)}
+.timeline-item{position:relative;margin-bottom:28px}
+.timeline-item::before{content:'';position:absolute;left:-28px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
+.timeline-item .tl-year{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:4px}
+.timeline-item .tl-event{font-size:.9rem;color:var(--text2)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:32px 0;border-top:1px solid var(--border);margin-top:40px}
+.bottom-nav a,.bottom-nav span{font-size:.9rem;color:var(--text2)}
+.bottom-nav .nav-prev,.bottom-nav .nav-next{display:flex;align-items:center;gap:8px}
+.bottom-nav .back-all{color:var(--gold);font-weight:600}
+.footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
+.footer .brand{font-family:var(--serif);color:var(--gold);font-size:1rem;margin-bottom:4px}
+.footer p{font-size:.78rem;color:var(--text3)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">\u2694 金庸人物志</a>
+    <a href="../index.html#characters" class="nav-back">\u2190 返回人物总览</a>
+  </div>
+</nav>
+<!-- COURSE HEADER -->
+<section class="course-hero">
+  <div class="container">
+    <span class="novel-tag">🏹 射雕英雄传</span>
+    <h1>洪七公</h1>
+    <div class="subtitle">北丐 · 九指神丐</div>
+    <p class="brief-intro">天下第一大帮丐帮帮主，五绝之一的"北丐"。为人正义而幽默，最大的爱好是吃——为了吃可以赴汤蹈火，但为了正义可以放弃吃的。他是金庸笔下最"接地气"的绝顶高手。</p>
+  </div>
+</section>
+
+<div class="container"><!-- 01 人物小传 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 01</div>
+    <h2>人物小传</h2>
+  </div>  <div class="content-block">
+    <table class="info-table">
+      <tr><td>姓名</td><td>洪七公</td></tr>
+      <tr><td>别名</td><td>北丐、九指神丐、老叫花</td></tr>
+      <tr><td>身份</td><td>五绝之一（北丐）、丐帮第十八代帮主</td></tr>
+      <tr><td>特征</td><td>右手缺一根食指（因贪吃误事自断）</td></tr>
+      <tr><td>徒弟</td><td>郭靖、黄蓉</td></tr>
+      <tr><td>主要武功</td><td>降龙十八掌、打狗棒法</td></tr>
+      <tr><td>爱好</td><td>美食（自称"吃遍天下美味"）</td></tr>
+      <tr><td>性格标签</td><td>正义、豪爽、贪吃、逍遥、大智若愚</td></tr>
+    </table>
+  </div></section><!-- 02 性格分析 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 02</div>
+    <h2>性格分析</h2>
+  </div>  <div class="content-block">
+    <h3>大智若愚的逍遥客</h3>
+    <p>洪七公是五绝中最"像人"的一位。王重阳高高在上、黄药师孤傲不群、欧阳锋阴毒狠辣、一灯大师慈悲渡人——只有洪七公像一个拿你没办法的长辈：贪吃、爱开玩笑、但大是大非面前从不含糊。</p>
+    <p>他的性格核心是<strong>"逍遥却不失底线"</strong>。他可以为了吃一只叫花鸡在荒山野岭等三天，但绝不会为了一口吃的做违背道义的事。他贪吃但不贪婪，贪玩但不误国。这种"有底线的自由"才是最难得的境界。</p>
+    <p><strong>洪七公最大的性格魅力在于他的"不装"</strong>——他从来不觉得自己是天下五绝就该端着。他可以和小乞丐一起蹲在路边啃鸡腿，也可以在华山之巅与天下英雄论剑。这种"对下不傲、对上不卑"的态度，让所有人都喜欢他。</p>
+  </div>  <div class="quote-block">
+    <div class="quote-text">"我一生杀过二百三十一人，个个都是恶徒、奸人、负心薄幸之辈。我老叫花贪吃贪玩，但生平没杀过一个好人。"</div>
+    <div class="quote-source">——洪七公对裘千仞</div>
+  </div></section><!-- 03 命运轨迹 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 03</div>
+    <h2>命运轨迹</h2>
+  </div>  <div class="content-block">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-year">年轻时</div>
+        <div class="tl-event">加入丐帮，天赋异禀，武功超群。练成降龙十八掌和打狗棒法，成为丐帮帮主。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">自断食指</div>
+        <div class="tl-event">因贪吃误了一件大事，自断右手食指以明志。从此被称为"九指神丐"。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">首次华山论剑</div>
+        <div class="tl-event">参加第一次华山论剑，与王重阳、黄药师、欧阳锋、段智兴并称五绝。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">收郭靖为徒</div>
+        <div class="tl-event">在江南遇到郭靖和黄蓉。被黄蓉的美食征服，传授郭靖降龙十八掌。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">第二次华山论剑</div>
+        <div class="tl-event">与义弟欧阳锋反目。面对裘千仞的挑衅，一番大义凛然的话让裘千仞幡然悔悟。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-year">晚年</div>
+        <div class="tl-event">将丐帮帮主之位传给黄蓉。与欧阳锋在华山之巅相拥大笑而逝——这一生唯一的"敌人"，最终成了最懂他的人。</div>
+      </div>
+    </div>
+  </div></section><!-- 04 奇遇与转折 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 04</div>
+    <h2>奇遇与转折</h2>
+  </div>  <div class="content-block">
+    <h3>美食奇缘</h3>
+    <p>洪七公传郭靖武功，是金庸武侠中最有意思的"奇遇"——因为这个"遇"是黄蓉用美食换来的。叫花鸡、好逑汤、玉笛谁家听落梅……黄蓉用一道道美食引诱洪七公教郭靖武功，而洪七公明知是"圈套"也心甘情愿地往里跳——因为他实在太爱吃了。</p>
+    <p>这段情节的深意在于：洪七公之所以愿意教，不光是因为吃，更是因为<strong>他看出了郭靖的赤诚</strong>。吃只是给了双方一个台阶。洪七公一生阅人无数，他知道什么样的人值得教。</p>
+  </div></section><!-- 05 武功绝学 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 05</div>
+    <h2>武功绝学</h2>
+  </div>  <div class="content-block">
+    <h3>降龙十八掌</h3>
+    <p>丐帮镇帮绝学，天下至刚至猛的掌法。洪七公的降龙十八掌比郭靖更加纯熟老练——他的每一掌都带着几十年的实战经验。其中"亢龙有悔"收发自如、"飞龙在天"气势磅礴。</p>
+  </div>  <div class="content-block">
+    <h3>打狗棒法</h3>
+    <p>丐帮帮主象征。三十六路打狗棒法变化精微，分为绊、劈、缠、戳、挑、引、封、转八诀。这套棒法是丐帮不外传的绝密武功。洪七公将打狗棒法传给了黄蓉而不是郭靖——因为他知道这套需要灵活变化的武功不适合郭靖，而黄蓉的聪明才智正合适。</p>
+  </div>  <div class="tag-list">
+      <span class="tag gold">降龙十八掌</span>
+      <span class="tag gold">打狗棒法</span>
+      <span class="tag">逍遥游拳法</span>
+      <span class="tag">混天功</span>
+  </div></section><!-- 06 情感世界 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 06</div>
+    <h2>情感世界</h2>
+  </div>  <div class="content-block">
+    <h3>与欧阳锋：亦敌亦友</h3>
+    <p>洪七公和欧阳锋的关系是金庸笔下最复杂的关系之一。他们是敌人——一个是正派北丐，一个是邪派西毒；但他们也是惺惺相惜的对手。洪七公曾救过欧阳锋的命，欧阳锋也在关键时刻帮过洪七公。</p>
+    <p>最终两人在华山之巅相拥而逝，是武侠文学中最震撼的场景之一。临终前，欧阳锋终于想起了自己是谁，而洪七公在他身边——这一生打了几十年的"死对头"，最终成了对方在人世间的最后一个朋友。</p>
+  </div>  <div class="content-block">
+    <h3>对郭靖和黄蓉：如父如师</h3>
+    <p>洪七公对郭靖和黄蓉的感情超越了普通师徒。他教郭靖不是出于责任，而是真心喜欢这个傻小子；他传黄蓉打狗棒法，是把丐帮的未来托付给她。郭靖和黄蓉也把洪七公当作父亲一样敬爱。</p>
+  </div></section><!-- 07 趣事典故 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 07</div>
+    <h2>趣事典故</h2>
+  </div>  <div class="content-block">
+    <h3>名场面：断指之誓</h3>
+    <p>洪七公年轻时因为贪吃，耽误了一件重要的事情，导致有人因此受害。他二话不说，拔出刀来砍掉了自己右手的食指——这是对自己的惩罚，也是对自己的警示。从此"九指神丐"的名号响彻江湖。这个细节体现了洪七公的刚烈：他不原谅自己的错误，哪怕是"小事"。</p>
+  </div>  <div class="content-block">
+    <h3>冷知识：洪七公的厨艺</h3>
+    <p>洪七公不仅爱吃，还会做。在《射雕》中有一段描写他自己动手烤叫花鸡的细节——手法之专业，连黄蓉都佩服。金庸曾经说过，洪七公的原型之一是<strong>苏东坡</strong>——一个被贬到哪儿就吃到哪儿的乐天派。</p>
+  </div>  <div class="content-block">
+    <h3>妙语金句</h3>
+    <p>"我老叫花一生无牵无挂，只有两件事放不下：一是吃，二是丐帮。"</p>
+    <p>"这世上，没有什么事是一只叫花鸡解决不了的。如果有，那就两只。"</p>
+    <p>"练武之人，第一要有德，第二要有胆，第三才是有功夫。"</p>
+  </div></section><!-- 08 现实启示 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 08</div>
+    <h2>现实启示</h2>
+  </div>  <div class="content-block">
+    <h3>做一个有底线的快乐人</h3>
+    <p>洪七公最大的现实启示是：<strong>你可以在快乐中坚持原则</strong>。很多人认为坚持原则就意味着苦大仇深，洪七公证明了不是这样。你可以贪吃、可以玩世不恭，但大是大非面前必须站稳立场。</p>
+  </div>  <div class="content-block">
+    <h3>领导力的本质</h3>
+    <p>洪七公治理丐帮的方式是<strong>"放权"</strong>——他经常不在帮中，到处游山玩水找吃的，但丐帮依然是天下第一大帮。因为他找到了一批有能力、有操守的弟子来实际管理。这是最高级的领导力：建立好的系统和传承，而不是事必躬亲。</p>
+  </div>  <div class="highlight-box">
+    <div class="hl-title">🎯 洪七公给现代人的启示</div>
+    <p>1. <strong>专业能力是你的名片</strong>——人们敬重洪七公，首先因为他武功盖世。</p>
+    <p>2. <strong>保持幽默感</strong>——严肃的人让人尊重，有趣的人让人喜欢。</p>
+    <p>3. <strong>对敌人也要有风度</strong>——竞争归竞争，不丢人格。</p>
+      </div></section><!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <a href="huangyaoshi.html" class="nav-prev">\u2190 黄药师</a>
+  <a href="../index.html#characters" class="back-all">金庸人物志</a>
+  <a href="ouyangfeng.html" class="nav-next">欧阳锋 \u2192</a>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="brand">金庸人物志</div>
+  <p>Jin Yong Character Chronicles — 江湖百态，尽在其中</p>
+</footer>
+</body>
+</html>

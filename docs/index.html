@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金庸人物志 — 江湖百态，尽在其中</title>
+<meta name="description" content="金庸15部小说完整人物志：性格分析、命运轨迹、武功绝学、情感世界、趣事典故。每个江湖人物，都是一门人生课。">
+<meta property="og:title" content="金庸人物志 — Jin Yong Character Chronicles">
+<meta property="og:description" content="15部小说 · 数百人物 · 深度解读">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════ RESET ═══════════════ */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a24;
+  --card:#1a1a26;--card2:#222230;--card3:#2a2a3a;
+  --border:#252535;--border2:#3a3a50;
+  --text:#f0ede5;--text2:#a09888;--text3:#6b6560;
+  --gold:#d4a574;--gold2:#e8c9a0;--gold3:#c08552;
+  --red:#c41e3a;--red2:#e84057;
+  --jade:#5b8c5a;--ink:#2c2416;
+  --serif:'Noto Serif SC',serif;
+  --sans:'Noto Sans SC',sans-serif;
+  --calligraphy:'Ma Shan Zheng',cursive;
+  --radius:12px;--radius-sm:8px;
+  --shadow-lg:0 20px 60px rgba(0,0,0,.5);
+  --transition:all .3s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+
+/* ═══════════════ TYPOGRAPHY ═══════════════ */
+.serif{font-family:var(--serif)}
+.calligraphy{font-family:var(--calligraphy)}
+h1{font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:900;line-height:1.2;letter-spacing:0.02em}
+h2{font-size:clamp(1.5rem,2.8vw,2.2rem);font-weight:700;line-height:1.3}
+h3{font-size:1.2rem;font-weight:600}
+.label{font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold)}
+.body-md{font-size:1.05rem;color:var(--text2);line-height:1.8}
+.body-sm{font-size:0.875rem;color:var(--text3)}
+.gold-text{color:var(--gold)}
+.red-text{color:var(--red)}
+
+/* ═══════════════ LAYOUT ═══════════════ */
+.container{max-width:1280px;margin:0 auto;padding:0 28px}
+.container-sm{max-width:900px;margin:0 auto;padding:0 28px}
+.section{padding:100px 0}
+.section-sm{padding:60px 0}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+@media(max-width:768px){
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .section{padding:60px 0}
+}
+
+/* ═══════════════ NAV ═══════════════ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:var(--transition)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 28px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:10px}
+.nav-logo .icon{font-size:1.5rem}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:0.9rem;color:var(--text2);transition:color .2s;font-weight:500;position:relative}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a.active{color:var(--gold)}
+.nav-links a.active::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--gold)}
+.nav-cta{background:linear-gradient(135deg,var(--gold),var(--gold3));color:#0a0a0f;padding:9px 22px;border-radius:6px;font-weight:600;font-size:0.88rem;transition:var(--transition)}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(212,165,116,.3)}
+@media(max-width:768px){
+  .nav-links{display:none}
+}
+
+/* ═══════════════ HERO ═══════════════ */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:68px}
+.hero-bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse 70% 50% at 50% 30%,rgba(212,165,116,.06),transparent 70%),
+  radial-gradient(ellipse 50% 30% at 20% 70%,rgba(196,30,58,.04),transparent 60%),
+  radial-gradient(ellipse 50% 30% at 80% 60%,rgba(91,140,90,.03),transparent 60%);
+}
+.hero-bg::after{content:'';position:absolute;inset:0;opacity:.03;
+  background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30Z' fill='none' stroke='%23d4a574' stroke-width='.3'/%3E%3C/svg%3E");
+}
+.hero-content{position:relative;z-index:1;text-align:center;max-width:900px;margin:0 auto;padding:0 24px}
+.hero-seal{font-family:var(--calligraphy);font-size:5rem;color:var(--red);opacity:.15;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-15deg);pointer-events:none;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,165,116,.1);border:1px solid rgba(212,165,116,.2);padding:6px 18px;border-radius:100px;font-size:.82rem;color:var(--gold);margin-bottom:36px}
+.hero-badge .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.hero h1{margin-bottom:20px;position:relative}
+.hero h1 .gold{color:var(--gold)}
+.hero h1 .red{color:var(--red)}
+.hero-sub{font-size:1.15rem;color:var(--text2);max-width:560px;margin:0 auto 40px;line-height:1.8}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:var(--radius-sm);font-weight:600;font-size:.95rem;transition:var(--transition);border:none;cursor:pointer;font-family:var(--sans)}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold3));color:#0a0a0f}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(212,165,116,.35)}
+.btn-secondary{background:transparent;color:var(--text);border:1px solid var(--border2)}
+.btn-secondary:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}
+.hero-stats{display:flex;justify-content:center;gap:56px;margin-top:72px;padding-top:44px;border-top:1px solid var(--border)}
+.hero-stat{text-align:center}
+.hero-stat .num{font-family:var(--serif);font-size:2.4rem;font-weight:800;color:var(--gold);line-height:1}
+.hero-stat .desc{font-size:.8rem;color:var(--text3);margin-top:8px;letter-spacing:.05em}
+.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);animation:bounce 2s infinite}
+.hero-scroll span{font-size:.8rem;color:var(--text3)}
+@keyframes bounce{0%,100%{transform:translateX(-50%)translateY(0)}50%{transform:translateX(-50%)translateY(8px)}}
+@media(max-width:768px){
+  .hero-stats{gap:28px}
+  .hero-stat .num{font-size:1.6rem}
+  .hero-seal{font-size:3rem}
+}
+
+/* ═══════════════ SECTION HEADERS ═══════════════ */
+.section-header{text-align:center;margin-bottom:64px}
+.section-header .label{margin-bottom:12px;display:block}
+.section-header h2{margin-bottom:16px}
+.section-header p{color:var(--text2);max-width:560px;margin:0 auto}
+.divider{width:60px;height:2px;background:var(--gold);margin:20px auto;opacity:.4}
+
+/* ═══════════════ NOVEL GRID ═══════════════ */
+.novel-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:var(--transition);cursor:pointer;position:relative;overflow:hidden}
+.novel-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .4s}
+.novel-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+.novel-card:hover::before{opacity:1}
+.novel-card .novel-emoji{font-size:2rem;margin-bottom:12px}
+.novel-card h3{font-family:var(--serif);margin-bottom:8px;font-size:1.1rem}
+.novel-card .novel-meta{font-size:.8rem;color:var(--text3)}
+.novel-card .novel-count{display:inline-block;background:rgba(212,165,116,.1);color:var(--gold);padding:3px 12px;border-radius:100px;font-size:.75rem;margin-top:12px}
+.novel-card .novel-poem{font-size:.78rem;color:var(--text3);margin-top:8px;font-style:italic}
+
+/* ═══════════════ CHARACTER COURSE CARD ═══════════════ */
+.course-header-section{display:flex;align-items:center;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px}
+.course-filter{display:flex;gap:8px;flex-wrap:wrap}
+.course-filter button{padding:8px 18px;border-radius:100px;border:1px solid var(--border);background:transparent;color:var(--text2);font-size:.82rem;cursor:pointer;transition:var(--transition);font-family:var(--sans)}
+.course-filter button:hover,.course-filter button.active{background:rgba(212,165,116,.1);border-color:var(--gold);color:var(--gold)}
+.char-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:var(--transition);position:relative}
+.char-card:hover{transform:translateY(-2px);border-color:var(--border2);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.char-card .char-type{position:absolute;top:16px;right:16px;font-size:.7rem;padding:3px 10px;border-radius:100px;font-weight:600}
+.char-card .char-type.protagonist{background:rgba(212,165,116,.15);color:var(--gold)}
+.char-card .char-type.supporting{background:rgba(91,140,90,.15);color:var(--jade)}
+.char-card .char-type.important{background:rgba(196,30,58,.1);color:var(--red)}
+.char-card .char-novel{font-size:.72rem;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.char-card h3{font-family:var(--serif);font-size:1.2rem;margin-bottom:6px}
+.char-card .char-alias{font-size:.82rem;color:var(--gold);margin-bottom:12px}
+.char-card .char-brief{font-size:.85rem;color:var(--text2);line-height:1.7;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.char-card .char-tags{display:flex;gap:6px;flex-wrap:wrap}
+.char-card .char-tag{font-size:.7rem;padding:2px 10px;border-radius:6px;background:var(--bg3);color:var(--text3)}
+.char-card .char-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--gold);font-size:.85rem;font-weight:600;transition:var(--transition)}
+.char-card .char-link:hover{gap:10px}
+
+/* ═══════════════ COURSE STRUCTURE ═══════════════ */
+.structure-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:24px}
+.struct-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:var(--transition)}
+.struct-card:hover{border-color:var(--border2)}
+.struct-card .struct-num{font-family:var(--serif);font-size:2.5rem;font-weight:900;color:var(--gold);opacity:.2;line-height:1}
+.struct-card h3{margin-bottom:12px}
+.struct-card ul{list-style:none;padding:0}
+.struct-card ul li{font-size:.88rem;color:var(--text2);padding:6px 0;padding-left:20px;position:relative}
+.struct-card ul li::before{content:'•';position:absolute;left:0;color:var(--gold)}
+
+/* ═══════════════ CTA ═══════════════ */
+.cta-section{background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1px solid var(--border);border-radius:24px;padding:80px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.cta-section h2{font-family:var(--serif);margin-bottom:16px}
+.cta-section p{color:var(--text2);max-width:500px;margin:0 auto 32px}
+
+/* ═══════════════ FOOTER ═══════════════ */
+.footer{padding:60px 0 40px;border-top:1px solid var(--border);text-align:center}
+.footer .footer-brand{font-family:var(--serif);font-size:1.1rem;color:var(--gold);margin-bottom:8px}
+.footer p{font-size:.82rem;color:var(--text3)}
+
+/* ═══════════════ ANIMATIONS ═══════════════ */
+.fade-up{opacity:0;transform:translateY(30px);animation:fadeUp .8s forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.fade-up:nth-child(1){animation-delay:0s}
+.fade-up:nth-child(2){animation-delay:.1s}
+.fade-up:nth-child(3){animation-delay:.2s}
+.fade-up:nth-child(4){animation-delay:.3s}
+.fade-up:nth-child(5){animation-delay:.4s}
+.fade-up:nth-child(6){animation-delay:.5s}
+
+/* ═══════════════ SCROLLBAR ═══════════════ */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--gold)}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="icon">⚔</span>金庸人物志
+    </a>
+    <div class="nav-links">
+      <a href="#novels" class="active">十五部小说</a>
+      <a href="#characters">人物总览</a>
+      <a href="#structure">课程体系</a>
+      <a href="#about">关于</a>
+      <a href="#characters" class="nav-cta">进入江湖</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <span class="hero-seal">侠</span>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span> Jin Yong Character Chronicles
+    </div>
+    <h1 class="serif">江湖百态<br><span class="gold">尽在</span><span class="red">人物志</span></h1>
+    <p class="hero-sub">飞雪连天射白鹿，笑书神侠倚碧鸳。金庸十五部武侠经典，数百位江湖人物，每一个人物都是一门人生课。</p>
+    <div class="hero-actions">
+      <a href="#novels" class="btn btn-primary">🏯 进入江湖</a>
+      <a href="#structure" class="btn btn-secondary">课程体系</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">15</div>
+        <div class="desc">经典小说</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">18+</div>
+        <div class="desc">江湖人物</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">8</div>
+        <div class="desc">维度深度解读</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">∞</div>
+        <div class="desc">人生智慧</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>▼ 往下探索</span></div>
+</section>
+
+<!-- ═══════════════ NOVELS SECTION ═══════════════ -->
+<section class="section" id="novels">
+  <div class="container">
+    <div class="section-header">
+      <span class="label">十五部经典</span>
+      <h2 class="serif">飞雪连天射白鹿，笑书神侠倚碧鸳</h2>
+      <div class="divider"></div>
+      <p>从《书剑恩仇录》到《鹿鼎记》，金庸用十五部小说构建了一个宏大的江湖世界。每个人物都是这个世界的灵魂。</p>
+    </div>
+    <div class="grid-4">
+      <!-- Novel cards -->
+      <div class="novel-card fade-up" onclick="scrollToChars('shediao')">
+        <div class="novel-emoji">🏹</div>
+        <h3>射雕英雄传</h3>
+        <div class="novel-meta">1957 · 南宋</div>
+        <div class="novel-poem">"侠之大者，为国为民"</div>
+        <div class="novel-count">20+ 人物</div>
+      </div>
+      <div class="novel-card fade-up" onclick="scrollToChars('shendiao')">
+        <div class="novel-emoji">🦅</div>
+        <h3>神雕侠侣</h3>
+        <div class="novel-meta">1959 · 南宋末</div>
+        <div class="novel-poem">"问世间情是何物"</div>
+        <div class="novel-count">18+ 人物</div>
+      </div>
+      <div class="novel-card fade-up" onclick="scrollToChars('yitian')">
+        <div class="novel-emoji">🐉</div>
+        <h3>倚天屠龙记</h3>
+        <div class="novel-meta">1961 · 元末明初</div>
+        <div class="novel-poem">"武林至尊，宝刀屠龙"</div>
+        <div class="novel-count">18+ 人物</div>
+      </div>
+      <div class="novel-card fade-up" onclick="scrollToChars('tianlong')">
+        <div class="novel-emoji">🐲</div>
+        <h3>天龙八部</h3>
+        <div class="novel-meta">1963 · 北宋</div>
+        <div class="novel-poem">"无人不冤，有情皆孽"</div>
+        <div class="novel-count">25+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🎋</div>
+        <h3>笑傲江湖</h3>
+        <div class="novel-meta">1967 · 明代</div>
+        <div class="novel-poem">"无招胜有招"</div>
+        <div class="novel-count">20+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🦌</div>
+        <h3>鹿鼎记</h3>
+        <div class="novel-meta">1969 · 清康熙</div>
+        <div class="novel-poem">"平生不见陈近南"</div>
+        <div class="novel-count">25+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">⚔</div>
+        <h3>书剑恩仇录</h3>
+        <div class="novel-meta">1955 · 清乾隆</div>
+        <div class="novel-poem">"情深不寿，强极则辱"</div>
+        <div class="novel-count">18+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🗡</div>
+        <h3>碧血剑</h3>
+        <div class="novel-meta">1956 · 明末清初</div>
+        <div class="novel-poem">"空负安邦志，遂吟去国行"</div>
+        <div class="novel-count">15+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🦊</div>
+        <h3>飞狐外传</h3>
+        <div class="novel-meta">1960 · 清乾隆</div>
+        <div class="novel-poem">"宝刀相见欢，柔情恨无常"</div>
+        <div class="novel-count">15+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">❄</div>
+        <h3>雪山飞狐</h3>
+        <div class="novel-meta">1959 · 清乾隆</div>
+        <div class="novel-poem">"胡斐这一刀，劈还是不劈"</div>
+        <div class="novel-count">10+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🔗</div>
+        <h3>连城诀</h3>
+        <div class="novel-meta">1963 · 清代</div>
+        <div class="novel-poem">"人为财死，鸟为食亡"</div>
+        <div class="novel-count">12+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🐴</div>
+        <h3>白马啸西风</h3>
+        <div class="novel-meta">1961 · 西域</div>
+        <div class="novel-poem">"那都是很好很好的"</div>
+        <div class="novel-count">8+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🚶</div>
+        <h3>侠客行</h3>
+        <div class="novel-meta">1965 · 明代</div>
+        <div class="novel-poem">"赵客缦胡缨，吴钩霜雪明"</div>
+        <div class="novel-count">12+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">🦆</div>
+        <h3>鸳鸯刀</h3>
+        <div class="novel-meta">1961 · 清代</div>
+        <div class="novel-poem">"仁者无敌"</div>
+        <div class="novel-count">8+ 人物</div>
+      </div>
+      <div class="novel-card fade-up">
+        <div class="novel-emoji">👧</div>
+        <h3>越女剑</h3>
+        <div class="novel-meta">1970 · 春秋</div>
+        <div class="novel-poem">"西施捧心，阿青舞剑"</div>
+        <div class="novel-count">5+ 人物</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ COURSE STRUCTURE ═══════════════ -->
+<section class="section" id="structure" style="background:var(--bg2)">
+  <div class="container">
+    <div class="section-header">
+      <span class="label">课程体系</span>
+      <h2 class="serif">八维深度人物解读</h2>
+      <div class="divider"></div>
+      <p>每个人物都是一门完整的课程，从八个维度深度拆解，让你真正读懂金庸笔下的江湖人物。</p>
+    </div>
+    <div class="structure-grid">
+      <div class="struct-card fade-up">
+        <div class="struct-num">01</div>
+        <h3>人物小传</h3>
+        <ul>
+          <li>出身背景与家族渊源</li>
+          <li>成长环境与关键事件</li>
+          <li>人物在小说中的定位</li>
+          <li>与其他角色的关系网络</li>
+        </ul>
+      </div>
+      <div class="struct-card fade-up">
+        <div class="struct-num">02</div>
+        <h3>性格分析</h3>
+        <ul>
+          <li>核心性格特质解读</li>
+          <li>MBTI/九型人格类比</li>
+          <li>性格矛盾与成长弧线</li>
+          <li>性格决定命运的案析</li>
+        </ul>
+      </div>
+      <div class="struct-card fade-up">
+        <div class="struct-num">03</div>
+        <h3>命运轨迹</h3>
+        <ul>
+          <li>人物完整时间线</li>
+          <li>人生关键转折点</li>
+          <li>选择与后果的因果链</li>
+          <li>结局的必然性与偶然性</li>
+        </ul>
+      </div>
+      <div class="struct-card fade-up">
+        <div class="struct-num">04</div>
+        <h3>奇遇与转折</h3>
+        <ul>
+          <li>武功奇遇与机缘</li>
+          <li>贵人相遇的蝴蝶效应</li>
+          <li>命运转折中的智慧</li>
+          <li>"如果"的另一种可能</li>
+        </ul>
+      </div>
+      <div class="struct-card fade-up">
+        <div class="struct-num">05</div>
+        <h3>武功绝学</h3>
+        <ul>
+          <li>武功体系与师承</li>
+          <li>招牌武功详解</li>
+          <li>武功与性格的映射</li>
+          <li>武功进化与成长关系</li>
+        </ul>
+      </div>
+      <div class="struct-card fade-up">
+        <div class="struct-num">06</div>
+        <h3>情感世界</h3>
+        <ul>
+          <li>爱情线与情感纠葛</li>
+          <li>友情、师徒情、家国情</li>
+          <li>情感选择背后的价值观</li>
+          <li>金庸爱情观的人物映照</li>
+        </ul>
+      </div>
+      <div class="struct-card fade-up">
+        <div class="struct-num">07</div>
+        <h3>趣事典故</h3>
+        <ul>
+          <li>经典桥段与名场面</li>
+          <li>妙语金句与高光时刻</li>
+          <li>鲜为人知的冷知识</li>
+          <li>影视作品中的经典演绎</li>
+        </ul>
+      </div>
+      <div class="struct-card fade-up">
+        <div class="struct-num">08</div>
+        <h3>现实启示</h3>
+        <ul>
+          <li>人物给现代人的启示</li>
+          <li>职场与人生方法论</li>
+          <li>领导力、情商、逆商</li>
+          <li>金庸智慧的现代应用</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CHARACTERS SECTION ═══════════════ -->
+<section class="section" id="characters">
+  <div class="container">
+    <div class="section-header">
+      <span class="label">人物总览</span>
+      <h2 class="serif">首批上线：射雕三部曲</h2>
+      <div class="divider"></div>
+      <p>从郭靖到张无忌，从黄蓉到赵敏。三大经典系列，数十位核心人物，深度解读课程陆续上线。</p>
+    </div>
+    
+    <div class="course-header-section">
+      <h3 class="serif" style="color:var(--gold)">🏹 射雕英雄传</h3>
+      <div class="course-filter">
+        <button class="active">全部</button>
+        <button>主角</button>
+        <button>配角</button>
+        <button>重要人物</button>
+      </div>
+    </div>
+    <div class="grid-4" style="margin-bottom:60px">
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>郭靖</h3>
+        <div class="char-alias">北侠 · 为国为民</div>
+        <p class="char-brief">"侠之大者，为国为民"。从蒙古草原到大宋襄阳，郭靖用一生诠释了什么是真正的大侠。</p>
+        <div class="char-tags">
+          <span class="char-tag">降龙十八掌</span>
+          <span class="char-tag">大智若愚</span>
+          <span class="char-tag">侠之大者</span>
+        </div>
+        <a href="courses/shediao/guojing.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>黄蓉</h3>
+        <div class="char-alias">丐帮帮主 · 东邪之女</div>
+        <p class="char-brief">金庸笔下最聪明的女人。桃花岛主黄药师之女，才智绝世，精通奇门遁甲、五行八卦。她证明了智慧的力量比武功更强大，是武侠史上最经典的女性形象之一。</p>
+        <div class="char-tags">
+          <span class="char-tag">打狗棒法</span>
+          <span class="char-tag">奇门遁甲</span>
+          <span class="char-tag">女诸葛</span>
+        </div>
+        <a href="courses/shediao/huangrong.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>杨康</h3>
+        <div class="char-alias">完颜康 · 金国小王爷</div>
+        <p class="char-brief">一个被命运撕扯的悲剧人物。身在金营心在汉？还是彻底背叛了自己的出身？杨康的人生选择，引发关于身份认同与道德选择的永恒思考。</p>
+        <div class="char-tags">
+          <span class="char-tag">九阴白骨爪</span>
+          <span class="char-tag">身份认同</span>
+          <span class="char-tag">悲剧人物</span>
+        </div>
+        <a href="courses/shediao/yangkang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>黄药师</h3>
+        <div class="char-alias">东邪 · 桃花岛主</div>
+        <p class="char-brief">"正中带有七分邪，邪中带有三分正"。琴棋书画、奇门遁甲、医卜星相无一不精。他是金庸笔下最全才的人物，也是最有魅力的孤独者。</p>
+        <div class="char-tags">
+          <span class="char-tag">弹指神通</span>
+          <span class="char-tag">五行八卦</span>
+          <span class="char-tag">全才宗师</span>
+        </div>
+        <a href="courses/shediao/huangyaoshi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>洪七公</h3>
+        <div class="char-alias">北丐 · 丐帮帮主</div>
+        <p class="char-brief">降龙十八掌天下第一，贪吃如命的绝世高手。洪七公是金庸笔下最潇洒的大侠——不贪权力、不求荣华，唯爱美食与正义。逍遥自在，来去如风。</p>
+        <div class="char-tags">
+          <span class="char-tag">降龙十八掌</span>
+          <span class="char-tag">北丐</span>
+          <span class="char-tag">美食家</span>
+        </div>
+        <a href="courses/shediao/hongqigong.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>欧阳锋</h3>
+        <div class="char-alias">西毒 · 白驼山主</div>
+        <p class="char-brief">金庸笔下最经典的邪派宗师。蛤蟆功、灵蛇拳，逆练九阴真经而疯癫。对武学的极致追求让他成为绝世高手，也让他陷入毁灭——敌友之间，一生纠缠。</p>
+        <div class="char-tags">
+          <span class="char-tag">蛤蟆功</span>
+          <span class="char-tag">西毒</span>
+          <span class="char-tag">逆练九阴</span>
+        </div>
+        <a href="courses/shediao/ouyangfeng.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>周伯通</h3>
+        <div class="char-alias">老顽童 · 中顽童</div>
+        <p class="char-brief">金庸笔下最可爱的武学天才。一个永远长不大的老小孩，桃花岛上自创双手互搏和空明拳。他用一生证明：真正的智慧，在于保持赤子之心。</p>
+        <div class="char-tags">
+          <span class="char-tag">双手互搏</span>
+          <span class="char-tag">空明拳</span>
+          <span class="char-tag">老顽童</span>
+        </div>
+        <a href="courses/shediao/zhoubotong.html" class="char-link">查看完整课程 →</a>
+      </div>
+    </div>
+
+    <div class="course-header-section">
+    <div class="course-header-section">
+      <h3 class="serif" style="color:var(--gold)">🦅 神雕侠侣</h3>
+    </div>
+    <div class="grid-4" style="margin-bottom:60px">
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">神雕侠侣</div>
+        <h3>杨过</h3>
+        <div class="char-alias">神雕大侠 · 西狂</div>
+        <p class="char-brief">金庸笔下最叛逆、最深情、最复杂的男主角。从流浪孤儿到一代神雕大侠，杨过的一生是对抗命运、证明自我的传奇。十六年等待，问世间情是何物。</p>
+        <div class="char-tags">
+          <span class="char-tag">黯然销魂掌</span>
+          <span class="char-tag">独孤九剑</span>
+          <span class="char-tag">深情狂傲</span>
+        </div>
+        <a href="courses/shendiao/yangguo.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">神雕侠侣</div>
+        <h3>小龙女</h3>
+        <div class="char-alias">古墓派传人</div>
+        <p class="char-brief">不食人间烟火的绝代佳人。古墓中长大，心如止水，却为杨过动了凡心。小龙女的美，是金庸笔下的极致——清冷、纯粹、超越世俗。</p>
+        <div class="char-tags">
+          <span class="char-tag">玉女心经</span>
+          <span class="char-tag">古墓派</span>
+          <span class="char-tag">仙气飘渺</span>
+        </div>
+        <a href="courses/shendiao/xiaolongnv.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">神雕侠侣</div>
+        <h3>郭襄</h3>
+        <div class="char-alias">小东邪 · 峨嵋派创派祖师</div>
+        <p class="char-brief">风陵渡口初相遇，一见杨过误终身。郭靖黄蓉之女，集父母所长却走出一条完全不同的路。她是金庸笔下最让人心疼的配角，也是最潇洒的孤独旅人。</p>
+        <div class="char-tags">
+          <span class="char-tag">峨嵋祖师</span>
+          <span class="char-tag">风陵师太</span>
+          <span class="char-tag">一生追寻</span>
+        </div>
+        <a href="courses/shendiao/guoxiang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">神雕侠侣</div>
+        <h3>李莫愁</h3>
+        <div class="char-alias">赤练仙子</div>
+        <p class="char-brief">"问世间情是何物，直教生死相许"。因爱生恨的悲剧人物，从温柔少女到杀人魔头。李莫愁的故事，是金庸对爱情黑暗面最深刻的探索。</p>
+        <div class="char-tags">
+          <span class="char-tag">冰魄银针</span>
+          <span class="char-tag">因爱生恨</span>
+          <span class="char-tag">情花之毒</span>
+        </div>
+        <a href="courses/shendiao/limochou.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">神雕侠侣</div>
+        <h3>金轮法王</h3>
+        <div class="char-alias">蒙古国师 · 密宗第一高手</div>
+        <p class="char-brief">高傲的蒙古国师，龙象般若功前无古人。抓郭襄为质，却对她动了真心——最终以生命完成了最壮烈的救赎。金庸笔下最有深度的反派之一。</p>
+        <div class="char-tags">
+          <span class="char-tag">龙象般若功</span>
+          <span class="char-tag">蒙古国师</span>
+          <span class="char-tag">国士无双</span>
+        </div>
+        <a href="courses/shendiao/jinlunfawang.html" class="char-link">查看完整课程 →</a>
+      </div>
+    </div>
+
+    <div class="course-header-section">
+    <div class="course-header-section">
+      <h3 class="serif" style="color:var(--gold)">🐉 倚天屠龙记</h3>
+    </div>
+    <div class="grid-4">
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>张无忌</h3>
+        <div class="char-alias">明教教主 · 曾阿牛</div>
+        <p class="char-brief">一个不想当教主的教主，一个优柔寡断却武功盖世的少年。张无忌证明了善良与宽容的力量，也在情感纠葛中展现了人性最真实的一面。</p>
+        <div class="char-tags">
+          <span class="char-tag">九阳神功</span>
+          <span class="char-tag">乾坤大挪移</span>
+          <span class="char-tag">仁者无敌</span>
+        </div>
+        <a href="courses/yitian/zhangwuji.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>赵敏</h3>
+        <div class="char-alias">绍敏郡主 · 敏敏特穆尔</div>
+        <p class="char-brief">金庸笔下最有政治智慧的女性。蒙古郡主，统率群豪，却为张无忌背叛自己的国家与身份。"我偏要勉强"——她证明了主动追求的真义。</p>
+        <div class="char-tags">
+          <span class="char-tag">政治智慧</span>
+          <span class="char-tag">敢爱敢恨</span>
+          <span class="char-tag">女中豪杰</span>
+        </div>
+        <a href="courses/yitian/zhaomin.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>周芷若</h3>
+        <div class="char-alias">峨嵋派掌门</div>
+        <p class="char-brief">从温柔如水的汉水渔女到心狠手辣的峨嵋掌门。周芷若的黑化之路，是金庸笔下最令人扼腕的角色转变，揭示了权力与情感对人性的侵蚀。</p>
+        <div class="char-tags">
+          <span class="char-tag">九阴白骨爪</span>
+          <span class="char-tag">黑化之路</span>
+          <span class="char-tag">悲剧人物</span>
+        </div>
+        <a href="courses/yitian/zhouruiruo.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>张三丰</h3>
+        <div class="char-alias">武当派创派祖师 · 张真人</div>
+        <p class="char-brief">一代武学宗师，武当派创始人。从少林弃徒到武林泰斗，张三丰的百年人生是一部自强不息的奋斗史。"太极"不仅是武功，更是一种人生哲学。</p>
+        <div class="char-tags">
+          <span class="char-tag">太极拳</span>
+          <span class="char-tag">一代宗师</span>
+          <span class="char-tag">武当始祖</span>
+        </div>
+        <a href="courses/yitian/zhangsanfeng.html" class="char-link">查看完整课程 →</a>
+      </div>
+    </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>谢逊</h3>
+        <div class="char-alias">金毛狮王 · 明教法王</div>
+        <p class="char-brief">金庸笔下最震撼的复仇者。全家为成昆所杀，他花了二十年追凶；但在冰火岛上抱住初生的张无忌，仇恨的深渊中从此有了第二种温度。</p>
+        <div class="char-tags">
+          <span class="char-tag">七伤拳</span>
+          <span class="char-tag">屠龙刀</span>
+          <span class="char-tag">义父情深</span>
+        </div>
+        <a href="courses/yitian/xiexun.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>殷素素</h3>
+        <div class="char-alias">天鹰教紫微堂主</div>
+        <p class="char-brief">"越漂亮的女人越会骗人"——她用生命给儿子上了最后一课。从邪教妖女到为爱赴死，殷素素与张翠山的正邪之恋是倚天屠龙记中最动人的悲剧。</p>
+        <div class="char-tags">
+          <span class="char-tag">鹰爪擒拿手</span>
+          <span class="char-tag">为爱赴死</span>
+          <span class="char-tag">母爱如山</span>
+        </div>
+        <a href="courses/yitian/yinsusu.html" class="char-link">查看完整课程 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CTA ═══════════════ -->
+<section class="section" style="background:var(--bg2)">
+  <div class="container">
+    <div class="cta-section">
+      <h2 class="serif">江湖已开，<span class="gold-text">等你入局</span></h2>
+      <p>十五部经典，数百位人物，八维深度解读。每个人物都是一面镜子，照见人性的光辉与幽暗，也照见我们自己的影子。</p>
+      <div class="hero-actions" style="margin-top:8px">
+        <a href="#characters" class="btn btn-primary">🏯 开始探索人物</a>
+        <a href="#novels" class="btn btn-secondary">全部小说</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer-brand">金庸人物志</div>
+  <p>Jin Yong Character Chronicles — 江湖百态，尽在其中</p>
+  <p style="margin-top:16px;color:var(--text3);font-size:.75rem">金庸武侠系列人物深度解读课程平台 · 持续更新中</p>
+</footer>
+
+<script>
+// Smooth scroll for novel cards
+function scrollToChars(novel) {
+  document.getElementById('characters').scrollIntoView({behavior:'smooth'});
+}
+
+// Filter buttons
+document.querySelectorAll('.course-filter button').forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.nav');
+  if (window.scrollY > 100) {
+    nav.style.boxShadow = '0 4px 30px rgba(0,0,0,.5)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});
+
+// Intersection observer for fade-up
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, {threshold:.1});
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
