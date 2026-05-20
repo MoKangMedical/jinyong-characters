@@ -3,113 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>郭靖 — 侠之大者，为国为民 | 金庸人物志研究院</title>
-<meta name="description" content="深度解读郭靖：从草原傻小子到一代大侠的完整成长轨迹。性格分析、奇遇经历、武功绝学、情感世界、现实启示。">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<title>郭靖 — 北侠 · 金刀驸马 | 金庸人物志研究院</title>
+<meta name="description" content="深度解读郭靖：从蒙古草原上一个天资愚钝的少年，到镇守襄阳四十年的"侠之大者"。郭靖用一生证明了：平凡人，也可以成为英雄。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/shared.css">
 <style>
-/* ═══════════════ RESET ═══════════════ */
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a24;
-  --card:#1a1a26;--card2:#222230;--card3:#2a2a3a;
-  --border:#252535;--border2:#3a3a50;
-  --text:#f0ede5;--text2:#a09888;--text3:#6b6560;
-  --gold:#d4a574;--gold2:#e8c9a0;--gold3:#c08552;
-  --red:#c41e3a;--jade:#5b8c5a;
-  --serif:'Noto Serif SC',serif;
-  --sans:'Noto Sans SC',sans-serif;
-}
-body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
-a{color:var(--gold);text-decoration:none}
+/* ═══════════════ 课程页专用样式 ═══════════════ */
 .container{max-width:900px;margin:0 auto;padding:0 24px}
 
-/* ═══════════════ NAV ═══════════════ */
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-.nav-inner{max-width:1280px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--gold)}
-.nav-back{font-size:.85rem;color:var(--text2);transition:color .2s}
-.nav-back:hover{color:var(--gold)}
+/* ═══════════════ 3D HERO ═══════════════ */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(212,165,116, .08) 0%, transparent 70%);
+}
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#d4a574;
+  text-shadow: 0 0 40px rgba(212,165,116, 0.4), 0 0 80px rgba(212,165,116, 0.4);
+  line-height:1;margin-bottom:8px;
+  opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
 
 /* ═══════════════ COURSE HEADER ═══════════════ */
-.course-hero{padding:120px 0 60px;text-align:center;position:relative}
-.course-hero .novel-tag{display:inline-block;background:rgba(212,165,116,.1);color:var(--gold);padding:4px 14px;border-radius:100px;font-size:.78rem;margin-bottom:16px}
-.course-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:900;margin-bottom:8px}
-.course-hero .subtitle{font-size:1.1rem;color:var(--gold);margin-bottom:8px}
-.course-hero .brief-intro{font-size:1rem;color:var(--text2);max-width:600px;margin:16px auto 0;line-height:1.8}
-.course-meta{display:flex;justify-content:center;gap:32px;margin-top:28px;flex-wrap:wrap}
+.course-header{padding:40px 0 48px;text-align:center}
+.course-header .novel-tag{
+  display:inline-block;
+  background:rgba(212,165,116, .1);
+  color:#d4a574;
+  padding:4px 14px;border-radius:100px;
+  font-size:.78rem;margin-bottom:16px;
+}
+.course-header .brief-intro{
+  font-size:1rem;color:var(--text2);max-width:600px;
+  margin:12px auto 0;line-height:1.8;
+}
+.course-meta{
+  display:flex;justify-content:center;gap:32px;
+  margin-top:24px;flex-wrap:wrap;
+}
 .course-meta-item{text-align:center}
-.course-meta-item .meta-val{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--gold)}
-.course-meta-item .meta-label{font-size:.72rem;color:var(--text3);margin-top:4px;letter-spacing:.05em}
+.course-meta-item .meta-val{
+  font-family:var(--serif);font-size:1.5rem;
+  font-weight:700;color:#d4a574;
+}
+.course-meta-item .meta-label{
+  font-size:.72rem;color:var(--text3);margin-top:4px;
+  letter-spacing:.05em;
+}
 
-/* ═══════════════ SECTION STYLES ═══════════════ */
-.section{padding:48px 0}
-.section-header{border-left:3px solid var(--gold);padding-left:16px;margin-bottom:28px}
-.section-header h2{font-family:var(--serif);font-size:1.5rem;margin-bottom:4px}
-.section-header .en{font-size:.72rem;color:var(--text3);letter-spacing:.1em;text-transform:uppercase}
-.content-block{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:20px}
-.content-block h3{font-size:1.1rem;color:var(--gold);margin-bottom:16px;font-family:var(--serif)}
-.content-block p{color:var(--text2);font-size:.92rem;line-height:1.9;margin-bottom:12px}
+/* ═══════════════ SECTIONS ═══════════════ */
+.section{padding:36px 0}
+.section-header{
+  border-left:3px solid #d4a574;
+  padding-left:16px;margin-bottom:28px;
+}
+.section-header h2{
+  font-family:var(--serif);font-size:1.5rem;margin-bottom:4px;
+}
+.section-header .en{
+  font-size:.72rem;color:var(--text3);
+  letter-spacing:.1em;text-transform:uppercase;
+}
+.content-block{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:28px;margin-bottom:20px;
+}
+.content-block h3{
+  font-size:1.1rem;color:#d4a574;
+  margin-bottom:16px;font-family:var(--serif);
+}
+.content-block p{
+  color:var(--text2);font-size:.92rem;
+  line-height:1.9;margin-bottom:12px;
+}
 .content-block p:last-child{margin-bottom:0}
 
 /* ═══════════════ HIGHLIGHTS ═══════════════ */
-.highlight-box{background:rgba(212,165,116,.05);border:1px solid rgba(212,165,116,.15);border-radius:10px;padding:20px;margin:20px 0}
-.highlight-box .hl-title{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:8px;letter-spacing:.08em}
+.highlight-box{
+  background:rgba(212,165,116, .05);
+  border:1px solid rgba(212,165,116, .15);
+  border-radius:10px;padding:20px;margin:20px 0;
+}
+.highlight-box .hl-title{
+  font-size:.78rem;color:#d4a574;
+  font-weight:600;margin-bottom:8px;letter-spacing:.08em;
+}
 .highlight-box p{font-size:.9rem;color:var(--text);line-height:1.8}
-.quote-block{border-left:2px solid var(--gold);padding:12px 20px;margin:20px 0;background:rgba(212,165,116,.03);font-style:italic}
-.quote-block .quote-text{font-family:var(--serif);font-size:1.05rem;color:var(--gold2);line-height:1.7}
-.quote-block .quote-source{font-size:.78rem;color:var(--text3);margin-top:8px}
+.quote-block{
+  border-left:2px solid #d4a574;
+  padding:12px 20px;margin:20px 0;
+  background:rgba(212,165,116, .03);font-style:italic;
+}
+.quote-block .quote-text{
+  font-family:var(--serif);font-size:1.05rem;
+  color:var(--gold2);line-height:1.7;
+}
+.quote-block .quote-source{
+  font-size:.78rem;color:var(--text3);margin-top:8px;
+}
 
 /* ═══════════════ TABLE ═══════════════ */
-.info-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.88rem}
-.info-table td{padding:10px 16px;border-bottom:1px solid var(--border);color:var(--text2)}
-.info-table td:first-child{color:var(--gold);font-weight:600;width:120px;white-space:nowrap}
-
-/* ═══════════════ TAG LIST ═══════════════ */
-.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
-.tag.gold{background:rgba(212,165,116,.1);color:var(--gold)}
+.info-table{
+  width:100%;border-collapse:collapse;
+  margin:16px 0;font-size:.88rem;
+}
+.info-table td{
+  padding:10px 16px;border-bottom:1px solid var(--border);
+  color:var(--text2);
+}
+.info-table td:first-child{
+  color:#d4a574;font-weight:600;
+  width:120px;white-space:nowrap;
+}
 
 /* ═══════════════ TIMELINE ═══════════════ */
-.timeline{position:relative;padding-left:32px}
-.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--border2)}
-.timeline-item{position:relative;margin-bottom:28px}
-.timeline-item::before{content:'';position:absolute;left:-28px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
-.timeline-item .tl-year{font-size:.78rem;color:var(--gold);font-weight:600;margin-bottom:4px}
+.timeline{
+  position:relative;padding-left:32px;
+}
+.timeline::before{
+  content:'';position:absolute;left:8px;top:0;bottom:0;
+  width:1px;background:var(--border2);
+}
+.timeline-item{
+  position:relative;margin-bottom:28px;
+}
+.timeline-item::before{
+  content:'';position:absolute;left:-28px;top:4px;
+  width:10px;height:10px;border-radius:50%;
+  background:#d4a574;border:2px solid var(--bg);
+}
+.timeline-item .tl-year{
+  font-size:.78rem;color:#d4a574;
+  font-weight:600;margin-bottom:4px;
+}
 .timeline-item .tl-event{font-size:.9rem;color:var(--text2)}
 
-/* ═══════════════ BOTTOM NAV ═══════════════ */
-.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:32px 0;border-top:1px solid var(--border);margin-top:40px}
-.bottom-nav a{font-size:.9rem;color:var(--text2);transition:color .2s}
-.bottom-nav a:hover{color:var(--gold)}
-.bottom-nav .nav-prev,.bottom-nav .nav-next{display:flex;align-items:center;gap:8px}
-.bottom-nav .back-all{color:var(--gold);font-weight:600}
+/* ═══════════════ TAGS ═══════════════ */
+.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
+.tag.gold{background:rgba(212,165,116, .1);color:#d4a574}
 
-/* ═══════════════ FOOTER ═══════════════ */
-.footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
-.footer .brand{font-family:var(--serif);color:var(--gold);font-size:1rem;margin-bottom:4px}
-.footer p{font-size:.78rem;color:var(--text3)}
-
-/* ═══════════════ SCROLLBAR ═══════════════ */
-::-webkit-scrollbar{width:5px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+@media(max-width:768px){
+  .hero-3d-container{height:350px}
+  .hero-3d-overlay .char-name{font-size:2.5rem}
+  .course-meta{gap:20px}
+}
 </style>
 </head>
 <body>
 
+<div class="bamboo-layer"></div>
+
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">⚔ 金庸人物志研究院</a>
-    <a href="index.html#characters" class="nav-back">← 返回人物总览</a>
+    <a href="../../index.html" class="nav-logo">
+      <span class="nav-logo-icon">⚔</span> 金庸人物志研究院
+    </a>
+    <a href="../../index.html" class="nav-back">← 返回人物总览</a>
   </div>
 </nav>
 
+<!-- 3D HERO -->
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">郭靖</div>
+    <div class="char-title">北侠 · 金刀驸马</div>
+  </div>
+</div>
+
+<div class="main-content">
+
 <!-- COURSE HEADER -->
-<section class="course-hero">
+<section class="course-header">
   <div class="container">
-    <span class="novel-tag">🏹 射雕英雄传</span>
-    <h1>郭靖</h1>
-    <div class="subtitle">北侠 · 金刀驸马</div>
+    <span class="novel-tag">射雕英雄传</span>
     <p class="brief-intro">从蒙古草原上一个天资愚钝的少年，到镇守襄阳四十年的"侠之大者"。郭靖用一生证明了：平凡人，也可以成为英雄。</p>
     <div class="course-meta">
       <div class="course-meta-item">
@@ -128,271 +208,265 @@ a{color:var(--gold);text-decoration:none}
   </div>
 </section>
 
-<div class="container">
-
-<!-- 01 人物小传 -->
+<!-- 01 人物档案 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 01</div>
-    <h2>人物小传</h2>
+    <h2>人物档案</h2>
   </div>
   <div class="content-block">
     <table class="info-table">
-      <tr><td>姓名</td><td>郭靖（蒙古名：托雷安答）</td></tr>
+      <tr><td>姓名</td><td>郭靖</td></tr>
       <tr><td>别名</td><td>北侠、金刀驸马、靖哥哥</td></tr>
       <tr><td>出身</td><td>临安府牛家村（今浙江杭州）</td></tr>
-      <tr><td>父亲</td><td>郭啸天（梁山泊好汉赛仁贵郭盛之后）</td></tr>
-      <tr><td>母亲</td><td>李萍（普通农家女，坚韧刚毅）</td></tr>
+      <tr><td>门派</td><td>丐帮（洪七公弟子）、全真教（马钰传功）</td></tr>
       <tr><td>师父</td><td>江南七怪、洪七公、周伯通</td></tr>
       <tr><td>配偶</td><td>黄蓉（桃花岛主黄药师之女）</td></tr>
-      <tr><td>子女</td><td>郭芙、郭襄、郭破虏</td></tr>
-      <tr><td>结义兄弟</td><td>拖雷（蒙古四皇子）、杨康（未遂）</td></tr>
-      <tr><td>门派</td><td>丐帮（洪七公弟子）、全真教（马钰传功）</td></tr>
-      <tr><td>主要武功</td><td>降龙十八掌、九阴真经、空明拳、双手互搏</td></tr>
-      <tr><td>最终归宿</td><td>与黄蓉镇守襄阳，城破殉国</td></tr>
+      <tr><td>武功</td><td>降龙十八掌、九阴真经、空明拳、双手互搏</td></tr>
+      <tr><td>兵器</td><td>掌法为主，弓箭（蒙古箭术）</td></tr>
+      <tr><td>结局</td><td>与黄蓉镇守襄阳四十余年，城破殉国</td></tr>
     </table>
   </div>
-  <div class="highlight-box">
-    <div class="hl-title">📖 一句话定位</div>
+    <div class="highlight-box">
+    <div class="hl-title">一句话定位</div>
     <p>郭靖是金庸武侠世界中最具代表性的"正道大侠"形象——他不是一个天生的英雄，而是一个用一生在"成为英雄"的普通人。他的故事是一部关于坚持、责任与成长的史诗。</p>
   </div>
 </section>
-
-<!-- 02 性格分析 -->
+<!-- 02 性格解析 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 02</div>
-    <h2>性格分析</h2>
+    <h2>性格解析</h2>
+  </div>
+    <div class="content-block">
+    <p>郭靖性格中最核心的特质是"诚"与"毅"。他天资不高，但贵在勤能补拙。江南七怪教他武功时，别人学一遍，他练十遍、百遍，直到每一个动作都刻入骨髓。</p>
   </div>
   <div class="content-block">
-    <h3>核心性格特质</h3>
-    <p>郭靖的性格可以用八个字概括：<strong>大智若愚，大勇若怯</strong>。他天资不高，但极度勤奋；他反应不快，但意志坚定；他不善言辞，但言行一致；他外表愚钝，内心却有着超乎常人的道德直觉。</p>
-    <p>郭靖的"笨"是一种选择性的笨——在武功学习上起步慢，在阴谋诡计上不擅长，但在大是大非面前，他有着惊人的洞察力和判断力。他不纠结、不犹豫，一旦认定了对的事情，就坚定不移地去做。</p>
-    <p>他的性格核心是<strong>"诚"</strong>：对师真诚、对友忠诚、对国赤诚。这种"诚"不是单纯的天真，而是一种经过考验后依然保持的本心。正是这种本心，让他能够在复杂的世界中始终保持方向。</p>
+    <h3>质朴纯善</h3>
+    <p>郭靖的善良不是后天修炼的道德自律，而是来自天性的纯良。他在蒙古草原上救下受伤的白雕、不忍杀生、对弱者天然同情，都源于这种不加修饰的本真。</p>
   </div>
   <div class="content-block">
-    <h3>人格类型类比</h3>
-    <p>如果用现代心理学框架来看，郭靖最接近<strong>ISFJ（守卫者）</strong>人格：内向、务实、重责任、忠诚不渝。他不是天生的领袖，却是最可靠的守护者。他的魅力不在于才华，而在于让人信任。</p>
-    <p>他也具备<strong>成长型思维（Growth Mindset）</strong>的完美示范：从不认为自己的笨是限制，而是用超越常人的努力来弥补。江南七怪教他十年，他学得慢但从不动摇；洪七公教他降龙十八掌，他一遍遍练习直到完美。</p>
+    <h3>大智若愚</h3>
+    <p>表面上郭靖迟钝木讷，但在大是大非面前，他的判断往往超越常人。面对完颜洪烈的威逼利诱，面对成吉思汗的野心，他始终守住了"忠孝仁义"的底线。这不是聪明，而是智慧。</p>
   </div>
   <div class="content-block">
-    <h3>性格矛盾与成长弧线</h3>
-    <p>郭靖的核心矛盾是<strong>"善与力的分离"</strong>——他天生善良，但善良在没有力量支撑的时候是脆弱的。整部《射雕》就是郭靖从善良走向善与力合一的过程。当他最终掌握降龙十八掌、九阴真经，并将这些力量用于守卫襄阳时，他完成了从"好人"到"大侠"的蜕变。</p>
-    <p>另一个矛盾是<strong>"蒙古养育之恩 vs 南宋血脉之根"</strong>。郭靖在蒙古长大，成吉思汗视他如子，拖雷是他的结义兄弟。当蒙古大军南下，他选择了站在血脉之根一边——不是出于狭隘的民族主义，而是出于对"正义"的判断：侵略就是侵略。</p>
-  </div>
-  <div class="quote-block">
-    <div class="quote-text">"侠之大者，为国为民。"</div>
-    <div class="quote-source">——郭靖对杨过的教诲，《神雕侠侣》第二十回</div>
+    <h3>坚韧不拔</h3>
+    <p>从六岁丧父、流落蒙古，到拜师学艺屡遭挫折，再到华山论剑名扬天下，郭靖的每一次进步都是用汗水浇灌出来的。他的坚韧不仅是体能上的，更是精神上的——认准了方向，就绝不回头。</p>
   </div>
 </section>
-
-<!-- 03 命运轨迹 -->
+<!-- 03 成长轨迹 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 03</div>
-    <h2>命运轨迹</h2>
+    <h2>成长轨迹</h2>
+  </div>
+    <div class="content-block">
+    <p>郭靖的成长轨迹可以分为五个阶段：</p>
   </div>
   <div class="content-block">
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="tl-year">出生前</div>
-        <div class="tl-event">父亲郭啸天与杨铁心结为兄弟，居于临安牛家村。丘处机路过，引发段天德追杀，郭啸天被杀。</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-year">0-6岁</div>
-        <div class="tl-event">母亲李萍被段天德挟持北上，流落蒙古大漠。在大漠中艰难求生，郭靖在苦寒中长大。</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-year">6-16岁</div>
-        <div class="tl-event">江南七怪找到郭靖，在蒙古教他武功十年。郭靖学得慢但极刻苦，虽未成大器但打下了坚实基础。期间结识拖雷、华筝，被成吉思汗赏识。</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-year">18岁</div>
-        <div class="tl-event">南下中原，在张家口初遇黄蓉。这成为他人生最重要的转折点——黄蓉的智慧补全了他的不足，两人的相遇改变了彼此的一生。</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-year">18-20岁</div>
-        <div class="tl-event">洪七公传授降龙十八掌。此后又遇周伯通，学会空明拳和双手互搏，并被骗背下《九阴真经》全文。武功突飞猛进，终成一流高手。</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-year">20-25岁</div>
-        <div class="tl-event">第二次华山论剑，与黄药师、洪七公各战三百招。虽未夺冠，但已名满天下。与黄蓉成婚，定居桃花岛。</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-year">25-65岁</div>
-        <div class="tl-event">《神雕侠侣》时期。携黄蓉镇守襄阳，抵抗蒙古大军四十年。收养杨过，收武敦儒、武修文为徒。教导杨过"侠之大者，为国为民"。</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-year">65岁</div>
-        <div class="tl-event">襄阳城破，郭靖与黄蓉双双殉国。铸倚天剑、屠龙刀，内藏《九阴真经》和《武穆遗书》，留待后人。</div>
-      </div>
-    </div>
+    <h3>草原少年（0-6岁）</h3>
+    <p>生于临安牛家村，父亲郭啸天被段天德所杀，母亲李萍被段天德挟持北上，在雪地产子。郭靖自幼在蒙古草原长大，与拖雷结为安答（义兄弟），生活虽苦但自由自在。</p>
   </div>
-  <div class="highlight-box">
-    <div class="hl-title">🔑 关键转折点</div>
-    <p><strong>张家口初遇黄蓉</strong>：这是郭靖命运的真正转折。没有黄蓉，郭靖可能只是一个武功平平的忠厚之人。黄蓉不仅帮他获得洪七公的传授，更在每一次关键时刻给予他最正确的建议。</p>
-    <p><strong>蒙古大营抉择</strong>：当成吉思汗命他带兵攻打南宋时，郭靖毅然决然地选择了背弃养育之恩。这个选择定义了他的一生——他是宋人，他守卫的是正义，不是权力。</p>
+  <div class="content-block">
+    <h3>江南学艺（6-18岁）</h3>
+    <p>江南七怪找到郭靖，开始传授武艺。但郭靖天资愚钝，进度远不如杨康，七怪一度灰心。全真教马钰暗中传授内功心法，为郭靖打下了坚实的基础。</p>
+  </div>
+  <div class="content-block">
+    <h3>江湖历练（18-20岁）</h3>
+    <p>与黄蓉相遇是郭靖人生的转折点。黄蓉的聪明才智弥补了他的不足，两人携手闯荡江湖。洪七公传授降龙十八掌，周伯通传授空明拳和双手互搏，郭靖武功突飞猛进。</p>
+  </div>
+  <div class="content-block">
+    <h3>华山论剑（20岁）</h3>
+    <p>第二次华山论剑，郭靖已能与东邪西毒等绝顶高手过招，正式跻身一流高手之列。</p>
+  </div>
+  <div class="content-block">
+    <h3>镇守襄阳（20岁-晚年）</h3>
+    <p>郭靖选择回到大宋，与黄蓉一同守护襄阳城。这一守就是四十多年，直到城破殉国。这个阶段，郭靖的身份从"江湖侠客"升华为"民族英雄"。</p>
   </div>
 </section>
-
-<!-- 04 奇遇与转折 -->
+<!-- 04 奇遇经历 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 04</div>
-    <h2>奇遇与转折</h2>
+    <h2>奇遇经历</h2>
+  </div>
+    <div class="content-block">
+    <p>郭靖一生中有多次奇遇，每一次都深刻地改变了他的命运：</p>
   </div>
   <div class="content-block">
-    <h3>武功奇遇</h3>
-    <p><strong>马钰夜传内功</strong>：全真教掌教马钰在蒙古大漠遇到郭靖，发现他只有外功没有内功根基，于是在悬崖顶上偷偷教他全真内功心法。这为郭靖后来修炼高深武功打下了关键基础。马钰的伟大之处在于：他不求回报，纯粹惜才。</p>
-    <p><strong>洪七公传降龙十八掌</strong>：这是郭靖武功生涯最大的质变。洪七公之所以传功，一开始是被黄蓉的美食（叫花鸡、好逑汤等）所诱惑，但真正让他倾囊相授的，是看到了郭靖的赤诚和勤奋。降龙十八掌中的"亢龙有悔"——掌力收发自如，正是郭靖性格的武功化表达。</p>
-    <p><strong>周伯通与九阴真经</strong>：在桃花岛上，周伯通被骗背下《九阴真经》后，又通过游戏的方式让郭靖也背了下来。更妙的是，周伯通自创的"双手互搏"——一个人同时使用两种武功——也只有郭靖这种"心无杂念"的人才能学会。聪明人反而学不会，这就是金庸的幽默。</p>
+    <h3>马钰传功</h3>
+    <p>全真教掌教马钰因敬重江南七怪的侠义，暗中传授郭靖全真内功心法。这份内功底子，是郭靖一切武功的基础。如果没有马钰，郭靖可能连降龙十八掌的入门都做不到。</p>
   </div>
   <div class="content-block">
-    <h3>人生奇遇</h3>
-    <p><strong>遇黄蓉如遇贵人</strong>：如果说武功上的奇遇是天赐，那么遇到黄蓉就是命中注定。黄蓉不仅是他的妻子，更是他的人生导师、战略顾问、精神支柱。没有黄蓉的郭靖，就像没有导航的船；有了黄蓉的郭靖，就如虎添翼。</p>
+    <h3>吸食宝蛇血</h3>
+    <p>在赵王府中，郭靖误喝了梁子翁用珍贵药材喂养的大蟒蛇的血，从此百毒不侵，内力大增。这是典型的"主角光环"式奇遇，但金庸把它安排得合情合理。</p>
   </div>
-  <div class="highlight-box">
-    <div class="hl-title">💡 奇遇背后的逻辑</div>
-    <p>郭靖的"奇遇"看似幸运，实际上是<strong>"诚"的回报</strong>。马钰教他是被他的刻苦感动；洪七公教他是被他的赤诚打动；周伯通教他是因为他心无杂念。金庸似乎在说：真正的奇遇，是你的人品吸引来的。</p>
+  <div class="content-block">
+    <h3>洪七公授艺</h3>
+    <p>黄蓉用美食"贿赂"洪七公，换来了降龙十八掌的前十五掌。后来洪七公被郭靖的诚心打动，将剩余三掌倾囊相授。降龙十八掌成为郭靖的标志性武功。</p>
+  </div>
+  <div class="content-block">
+    <h3>周伯通传功</h3>
+    <p>在桃花岛上，郭靖与周伯通结为忘年交。周伯通教会了他空明拳和双手互搏——这两门武功与降龙十八掌一刚一柔，相得益彰，让郭靖的战力跃升了一个层次。</p>
+  </div>
+  <div class="content-block">
+    <h3>九阴真经</h3>
+    <p>郭靖无意中得到了完整的九阴真经。虽然他不能完全理解其中的道家玄理，但周伯通的指点加上自身的内功底子，让他逐渐参透了真经的精髓。</p>
   </div>
 </section>
-
 <!-- 05 武功绝学 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 05</div>
     <h2>武功绝学</h2>
   </div>
-  <div class="content-block">
+    <div class="content-block">
     <h3>降龙十八掌</h3>
-    <p>丐帮镇帮绝学，天下至刚至猛的掌法。郭靖从洪七公处学得十五掌，后来又自行领悟后三掌。降龙十八掌的核心不是力量，而是<strong>"有余不尽"</strong>——掌力发出后仍有回旋余地。"亢龙有悔"的精髓在"悔"字：知进知退，知攻知守。</p>
-    <p>郭靖将降龙十八掌练到了超越洪七公的境界——他将九阴真经的柔劲融入了掌法中，使原本至刚的降龙十八掌达到了<strong>刚柔并济</strong>的新高度。</p>
+    <p>丐帮镇帮绝学，总共十八掌。郭靖学到了全部十八掌，并将"亢龙有悔"练到极致。这套掌法刚猛无匹，每一掌都有开碑裂石之力。郭靖的降龙十八掌融合了九阴真经的内力后，威力更上一层楼。</p>
   </div>
   <div class="content-block">
     <h3>九阴真经</h3>
-    <p>天下武学总纲。郭靖在桃花岛上被周伯通骗着背下了全文，但一直没有刻意修炼。直到后来在实战中，九阴真经的武功自然而然地融入了他的身体。郭靖对九阴真经的态度很有意思——他知道这是绝世武功，但从不觉得应该依赖它，而是用自己的努力去领悟。</p>
+    <p>黄裳所著的武学宝典，包含内功、拳法、掌法、剑法等诸多法门。郭靖虽然没有完全参透，但真经的内功心法让他的内力源源不绝，这是他能够长时间战斗的根本。</p>
   </div>
   <div class="content-block">
-    <h3>双手互搏与空明拳</h3>
-    <p>周伯通自创的双手互搏之术——左手画圆、右手画方，一人同时使用两种武功。郭靖是少数能学会的人之一，因为他"心无杂念"。空明拳则是周伯通从《道德经》中悟出的柔劲拳法，以空制有，以柔克刚。</p>
+    <h3>空明拳</h3>
+    <p>周伯通自创的拳法，以柔克刚，讲究"空明"二字。出拳看似轻柔，实则暗藏玄机，与降龙十八掌形成完美的刚柔互补。</p>
   </div>
-  <div class="tag-list">
-    <span class="tag gold">降龙十八掌</span>
-    <span class="tag gold">九阴真经</span>
-    <span class="tag">双手互搏</span>
-    <span class="tag">空明拳</span>
-    <span class="tag">全真内功</span>
-    <span class="tag">金雁功</span>
-    <span class="tag">南山掌法</span>
+  <div class="content-block">
+    <h3>双手互搏</h3>
+    <p>周伯通发明的奇技，可以左右手同时使用不同武功。郭靖将降龙十八掌与空明拳同时使出，令对手防不胜防。这也是他能够在华山论剑中与黄药师、洪七公周旋的法宝。</p>
+  </div>
+  <div class="content-block">
+    <h3>江南七怪武功</h3>
+    <p>包括越女剑法、伏魔杖法、南山刀法等，虽然不算顶级，但为郭靖打下了扎实的武术基础。</p>
+  </div>
+  <div class="content-block">
+    <h3>蒙古箭术</h3>
+    <p>哲别传授，郭靖箭术无双，能一箭双雕。</p>
   </div>
 </section>
-
 <!-- 06 情感世界 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 06</div>
     <h2>情感世界</h2>
   </div>
-  <div class="content-block">
-    <h3>与黄蓉：最经典的互补之爱</h3>
-    <p>郭靖和黄蓉是金庸笔下最经典的CP，也是武侠文学中最完美的互补型伴侣。郭靖的"拙"和黄蓉的"巧"形成了完美的互补——郭靖给了黄蓉安全感与赤诚，黄蓉给了郭靖智慧与方向。</p>
-    <p>但他们的关系不是单向的"黄蓉帮郭靖"。在关键时刻，郭靖的坚定和正直也在影响着黄蓉——让这个"小妖女"逐渐成长为心怀天下的大侠夫人。他们的爱情不是一见钟情的浪漫，而是在共同经历的磨难中越来越深的信任与依赖。</p>
+    <div class="content-block">
+    <h3>亲情</h3>
+    <p>郭靖对母亲李萍的感情极其深厚。李萍在蒙古含辛茹苦抚养他长大，教他认字、做人的道理。李萍的死是郭靖一生中最痛苦的经历之一，他在母亲坟前发下的"精忠报国"誓言，贯穿了之后的一生。</p>
   </div>
   <div class="content-block">
-    <h3>与华筝：青梅竹马的遗憾</h3>
-    <p>华筝是成吉思汗的女儿，郭靖在蒙古的青梅竹马。成吉思汗曾封郭靖为"金刀驸马"，将华筝许配给他。郭靖对华筝的感情是真挚的，但那更像是对妹妹的关爱，而非爱情。最终选择黄蓉、放弃华筝，也是郭靖认清自己内心的过程。</p>
+    <h3>爱情</h3>
+    <p>郭靖与黄蓉的爱情是金庸笔下最经典的CP之一。一个是质朴木讷的傻小子，一个是聪明绝顶的女诸葛。他们的感情经历了桃花岛误会、华筝婚约等多重考验，最终修成正果。黄蓉不仅是郭靖的挚爱，更是他一生的智囊和伙伴。</p>
   </div>
   <div class="content-block">
-    <h3>与杨康：未完成的兄弟情</h3>
-    <p>郭靖的父亲郭啸天与杨康的父亲杨铁心是结义兄弟。郭靖一生都在期待与杨康成为真正的兄弟，但杨康的背叛让这个愿望永远无法实现。这种遗憾延伸到了杨过身上——郭靖收养杨过，某种程度上也是想弥补与杨康之间的遗憾。</p>
+    <h3>兄弟情</h3>
+    <p>郭靖与拖雷的义兄弟情谊令人感慨。两人幼年结拜，情同手足。但最终因为国家立场不同，各为其主。郭靖与杨康的关系则是一场悲剧——杨康选择了权贵和富贵，走上了与郭靖截然相反的道路。</p>
   </div>
-  <div class="quote-block">
-    <div class="quote-text">"靖哥哥，你总是这么傻乎乎的，可你心里，比谁都明白。"</div>
-    <div class="quote-source">——黄蓉对郭靖的评语</div>
+  <div class="content-block">
+    <h3>师徒情</h3>
+    <p>郭靖对江南七怪的感情非常深厚，尤其是对韩小莹（越女剑传人）。七怪虽然武功不是最顶尖的，但他们教会了郭靖什么是侠义、什么是坚持。</p>
   </div>
 </section>
-
 <!-- 07 趣事典故 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 07</div>
     <h2>趣事典故</h2>
   </div>
-  <div class="content-block">
-    <h3>名场面：吃叫花鸡</h3>
-    <p>在张家口，郭靖初遇扮成小叫花的黄蓉。黄蓉点了一桌子菜，郭靖二话不说就请了。更妙的是黄蓉点了一只"叫花鸡"，郭靖看着乞丐大快朵颐不仅不嫌弃，还把自己的貂裘送给了"他"。这个场景是金庸笔下最动人的初遇之一——因为郭靖的善良，不因对方是乞丐而改变。</p>
+    <div class="content-block">
+    <h3>一箭双雕</h3>
+    <p>少年郭靖在蒙古草原上，受哲别指点射箭。恰逢两只白雕在高空盘旋，郭靖张弓搭箭，一箭射出，竟将两雕同时射下！"一箭双雕"从此成为郭靖箭术超群的标志。</p>
   </div>
   <div class="content-block">
-    <h3>冷知识：郭靖为什么学不会"打狗棒法"</h3>
-    <p>洪七公曾想将打狗棒法也传给郭靖，但郭靖无论如何都学不会。原因很简单：打狗棒法讲究变化多端、出其不意，而郭靖的性格是直来直去、以力破巧。这套武功与他的性格天然相克——金庸在用一个细节告诉我们：武功和性格是一体的。</p>
+    <h3>降龙十八掌初显威</h3>
+    <p>在赵王府中，郭靖第一次使用降龙十八掌。当时他内力尚浅，但"亢龙有悔"一出，仍然震得沙通天、彭连虎等人大惊失色。</p>
   </div>
   <div class="content-block">
-    <h3>妙语金句</h3>
-    <p>"蓉儿，我想来想去，这世界上最厉害的武功，就是让敌人不打你。"</p>
-    <p>"我资质不好，但我想，只要功夫深，铁杵磨成针。"</p>
-    <p>"为国为民，才是侠之大者。武功再高，不为国为民，又算得了什么？"</p>
+    <h3>双手互搏显神威</h3>
+    <p>在华山论剑时，郭靖左手降龙十八掌、右手空明拳，同时迎战黄药师和洪七公（两人各有所保留）。这等打法前所未见，连黄药师都赞叹不已。</p>
   </div>
-  <div class="highlight-box">
-    <div class="hl-title">🎬 影视经典演绎</div>
-    <p>1983版黄日华塑造了最经典的郭靖形象——憨厚但不愚蠢，笨拙但有力量。1994版张智霖的郭靖更清秀，被粉丝称为"最帅郭靖"。2003版李亚鹏的郭靖争议最大，但忠实还原了原著中的"笨"。2017版杨旭文的郭靖年轻有朝气，是最有成长感的一版。</p>
+  <div class="content-block">
+    <h3>桃花岛三道试题</h3>
+    <p>郭靖到桃花岛求亲，黄药师出了三道试题。郭靖以自己的真诚和勇气（加上黄蓉暗中相助）通过了考验，最终娶得美人归。</p>
+  </div>
+  <div class="content-block">
+    <h3>襄阳城墙上的承诺</h3>
+    <p>郭靖对黄蓉说："蓉儿，咱们守在这里，能守多久就守多久。"这句话没有豪言壮语，却比任何誓言都沉重。</p>
   </div>
 </section>
-
-<!-- 08 现实启示 -->
+<!-- 08 江湖地位与启示 -->
 <section class="section">
   <div class="section-header">
     <div class="en">Chapter 08</div>
-    <h2>现实启示</h2>
+    <h2>江湖地位与启示</h2>
+  </div>
+    <div class="content-block">
+    <h3>金庸武侠第一正统大侠</h3>
+    <p>在金庸十五部小说中，郭靖被公认为"正统大侠"的最高代表。他的"侠之大者，为国为民"成为整个武侠文学的价值观标杆。</p>
   </div>
   <div class="content-block">
-    <h3>天资不如勤奋</h3>
-    <p>郭靖最大的现实启示是：<strong>天才决定上限，勤奋决定下限；而大多数人的努力程度，根本轮不到拼天赋</strong>。郭靖的天赋在所有金庸男主角中可能是最低的，但他最终的成就却排在前列。因为他有一种能力是天才们没有的——把简单的事情重复做，做到极致。</p>
-    <p>在职场中，我们经常看到"聪明人"跳来跳去、一事无成，而"笨人"在一个领域深耕十年，最终成为专家。郭靖就是后者的最好代言人。</p>
+    <h3>从凡人到英雄的范式</h3>
+    <p>郭靖的成长轨迹定义了"普通人也能成为英雄"的叙事范式。他不是天才，没有奇遇就不会成功——但他所有的奇遇，都是因为他的善良和坚持而获得的。</p>
   </div>
   <div class="content-block">
-    <h3>价值观是最强竞争力</h3>
-    <p>郭靖在江湖中立足，靠的不是武功（他很长一段时间武功一般），而是<strong>人品</strong>。江南七怪愿意为他死，洪七公愿意倾囊相授，周伯通视他为知己——这些都因为他的"诚"。在商业世界中，这对应的就是<strong>信任资产</strong>——信任是最稀缺的资源，而郭靖用一生积累了最丰富的信任。</p>
+    <h3>儒家精神的完美化身</h3>
+    <p>郭靖身上体现了儒家思想的核心价值：忠（对国家）、孝（对母亲）、仁（对弱者）、义（对朋友）、礼（对师长）、智（大智若愚）、信（一诺千金）。</p>
   </div>
   <div class="content-block">
-    <h3>找到你的"黄蓉"</h3>
-    <p>郭靖的成功有一个不可忽视的因素：黄蓉。这不是说每个人都需要找到一个比自己聪明的伴侣，而是说<strong>要敢于承认自己的不足，善于借助他人的优势</strong>。最好的团队不是所有人都很强，而是每个人都发挥自己的长处，互相补位。</p>
+    <h3>现实启示</h3>
+    <p>郭靖告诉我们：天赋不重要，坚持才重要；聪明不重要，善良才重要；个人的武功高低不重要，为谁而用才重要。</p>
   </div>
-  <div class="content-block">
-    <h3>侠之大者的现代诠释</h3>
-    <p>"为国为民"在今天可以翻译为<strong>"创造社会价值"</strong>。郭靖的选择启示我们：真正的成功不是个人武功有多高、财富有多少，而是你为这个社会做了什么。做企业也好，做产品也好，最终衡量价值的标准是你是否让这个世界变得更好了一点点。</p>
-  </div>
-  <div class="highlight-box">
-    <div class="hl-title">🎯 郭靖给现代人的三句话</div>
-    <p>1. <strong>不要太聪明</strong>——有时候，傻傻的坚持比聪明的投机更接近成功。</p>
-    <p>2. <strong>忠于自己的价值观</strong>——在诱惑面前，只有坚定的价值观能让你不迷失。</p>
-    <p>3. <strong>找一个好搭档</strong>——没有人是全能的，找到互补的人一起奋斗。</p>
+  <div class="quote-block">
+    <div class="quote-text">"侠之大者，为国为民。"—— 郭靖对杨过说的话，也是他一生的写照。</div>
   </div>
 </section>
 
 <!-- BOTTOM NAV -->
-<div class="bottom-nav">
-  <a href="index.html#characters" class="nav-prev">← 返回人物总览</a>
-  <a href="index.html" class="back-all">金庸人物志研究院</a>
-  <a href="huangrong.html" class="nav-next">下一人物：黄蓉 →</a>
+<div class="container">
+  <div class="bottom-nav">
+    <span></span>
+    <a href="../../index.html" class="back-all">返回人物总览</a>
+    <span></span>
+  </div>
 </div>
 
 </div>
 
 <footer class="footer">
   <div class="brand">金庸人物志研究院</div>
-  <p>Jin Yong Character Chronicles — 江湖百态，尽在其中</p>
+  <p>Jin Yong Character Chronicles · 江湖百态，尽在其中</p>
 </footer>
 
-<script>
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(a.getAttribute('href'));
-    if(target) target.scrollIntoView({behavior:'smooth'});
-  });
-});
+<!-- Three.js CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
 </script>
+
+<!-- 3D Hero 配置 -->
+<script>
+window.hero3dConfig = {
+  characterName: '郭靖',
+  characterTitle: '北侠 · 金刀驸马',
+  themeColor: '#d4a574',
+  particleColor: '#d4a574',
+  elements: ["palm", "dragon", "sword"]
+};
+</script>
+
+<script src="../../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../../assets/hero-3d.js"></script>
 
 </body>
 </html>

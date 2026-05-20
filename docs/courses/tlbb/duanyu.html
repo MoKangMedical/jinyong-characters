@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>段誉 — 大理世子 · 痴情公子 | 金庸人物志研究院</title>
+<meta name="description" content="深度解读段誉：大理国世子，不喜武功却身负绝学。一生痴恋王语嫣，最终看破情障、继承大统。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/shared.css">
+<style>
+/* ═══════════════ 课程页专用样式 ═══════════════ */
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+
+/* ═══════════════ 3D HERO ═══════════════ */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(126,184,218, .08) 0%, transparent 70%);
+}
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#7eb8da;
+  text-shadow: 0 0 40px rgba(126,184,218, 0.4), 0 0 80px rgba(126,184,218, 0.4);
+  line-height:1;margin-bottom:8px;
+  opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
+
+/* ═══════════════ COURSE HEADER ═══════════════ */
+.course-header{padding:40px 0 48px;text-align:center}
+.course-header .novel-tag{
+  display:inline-block;
+  background:rgba(126,184,218, .1);
+  color:#7eb8da;
+  padding:4px 14px;border-radius:100px;
+  font-size:.78rem;margin-bottom:16px;
+}
+.course-header .brief-intro{
+  font-size:1rem;color:var(--text2);max-width:600px;
+  margin:12px auto 0;line-height:1.8;
+}
+.course-meta{
+  display:flex;justify-content:center;gap:32px;
+  margin-top:24px;flex-wrap:wrap;
+}
+.course-meta-item{text-align:center}
+.course-meta-item .meta-val{
+  font-family:var(--serif);font-size:1.5rem;
+  font-weight:700;color:#7eb8da;
+}
+.course-meta-item .meta-label{
+  font-size:.72rem;color:var(--text3);margin-top:4px;
+  letter-spacing:.05em;
+}
+
+/* ═══════════════ SECTIONS ═══════════════ */
+.section{padding:36px 0}
+.section-header{
+  border-left:3px solid #7eb8da;
+  padding-left:16px;margin-bottom:28px;
+}
+.section-header h2{
+  font-family:var(--serif);font-size:1.5rem;margin-bottom:4px;
+}
+.section-header .en{
+  font-size:.72rem;color:var(--text3);
+  letter-spacing:.1em;text-transform:uppercase;
+}
+.content-block{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:28px;margin-bottom:20px;
+}
+.content-block h3{
+  font-size:1.1rem;color:#7eb8da;
+  margin-bottom:16px;font-family:var(--serif);
+}
+.content-block p{
+  color:var(--text2);font-size:.92rem;
+  line-height:1.9;margin-bottom:12px;
+}
+.content-block p:last-child{margin-bottom:0}
+
+/* ═══════════════ HIGHLIGHTS ═══════════════ */
+.highlight-box{
+  background:rgba(126,184,218, .05);
+  border:1px solid rgba(126,184,218, .15);
+  border-radius:10px;padding:20px;margin:20px 0;
+}
+.highlight-box .hl-title{
+  font-size:.78rem;color:#7eb8da;
+  font-weight:600;margin-bottom:8px;letter-spacing:.08em;
+}
+.highlight-box p{font-size:.9rem;color:var(--text);line-height:1.8}
+.quote-block{
+  border-left:2px solid #7eb8da;
+  padding:12px 20px;margin:20px 0;
+  background:rgba(126,184,218, .03);font-style:italic;
+}
+.quote-block .quote-text{
+  font-family:var(--serif);font-size:1.05rem;
+  color:var(--gold2);line-height:1.7;
+}
+.quote-block .quote-source{
+  font-size:.78rem;color:var(--text3);margin-top:8px;
+}
+
+/* ═══════════════ TABLE ═══════════════ */
+.info-table{
+  width:100%;border-collapse:collapse;
+  margin:16px 0;font-size:.88rem;
+}
+.info-table td{
+  padding:10px 16px;border-bottom:1px solid var(--border);
+  color:var(--text2);
+}
+.info-table td:first-child{
+  color:#7eb8da;font-weight:600;
+  width:120px;white-space:nowrap;
+}
+
+/* ═══════════════ TIMELINE ═══════════════ */
+.timeline{
+  position:relative;padding-left:32px;
+}
+.timeline::before{
+  content:'';position:absolute;left:8px;top:0;bottom:0;
+  width:1px;background:var(--border2);
+}
+.timeline-item{
+  position:relative;margin-bottom:28px;
+}
+.timeline-item::before{
+  content:'';position:absolute;left:-28px;top:4px;
+  width:10px;height:10px;border-radius:50%;
+  background:#7eb8da;border:2px solid var(--bg);
+}
+.timeline-item .tl-year{
+  font-size:.78rem;color:#7eb8da;
+  font-weight:600;margin-bottom:4px;
+}
+.timeline-item .tl-event{font-size:.9rem;color:var(--text2)}
+
+/* ═══════════════ TAGS ═══════════════ */
+.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
+.tag.gold{background:rgba(126,184,218, .1);color:#7eb8da}
+
+@media(max-width:768px){
+  .hero-3d-container{height:350px}
+  .hero-3d-overlay .char-name{font-size:2.5rem}
+  .course-meta{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="bamboo-layer"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../../index.html" class="nav-logo">
+      <span class="nav-logo-icon">⚔</span> 金庸人物志研究院
+    </a>
+    <a href="../../index.html" class="nav-back">← 返回人物总览</a>
+  </div>
+</nav>
+
+<!-- 3D HERO -->
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">段誉</div>
+    <div class="char-title">大理世子 · 痴情公子</div>
+  </div>
+</div>
+
+<div class="main-content">
+
+<!-- COURSE HEADER -->
+<section class="course-header">
+  <div class="container">
+    <span class="novel-tag">天龙八部</span>
+    <p class="brief-intro">大理国世子，不喜武功却身负绝学。一生痴恋王语嫣，最终看破情障、继承大统。</p>
+    <div class="course-meta">
+      <div class="course-meta-item">
+        <div class="meta-val">8</div>
+        <div class="meta-label">深度维度</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">主角</div>
+        <div class="meta-label">人物级别</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">25分钟</div>
+        <div class="meta-label">阅读时长</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 人物档案 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 01</div>
+    <h2>人物档案</h2>
+  </div>
+  <div class="content-block">
+    <table class="info-table">
+      <tr><td>姓名</td><td>段誉</td></tr>
+      <tr><td>别名</td><td>段世子、誉儿</td></tr>
+      <tr><td>出身</td><td>大理国</td></tr>
+      <tr><td>门派</td><td>大理段氏</td></tr>
+      <tr><td>师父</td><td>无（自学凌波微步/六脉神剑）</td></tr>
+      <tr><td>配偶</td><td>王语嫣、木婉清、钟灵</td></tr>
+      <tr><td>武功</td><td>六脉神剑、凌波微步、北冥神功</td></tr>
+      <tr><td>结局</td><td>返回大理继承皇位，成为一代明君</td></tr>
+    </table>
+  </div>
+    <div class="highlight-box">
+    <div class="hl-title">一句话定位</div>
+    <p>段誉是金庸笔下独特的「反武侠」主角——讨厌暴力、不想练武，却被命运推着学会最厉害的武功。他痴恋王语嫣近乎病态，但最终学会了看破与放下。</p>
+  </div>
+</section>
+<!-- 02 性格解析 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 02</div>
+    <h2>性格解析</h2>
+  </div>
+    <div class="content-block">
+    <h3>痴情至性</h3>
+    <p>对王语嫣一见钟情后持续执迷。为多看她一眼甘冒生命危险，这种痴情让人叹息又感动。</p>
+  </div>
+  <div class="content-block">
+    <h3>仁厚善良</h3>
+    <p>天性不喜争斗，对要杀他的人也手下留情。鸠摩智多番羞辱他，后来他以德报怨。</p>
+  </div>
+  <div class="content-block">
+    <h3>书生意气</h3>
+    <p>饱读诗书出口成章，对佛学和易理有深入研究，为其参透六脉神剑奠定基础。</p>
+  </div>
+  <div class="content-block">
+    <h3>幽默自嘲</h3>
+    <p>常自我解嘲，明知痴恋王语嫣不理智就是控制不住。这种自知之明让他真实可爱。</p>
+  </div>
+</section>
+<!-- 03 成长轨迹 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 03</div>
+    <h2>成长轨迹</h2>
+  </div>
+    <div class="content-block">
+    <h3>离家出走</h3>
+    <p>因不愿学武被父亲责罚出走，这个「反武侠」开局反开启传奇。</p>
+  </div>
+  <div class="content-block">
+    <h3>无量山奇遇</h3>
+    <p>在剑湖宫发现「琅嬛福地」，学会凌波微步和北冥神功。</p>
+  </div>
+  <div class="content-block">
+    <h3>天龙寺获剑谱</h3>
+    <p>鸠摩智抢夺六脉神剑剑谱，段誉无意识中将六脉神剑全部吸入体内。</p>
+  </div>
+  <div class="content-block">
+    <h3>看破情障</h3>
+    <p>历经波折终与王语嫣等结合，返回大理。</p>
+  </div>
+</section>
+<!-- 04 奇遇经历 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 04</div>
+    <h2>奇遇经历</h2>
+  </div>
+    <div class="content-block">
+    <h3>琅嬛福地</h3>
+    <p>发现逍遥派秘籍，看到李秋水玉像，学会凌波微步和北冥神功，这是决定命运的关键奇遇。</p>
+  </div>
+  <div class="content-block">
+    <h3>误吞莽牯朱蛤</h3>
+    <p>在万劫谷吞下天下剧毒莽牯朱蛤，从此百毒不侵。</p>
+  </div>
+  <div class="content-block">
+    <h3>被动吸功</h3>
+    <p>无意中吸取众多高手内力，内力深厚冠绝当世，为驾驭六脉神剑奠基。</p>
+  </div>
+</section>
+<!-- 05 武功绝学 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 05</div>
+    <h2>武功绝学</h2>
+  </div>
+    <div class="content-block">
+    <h3>六脉神剑</h3>
+    <p>天龙寺第一绝学，内力化为无形剑气从六指射出。段誉是唯一练成全套者。</p>
+  </div>
+  <div class="content-block">
+    <h3>凌波微步</h3>
+    <p>逍遥派绝学步法精妙，段誉赖以躲避追杀。</p>
+  </div>
+  <div class="content-block">
+    <h3>北冥神功</h3>
+    <p>吸取他人内力为己用的奇功。</p>
+  </div>
+</section>
+<!-- 06 情感世界 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 06</div>
+    <h2>情感世界</h2>
+  </div>
+    <div class="content-block">
+    <h3>对王语嫣的崇拜式爱恋</h3>
+    <p>从第一眼就无可救药爱上，持续整部小说。王语嫣在他眼中是「神仙姐姐」化身。</p>
+  </div>
+  <div class="content-block">
+    <h3>兄弟情</h3>
+    <p>与乔峰虚竹结拜，三人性格迥异却真心相待。少室山联手抗敌是最热血片段。</p>
+  </div>
+</section>
+<!-- 07 趣事典故 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 07</div>
+    <h2>趣事典故</h2>
+  </div>
+    <div class="content-block">
+    <h3>磕头千拜</h3>
+    <p>为学艺给「神仙姐姐」玉像磕了一千个头，每磕百个头出现新秘籍。</p>
+  </div>
+  <div class="content-block">
+    <h3>六脉神剑失控</h3>
+    <p>学会但控制不住，该出时不出、不该出时乱放，让读者既急又笑。</p>
+  </div>
+</section>
+<!-- 08 江湖地位与启示 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 08</div>
+    <h2>江湖地位与启示</h2>
+  </div>
+    <div class="content-block">
+    <h3>反武侠先行者</h3>
+    <p>一个不想做侠客却被逼成绝世高手的人，为韦小宝等「非传统主角」开辟道路。</p>
+  </div>
+  <div class="content-block">
+    <h3>佛法与武学</h3>
+    <p>故事融入深厚佛学思想，看破情障放下执着与佛教理念完美契合。</p>
+  </div>
+</section>
+
+<!-- BOTTOM NAV -->
+<div class="container">
+  <div class="bottom-nav">
+    <a href="qiaofeng.html" class="nav-prev">← 乔峰</a>
+    <a href="../../index.html" class="back-all">返回人物总览</a>
+    <a href="xuzhu.html" class="nav-next">虚竹 →</a>
+  </div>
+</div>
+
+</div>
+
+<footer class="footer">
+  <div class="brand">金庸人物志研究院</div>
+  <p>Jin Yong Character Chronicles · 江湖百态，尽在其中</p>
+</footer>
+
+<!-- Three.js CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- 3D Hero 配置 -->
+<script>
+window.hero3dConfig = {
+  characterName: '段誉',
+  characterTitle: '大理世子 · 痴情公子',
+  themeColor: '#7eb8da',
+  particleColor: '#7eb8da',
+  elements: ["sword"]
+};
+</script>
+
+<script src="../../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../../assets/hero-3d.js"></script>
+
+</body>
+</html>

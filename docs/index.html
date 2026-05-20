@@ -225,7 +225,7 @@ h3{font-size:1.2rem;font-weight:600}
         <div class="desc">经典小说</div>
       </div>
       <div class="hero-stat">
-        <div class="num">18+</div>
+        <div class="num">78</div>
         <div class="desc">江湖人物</div>
       </div>
       <div class="hero-stat">
@@ -460,269 +460,779 @@ h3{font-size:1.2rem;font-weight:600}
   <div class="container">
     <div class="section-header">
       <span class="label">人物总览</span>
-      <h2 class="serif">首批上线：射雕三部曲</h2>
+      <h2 class="serif">六大经典系列 · 全部上线</h2>
       <div class="divider"></div>
-      <p>从郭靖到张无忌，从黄蓉到赵敏。三大经典系列，数十位核心人物，深度解读课程陆续上线。</p>
+      <p>从郭靖到韦小宝，从乔峰到令狐冲。六大经典系列、78位核心人物，八维深度解读课程全部上线。</p>
     </div>
-    
+
     <div class="course-header-section">
       <h3 class="serif" style="color:var(--gold)">🏹 射雕英雄传</h3>
       <div class="course-filter">
-        <button class="active">全部</button>
-        <button>主角</button>
-        <button>配角</button>
-        <button>重要人物</button>
+        <button class="active" onclick="filterCards(this,'all','grid-shediao')">全部</button>
+        <button onclick="filterCards(this,'protagonist','grid-shediao')">主角</button>
+        <button onclick="filterCards(this,'supporting','grid-shediao')">配角</button>
+        <button onclick="filterCards(this,'important','grid-shediao')">重要人物</button>
       </div>
     </div>
-    <div class="grid-4" style="margin-bottom:60px">
+    <div class="grid-4" id="grid-shediao" style="margin-bottom:60px">
       <div class="char-card fade-up">
         <span class="char-type protagonist">主角</span>
         <div class="char-novel">射雕英雄传</div>
         <h3>郭靖</h3>
-        <div class="char-alias">北侠 · 为国为民</div>
-        <p class="char-brief">"侠之大者，为国为民"。从蒙古草原到大宋襄阳，郭靖用一生诠释了什么是真正的大侠。</p>
-        <div class="char-tags">
-          <span class="char-tag">降龙十八掌</span>
-          <span class="char-tag">大智若愚</span>
-          <span class="char-tag">侠之大者</span>
-        </div>
+        <div class="char-alias">北侠、金刀驸马、靖哥哥</div>
+        <p class="char-brief">郭靖性格中最核心的特质是"诚"与"毅"。</p>
+        <div class="char-tags"><span class="char-tag">降龙十八掌</span><span class="char-tag">九阴真经</span><span class="char-tag">金刀驸马</span></div>
         <a href="courses/shediao/guojing.html" class="char-link">查看完整课程 →</a>
-      </div>
-      <div class="char-card fade-up">
-        <span class="char-type protagonist">主角</span>
-        <div class="char-novel">射雕英雄传</div>
-        <h3>黄蓉</h3>
-        <div class="char-alias">丐帮帮主 · 东邪之女</div>
-        <p class="char-brief">金庸笔下最聪明的女人。桃花岛主黄药师之女，才智绝世，精通奇门遁甲、五行八卦。她证明了智慧的力量比武功更强大，是武侠史上最经典的女性形象之一。</p>
-        <div class="char-tags">
-          <span class="char-tag">打狗棒法</span>
-          <span class="char-tag">奇门遁甲</span>
-          <span class="char-tag">女诸葛</span>
-        </div>
-        <a href="courses/shediao/huangrong.html" class="char-link">查看完整课程 →</a>
-      </div>
-      <div class="char-card fade-up">
-        <span class="char-type important">重要人物</span>
-        <div class="char-novel">射雕英雄传</div>
-        <h3>杨康</h3>
-        <div class="char-alias">完颜康 · 金国小王爷</div>
-        <p class="char-brief">一个被命运撕扯的悲剧人物。身在金营心在汉？还是彻底背叛了自己的出身？杨康的人生选择，引发关于身份认同与道德选择的永恒思考。</p>
-        <div class="char-tags">
-          <span class="char-tag">九阴白骨爪</span>
-          <span class="char-tag">身份认同</span>
-          <span class="char-tag">悲剧人物</span>
-        </div>
-        <a href="courses/shediao/yangkang.html" class="char-link">查看完整课程 →</a>
-      </div>
-      <div class="char-card fade-up">
-        <span class="char-type important">重要人物</span>
-        <div class="char-novel">射雕英雄传</div>
-        <h3>黄药师</h3>
-        <div class="char-alias">东邪 · 桃花岛主</div>
-        <p class="char-brief">"正中带有七分邪，邪中带有三分正"。琴棋书画、奇门遁甲、医卜星相无一不精。他是金庸笔下最全才的人物，也是最有魅力的孤独者。</p>
-        <div class="char-tags">
-          <span class="char-tag">弹指神通</span>
-          <span class="char-tag">五行八卦</span>
-          <span class="char-tag">全才宗师</span>
-        </div>
-        <a href="courses/shediao/huangyaoshi.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
         <span class="char-type important">重要人物</span>
         <div class="char-novel">射雕英雄传</div>
         <h3>洪七公</h3>
-        <div class="char-alias">北丐 · 丐帮帮主</div>
-        <p class="char-brief">降龙十八掌天下第一，贪吃如命的绝世高手。洪七公是金庸笔下最潇洒的大侠——不贪权力、不求荣华，唯爱美食与正义。逍遥自在，来去如风。</p>
-        <div class="char-tags">
-          <span class="char-tag">降龙十八掌</span>
-          <span class="char-tag">北丐</span>
-          <span class="char-tag">美食家</span>
-        </div>
+        <div class="char-alias">北丐、九指神丐、老叫花</div>
+        <p class="char-brief">>"我一生杀过二百三十一人，个个都是恶徒、奸人、负心薄幸之辈。</p>
+        <div class="char-tags"><span class="char-tag">降龙十八掌</span><span class="char-tag">打狗棒法</span><span class="char-tag">九指神丐</span></div>
         <a href="courses/shediao/hongqigong.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>黄蓉</h3>
+        <div class="char-alias">蓉儿、女诸葛、丐帮第十九代帮主</div>
+        <p class="char-brief">黄蓉是金庸武侠世界中最具魅力的女性角色——她集智慧、美貌、狡黠、深情于一身，是武侠文学中罕见的"智勇双全"女性。她不是郭靖的附庸，而是郭靖的"大脑"，两人合在一起，才是完整的"侠之大者"。</p>
+        <div class="char-tags"><span class="char-tag">打狗棒法</span><span class="char-tag">逍遥游掌法</span><span class="char-tag">女诸葛</span></div>
+        <a href="courses/shediao/huangrong.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
         <span class="char-type important">重要人物</span>
         <div class="char-novel">射雕英雄传</div>
-        <h3>欧阳锋</h3>
-        <div class="char-alias">西毒 · 白驼山主</div>
-        <p class="char-brief">金庸笔下最经典的邪派宗师。蛤蟆功、灵蛇拳，逆练九阴真经而疯癫。对武学的极致追求让他成为绝世高手，也让他陷入毁灭——敌友之间，一生纠缠。</p>
-        <div class="char-tags">
-          <span class="char-tag">蛤蟆功</span>
-          <span class="char-tag">西毒</span>
-          <span class="char-tag">逆练九阴</span>
-        </div>
+        <h3>黄药师</h3>
+        <div class="char-alias">东邪、黄老邪、桃花岛主</div>
+        <p class="char-brief">>"我黄药师行事，从来只凭一己好恶，不问是非。</p>
+        <div class="char-tags"><span class="char-tag">弹指神通</span><span class="char-tag">落英神剑掌</span><span class="char-tag">黄老邪</span></div>
+        <a href="courses/shediao/huangyaoshi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>ouyangfeng</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">>"我欧阳锋纵横一世，到头来连自己是谁都不知道了。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
         <a href="courses/shediao/ouyangfeng.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
-        <span class="char-type supporting">配角</span>
+        <span class="char-type important">重要人物</span>
         <div class="char-novel">射雕英雄传</div>
-        <h3>周伯通</h3>
-        <div class="char-alias">老顽童 · 中顽童</div>
-        <p class="char-brief">金庸笔下最可爱的武学天才。一个永远长不大的老小孩，桃花岛上自创双手互搏和空明拳。他用一生证明：真正的智慧，在于保持赤子之心。</p>
-        <div class="char-tags">
-          <span class="char-tag">双手互搏</span>
-          <span class="char-tag">空明拳</span>
-          <span class="char-tag">老顽童</span>
-        </div>
+        <h3>杨康</h3>
+        <div class="char-alias">小王爷、完颜康</div>
+        <p class="char-brief">杨康是金庸武侠中最经典的"反派悲剧"——他不是一个天生的恶人，而是一个在身份认同危机中做出了利己选择的聪明人。他的悲剧不是命运的捉弄，而是<strong>每一次选择都走向深渊</strong>的累积。</p>
+        <div class="char-tags"><span class="char-tag">九阴白骨爪</span><span class="char-tag">摧心掌</span><span class="char-tag">小王爷</span></div>
+        <a href="courses/shediao/yangkang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">射雕英雄传</div>
+        <h3>zhoubotong</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">>"我一生最快乐的事，就是在桃花岛上养蜜蜂。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
         <a href="courses/shediao/zhoubotong.html" class="char-link">查看完整课程 →</a>
       </div>
     </div>
-
-    <div class="course-header-section">
     <div class="course-header-section">
       <h3 class="serif" style="color:var(--gold)">🦅 神雕侠侣</h3>
+      <div class="course-filter">
+        <button class="active" onclick="filterCards(this,'all','grid-shendiao')">全部</button>
+        <button onclick="filterCards(this,'protagonist','grid-shendiao')">主角</button>
+        <button onclick="filterCards(this,'supporting','grid-shendiao')">配角</button>
+        <button onclick="filterCards(this,'important','grid-shendiao')">重要人物</button>
+      </div>
     </div>
-    <div class="grid-4" style="margin-bottom:60px">
+    <div class="grid-4" id="grid-shendiao" style="margin-bottom:60px">
       <div class="char-card fade-up">
-        <span class="char-type protagonist">主角</span>
+        <span class="char-type important">重要人物</span>
         <div class="char-novel">神雕侠侣</div>
-        <h3>杨过</h3>
-        <div class="char-alias">神雕大侠 · 西狂</div>
-        <p class="char-brief">金庸笔下最叛逆、最深情、最复杂的男主角。从流浪孤儿到一代神雕大侠，杨过的一生是对抗命运、证明自我的传奇。十六年等待，问世间情是何物。</p>
-        <div class="char-tags">
-          <span class="char-tag">黯然销魂掌</span>
-          <span class="char-tag">独孤九剑</span>
-          <span class="char-tag">深情狂傲</span>
-        </div>
-        <a href="courses/shendiao/yangguo.html" class="char-link">查看完整课程 →</a>
+        <h3>guoxiang</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">>风陵渡口初相遇，一见杨过误终身。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/shendiao/guoxiang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">神雕侠侣</div>
+        <h3>jinlunfawang</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">## 高傲的武学宗师 | 金轮法王不是一般的小反派——他是真正的武学宗师。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/shendiao/jinlunfawang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">神雕侠侣</div>
+        <h3>limochou</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">>问世间情是何物，直教生死相许。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/shendiao/limochou.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
         <span class="char-type protagonist">主角</span>
         <div class="char-novel">神雕侠侣</div>
         <h3>小龙女</h3>
-        <div class="char-alias">古墓派传人</div>
-        <p class="char-brief">不食人间烟火的绝代佳人。古墓中长大，心如止水，却为杨过动了凡心。小龙女的美，是金庸笔下的极致——清冷、纯粹、超越世俗。</p>
-        <div class="char-tags">
-          <span class="char-tag">玉女心经</span>
-          <span class="char-tag">古墓派</span>
-          <span class="char-tag">仙气飘渺</span>
-        </div>
+        <div class="char-alias">龙儿、姑姑（杨过称）、古墓仙子</div>
+        <p class="char-brief">小龙女是金庸笔下最"出世"的女主角——她不属于人间烟火，却因爱走进了红尘。她的美不是艳丽，而是清冷；她的爱不是热烈，而是纯粹。她是金庸对"极致单纯"这一人格的最美想象。</p>
+        <div class="char-tags"><span class="char-tag">玉女心经</span><span class="char-tag">玉女剑法</span><span class="char-tag">姑姑（杨过称）</span></div>
         <a href="courses/shendiao/xiaolongnv.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
-        <span class="char-type important">重要人物</span>
+        <span class="char-type protagonist">主角</span>
         <div class="char-novel">神雕侠侣</div>
-        <h3>郭襄</h3>
-        <div class="char-alias">小东邪 · 峨嵋派创派祖师</div>
-        <p class="char-brief">风陵渡口初相遇，一见杨过误终身。郭靖黄蓉之女，集父母所长却走出一条完全不同的路。她是金庸笔下最让人心疼的配角，也是最潇洒的孤独旅人。</p>
-        <div class="char-tags">
-          <span class="char-tag">峨嵋祖师</span>
-          <span class="char-tag">风陵师太</span>
-          <span class="char-tag">一生追寻</span>
-        </div>
-        <a href="courses/shendiao/guoxiang.html" class="char-link">查看完整课程 →</a>
-      </div>
-      <div class="char-card fade-up">
-        <span class="char-type supporting">配角</span>
-        <div class="char-novel">神雕侠侣</div>
-        <h3>李莫愁</h3>
-        <div class="char-alias">赤练仙子</div>
-        <p class="char-brief">"问世间情是何物，直教生死相许"。因爱生恨的悲剧人物，从温柔少女到杀人魔头。李莫愁的故事，是金庸对爱情黑暗面最深刻的探索。</p>
-        <div class="char-tags">
-          <span class="char-tag">冰魄银针</span>
-          <span class="char-tag">因爱生恨</span>
-          <span class="char-tag">情花之毒</span>
-        </div>
-        <a href="courses/shendiao/limochou.html" class="char-link">查看完整课程 →</a>
-      </div>
-      <div class="char-card fade-up">
-        <span class="char-type important">重要人物</span>
-        <div class="char-novel">神雕侠侣</div>
-        <h3>金轮法王</h3>
-        <div class="char-alias">蒙古国师 · 密宗第一高手</div>
-        <p class="char-brief">高傲的蒙古国师，龙象般若功前无古人。抓郭襄为质，却对她动了真心——最终以生命完成了最壮烈的救赎。金庸笔下最有深度的反派之一。</p>
-        <div class="char-tags">
-          <span class="char-tag">龙象般若功</span>
-          <span class="char-tag">蒙古国师</span>
-          <span class="char-tag">国士无双</span>
-        </div>
-        <a href="courses/shendiao/jinlunfawang.html" class="char-link">查看完整课程 →</a>
+        <h3>杨过</h3>
+        <div class="char-alias">神雕大侠、西狂、过儿、傻蛋（小龙女昵称）</div>
+        <p class="char-brief">杨过是金庸笔下最具反抗精神和情感张力的男主角——他反抗礼教、反抗命运、反抗一切不公。他的成长不是被规训的过程，而是在痛苦和孤独中自我锻造的过程。他是"情"的极致化身。</p>
+        <div class="char-tags"><span class="char-tag">黯然销魂掌</span><span class="char-tag">玄铁剑法</span><span class="char-tag">神雕大侠</span></div>
+        <a href="courses/shendiao/yangguo.html" class="char-link">查看完整课程 →</a>
       </div>
     </div>
-
     <div class="course-header-section">
-    <div class="course-header-section">
-      <h3 class="serif" style="color:var(--gold)">🐉 倚天屠龙记</h3>
+      <h3 class="serif" style="color:var(--gold)">🗡 倚天屠龙记</h3>
+      <div class="course-filter">
+        <button class="active" onclick="filterCards(this,'all','grid-yitian')">全部</button>
+        <button onclick="filterCards(this,'protagonist','grid-yitian')">主角</button>
+        <button onclick="filterCards(this,'supporting','grid-yitian')">配角</button>
+        <button onclick="filterCards(this,'important','grid-yitian')">重要人物</button>
+      </div>
     </div>
-    <div class="grid-4">
+    <div class="grid-4" id="grid-yitian" style="margin-bottom:60px">
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>xiexun</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">## 烈火与寒冰并存 | 谢逊的性格可以用"烈火+寒冰"来形容——对成昆的仇恨如烈火，对张无忌的慈爱如寒冰（外表冷但内里纯净）。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/yitian/xiexun.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>yinsusu</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">>无忌，你长大了以后要记住：越漂亮的女人，越会骗人。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/yitian/yinsusu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">倚天屠龙记</div>
+        <h3>zhangsanfeng</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">>他强由他强，清风拂山岗；他横由他横，明月照大江。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/yitian/zhangsanfeng.html" class="char-link">查看完整课程 →</a>
+      </div>
       <div class="char-card fade-up">
         <span class="char-type protagonist">主角</span>
         <div class="char-novel">倚天屠龙记</div>
         <h3>张无忌</h3>
-        <div class="char-alias">明教教主 · 曾阿牛</div>
-        <p class="char-brief">一个不想当教主的教主，一个优柔寡断却武功盖世的少年。张无忌证明了善良与宽容的力量，也在情感纠葛中展现了人性最真实的一面。</p>
-        <div class="char-tags">
-          <span class="char-tag">九阳神功</span>
-          <span class="char-tag">乾坤大挪移</span>
-          <span class="char-tag">仁者无敌</span>
-        </div>
+        <div class="char-alias">曾阿牛、明教教主、魔教教主</div>
+        <p class="char-brief">张无忌是金庸笔下最「反英雄」的英雄——他拥有天下无敌的武功却厌恶暴力，身为明教教主却无政治野心，面对四美环绕却优柔寡断。他以仁为本、以善待人，证明了真正的力量不在于征服，而在于宽恕。</p>
+        <div class="char-tags"><span class="char-tag">九阳神功</span><span class="char-tag">乾坤大挪移</span><span class="char-tag">曾阿牛</span></div>
         <a href="courses/yitian/zhangwuji.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
-        <span class="char-type protagonist">主角</span>
+        <span class="char-type important">重要人物</span>
         <div class="char-novel">倚天屠龙记</div>
-        <h3>赵敏</h3>
-        <div class="char-alias">绍敏郡主 · 敏敏特穆尔</div>
-        <p class="char-brief">金庸笔下最有政治智慧的女性。蒙古郡主，统率群豪，却为张无忌背叛自己的国家与身份。"我偏要勉强"——她证明了主动追求的真义。</p>
-        <div class="char-tags">
-          <span class="char-tag">政治智慧</span>
-          <span class="char-tag">敢爱敢恨</span>
-          <span class="char-tag">女中豪杰</span>
-        </div>
+        <h3>敏敏特穆尔</h3>
+        <div class="char-alias">绍敏郡主、蒙古第一美人、妖女</div>
+        <p class="char-brief">赵敏是金庸武侠世界中最具现代性的女性角色——她不是等待被拯救的公主，而是掌握自己命运的强者。她的每一次选择都主动而决绝：爱，就全力以赴；弃，就义无反顾。她证明了真正强大的人，敢于为爱跨越一切藩篱。</p>
+        <div class="char-tags"><span class="char-tag">绍敏郡主</span><span class="char-tag">蒙古第一美人</span><span class="char-tag">重要人物</span></div>
         <a href="courses/yitian/zhaomin.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
         <span class="char-type important">重要人物</span>
         <div class="char-novel">倚天屠龙记</div>
-        <h3>周芷若</h3>
-        <div class="char-alias">峨嵋派掌门</div>
-        <p class="char-brief">从温柔如水的汉水渔女到心狠手辣的峨嵋掌门。周芷若的黑化之路，是金庸笔下最令人扼腕的角色转变，揭示了权力与情感对人性的侵蚀。</p>
-        <div class="char-tags">
-          <span class="char-tag">九阴白骨爪</span>
-          <span class="char-tag">黑化之路</span>
-          <span class="char-tag">悲剧人物</span>
-        </div>
+        <h3>zhouruiruo</h3>
+        <div class="char-alias"></div>
+        <p class="char-brief">>无忌哥哥，你为什么要这样对我？
+
+## 金庸笔下最完整的黑化弧线 | 周芷若的前后变化，是金庸所有角色中最剧烈的。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
         <a href="courses/yitian/zhouruiruo.html" class="char-link">查看完整课程 →</a>
       </div>
-      <div class="char-card fade-up">
-        <span class="char-type important">重要人物</span>
-        <div class="char-novel">倚天屠龙记</div>
-        <h3>张三丰</h3>
-        <div class="char-alias">武当派创派祖师 · 张真人</div>
-        <p class="char-brief">一代武学宗师，武当派创始人。从少林弃徒到武林泰斗，张三丰的百年人生是一部自强不息的奋斗史。"太极"不仅是武功，更是一种人生哲学。</p>
-        <div class="char-tags">
-          <span class="char-tag">太极拳</span>
-          <span class="char-tag">一代宗师</span>
-          <span class="char-tag">武当始祖</span>
-        </div>
-        <a href="courses/yitian/zhangsanfeng.html" class="char-link">查看完整课程 →</a>
+    </div>
+    <div class="course-header-section">
+      <h3 class="serif" style="color:var(--gold)">🐲 天龙八部</h3>
+      <div class="course-filter">
+        <button class="active" onclick="filterCards(this,'all','grid-tlbb')">全部</button>
+        <button onclick="filterCards(this,'protagonist','grid-tlbb')">主角</button>
+        <button onclick="filterCards(this,'supporting','grid-tlbb')">配角</button>
+        <button onclick="filterCards(this,'important','grid-tlbb')">重要人物</button>
       </div>
     </div>
+    <div class="grid-4" id="grid-tlbb" style="margin-bottom:60px">
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>乔峰</h3>
+        <div class="char-alias">乔帮主、萧峰</div>
+        <p class="char-brief">天下第一大帮丐帮帮主，真实身份契丹人。一生在忠义与民族间挣扎，最终以死明志的悲壮英雄。</p>
+        <div class="char-tags"><span class="char-tag">降龙十八掌</span><span class="char-tag">打狗棒法</span><span class="char-tag">乔帮主</span></div>
+        <a href="courses/tlbb/qiaofeng.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>段誉</h3>
+        <div class="char-alias">段世子、誉儿</div>
+        <p class="char-brief">大理国世子，不喜武功却身负绝学。一生痴恋王语嫣，最终看破情障、继承大统。</p>
+        <div class="char-tags"><span class="char-tag">六脉神剑</span><span class="char-tag">凌波微步</span><span class="char-tag">段世子</span></div>
+        <a href="courses/tlbb/duanyu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>虚竹</h3>
+        <div class="char-alias">虚竹、虚竹子</div>
+        <p class="char-brief">少林寺小和尚，相貌丑陋心地纯善。因缘际会成为逍遥派掌门兼灵鹫宫主，娶西夏公主，成就「丑小和尚的逆袭」。</p>
+        <div class="char-tags"><span class="char-tag">天山六阳掌</span><span class="char-tag">天山折梅手</span><span class="char-tag">虚竹子</span></div>
+        <a href="courses/tlbb/xuzhu.html" class="char-link">查看完整课程 →</a>
+      </div>
       <div class="char-card fade-up">
         <span class="char-type important">重要人物</span>
-        <div class="char-novel">倚天屠龙记</div>
-        <h3>谢逊</h3>
-        <div class="char-alias">金毛狮王 · 明教法王</div>
-        <p class="char-brief">金庸笔下最震撼的复仇者。全家为成昆所杀，他花了二十年追凶；但在冰火岛上抱住初生的张无忌，仇恨的深渊中从此有了第二种温度。</p>
-        <div class="char-tags">
-          <span class="char-tag">七伤拳</span>
-          <span class="char-tag">屠龙刀</span>
-          <span class="char-tag">义父情深</span>
-        </div>
-        <a href="courses/yitian/xiexun.html" class="char-link">查看完整课程 →</a>
+        <div class="char-novel">天龙八部</div>
+        <h3>王语嫣</h3>
+        <div class="char-alias">神仙姐姐</div>
+        <p class="char-brief">曼陀山庄大小姐，美貌绝伦，通晓天下武学却不会武功。痴恋表哥慕容复多年，最后才醒悟真爱在身边。</p>
+        <div class="char-tags"><span class="char-tag">神仙姐姐</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/wangyuyan.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>慕容复</h3>
+        <div class="char-alias">南慕容、公子爷</div>
+        <p class="char-brief">姑苏慕容家少主，武功卓绝心机深沉。一生执着于「大燕复国」的虚幻梦想，最终在少室山下疯癫收场。</p>
+        <div class="char-tags"><span class="char-tag">斗转星移</span><span class="char-tag">参合指</span><span class="char-tag">南慕容</span></div>
+        <a href="courses/tlbb/murongfu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>阿朱</h3>
+        <div class="char-alias">阿朱姑娘</div>
+        <p class="char-brief">慕容世家丫鬟，擅长易容术。与乔峰相遇相知，为化解乔峰对段正淳的仇恨，假扮段正淳被乔峰一掌打死。</p>
+        <div class="char-tags"><span class="char-tag">易容术</span><span class="char-tag">基本武艺</span><span class="char-tag">阿朱姑娘</span></div>
+        <a href="courses/tlbb/azhu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>阿紫</h3>
+        <div class="char-alias">阿紫姑娘</div>
+        <p class="char-brief">星宿派弟子，阿朱之妹。性格乖张毒辣，对乔峰由利用转为痴恋。最终抱着乔峰的尸体跳下雁门关。</p>
+        <div class="char-tags"><span class="char-tag">星宿派毒功</span><span class="char-tag">化功大法（部分）</span><span class="char-tag">阿紫姑娘</span></div>
+        <a href="courses/tlbb/azi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>鸠摩智</h3>
+        <div class="char-alias">大轮明王</div>
+        <p class="char-brief">吐蕃国师，一代高僧外表下藏着对天下武学的贪婪。最终武功尽废，反得善果。</p>
+        <div class="char-tags"><span class="char-tag">火焰刀</span><span class="char-tag">小无相功</span><span class="char-tag">大轮明王</span></div>
+        <a href="courses/tlbb/jiumozhi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>天山童姥</h3>
+        <div class="char-alias">童姥、天山童姥</div>
+        <p class="char-brief">逍遥派大师姐，灵鹫宫主。修练八荒六合唯我独尊功，每三十年返老还童一次。掌控三十六洞七十二岛的武林至尊。</p>
+        <div class="char-tags"><span class="char-tag">天山六阳掌</span><span class="char-tag">天山折梅手</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/tianshantonglao.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>段正淳</h3>
+        <div class="char-alias">镇南王</div>
+        <p class="char-brief">大理镇南王，风流倜傥，一生拥有多位情人。他是段誉之父，也是众多角色的生父。</p>
+        <div class="char-tags"><span class="char-tag">一阳指</span><span class="char-tag">段氏剑法</span><span class="char-tag">镇南王</span></div>
+        <a href="courses/tlbb/duanzhengchun.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>段延庆</h3>
+        <div class="char-alias">恶贯满盈</div>
+        <p class="char-brief">大理前太子，因政变被废，沦为'天下第一恶人'。身残心毒，但内心仍有一丝高贵。</p>
+        <div class="char-tags"><span class="char-tag">一阳指</span><span class="char-tag">腹语术</span><span class="char-tag">恶贯满盈</span></div>
+        <a href="courses/tlbb/duanyanqing.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>李秋水</h3>
+        <div class="char-alias">李太妃</div>
+        <p class="char-brief">逍遥派弟子，西夏皇太妃。与师姐天山童姥为无崖子争风吃醋数十年，至死方休。</p>
+        <div class="char-tags"><span class="char-tag">小无相功</span><span class="char-tag">白虹掌力</span><span class="char-tag">李太妃</span></div>
+        <a href="courses/tlbb/liqiushui.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>无崖子</h3>
+        <div class="char-alias">逍遥子（非）</div>
+        <p class="char-brief">逍遥派掌门，武功通神。被弟子丁春秋暗算推下山崖，瘫痪数十年。临终前将七十年功力传给虚竹。</p>
+        <div class="char-tags"><span class="char-tag">北冥神功</span><span class="char-tag">小无相功</span><span class="char-tag">逍遥子（非）</span></div>
+        <a href="courses/tlbb/wuyazi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>丁春秋</h3>
+        <div class="char-alias">星宿老仙</div>
+        <p class="char-brief">星宿派掌门，背叛师门暗算师父的无耻之徒。武功阴毒，善于用毒和化功大法。</p>
+        <div class="char-tags"><span class="char-tag">化功大法</span><span class="char-tag">腐尸毒</span><span class="char-tag">星宿老仙</span></div>
+        <a href="courses/tlbb/dingchunqiu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>游坦之</h3>
+        <div class="char-alias">铁头人</div>
+        <p class="char-brief">聚贤庄少庄主，家破人亡后被阿紫毁容套上铁面具。疯狂爱着阿紫，为她付出一切。</p>
+        <div class="char-tags"><span class="char-tag">冰蚕毒掌（意外练成）</span><span class="char-tag">铁头人</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/youtanzhi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>木婉清</h3>
+        <div class="char-alias">修罗刀</div>
+        <p class="char-brief">段正淳私生女，性格刚烈冷傲。外号'修罗刀'，实际内心渴望温情。</p>
+        <div class="char-tags"><span class="char-tag">修罗刀法</span><span class="char-tag">修罗刀</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/muwanqing.html" class="char-link">查看完整课程 →</a>
       </div>
       <div class="char-card fade-up">
         <span class="char-type supporting">配角</span>
-        <div class="char-novel">倚天屠龙记</div>
-        <h3>殷素素</h3>
-        <div class="char-alias">天鹰教紫微堂主</div>
-        <p class="char-brief">"越漂亮的女人越会骗人"——她用生命给儿子上了最后一课。从邪教妖女到为爱赴死，殷素素与张翠山的正邪之恋是倚天屠龙记中最动人的悲剧。</p>
-        <div class="char-tags">
-          <span class="char-tag">鹰爪擒拿手</span>
-          <span class="char-tag">为爱赴死</span>
-          <span class="char-tag">母爱如山</span>
-        </div>
-        <a href="courses/yitian/yinsusu.html" class="char-link">查看完整课程 →</a>
+        <div class="char-novel">天龙八部</div>
+        <h3>钟灵</h3>
+        <div class="char-alias">灵儿</div>
+        <p class="char-brief">段正淳私生女，天真烂漫。养有一只叫'闪电貂'的宠物，出场时活泼可爱。</p>
+        <div class="char-tags"><span class="char-tag">闪电貂（宠物鼠）</span><span class="char-tag">含沙射影</span><span class="char-tag">配角</span></div>
+        <a href="courses/tlbb/zhongling.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>康敏</h3>
+        <div class="char-alias">马夫人</div>
+        <p class="char-brief">丐帮副帮主马大元之妻，心肠歹毒的美艳寡妇。揭穿乔峰身世的始作俑者。</p>
+        <div class="char-tags"><span class="char-tag">马夫人</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/kangmin.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>扫地僧</h3>
+        <div class="char-alias">无名老僧</div>
+        <p class="char-brief">少林寺藏经阁的扫地老僧，武功深不可测。一掌杀死慕容博和萧远山，又一掌救活他们。</p>
+        <div class="char-tags"><span class="char-tag">少林最高内功</span><span class="char-tag">无名老僧</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/saodiseng.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>萧远山</h3>
+        <div class="char-alias">萧远山</div>
+        <p class="char-brief">乔峰之父，三十年前雁门关外跳崖假死。潜伏少林三十年偷学武功，后与慕容博在扫地僧前皈依佛门。</p>
+        <div class="char-tags"><span class="char-tag">少林七十二绝技</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/xiaoyuanshan.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>刀白凤</h3>
+        <div class="char-alias">王妃</div>
+        <p class="char-brief">大理镇南王妃，段誉之母。因恨段正淳风流，自暴自弃与段延庆生下了段誉。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/tlbb/daobaifeng.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">天龙八部</div>
+        <h3>阿碧</h3>
+        <div class="char-alias">阿碧姑娘</div>
+        <p class="char-brief">慕容世家丫鬟，温婉贤淑。在所有人离开后，她依然守护在疯癫的慕容复身边。</p>
+        <div class="char-tags"><span class="char-tag">阿碧姑娘</span><span class="char-tag">配角</span></div>
+        <a href="courses/tlbb/abi.html" class="char-link">查看完整课程 →</a>
+      </div>
+    </div>
+    <div class="course-header-section">
+      <h3 class="serif" style="color:var(--gold)">🎋 笑傲江湖</h3>
+      <div class="course-filter">
+        <button class="active" onclick="filterCards(this,'all','grid-xajh')">全部</button>
+        <button onclick="filterCards(this,'protagonist','grid-xajh')">主角</button>
+        <button onclick="filterCards(this,'supporting','grid-xajh')">配角</button>
+        <button onclick="filterCards(this,'important','grid-xajh')">重要人物</button>
+      </div>
+    </div>
+    <div class="grid-4" id="grid-xajh" style="margin-bottom:60px">
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>令狐冲</h3>
+        <div class="char-alias">令狐冲、冲哥</div>
+        <p class="char-brief">华山派大弟子，生性放浪不羁。学得独孤九剑和吸星大法，接任恒山派掌门，最终与任盈盈笑傲江湖。</p>
+        <div class="char-tags"><span class="char-tag">独孤九剑</span><span class="char-tag">吸星大法</span><span class="char-tag">主角</span></div>
+        <a href="courses/xajh/linghuchong.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>任盈盈</h3>
+        <div class="char-alias">圣姑、盈盈</div>
+        <p class="char-brief">日月神教前教主任我行之女，现任圣姑。武功高强心思缜密，与令狐冲因琴曲结缘，终成眷属。</p>
+        <div class="char-tags"><span class="char-tag">琴中剑</span><span class="char-tag">任家武学</span><span class="char-tag">主角</span></div>
+        <a href="courses/xajh/renyingying.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>岳不群</h3>
+        <div class="char-alias">君子剑</div>
+        <p class="char-brief">华山派掌门，表面道貌岸然实则心机深沉。为夺取辟邪剑谱不惜自宫，最终身败名裂。</p>
+        <div class="char-tags"><span class="char-tag">华山剑法</span><span class="char-tag">紫霞神功</span><span class="char-tag">君子剑</span></div>
+        <a href="courses/xajh/yuebuqun.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>东方不败</h3>
+        <div class="char-alias">东方不败</div>
+        <p class="char-brief">篡夺任我行的日月神教教主之位，练葵花宝典后武功天下第一。自宫后性情大变，宠爱男宠杨莲亭。</p>
+        <div class="char-tags"><span class="char-tag">葵花宝典（绣花针）</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/dongfangbubai.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>任我行</h3>
+        <div class="char-alias">任教主</div>
+        <p class="char-brief">日月神教前教主，被东方不败篡位囚禁十二载。越狱后夺回教主之位，最终暴毙于黑木崖。</p>
+        <div class="char-tags"><span class="char-tag">吸星大法</span><span class="char-tag">任教主</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/renwoxing.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>风清扬</h3>
+        <div class="char-alias">风清扬老前辈</div>
+        <p class="char-brief">华山派剑宗前辈，独孤九剑的唯一传人。隐居华山思过崖数十年，因缘际会将独孤九剑传给令狐冲。</p>
+        <div class="char-tags"><span class="char-tag">独孤九剑</span><span class="char-tag">风清扬老前辈</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/fengqingyang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>向问天</h3>
+        <div class="char-alias">天王老子</div>
+        <p class="char-brief">日月神教光明左使，任我行的忠实拥护者。为人豪迈机智，是令狐冲最敬重的朋友之一。</p>
+        <div class="char-tags"><span class="char-tag">天王老子</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/xiangwentian.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>林平之</h3>
+        <div class="char-alias">林少爷</div>
+        <p class="char-brief">福威镖局少镖头，家破人亡后为复仇忍辱负重。习得辟邪剑法后性情大变，亲手杀死岳灵珊。</p>
+        <div class="char-tags"><span class="char-tag">辟邪剑法</span><span class="char-tag">林少爷</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/linpingzhi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>岳灵珊</h3>
+        <div class="char-alias">小师妹</div>
+        <p class="char-brief">岳不群之女，令狐冲的小师妹。天真烂漫，从爱慕令狐冲转为爱上林平之，最终死于丈夫剑下。</p>
+        <div class="char-tags"><span class="char-tag">小师妹</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/yuelingshan.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>仪琳</h3>
+        <div class="char-alias">仪琳小师父</div>
+        <p class="char-brief">恒山派小尼姑，纯真善良。无意中爱上了令狐冲，但因出家人身份只能将感情深埋心底。</p>
+        <div class="char-tags"><span class="char-tag">仪琳小师父</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/yilin.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>田伯光</h3>
+        <div class="char-alias">万里独行</div>
+        <p class="char-brief">江湖上有名的采花贼，轻功绝顶外号'万里独行'。被令狐冲感化后改邪归正。</p>
+        <div class="char-tags"><span class="char-tag">万里独行</span><span class="char-tag">配角</span></div>
+        <a href="courses/xajh/tianboguang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>左冷禅</h3>
+        <div class="char-alias">左盟主</div>
+        <p class="char-brief">嵩山派掌门，野心勃勃。策划五岳并派阴谋，最终被练成辟邪剑法的岳不群刺瞎双眼。</p>
+        <div class="char-tags"><span class="char-tag">嵩山剑法</span><span class="char-tag">寒冰真气</span><span class="char-tag">左盟主</span></div>
+        <a href="courses/xajh/zuolengchan.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>宁中则</h3>
+        <div class="char-alias">宁女侠</div>
+        <p class="char-brief">华山派掌门夫人，岳不群之妻。正直豪爽的女侠，在丈夫的真面目暴露后自杀明志。</p>
+        <div class="char-tags"><span class="char-tag">宁女侠</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/xajh/ningzhongze.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>莫大</h3>
+        <div class="char-alias">潇湘夜雨</div>
+        <p class="char-brief">衡山派掌门，外号'潇湘夜雨'。琴剑双绝，为人低调但关键时刻深明大义。</p>
+        <div class="char-tags"><span class="char-tag">衡山剑法</span><span class="char-tag">胡琴（琴中藏剑）</span><span class="char-tag">潇湘夜雨</span></div>
+        <a href="courses/xajh/moda.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>蓝凤凰</h3>
+        <div class="char-alias">蓝教主</div>
+        <p class="char-brief">苗疆五毒教教主，豪爽泼辣。是令狐冲的红颜知己之一，多次出手相助。</p>
+        <div class="char-tags"><span class="char-tag">蓝教主</span><span class="char-tag">配角</span></div>
+        <a href="courses/xajh/lanfenghuang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>定逸师太</h3>
+        <div class="char-alias">定逸师太</div>
+        <p class="char-brief">恒山三定之一，性格刚烈正直。在令狐冲最危难时给予信任与支持。</p>
+        <div class="char-tags"><span class="char-tag">配角</span></div>
+        <a href="courses/xajh/dingyishitai.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>平一指</h3>
+        <div class="char-alias">杀人名医</div>
+        <p class="char-brief">江湖神医，医术出神入化。他的规矩是：救活一人就必须杀死一人。最后被岳不群的伤情难倒了。</p>
+        <div class="char-tags"><span class="char-tag">杀人名医</span><span class="char-tag">配角</span></div>
+        <a href="courses/xajh/pingyizhi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">笑傲江湖</div>
+        <h3>不戒和尚</h3>
+        <div class="char-alias">不戒</div>
+        <p class="char-brief">仪琳之父，一个不像和尚的和尚。性格憨直鲁莽，却有真性情。被迫出家的前因后果极其有趣。</p>
+        <div class="char-tags"><span class="char-tag">配角</span></div>
+        <a href="courses/xajh/bujieheshang.html" class="char-link">查看完整课程 →</a>
+      </div>
+    </div>
+    <div class="course-header-section">
+      <h3 class="serif" style="color:var(--gold)">🦌 鹿鼎记</h3>
+      <div class="course-filter">
+        <button class="active" onclick="filterCards(this,'all','grid-ldj')">全部</button>
+        <button onclick="filterCards(this,'protagonist','grid-ldj')">主角</button>
+        <button onclick="filterCards(this,'supporting','grid-ldj')">配角</button>
+        <button onclick="filterCards(this,'important','grid-ldj')">重要人物</button>
+      </div>
+    </div>
+    <div class="grid-4" id="grid-ldj" style="margin-bottom:60px">
+      <div class="char-card fade-up">
+        <span class="char-type protagonist">主角</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>韦小宝</h3>
+        <div class="char-alias">韦爵爷、小宝、小桂子</div>
+        <p class="char-brief">扬州妓院出身的小混混，靠机智和运气成为康熙近臣、天地会青木堂香主、神龙教白龙使、一等鹿鼎公。娶七位夫人，金庸笔下最不像大侠的主角。</p>
+        <div class="char-tags"><span class="char-tag">含沙射影（暗器）</span><span class="char-tag">韦爵爷</span><span class="char-tag">主角</span></div>
+        <a href="courses/ldj/weixiaobao.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>康熙</h3>
+        <div class="char-alias">皇上、小玄子（韦小宝专用）</div>
+        <p class="char-brief">少年康熙帝，雄才大略。与韦小宝从摔跤玩伴到君臣，是金庸笔下最立体的帝王形象。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/kangxi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>陈近南</h3>
+        <div class="char-alias">陈总舵主</div>
+        <p class="char-brief">天地会总舵主，反清复明的旗帜。武功卓绝人品高尚，是韦小宝最敬重的人。被郑克塽偷袭身亡。</p>
+        <div class="char-tags"><span class="char-tag">陈总舵主</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/chenjinnan.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>阿珂</h3>
+        <div class="char-alias">阿珂</div>
+        <p class="char-brief">陈圆圆之女，容貌倾城。韦小宝一见钟情想尽办法追求，最终成为韦小宝七夫人之首。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/ake.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>双儿</h3>
+        <div class="char-alias">双儿</div>
+        <p class="char-brief">韦小宝最信任的夫人。忠心耿耿、温柔体贴，是韦小宝心中最可靠的港湾。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/shuang'er.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>建宁公主</h3>
+        <div class="char-alias">建宁</div>
+        <p class="char-brief">康熙的妹妹，性格刁蛮任性。先与吴应熊有婚约，后成为韦小宝的七夫人之一。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/jianninggongzhu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>苏荃</h3>
+        <div class="char-alias">荃姐</div>
+        <p class="char-brief">原神龙教主洪安通之妻，被韦小宝所救后嫁给韦小宝，成为七夫人中最有主见的一位。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/suquan.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>鳌拜</h3>
+        <div class="char-alias">鳌少保</div>
+        <p class="char-brief">康熙初年的顾命大臣，权倾朝野。最终被康熙和韦小宝联手设计擒杀。</p>
+        <div class="char-tags"><span class="char-tag">金钟罩铁布衫</span><span class="char-tag">鳌少保</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/aobai.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>吴三桂</h3>
+        <div class="char-alias">平西王</div>
+        <p class="char-brief">明末清初的汉奸，引清兵入关后封平西王。镇守云南拥兵自重，最终起兵反清失败。</p>
+        <div class="char-tags"><span class="char-tag">平西王</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/wusangui.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>九难师太</h3>
+        <div class="char-alias">九难师太、阿九</div>
+        <p class="char-brief">明朝崇祯皇帝之女长平公主，国破后出家为尼，法号九难。收韦小宝为徒。</p>
+        <div class="char-tags"><span class="char-tag">铁剑门剑法</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/jiunanshitai.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>洪安通</h3>
+        <div class="char-alias">洪教主</div>
+        <p class="char-brief">神龙教教主，性格多疑残暴。控制苏荃为妻，最终死于神龙教内乱。</p>
+        <div class="char-tags"><span class="char-tag">神龙教武功</span><span class="char-tag">洪教主</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/hongantong.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>方怡</h3>
+        <div class="char-alias">方怡姐姐</div>
+        <p class="char-brief">沐王府的义女，初始与韦小宝敌对，后为情势所迫嫁给韦小宝。是七夫人中与韦小宝感情最曲折的一位。</p>
+        <div class="char-tags"><span class="char-tag">方怡姐姐</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/fangyi.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>沐剑屏</h3>
+        <div class="char-alias">小郡主</div>
+        <p class="char-brief">沐王府的小郡主，入宫后被韦小宝保护。天真娇憨是七夫人中最不谙世事的一位。</p>
+        <div class="char-tags"><span class="char-tag">小郡主</span><span class="char-tag">配角</span></div>
+        <a href="courses/ldj/mujianping.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>曾柔</h3>
+        <div class="char-alias">王屋派弟子 · 柔情似水</div>
+        <p class="char-brief">王屋派弟子，在韦小宝的保护下幸免于难。七夫人中最温柔的一位。</p>
+        <div class="char-tags"><span class="char-tag">配角</span></div>
+        <a href="courses/ldj/zengrou.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>郑克塽</h3>
+        <div class="char-alias">郑世子</div>
+        <p class="char-brief">郑成功之孙，承袭延平郡王爵位。志大才疏，暗中杀害陈近南。最终降清。</p>
+        <div class="char-tags"><span class="char-tag">郑世子</span><span class="char-tag">配角</span></div>
+        <a href="courses/ldj/zhengkeshuang.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>海大富</h3>
+        <div class="char-alias">海老公</div>
+        <p class="char-brief">清宫太监总管，武功深藏不露。精通化骨绵掌，是韦小宝早期的主要对手。</p>
+        <div class="char-tags"><span class="char-tag">化骨绵掌</span><span class="char-tag">海老公</span><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/haidafu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>毛东珠</h3>
+        <div class="char-alias">太后</div>
+        <p class="char-brief">神龙教安插在清宫的卧底，冒充太后多年。是韦小宝揭露的第一个宫廷大秘密。</p>
+        <div class="char-tags"><span class="char-tag">配角</span></div>
+        <a href="courses/ldj/maodongzhu.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>多隆</h3>
+        <div class="char-alias">多总管</div>
+        <p class="char-brief">康熙的御前侍卫总管，韦小宝的好友和同事。忠勇耿直，多次保护韦小宝。</p>
+        <div class="char-tags"><span class="char-tag">多总管</span><span class="char-tag">配角</span></div>
+        <a href="courses/ldj/duolong.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type important">重要人物</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>陈圆圆</h3>
+        <div class="char-alias">圆圆</div>
+        <p class="char-brief">明末清初传奇美女，秦淮八艳之一。吴三桂为她叛明降清，李自成为她失去天下。阿珂之母。</p>
+        <div class="char-tags"><span class="char-tag">重要人物</span></div>
+        <a href="courses/ldj/chenyuanyuan.html" class="char-link">查看完整课程 →</a>
+      </div>
+      <div class="char-card fade-up">
+        <span class="char-type supporting">配角</span>
+        <div class="char-novel">鹿鼎记</div>
+        <h3>杨溢之</h3>
+        <div class="char-alias">杨大哥</div>
+        <p class="char-brief">平西王世子吴应熊的部将，为人正直。与韦小宝惺惺相惜却立场对立。</p>
+        <div class="char-tags"><span class="char-tag">杨大哥</span><span class="char-tag">配角</span></div>
+        <a href="courses/ldj/yangyizhi.html" class="char-link">查看完整课程 →</a>
       </div>
     </div>
   </div>
@@ -784,6 +1294,28 @@ const observer = new IntersectionObserver((entries) => {
 }, {threshold:.1});
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+
+<script>
+function filterCards(btn, type, gridId) {
+  btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  var grid = document.getElementById(gridId);
+  if (!grid) return;
+  var cards = grid.querySelectorAll('.char-card');
+  cards.forEach(function(card) {
+    var ct = card.querySelector('.char-type');
+    if (!ct) return;
+    var cardType = ct.classList.contains('protagonist') ? 'protagonist' :
+                   ct.classList.contains('supporting') ? 'supporting' : 'important';
+    card.style.display = (type === 'all' || cardType === type) ? '' : 'none';
+  });
+}
+function scrollToChars(novelId) {
+  var grid = document.getElementById('grid-' + novelId);
+  if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 </script>
 
 </body>

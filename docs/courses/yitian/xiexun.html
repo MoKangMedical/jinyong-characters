@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>谢逊 — 金毛狮王 | 金庸人物志研究院</title>
+<link rel="stylesheet" href="../assets/shared.css">
 <meta name="description" content="深度解读谢逊">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet"> rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a24;--card:#1a1a26;--border:#252535;--border2:#3a3a50;--text:#f0ede5;--text2:#a09888;--text3:#6b6560;--gold:#d4a574;--gold2:#e8c9a0;--gold3:#c08552;--red:#c41e3a;--jade:#5b8c5a;--serif:'Noto Serif SC',serif;--sans:'Noto Sans SC',sans-serif}
@@ -52,11 +54,76 @@ a{color:var(--gold);text-decoration:none}
 .footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
 .footer .brand{font-family:var(--serif);color:var(--gold);font-size:1rem;margin-bottom:4px}
 .footer p{font-size:.78rem;color:var(--text3)}
+
+/* 3D Hero */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(192,144,64, .08) 0%, transparent 70%);
+}
+@media(max-width:768px){ .hero-3d-container{height:350px} }
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#c09040;
+  text-shadow: 0 0 40px rgba(192,144,64, 0.4), 0 0 80px rgba(192,144,64, 0.4);
+  line-height:1;margin-bottom:8px;opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
+
 </style>
 </head>
 <body>
+<div class="bamboo-layer"></div>
 <nav class="nav"><div class="nav-inner">
 <a href="../index.html" class="nav-logo">JY 金庸人物志研究院</a>
 <a href="../index.html#characters" class="nav-back">返回人物总览</a>
 </div></nav>
-<section class="course-hero"><div class="container"><span class="novel-tag">🗡 倚天屠龙记</span><h1>谢逊</h1><div class="subtitle">金毛狮王</div><p class="brief-intro">金毛狮王谢逊是全金庸最震撼的复仇者。全家被杀，他花了二十年追凶；但在仇恨的深渊中，他抱住了一个婴儿，从此生命有了第二种意义。</p></div></section><div class="container"><section class="section"><div class="section-header"><div class="en">Chapter 01</div><h2>人物小传</h2></div><div class="content-block"><table class="info-table"><tr><td>姓名</td><td>谢逊</td></tr><tr><td>别名</td><td>金毛狮王</td></tr><tr><td>身份</td><td>明教四大护教法王之一（金毛狮王）</td></tr><tr><td>武功</td><td>七伤拳、狮子吼、屠龙刀法</td></tr><tr><td>结义兄弟</td><td>张翠山（张无忌之父）</td></tr><tr><td>义子</td><td>张无忌</td></tr><tr><td>仇人</td><td>成昆（杀其全家、逼疯谢逊的幕后黑手）</td></tr><tr><td>结局</td><td>出家为僧，放下屠刀</td></tr></table></div><div class="highlight-box"><div class="hl-title">一句话定位</div><p>谢逊是金庸笔下最具震撼力的复仇者。全家被杀、双眼被毁——他的人生被成昆彻底摧毁。但在无尽的仇恨中，他始终守住一份良知：对张无忌的父爱。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 02</div><h2>性格分析</h2></div><div class="content-block"><h3>烈火与寒冰并存</h3><p>谢逊的性格可以用"烈火+寒冰"来形容——对成昆的仇恨如烈火，对张无忌的慈爱如寒冰（外表冷但内里纯净）。他暴躁时可以毁灭一切，安静时又能悟出深奥的武学哲理。</p><p>他的核心特质是<strong>执念</strong>——为复仇而活的二十年。但他的执念和欧阳锋不同：谢逊的执念是有明确敌人的（成昆），而且他的内心深处保留了对"善"的意识。他在杀人的时候会痛苦，会自责。这正是他人性的证明。</p><p>张无忌的诞生给了谢逊第二个人生意义。在冰火岛上，谢逊抱着婴儿张无忌，第一次感到了复仇之外的温暖。这种父爱是他人性没有被仇恨完全吞噬的关键锚点。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 03</div><h2>命运轨迹</h2></div><div class="content-block"><div class="timeline"><div class="timeline-item"><div class="tl-year">青年</div><div class="tl-event">明教护教法王，武功高强。与成昆交好，尊其为师。</div></div><div class="timeline-item"><div class="tl-year">家破人亡</div><div class="tl-event">成昆为报复明教教主阳顶天，奸杀谢逊全家。谢逊从此开始疯狂的复仇之路。</div></div><div class="timeline-item"><div class="tl-year">江湖杀戮</div><div class="tl-event">在江湖上大开杀戒，杀死成昆的亲朋好友来逼他现身。双眼被毁后，凭听力和直觉依然无敌。</div></div><div class="timeline-item"><div class="tl-year">冰火岛</div><div class="tl-event">与张翠山、殷素素漂流到冰火岛。岛上十年，张无忌出生，谢逊成为真正的"父亲"。</div></div><div class="timeline-item"><div class="tl-year">屠狮大会</div><div class="tl-event">在少林寺屠狮大会上与成昆决一死战。终于杀了仇人，但也因此大彻大悟。</div></div><div class="timeline-item"><div class="tl-year">终局</div><div class="tl-event">放下屠刀，在少林寺出家为僧。余生在诵经中忏悔赎罪。</div></div></div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 04</div><h2>奇遇与转折</h2></div><div class="content-block"><h3>屠龙刀：复仇的工具还是命运的诅咒</h3><p>屠龙刀是谢逊的执念。他相信只有屠龙刀才能杀死成昆——于是他花了几十年去寻找这把刀。屠龙刀最终到了他手里，但真正帮他杀死成昆的，不是屠龙刀，而是他对武学的参悟和他的义子张无忌。他的真正"奇遇"不是得到屠龙刀，而是成为张无忌的义父。这让他的人生在仇恨之外，有了第二种温度。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 05</div><h2>武功绝学</h2></div><div class="content-block"><h3>七伤拳</h3><p>伤人先伤己的极限拳法。每一拳打出都先伤自己的内脏——这正是谢逊人生的写照：在毁灭敌人的同时也在毁灭自己。拳如其人。</p></div><div class="tag-list"><span class="tag gold">七伤拳</span><span class="tag gold">狮子吼</span><span class="tag">屠龙刀法</span><span class="tag">混元霹雳手</span></div></section><section class="section"><div class="section-header"><div class="en">Chapter 06</div><h2>情感世界</h2></div><div class="content-block"><h3>对张无忌：超越血缘的父爱</h3><p>谢逊和张无忌的关系是倚天中最温暖的部分。在冰火岛上，谢逊抱着刚出生的张无忌，第一次感受到了人生除了复仇以外的意义。他教张无忌武功、给他讲故事、为他取名"无忌"——希望这个孩子一生没有禁忌、自由自在。</p><p>当张无忌长大后要离开冰火岛时，谢逊的告别是全书中最大的泪点。一个铁骨铮铮的汉子，对着一个少年流下了不舍的泪——这才是真正的"金毛狮王"。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 07</div><h2>趣事典故</h2></div><div class="content-block"><h3>名场面：冰火岛喊魂</h3><p>在冰火岛上，谢逊抱着刚出生的张无忌大喊："老天爷，你给我听好了！这个小娃娃叫张无忌！你要保佑他长命百岁、福寿双全！"——这一声呐喊既是对命运的怒吼，也是对一个无辜生命最真诚的祝福。谢逊把自己没能守护家人的遗憾，全部转化成了对这个婴儿的守护之心。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 08</div><h2>现实启示</h2></div><div class="content-block"><h3>仇恨的代价</h3><p>谢逊用二十年去复仇，最终成功了——但二十年的人生也失去了。这个账值得算：用一个二十年去弥补一个瞬间的伤害，值得吗？谢逊最终的答案是"不"。所以他选择出家——不是原谅成昆，而是放过自己。</p></div><div class="content-block"><h3>找到人生的锚点</h3><p>谢逊如果没有张无忌，他早就在仇恨中沉没。张无忌就是他的人性锚点——一个人的生命中如果有这样一个锚点，再深的仇恨也拖不沉你。这个锚点可以是孩子、伴侣、信仰、事业——但必须有。</p></div><div class="highlight-box"><div class="hl-title">给现代人的启示</div><p>1. 不要让你的一生被仇恨定义。</p><p>2. 找到一个值得你爱的人或事——这是对抗黑暗的最好武器。</p></div></section><div class="bottom-nav"><a href="zhouruiruo.html">L 周芷若</a><a href="../index.html#characters" class="back-all">金庸人物志研究院</a><a href="zhangsanfeng.html">张三丰 R</a></div></div><footer class="footer"><div class="brand">金庸人物志研究院</div><p>Jin Yong Character Chronicles</p></footer></body></html>
+
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">谢逊</div>
+    <div class="char-title">金毛狮王</div>
+  </div>
+</div>
+
+<div class="main-content">
+<section class="course-hero"><div class="container"><span class="novel-tag">🗡 倚天屠龙记</span><h1>谢逊</h1><div class="subtitle">金毛狮王</div><p class="brief-intro">金毛狮王谢逊是全金庸最震撼的复仇者。全家被杀，他花了二十年追凶；但在仇恨的深渊中，他抱住了一个婴儿，从此生命有了第二种意义。</p></div></section><div class="container"><section class="section"><div class="section-header"><div class="en">Chapter 01</div><h2>人物小传</h2></div><div class="content-block"><table class="info-table"><tr><td>姓名</td><td>谢逊</td></tr><tr><td>别名</td><td>金毛狮王</td></tr><tr><td>身份</td><td>明教四大护教法王之一（金毛狮王）</td></tr><tr><td>武功</td><td>七伤拳、狮子吼、屠龙刀法</td></tr><tr><td>结义兄弟</td><td>张翠山（张无忌之父）</td></tr><tr><td>义子</td><td>张无忌</td></tr><tr><td>仇人</td><td>成昆（杀其全家、逼疯谢逊的幕后黑手）</td></tr><tr><td>结局</td><td>出家为僧，放下屠刀</td></tr></table></div><div class="highlight-box"><div class="hl-title">一句话定位</div><p>谢逊是金庸笔下最具震撼力的复仇者。全家被杀、双眼被毁——他的人生被成昆彻底摧毁。但在无尽的仇恨中，他始终守住一份良知：对张无忌的父爱。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 02</div><h2>性格分析</h2></div><div class="content-block"><h3>烈火与寒冰并存</h3><p>谢逊的性格可以用"烈火+寒冰"来形容——对成昆的仇恨如烈火，对张无忌的慈爱如寒冰（外表冷但内里纯净）。他暴躁时可以毁灭一切，安静时又能悟出深奥的武学哲理。</p><p>他的核心特质是<strong>执念</strong>——为复仇而活的二十年。但他的执念和欧阳锋不同：谢逊的执念是有明确敌人的（成昆），而且他的内心深处保留了对"善"的意识。他在杀人的时候会痛苦，会自责。这正是他人性的证明。</p><p>张无忌的诞生给了谢逊第二个人生意义。在冰火岛上，谢逊抱着婴儿张无忌，第一次感到了复仇之外的温暖。这种父爱是他人性没有被仇恨完全吞噬的关键锚点。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 03</div><h2>命运轨迹</h2></div><div class="content-block"><div class="timeline"><div class="timeline-item"><div class="tl-year">青年</div><div class="tl-event">明教护教法王，武功高强。与成昆交好，尊其为师。</div></div><div class="timeline-item"><div class="tl-year">家破人亡</div><div class="tl-event">成昆为报复明教教主阳顶天，奸杀谢逊全家。谢逊从此开始疯狂的复仇之路。</div></div><div class="timeline-item"><div class="tl-year">江湖杀戮</div><div class="tl-event">在江湖上大开杀戒，杀死成昆的亲朋好友来逼他现身。双眼被毁后，凭听力和直觉依然无敌。</div></div><div class="timeline-item"><div class="tl-year">冰火岛</div><div class="tl-event">与张翠山、殷素素漂流到冰火岛。岛上十年，张无忌出生，谢逊成为真正的"父亲"。</div></div><div class="timeline-item"><div class="tl-year">屠狮大会</div><div class="tl-event">在少林寺屠狮大会上与成昆决一死战。终于杀了仇人，但也因此大彻大悟。</div></div><div class="timeline-item"><div class="tl-year">终局</div><div class="tl-event">放下屠刀，在少林寺出家为僧。余生在诵经中忏悔赎罪。</div></div></div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 04</div><h2>奇遇与转折</h2></div><div class="content-block"><h3>屠龙刀：复仇的工具还是命运的诅咒</h3><p>屠龙刀是谢逊的执念。他相信只有屠龙刀才能杀死成昆——于是他花了几十年去寻找这把刀。屠龙刀最终到了他手里，但真正帮他杀死成昆的，不是屠龙刀，而是他对武学的参悟和他的义子张无忌。他的真正"奇遇"不是得到屠龙刀，而是成为张无忌的义父。这让他的人生在仇恨之外，有了第二种温度。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 05</div><h2>武功绝学</h2></div><div class="content-block"><h3>七伤拳</h3><p>伤人先伤己的极限拳法。每一拳打出都先伤自己的内脏——这正是谢逊人生的写照：在毁灭敌人的同时也在毁灭自己。拳如其人。</p></div><div class="tag-list"><span class="tag gold">七伤拳</span><span class="tag gold">狮子吼</span><span class="tag">屠龙刀法</span><span class="tag">混元霹雳手</span></div></section><section class="section"><div class="section-header"><div class="en">Chapter 06</div><h2>情感世界</h2></div><div class="content-block"><h3>对张无忌：超越血缘的父爱</h3><p>谢逊和张无忌的关系是倚天中最温暖的部分。在冰火岛上，谢逊抱着刚出生的张无忌，第一次感受到了人生除了复仇以外的意义。他教张无忌武功、给他讲故事、为他取名"无忌"——希望这个孩子一生没有禁忌、自由自在。</p><p>当张无忌长大后要离开冰火岛时，谢逊的告别是全书中最大的泪点。一个铁骨铮铮的汉子，对着一个少年流下了不舍的泪——这才是真正的"金毛狮王"。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 07</div><h2>趣事典故</h2></div><div class="content-block"><h3>名场面：冰火岛喊魂</h3><p>在冰火岛上，谢逊抱着刚出生的张无忌大喊："老天爷，你给我听好了！这个小娃娃叫张无忌！你要保佑他长命百岁、福寿双全！"——这一声呐喊既是对命运的怒吼，也是对一个无辜生命最真诚的祝福。谢逊把自己没能守护家人的遗憾，全部转化成了对这个婴儿的守护之心。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 08</div><h2>现实启示</h2></div><div class="content-block"><h3>仇恨的代价</h3><p>谢逊用二十年去复仇，最终成功了——但二十年的人生也失去了。这个账值得算：用一个二十年去弥补一个瞬间的伤害，值得吗？谢逊最终的答案是"不"。所以他选择出家——不是原谅成昆，而是放过自己。</p></div><div class="content-block"><h3>找到人生的锚点</h3><p>谢逊如果没有张无忌，他早就在仇恨中沉没。张无忌就是他的人性锚点——一个人的生命中如果有这样一个锚点，再深的仇恨也拖不沉你。这个锚点可以是孩子、伴侣、信仰、事业——但必须有。</p></div><div class="highlight-box"><div class="hl-title">给现代人的启示</div><p>1. 不要让你的一生被仇恨定义。</p><p>2. 找到一个值得你爱的人或事——这是对抗黑暗的最好武器。</p></div></section><div class="bottom-nav"><a href="zhouruiruo.html">L 周芷若</a><a href="../index.html#characters" class="back-all">金庸人物志研究院</a><a href="zhangsanfeng.html">张三丰 R</a></div></div></div>
+
+<footer class="footer"><div class="brand">金庸人物志研究院</div><p>Jin Yong Character Chronicles</p></footer>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script>
+window.hero3dConfig = {
+  characterName: '谢逊',
+  characterTitle: '金毛狮王',
+  themeColor: '#c09040',
+  particleColor: '#c09040',
+  elements: ["dagger", "palm"]
+};
+</script>
+<script src="../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../assets/hero-3d.js"></script>
+
+</body></html>

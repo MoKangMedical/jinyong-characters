@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>韦小宝 — 扬州小宝 · 通天韦爵爷 | 金庸人物志研究院</title>
+<meta name="description" content="深度解读韦小宝：扬州妓院出身的小混混，靠机智和运气成为康熙近臣、天地会青木堂香主、神龙教白龙使、一等鹿鼎公。娶七位夫人，金庸笔下最不像大侠的主角。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/shared.css">
+<style>
+/* ═══════════════ 课程页专用样式 ═══════════════ */
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+
+/* ═══════════════ 3D HERO ═══════════════ */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(232,192,64, .08) 0%, transparent 70%);
+}
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#e8c040;
+  text-shadow: 0 0 40px rgba(232,192,64, 0.4), 0 0 80px rgba(232,192,64, 0.4);
+  line-height:1;margin-bottom:8px;
+  opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
+
+/* ═══════════════ COURSE HEADER ═══════════════ */
+.course-header{padding:40px 0 48px;text-align:center}
+.course-header .novel-tag{
+  display:inline-block;
+  background:rgba(232,192,64, .1);
+  color:#e8c040;
+  padding:4px 14px;border-radius:100px;
+  font-size:.78rem;margin-bottom:16px;
+}
+.course-header .brief-intro{
+  font-size:1rem;color:var(--text2);max-width:600px;
+  margin:12px auto 0;line-height:1.8;
+}
+.course-meta{
+  display:flex;justify-content:center;gap:32px;
+  margin-top:24px;flex-wrap:wrap;
+}
+.course-meta-item{text-align:center}
+.course-meta-item .meta-val{
+  font-family:var(--serif);font-size:1.5rem;
+  font-weight:700;color:#e8c040;
+}
+.course-meta-item .meta-label{
+  font-size:.72rem;color:var(--text3);margin-top:4px;
+  letter-spacing:.05em;
+}
+
+/* ═══════════════ SECTIONS ═══════════════ */
+.section{padding:36px 0}
+.section-header{
+  border-left:3px solid #e8c040;
+  padding-left:16px;margin-bottom:28px;
+}
+.section-header h2{
+  font-family:var(--serif);font-size:1.5rem;margin-bottom:4px;
+}
+.section-header .en{
+  font-size:.72rem;color:var(--text3);
+  letter-spacing:.1em;text-transform:uppercase;
+}
+.content-block{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:28px;margin-bottom:20px;
+}
+.content-block h3{
+  font-size:1.1rem;color:#e8c040;
+  margin-bottom:16px;font-family:var(--serif);
+}
+.content-block p{
+  color:var(--text2);font-size:.92rem;
+  line-height:1.9;margin-bottom:12px;
+}
+.content-block p:last-child{margin-bottom:0}
+
+/* ═══════════════ HIGHLIGHTS ═══════════════ */
+.highlight-box{
+  background:rgba(232,192,64, .05);
+  border:1px solid rgba(232,192,64, .15);
+  border-radius:10px;padding:20px;margin:20px 0;
+}
+.highlight-box .hl-title{
+  font-size:.78rem;color:#e8c040;
+  font-weight:600;margin-bottom:8px;letter-spacing:.08em;
+}
+.highlight-box p{font-size:.9rem;color:var(--text);line-height:1.8}
+.quote-block{
+  border-left:2px solid #e8c040;
+  padding:12px 20px;margin:20px 0;
+  background:rgba(232,192,64, .03);font-style:italic;
+}
+.quote-block .quote-text{
+  font-family:var(--serif);font-size:1.05rem;
+  color:var(--gold2);line-height:1.7;
+}
+.quote-block .quote-source{
+  font-size:.78rem;color:var(--text3);margin-top:8px;
+}
+
+/* ═══════════════ TABLE ═══════════════ */
+.info-table{
+  width:100%;border-collapse:collapse;
+  margin:16px 0;font-size:.88rem;
+}
+.info-table td{
+  padding:10px 16px;border-bottom:1px solid var(--border);
+  color:var(--text2);
+}
+.info-table td:first-child{
+  color:#e8c040;font-weight:600;
+  width:120px;white-space:nowrap;
+}
+
+/* ═══════════════ TIMELINE ═══════════════ */
+.timeline{
+  position:relative;padding-left:32px;
+}
+.timeline::before{
+  content:'';position:absolute;left:8px;top:0;bottom:0;
+  width:1px;background:var(--border2);
+}
+.timeline-item{
+  position:relative;margin-bottom:28px;
+}
+.timeline-item::before{
+  content:'';position:absolute;left:-28px;top:4px;
+  width:10px;height:10px;border-radius:50%;
+  background:#e8c040;border:2px solid var(--bg);
+}
+.timeline-item .tl-year{
+  font-size:.78rem;color:#e8c040;
+  font-weight:600;margin-bottom:4px;
+}
+.timeline-item .tl-event{font-size:.9rem;color:var(--text2)}
+
+/* ═══════════════ TAGS ═══════════════ */
+.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
+.tag.gold{background:rgba(232,192,64, .1);color:#e8c040}
+
+@media(max-width:768px){
+  .hero-3d-container{height:350px}
+  .hero-3d-overlay .char-name{font-size:2.5rem}
+  .course-meta{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="bamboo-layer"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../../index.html" class="nav-logo">
+      <span class="nav-logo-icon">⚔</span> 金庸人物志研究院
+    </a>
+    <a href="../../index.html" class="nav-back">← 返回人物总览</a>
+  </div>
+</nav>
+
+<!-- 3D HERO -->
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">韦小宝</div>
+    <div class="char-title">扬州小宝 · 通天韦爵爷</div>
+  </div>
+</div>
+
+<div class="main-content">
+
+<!-- COURSE HEADER -->
+<section class="course-header">
+  <div class="container">
+    <span class="novel-tag">鹿鼎记</span>
+    <p class="brief-intro">扬州妓院出身的小混混，靠机智和运气成为康熙近臣、天地会青木堂香主、神龙教白龙使、一等鹿鼎公。娶七位夫人，金庸笔下最不像大侠的主角。</p>
+    <div class="course-meta">
+      <div class="course-meta-item">
+        <div class="meta-val">8</div>
+        <div class="meta-label">深度维度</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">主角</div>
+        <div class="meta-label">人物级别</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">25分钟</div>
+        <div class="meta-label">阅读时长</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 人物档案 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 01</div>
+    <h2>人物档案</h2>
+  </div>
+  <div class="content-block">
+    <table class="info-table">
+      <tr><td>姓名</td><td>韦小宝</td></tr>
+      <tr><td>别名</td><td>韦爵爷、小宝、小桂子</td></tr>
+      <tr><td>出身</td><td>扬州丽春院</td></tr>
+      <tr><td>门派</td><td>天地会、神龙教、朝廷（三重身份）</td></tr>
+      <tr><td>师父</td><td>九难师太、陈近南（未学成武功）</td></tr>
+      <tr><td>配偶</td><td>阿珂、双儿、方怡、沐剑屏、建宁公主、曾柔、苏荃</td></tr>
+      <tr><td>武功</td><td>匕首、含沙射影（暗器）、化骨绵掌（皮毛）</td></tr>
+      <tr><td>结局</td><td>归隐云南，携七位夫人逍遥</td></tr>
+    </table>
+  </div>
+    <div class="highlight-box">
+    <div class="hl-title">一句话定位</div>
+    <p>韦小宝是金庸全部作品的终极叛逆。他不会武功却征服了整个江湖，他不读书却玩弄天下人于股掌。他说：'老子不干了！'——然后扬长而去，留给世人一个永远无法复制的传奇。</p>
+  </div>
+</section>
+<!-- 02 性格解析 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 02</div>
+    <h2>性格解析</h2>
+  </div>
+    <div class="content-block">
+    <h3>市井智慧</h3>
+    <p>韦小宝的智慧来自扬州妓院的底层生存。他懂人情、会察言观色、善于投机，是纯粹的街头天才。</p>
+  </div>
+  <div class="content-block">
+    <h3>义气与滑头并存</h3>
+    <p>他对康熙和陈近南都是真诚的，明知两边水火不容却两边都不肯背叛。这种两面讨好的本领只有韦小宝做得出来。</p>
+  </div>
+  <div class="content-block">
+    <h3>贪财好色但不贪婪</h3>
+    <p>韦小宝爱钱爱女人，但从不过分。他有自知之明——知道什么可以贪、什么不能碰。</p>
+  </div>
+</section>
+<!-- 03 成长轨迹 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 03</div>
+    <h2>成长轨迹</h2>
+  </div>
+    <div class="content-block">
+    <h3>扬州小混混</h3>
+    <p>韦小宝在丽春院出生、长大。大字不识，但嘴甜会来事。</p>
+  </div>
+  <div class="content-block">
+    <h3>进京入宫</h3>
+    <p>因缘际会顶替小桂子入宫，与康熙结成摔跤之谊。</p>
+  </div>
+  <div class="content-block">
+    <h3>爵位攀升</h3>
+    <p>从御膳房小太监一路升迁至一等鹿鼎公，同时还是天地会香主和神龙教白龙使。</p>
+  </div>
+  <div class="content-block">
+    <h3>急流勇退</h3>
+    <p>在康熙要他剿灭天地会时，韦小宝选择两边都不背叛，带着老婆们跑路。</p>
+  </div>
+</section>
+<!-- 04 奇遇经历 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 04</div>
+    <h2>奇遇经历</h2>
+  </div>
+    <div class="content-block">
+    <h3>入宫顶替</h3>
+    <p>杀了真太监小桂子，冒名顶替入宫。这是韦小宝人生最大的转折。</p>
+  </div>
+  <div class="content-block">
+    <h3>云南护驾</h3>
+    <p>陪康熙去云南平西王府，在吴三桂眼皮底下耍把戏。</p>
+  </div>
+  <div class="content-block">
+    <h3>鹿鼎山寻宝</h3>
+    <p>率兵北上寻找大清龙脉和宝藏。</p>
+  </div>
+</section>
+<!-- 05 武功绝学 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 05</div>
+    <h2>武功绝学</h2>
+  </div>
+    <div class="content-block">
+    <h3>不会武功</h3>
+    <p>韦小宝真正会的就是几招逃跑用的基础功夫。</p>
+  </div>
+  <div class="content-block">
+    <h3>三寸不烂之舌</h3>
+    <p>这才是他的真正武器。能把死人说活、能把敌人说成朋友。</p>
+  </div>
+  <div class="content-block">
+    <h3>识人用人</h3>
+    <p>韦小宝有一双看人的毒眼，总能找到对的人做对的事。</p>
+  </div>
+</section>
+<!-- 06 情感世界 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 06</div>
+    <h2>情感世界</h2>
+  </div>
+    <div class="content-block">
+    <h3>对康熙</h3>
+    <p>韦小宝和康熙的关系是鹿鼎记最核心的情感线索。两人从摔跤玩伴变成君臣，但那份少年时代的真诚始终没有变。</p>
+  </div>
+  <div class="content-block">
+    <h3>对陈近南</h3>
+    <p>韦小宝对师父陈近南是真心敬重。陈近南被杀后，韦小宝痛哭流涕。</p>
+  </div>
+  <div class="content-block">
+    <h3>七位夫人</h3>
+    <p>韦小宝的爱情是'广撒网'式的。但他对每位夫人都有真感情——双儿是他最信任的、阿珂是他最想要的。</p>
+  </div>
+</section>
+<!-- 07 趣事典故 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 07</div>
+    <h2>趣事典故</h2>
+  </div>
+    <div class="content-block">
+    <h3>一句'老子不干了'</h3>
+    <p>当康熙让他二选一时，韦小宝一拍桌子：'老子不干了！'这个场景成为金庸武侠最痛快的台词之一。</p>
+  </div>
+  <div class="content-block">
+    <h3>丽春院大被同眠</h3>
+    <p>韦小宝在丽春院把七个女人一起带进被窝，这在他的那套逻辑里叫做'讲道理'。</p>
+  </div>
+</section>
+<!-- 08 江湖地位与启示 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 08</div>
+    <h2>江湖地位与启示</h2>
+  </div>
+    <div class="content-block">
+    <h3>反武侠的终点</h3>
+    <p>从郭靖的'侠之大者'到韦小宝的'老子不干了'，金庸走完了武侠精神的完整光谱。韦小宝证明：在末世的江湖里，最大的智慧是活着。
+> '老子不干了！'——韦小宝留给武侠史的最后一句话</p>
+  </div>
+</section>
+
+<!-- BOTTOM NAV -->
+<div class="container">
+  <div class="bottom-nav">
+    <span></span>
+    <a href="../../index.html" class="back-all">返回人物总览</a>
+    <a href="kangxi.html" class="nav-next">康熙 →</a>
+  </div>
+</div>
+
+</div>
+
+<footer class="footer">
+  <div class="brand">金庸人物志研究院</div>
+  <p>Jin Yong Character Chronicles · 江湖百态，尽在其中</p>
+</footer>
+
+<!-- Three.js CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- 3D Hero 配置 -->
+<script>
+window.hero3dConfig = {
+  characterName: '韦小宝',
+  characterTitle: '扬州小宝 · 通天韦爵爷',
+  themeColor: '#e8c040',
+  particleColor: '#e8c040',
+  elements: ["palm", "needle", "sword"]
+};
+</script>
+
+<script src="../../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../../assets/hero-3d.js"></script>
+
+</body>
+</html>

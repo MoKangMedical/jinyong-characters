@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>周芷若 — 峨嵋掌门 · 九阴白骨爪 | 金庸人物志研究院</title>
+<link rel="stylesheet" href="../assets/shared.css">
 <meta name="description" content="深度解读周芷若">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet"> rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0a0f;--bg2:#12121a;--bg3:#1a1a24;--card:#1a1a26;--border:#252535;--border2:#3a3a50;--text:#f0ede5;--text2:#a09888;--text3:#6b6560;--gold:#d4a574;--gold2:#e8c9a0;--gold3:#c08552;--red:#c41e3a;--jade:#5b8c5a;--serif:'Noto Serif SC',serif;--sans:'Noto Sans SC',sans-serif}
@@ -52,11 +54,76 @@ a{color:var(--gold);text-decoration:none}
 .footer{padding:40px 0;border-top:1px solid var(--border);text-align:center}
 .footer .brand{font-family:var(--serif);color:var(--gold);font-size:1rem;margin-bottom:4px}
 .footer p{font-size:.78rem;color:var(--text3)}
+
+/* 3D Hero */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(107,158,158, .08) 0%, transparent 70%);
+}
+@media(max-width:768px){ .hero-3d-container{height:350px} }
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#6b9e9e;
+  text-shadow: 0 0 40px rgba(107,158,158, 0.4), 0 0 80px rgba(107,158,158, 0.4);
+  line-height:1;margin-bottom:8px;opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
+
 </style>
 </head>
 <body>
+<div class="bamboo-layer"></div>
 <nav class="nav"><div class="nav-inner">
 <a href="../index.html" class="nav-logo">JY 金庸人物志研究院</a>
 <a href="../index.html#characters" class="nav-back">返回人物总览</a>
 </div></nav>
-<section class="course-hero"><div class="container"><span class="novel-tag">🗡 倚天屠龙记</span><h1>周芷若</h1><div class="subtitle">峨嵋掌门 · 九阴白骨爪</div><p class="brief-intro">汉水渔家女→峨嵋掌门→武林魔头→幡然悔悟。周芷若是金庸笔下最完整的黑化与救赎弧线——她让人恐惧，更让人心疼。</p></div></section><div class="container"><section class="section"><div class="section-header"><div class="en">Chapter 01</div><h2>人物小传</h2></div><div class="content-block"><table class="info-table"><tr><td>姓名</td><td>周芷若</td></tr><tr><td>别名</td><td>峨嵋派第四代掌门</td></tr><tr><td>身份</td><td>峨嵋派掌门、张无忌的青梅竹马</td></tr><tr><td>师承</td><td>灭绝师太</td></tr><tr><td>武功</td><td>九阴白骨爪、峨嵋剑法、白蟒鞭</td></tr><tr><td>性格</td><td>温柔→阴狠→悔悟（完整的黑化弧线）</td></tr><tr><td>爱情</td><td>张无忌（刻骨铭心的初恋与伤）</td></tr><tr><td>结局</td><td>幡然醒悟，回归正道</td></tr></table></div><div class="highlight-box"><div class="hl-title">一句话定位</div><p>周芷若是金庸笔下最成功的"黑化"角色。从温柔如水的渔家女到心狠手辣的峨嵋掌门，她的人生轨迹是因爱生恨最完整的教科书。她的可怕在于：你完全理解她为什么变成这样。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 02</div><h2>性格分析</h2></div><div class="content-block"><h3>金庸笔下最完整的黑化弧线</h3><p>周芷若的前后变化，是金庸所有角色中最剧烈的。她小时候在汉水边给张无忌喂饭的场景，是全书最温暖的画面之一。那个时候的她，温柔、善良、充满同情心。</p><p>但在光明顶上，张无忌当着天下人的面选择了赵敏，周芷若的世界从此崩塌。她不是单纯的"嫉妒"——她是一种"我付出了一切，你却选了别人"的绝望。</p><p>灭绝师太临终前逼她发的毒誓（"若与张无忌结为夫妻，则父母九泉之下不得安宁"），更是压垮她的最后一根稻草。她陷入了进退两难的绝境：爱一个人是对父母的背叛，不爱这个人是对自己的背叛。这种撕裂无法和解，最终转化为对全世界的恨。</p></div><div class="quote-block"><div class="quote-text">无忌哥哥，你为什么要这样对我？</div><div class="quote-source">-- 周芷若在光明顶</div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 03</div><h2>命运轨迹</h2></div><div class="content-block"><div class="timeline"><div class="timeline-item"><div class="tl-year">童年</div><div class="tl-event">汉水渔家女，父亲是船夫。在汉水边遇到受伤的张无忌，给他喂饭，两人相识。</div></div><div class="timeline-item"><div class="tl-year">入峨嵋</div><div class="tl-event">被灭绝师太收为弟子。天资聪颖，深得师太喜爱。</div></div><div class="timeline-item"><div class="tl-year">光明顶事变</div><div class="tl-event">张无忌在六大派面前选择赵敏，周芷若当众被弃。灭绝师太逼她发毒誓。</div></div><div class="timeline-item"><div class="tl-year">偷倚天屠龙</div><div class="tl-event">从荒岛偷走倚天剑屠龙刀，练成九阴白骨爪。嫁祸赵敏，杀了殷离。</div></div><div class="timeline-item"><div class="tl-year">屠狮大会</div><div class="tl-event">以九阴白骨爪威震武林，手段狠辣。一度成为武林最可怕的魔头。</div></div><div class="timeline-item"><div class="tl-year">终局</div><div class="tl-event">在张无忌面前幡然醒悟。放下执念，回归峨嵋，专心武学和传承。</div></div></div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 04</div><h2>奇遇与转折</h2></div><div class="content-block"><h3>倚天剑和屠龙刀的秘密</h3><p>周芷若从荒岛上偷到了倚天剑和屠龙刀——这本来是金庸世界中最强大的两件兵器。但她的"奇遇"不是得到了力量，而是被力量吞噬。九阴白骨爪让她武功大进，但也让她失去了自我。力量本身没有对错，但获取力量的方式定义了你是谁。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 05</div><h2>武功绝学</h2></div><div class="content-block"><h3>九阴白骨爪</h3><p>梅超风版的九阴白骨爪以妖异著称，周芷若练的是速成版——以阴狠见长。她可以不动声色地杀人于无形，这让整个武林都恐惧不已。</p></div><div class="tag-list"><span class="tag gold">九阴白骨爪</span><span class="tag">峨嵋剑法</span><span class="tag">白蟒鞭</span><span class="tag">飘雪穿云掌</span></div></section><section class="section"><div class="section-header"><div class="en">Chapter 06</div><h2>情感世界</h2></div><div class="content-block"><h3>对张无忌：从爱到恨再到放下</h3><p>周芷若对张无忌的感情变化是全书最核心的情感线之一。她爱的不是张无忌这个人，而是"和张无忌在一起的未来"。当这个未来被赵敏夺走时，她失去的不是一个男人，而是整个后半生。</p><p>但最终她放下了。不是因为原谅，而是因为累了、悟了。这种放下比黑化更难——因为黑化是堕入黑暗，放下是从黑暗中爬回来。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 07</div><h2>趣事典故</h2></div><div class="content-block"><h3>名场面：屠狮大会</h3><p>周芷若在屠狮大会上以九阴白骨爪大杀四方，手段之狠辣令所有人胆寒。她踩着江湖群雄的脸面走上巅峰——但这一刻的"胜利"，恰恰是她最孤独的时刻。高高在上却无人可信——这是所有黑化角色的终极诅咒。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 08</div><h2>现实启示</h2></div><div class="content-block"><h3>嫉妒与自我毁灭</h3><p>周芷若最大的教训是：嫉妒是一把双刃剑——你以为是武器，其实它也在杀你。她用嫉妒驱动自己变强，但也用嫉妒毁掉了自己原本美好的一切。</p></div><div class="content-block"><h3>黑化的代价</h3><p>黑化看起来是一条"捷径"——不再忍耐、不再善良、不再受限。但这条路的尽头是孤独。周芷若在屠狮大会上无人能敌，但她比任何时候都更孤独——这就是黑化的真正代价。</p></div><div class="highlight-box"><div class="hl-title">给现代人的启示</div><p>1. 不要为了报复任何人而毁掉自己。</p><p>2. 放下不是原谅别人，是放过自己。</p></div></section><div class="bottom-nav"><a href="zhaomin.html">L 赵敏</a><a href="../index.html#characters" class="back-all">金庸人物志研究院</a><a href="xiexun.html">谢逊 R</a></div></div><footer class="footer"><div class="brand">金庸人物志研究院</div><p>Jin Yong Character Chronicles</p></footer></body></html>
+
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">周芷若</div>
+    <div class="char-title">峨眉派掌门</div>
+  </div>
+</div>
+
+<div class="main-content">
+<section class="course-hero"><div class="container"><span class="novel-tag">🗡 倚天屠龙记</span><h1>周芷若</h1><div class="subtitle">峨嵋掌门 · 九阴白骨爪</div><p class="brief-intro">汉水渔家女→峨嵋掌门→武林魔头→幡然悔悟。周芷若是金庸笔下最完整的黑化与救赎弧线——她让人恐惧，更让人心疼。</p></div></section><div class="container"><section class="section"><div class="section-header"><div class="en">Chapter 01</div><h2>人物小传</h2></div><div class="content-block"><table class="info-table"><tr><td>姓名</td><td>周芷若</td></tr><tr><td>别名</td><td>峨嵋派第四代掌门</td></tr><tr><td>身份</td><td>峨嵋派掌门、张无忌的青梅竹马</td></tr><tr><td>师承</td><td>灭绝师太</td></tr><tr><td>武功</td><td>九阴白骨爪、峨嵋剑法、白蟒鞭</td></tr><tr><td>性格</td><td>温柔→阴狠→悔悟（完整的黑化弧线）</td></tr><tr><td>爱情</td><td>张无忌（刻骨铭心的初恋与伤）</td></tr><tr><td>结局</td><td>幡然醒悟，回归正道</td></tr></table></div><div class="highlight-box"><div class="hl-title">一句话定位</div><p>周芷若是金庸笔下最成功的"黑化"角色。从温柔如水的渔家女到心狠手辣的峨嵋掌门，她的人生轨迹是因爱生恨最完整的教科书。她的可怕在于：你完全理解她为什么变成这样。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 02</div><h2>性格分析</h2></div><div class="content-block"><h3>金庸笔下最完整的黑化弧线</h3><p>周芷若的前后变化，是金庸所有角色中最剧烈的。她小时候在汉水边给张无忌喂饭的场景，是全书最温暖的画面之一。那个时候的她，温柔、善良、充满同情心。</p><p>但在光明顶上，张无忌当着天下人的面选择了赵敏，周芷若的世界从此崩塌。她不是单纯的"嫉妒"——她是一种"我付出了一切，你却选了别人"的绝望。</p><p>灭绝师太临终前逼她发的毒誓（"若与张无忌结为夫妻，则父母九泉之下不得安宁"），更是压垮她的最后一根稻草。她陷入了进退两难的绝境：爱一个人是对父母的背叛，不爱这个人是对自己的背叛。这种撕裂无法和解，最终转化为对全世界的恨。</p></div><div class="quote-block"><div class="quote-text">无忌哥哥，你为什么要这样对我？</div><div class="quote-source">-- 周芷若在光明顶</div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 03</div><h2>命运轨迹</h2></div><div class="content-block"><div class="timeline"><div class="timeline-item"><div class="tl-year">童年</div><div class="tl-event">汉水渔家女，父亲是船夫。在汉水边遇到受伤的张无忌，给他喂饭，两人相识。</div></div><div class="timeline-item"><div class="tl-year">入峨嵋</div><div class="tl-event">被灭绝师太收为弟子。天资聪颖，深得师太喜爱。</div></div><div class="timeline-item"><div class="tl-year">光明顶事变</div><div class="tl-event">张无忌在六大派面前选择赵敏，周芷若当众被弃。灭绝师太逼她发毒誓。</div></div><div class="timeline-item"><div class="tl-year">偷倚天屠龙</div><div class="tl-event">从荒岛偷走倚天剑屠龙刀，练成九阴白骨爪。嫁祸赵敏，杀了殷离。</div></div><div class="timeline-item"><div class="tl-year">屠狮大会</div><div class="tl-event">以九阴白骨爪威震武林，手段狠辣。一度成为武林最可怕的魔头。</div></div><div class="timeline-item"><div class="tl-year">终局</div><div class="tl-event">在张无忌面前幡然醒悟。放下执念，回归峨嵋，专心武学和传承。</div></div></div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 04</div><h2>奇遇与转折</h2></div><div class="content-block"><h3>倚天剑和屠龙刀的秘密</h3><p>周芷若从荒岛上偷到了倚天剑和屠龙刀——这本来是金庸世界中最强大的两件兵器。但她的"奇遇"不是得到了力量，而是被力量吞噬。九阴白骨爪让她武功大进，但也让她失去了自我。力量本身没有对错，但获取力量的方式定义了你是谁。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 05</div><h2>武功绝学</h2></div><div class="content-block"><h3>九阴白骨爪</h3><p>梅超风版的九阴白骨爪以妖异著称，周芷若练的是速成版——以阴狠见长。她可以不动声色地杀人于无形，这让整个武林都恐惧不已。</p></div><div class="tag-list"><span class="tag gold">九阴白骨爪</span><span class="tag">峨嵋剑法</span><span class="tag">白蟒鞭</span><span class="tag">飘雪穿云掌</span></div></section><section class="section"><div class="section-header"><div class="en">Chapter 06</div><h2>情感世界</h2></div><div class="content-block"><h3>对张无忌：从爱到恨再到放下</h3><p>周芷若对张无忌的感情变化是全书最核心的情感线之一。她爱的不是张无忌这个人，而是"和张无忌在一起的未来"。当这个未来被赵敏夺走时，她失去的不是一个男人，而是整个后半生。</p><p>但最终她放下了。不是因为原谅，而是因为累了、悟了。这种放下比黑化更难——因为黑化是堕入黑暗，放下是从黑暗中爬回来。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 07</div><h2>趣事典故</h2></div><div class="content-block"><h3>名场面：屠狮大会</h3><p>周芷若在屠狮大会上以九阴白骨爪大杀四方，手段之狠辣令所有人胆寒。她踩着江湖群雄的脸面走上巅峰——但这一刻的"胜利"，恰恰是她最孤独的时刻。高高在上却无人可信——这是所有黑化角色的终极诅咒。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 08</div><h2>现实启示</h2></div><div class="content-block"><h3>嫉妒与自我毁灭</h3><p>周芷若最大的教训是：嫉妒是一把双刃剑——你以为是武器，其实它也在杀你。她用嫉妒驱动自己变强，但也用嫉妒毁掉了自己原本美好的一切。</p></div><div class="content-block"><h3>黑化的代价</h3><p>黑化看起来是一条"捷径"——不再忍耐、不再善良、不再受限。但这条路的尽头是孤独。周芷若在屠狮大会上无人能敌，但她比任何时候都更孤独——这就是黑化的真正代价。</p></div><div class="highlight-box"><div class="hl-title">给现代人的启示</div><p>1. 不要为了报复任何人而毁掉自己。</p><p>2. 放下不是原谅别人，是放过自己。</p></div></section><div class="bottom-nav"><a href="zhaomin.html">L 赵敏</a><a href="../index.html#characters" class="back-all">金庸人物志研究院</a><a href="xiexun.html">谢逊 R</a></div></div></div>
+
+<footer class="footer"><div class="brand">金庸人物志研究院</div><p>Jin Yong Character Chronicles</p></footer>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script>
+window.hero3dConfig = {
+  characterName: '周芷若',
+  characterTitle: '峨眉派掌门',
+  themeColor: '#6b9e9e',
+  particleColor: '#6b9e9e',
+  elements: ["sword", "whip", "needle"]
+};
+</script>
+<script src="../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../assets/hero-3d.js"></script>
+
+</body></html>

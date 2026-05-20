@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>欧阳锋 — 西毒 · 白驼山主 | 金庸人物志研究院</title>
+<link rel="stylesheet" href="../assets/shared.css">
 <meta name="description" content="深度解读欧阳锋：金庸笔下最经典的"邪派宗师"。对武学的极致追求让他成为绝世高手，也让他陷入疯癫。他和洪七公的故事，是对"敌友"二字最深情的注解。">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet"> rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -65,20 +67,85 @@ a{color:var(--gold);text-decoration:none}
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+
+/* 3D Hero */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(123,75,138, .08) 0%, transparent 70%);
+}
+@media(max-width:768px){ .hero-3d-container{height:350px} }
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#7b4b8a;
+  text-shadow: 0 0 40px rgba(123,75,138, 0.4), 0 0 80px rgba(123,75,138, 0.4);
+  line-height:1;margin-bottom:8px;opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
+
 </style>
 </head>
 <body>
+<div class="bamboo-layer"></div>
 <nav class="nav">
   <div class="nav-inner">
     <a href="../index.html" class="nav-logo">JY 金庸人物志研究院</a>
     <a href="../index.html#characters" class="nav-back">返回人物总览</a>
   </div>
 </nav>
+
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">欧阳锋</div>
+    <div class="char-title">西毒 · 白驼山主</div>
+  </div>
+</div>
+
+<div class="main-content">
 <section class="course-hero"><div class="container"><span class="novel-tag">🏹 射雕英雄传</span><h1>欧阳锋</h1><div class="subtitle">西毒 · 白驼山主</div><p class="brief-intro">金庸笔下最经典的"邪派宗师"。对武学的极致追求让他成为绝世高手，也让他陷入疯癫。他和洪七公的故事，是对"敌友"二字最深情的注解。</p></div></section><div class="container"><section class="section"><div class="section-header"><div class="en">Chapter 01</div><h2>人物小传</h2></div><div class="content-block"><table class="info-table"><tr><td>姓名</td><td>欧阳锋</td></tr><tr><td>别名</td><td>西毒、老毒物</td></tr><tr><td>身份</td><td>五绝之一（西毒）</td></tr><tr><td>出身</td><td>西域白驼山</td></tr><tr><td>子嗣</td><td>欧阳克（名义上的侄子，实为私生子）</td></tr><tr><td>主要武功</td><td>蛤蟆功、灵蛇拳、逆转经脉</td></tr><tr><td>性格标签</td><td>阴毒、执着、疯癫、可悲</td></tr><tr><td>最终结局</td><td>与洪七公在华山之巅相拥而逝</td></tr></table></div><div class="highlight-box"><div class="hl-title">一句话定位</div><p>欧阳锋是金庸笔下最经典的"邪派宗师"。他不是单纯的坏人，而是一个被执念吞噬的悲剧人物。他对《九阴真经》的疯狂追求，最终导致了自己的癫狂与毁灭。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 02</div><h2>性格分析</h2></div><div class="content-block"><h3>执念驱动的悲剧天才</h3><p>欧阳锋的性格核心是<strong>执念</strong>。他对武功的追求到了病态的地步——为了《九阴真经》可以不择手段。但这种执念不是单纯的贪婪，而是源于一种"我要证明我比所有人都强"的深层需求。</p><p>他不是一个没有原则的人——他对欧阳克有着真挚的父爱（虽然不能对外承认），他在某些场合也展现过宗师气度。但他的问题在于<strong>手段没有底线</strong>。其他四绝也有执念，但都不会像他那样无所不用其极。</p><p>最终他被黄蓉的假《九阴真经》逼疯，在疯癫中反而达到了武学的新境界——逆转经脉。这个讽刺的结局告诉我们：执念既是动力，也是毒药。</p></div><div class="quote-block"><div class="quote-text">"我欧阳锋纵横一世，到头来连自己是谁都不知道了。"</div><div class="quote-source">——欧阳锋疯癫后的自语</div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 03</div><h2>命运轨迹</h2></div><div class="content-block"><div class="timeline"><div class="timeline-item"><div class="tl-year">青年</div><div class="tl-event">在西域白驼山建立势力，以毒功名震武林。蛤蟆功独树一帜。</div></div><div class="timeline-item"><div class="tl-year">首次华山论剑</div><div class="tl-event">参加五绝之争，获封"西毒"。从此开始疯狂追求《九阴真经》。</div></div><div class="timeline-item"><div class="tl-year">与洪七公</div><div class="tl-event">多次交手，亦敌亦友。洪七公曾多次救他性命。</div></div><div class="timeline-item"><div class="tl-year">逼死欧阳克</div><div class="tl-event">儿子欧阳克被杨康所杀，欧阳锋悲痛欲绝——这是报应的开始。</div></div><div class="timeline-item"><div class="tl-year">逆练九阴真经</div><div class="tl-event">被黄蓉骗学假的《九阴真经》，导致经脉逆转，走火入魔。但阴错阳差练成了前所未有的"逆转经脉"武功。</div></div><div class="timeline-item"><div class="tl-year">终局</div><div class="tl-event">第二次华山论剑，在疯癫中与洪七公相拥大笑而逝。</div></div></div></div></section><section class="section"><div class="section-header"><div class="en">Chapter 04</div><h2>奇遇与转折</h2></div><div class="content-block"><h3>逆转经脉：最讽刺的奇遇</h3><p>欧阳锋的"奇遇"是金庸世界中最讽刺的一个。黄蓉为了害他，把《九阴真经》的经文故意颠倒顺序让他练。按照正常逻辑，这应该让他走火入魔而死——但欧阳锋竟然阴错阳差地练成了！经脉冲撞之下，他的身体产生了前所未有的变化：内力可以逆流、招式可以反向。</p><p>这个"奇遇"的讽刺之处在于：欧阳锋一生追求《九阴真经》，最终确实得到了超越其他四绝的力量——但代价是完全疯掉。金庸似乎在说：<strong>走捷径得来的力量，必然伴随着代价</strong>。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 05</div><h2>武功绝学</h2></div><div class="content-block"><h3>蛤蟆功</h3><p>['欧阳锋的招牌武功。外形模仿蛤蟆蓄力的姿态，将全身内力凝聚于一点，然后突然爆发。这门武功的特点是"以静制动"——看起来是一动不动地蹲在地上，实际上内力在飞速运转。']</p></div><div class="content-block"><h3>灵蛇拳</h3><p>['从白驼山的毒蛇身上悟出的拳法。拳路诡异、角度刁钻、防不胜防。体现了欧阳锋的武学思维：不走寻常路。']</p></div><div class="tag-list"><span class="tag gold">蛤蟆功</span><span class="tag">灵蛇拳</span><span class="tag">逆转经脉</span><span class="tag">蛇毒</span><span class="tag">白驼山毒功</span></div></section><section class="section"><div class="section-header"><div class="en">Chapter 06</div><h2>情感世界</h2></div><div class="content-block"><h3>对欧阳克：不能说的父爱</h3><p>欧阳克名义上是欧阳锋的侄子，实际上是他的私生子（与嫂子所生）。这个秘密让欧阳锋对欧阳克的感情充满了痛苦——他可以像父亲一样爱他，却不能以父亲的身份出现。欧阳克的死是欧阳锋一生的转折点——从此他变得更加疯狂和不择手段。</p></div><div class="content-block"><h3>与洪七公：亦敌亦友</h3><p>洪七公和欧阳锋打了几十年，但内心深处，两人有着某种共鸣。他们都是武学宗师，都达到了凡人无法企及的境界。在华山之巅，两个垂死之人相拥大笑——这一生最了解自己的人，竟然是最大的敌人。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 07</div><h2>趣事典故</h2></div><div class="content-block"><h3>名场面：蛤蟆功的姿势</h3><p>欧阳锋的蛤蟆功起手式是四肢着地、鼓胀腮帮的姿势——堂堂五绝之一，摆出这样一个"不雅"的动作，在华山论剑的庄严场合中格外滑稽。但正是这个"可笑"的动作中蕴含着致命的杀招——金庸用这个细节告诉我们：不要以貌取人，更不要以姿势取武功。</p></div><div class="content-block"><h3>冷知识：欧阳锋的文化修养</h3><p>欧阳锋虽然被称为"西毒"，但他并非粗人。他精通西域多国语言，对毒药学有着极深的研究，甚至懂得一些西域天文和医药知识。在《神雕侠侣》中，欧阳锋疯癫后曾教过杨过一些西域的武功知识——这说明他的学识实际上是相当渊博的。</p></div></section><section class="section"><div class="section-header"><div class="en">Chapter 08</div><h2>现实启示</h2></div><div class="content-block"><h3>执念的两面性</h3><p>欧阳锋的故事是对"目标导向"文化的最好警示。有目标是好事，但为了目标不择手段、牺牲一切——包括自己的良知和亲情——最终只会走向毁灭。</p></div><div class="content-block"><h3>竞争中的底线</h3><p>欧阳锋和洪七公一生为敌，但洪七公始终有大侠风度，欧阳锋却越来越不堪。区别在哪里？<strong>底线</strong>。竞争可以有，手段不能无底线。</p></div><div class="highlight-box"><div class="hl-title">给现代人的启示</div><p>1. 目标再大，不能丢底线——手段决定了你将成为什么样的人。</p><p>2. 执念是双刃剑——驱动你前进的，也可能把你撕碎。</p></div></section><div class="bottom-nav"><a href="hongqigong.html" class="nav-prev">← 洪七公</a><a href="../index.html#characters" class="back-all">金庸人物志研究院</a><a href="zhoubotong.html" class="nav-next">周伯通 →</a></div>
 </div>
+</div>
+
 <footer class="footer">
   <div class="brand">金庸人物志研究院</div>
   <p>Jin Yong Character Chronicles</p>
 </footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script>
+window.hero3dConfig = {
+  characterName: '欧阳锋',
+  characterTitle: '西毒 · 白驼山主',
+  themeColor: '#7b4b8a',
+  particleColor: '#7b4b8a',
+  elements: ["staff", "medicine", "needle"]
+};
+</script>
+<script src="../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../assets/hero-3d.js"></script>
+
 </body>
 </html>

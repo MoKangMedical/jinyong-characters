@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>黄药师 — 东邪 · 桃花岛主 | 金庸人物志研究院</title>
+<link rel="stylesheet" href="../assets/shared.css">
 <meta name="description" content="深度解读黄药师：正中带有七分邪，邪中带有三分正。琴棋书画、奇门遁甲、医卜星相无一不精的江湖全才。">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet"> rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -70,9 +72,36 @@ a{color:var(--gold);text-decoration:none}
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+
+/* 3D Hero */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(107,142,139, .08) 0%, transparent 70%);
+}
+@media(max-width:768px){ .hero-3d-container{height:350px} }
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#6b8e8b;
+  text-shadow: 0 0 40px rgba(107,142,139, 0.4), 0 0 80px rgba(107,142,139, 0.4);
+  line-height:1;margin-bottom:8px;opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
+
 </style>
 </head>
 <body>
+<div class="bamboo-layer"></div>
 
 <nav class="nav">
   <div class="nav-inner">
@@ -80,7 +109,16 @@ a{color:var(--gold);text-decoration:none}
     <a href="../index.html#characters" class="nav-back">\u2190 返回人物总览</a>
   </div>
 </nav>
+
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">黄药师</div>
+    <div class="char-title">东邪 · 桃花岛主</div>
+  </div>
+</div>
+
 <!-- COURSE HEADER -->
+<div class="main-content">
 <section class="course-hero">
   <div class="container">
     <span class="novel-tag">🏹 射雕英雄传</span>
@@ -249,9 +287,38 @@ a{color:var(--gold);text-decoration:none}
 </div>
 </div>
 
+</div>
+
 <footer class="footer">
   <div class="brand">金庸人物志研究院</div>
   <p>Jin Yong Character Chronicles — 江湖百态，尽在其中</p>
 </footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script>
+window.hero3dConfig = {
+  characterName: '黄药师',
+  characterTitle: '东邪 · 桃花岛主',
+  themeColor: '#6b8e8b',
+  particleColor: '#6b8e8b',
+  elements: ["flute", "book", "fan"]
+};
+</script>
+<script src="../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../assets/hero-3d.js"></script>
+
 </body>
 </html>

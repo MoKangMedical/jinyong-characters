@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>乔峰 — 北乔峰 · 南院大王 | 金庸人物志研究院</title>
+<meta name="description" content="深度解读乔峰：天下第一大帮丐帮帮主，真实身份契丹人。一生在忠义与民族间挣扎，最终以死明志的悲壮英雄。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/shared.css">
+<style>
+/* ═══════════════ 课程页专用样式 ═══════════════ */
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+
+/* ═══════════════ 3D HERO ═══════════════ */
+.hero-3d-container{
+  width:100%;height:500px;position:relative;overflow:hidden;
+  margin-top:64px;
+  background:radial-gradient(ellipse at center, rgba(192,64,48, .08) 0%, transparent 70%);
+}
+.hero-3d-container canvas{display:block}
+.hero-3d-overlay{
+  position:absolute;bottom:40px;left:0;right:0;text-align:center;
+  pointer-events:none;z-index:2;
+}
+.hero-3d-overlay .char-name{
+  font-family:'Ma Shan Zheng', cursive;
+  font-size:clamp(3rem, 7vw, 5rem);
+  color:#c04030;
+  text-shadow: 0 0 40px rgba(192,64,48, 0.4), 0 0 80px rgba(192,64,48, 0.4);
+  line-height:1;margin-bottom:8px;
+  opacity:.9;
+}
+.hero-3d-overlay .char-title{
+  font-family:var(--serif);
+  font-size:1.1rem;color:var(--text2);
+  letter-spacing:.15em;
+}
+
+/* ═══════════════ COURSE HEADER ═══════════════ */
+.course-header{padding:40px 0 48px;text-align:center}
+.course-header .novel-tag{
+  display:inline-block;
+  background:rgba(192,64,48, .1);
+  color:#c04030;
+  padding:4px 14px;border-radius:100px;
+  font-size:.78rem;margin-bottom:16px;
+}
+.course-header .brief-intro{
+  font-size:1rem;color:var(--text2);max-width:600px;
+  margin:12px auto 0;line-height:1.8;
+}
+.course-meta{
+  display:flex;justify-content:center;gap:32px;
+  margin-top:24px;flex-wrap:wrap;
+}
+.course-meta-item{text-align:center}
+.course-meta-item .meta-val{
+  font-family:var(--serif);font-size:1.5rem;
+  font-weight:700;color:#c04030;
+}
+.course-meta-item .meta-label{
+  font-size:.72rem;color:var(--text3);margin-top:4px;
+  letter-spacing:.05em;
+}
+
+/* ═══════════════ SECTIONS ═══════════════ */
+.section{padding:36px 0}
+.section-header{
+  border-left:3px solid #c04030;
+  padding-left:16px;margin-bottom:28px;
+}
+.section-header h2{
+  font-family:var(--serif);font-size:1.5rem;margin-bottom:4px;
+}
+.section-header .en{
+  font-size:.72rem;color:var(--text3);
+  letter-spacing:.1em;text-transform:uppercase;
+}
+.content-block{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:12px;padding:28px;margin-bottom:20px;
+}
+.content-block h3{
+  font-size:1.1rem;color:#c04030;
+  margin-bottom:16px;font-family:var(--serif);
+}
+.content-block p{
+  color:var(--text2);font-size:.92rem;
+  line-height:1.9;margin-bottom:12px;
+}
+.content-block p:last-child{margin-bottom:0}
+
+/* ═══════════════ HIGHLIGHTS ═══════════════ */
+.highlight-box{
+  background:rgba(192,64,48, .05);
+  border:1px solid rgba(192,64,48, .15);
+  border-radius:10px;padding:20px;margin:20px 0;
+}
+.highlight-box .hl-title{
+  font-size:.78rem;color:#c04030;
+  font-weight:600;margin-bottom:8px;letter-spacing:.08em;
+}
+.highlight-box p{font-size:.9rem;color:var(--text);line-height:1.8}
+.quote-block{
+  border-left:2px solid #c04030;
+  padding:12px 20px;margin:20px 0;
+  background:rgba(192,64,48, .03);font-style:italic;
+}
+.quote-block .quote-text{
+  font-family:var(--serif);font-size:1.05rem;
+  color:var(--gold2);line-height:1.7;
+}
+.quote-block .quote-source{
+  font-size:.78rem;color:var(--text3);margin-top:8px;
+}
+
+/* ═══════════════ TABLE ═══════════════ */
+.info-table{
+  width:100%;border-collapse:collapse;
+  margin:16px 0;font-size:.88rem;
+}
+.info-table td{
+  padding:10px 16px;border-bottom:1px solid var(--border);
+  color:var(--text2);
+}
+.info-table td:first-child{
+  color:#c04030;font-weight:600;
+  width:120px;white-space:nowrap;
+}
+
+/* ═══════════════ TIMELINE ═══════════════ */
+.timeline{
+  position:relative;padding-left:32px;
+}
+.timeline::before{
+  content:'';position:absolute;left:8px;top:0;bottom:0;
+  width:1px;background:var(--border2);
+}
+.timeline-item{
+  position:relative;margin-bottom:28px;
+}
+.timeline-item::before{
+  content:'';position:absolute;left:-28px;top:4px;
+  width:10px;height:10px;border-radius:50%;
+  background:#c04030;border:2px solid var(--bg);
+}
+.timeline-item .tl-year{
+  font-size:.78rem;color:#c04030;
+  font-weight:600;margin-bottom:4px;
+}
+.timeline-item .tl-event{font-size:.9rem;color:var(--text2)}
+
+/* ═══════════════ TAGS ═══════════════ */
+.tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 14px;border-radius:8px;background:var(--bg3);color:var(--text2)}
+.tag.gold{background:rgba(192,64,48, .1);color:#c04030}
+
+@media(max-width:768px){
+  .hero-3d-container{height:350px}
+  .hero-3d-overlay .char-name{font-size:2.5rem}
+  .course-meta{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="bamboo-layer"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../../index.html" class="nav-logo">
+      <span class="nav-logo-icon">⚔</span> 金庸人物志研究院
+    </a>
+    <a href="../../index.html" class="nav-back">← 返回人物总览</a>
+  </div>
+</nav>
+
+<!-- 3D HERO -->
+<div id="hero-3d" class="hero-3d-container">
+  <div class="hero-3d-overlay">
+    <div class="char-name">乔峰</div>
+    <div class="char-title">北乔峰 · 南院大王</div>
+  </div>
+</div>
+
+<div class="main-content">
+
+<!-- COURSE HEADER -->
+<section class="course-header">
+  <div class="container">
+    <span class="novel-tag">天龙八部</span>
+    <p class="brief-intro">天下第一大帮丐帮帮主，真实身份契丹人。一生在忠义与民族间挣扎，最终以死明志的悲壮英雄。</p>
+    <div class="course-meta">
+      <div class="course-meta-item">
+        <div class="meta-val">8</div>
+        <div class="meta-label">深度维度</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">主角</div>
+        <div class="meta-label">人物级别</div>
+      </div>
+      <div class="course-meta-item">
+        <div class="meta-val">25分钟</div>
+        <div class="meta-label">阅读时长</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 人物档案 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 01</div>
+    <h2>人物档案</h2>
+  </div>
+  <div class="content-block">
+    <table class="info-table">
+      <tr><td>姓名</td><td>乔峰</td></tr>
+      <tr><td>别名</td><td>乔帮主、萧峰</td></tr>
+      <tr><td>出身</td><td>契丹后族</td></tr>
+      <tr><td>门派</td><td>丐帮(前帮主)</td></tr>
+      <tr><td>师父</td><td>汪剑通、玄苦</td></tr>
+      <tr><td>配偶</td><td>阿朱(未婚)</td></tr>
+      <tr><td>武功</td><td>降龙十八掌、打狗棒法、擒龙功</td></tr>
+      <tr><td>结局</td><td>雁门关外自尽，以生命换取宋辽和平</td></tr>
+    </table>
+  </div>
+    <div class="highlight-box">
+    <div class="hl-title">一句话定位</div>
+    <p>乔峰是金庸笔下最悲壮的悲剧英雄。他一生痛苦源于身份矛盾：汉人养大的契丹人，丐帮帮主变为辽国南院大王。他的死是天龙八部「有情皆孽，无人不冤」的终极注脚。</p>
+  </div>
+</section>
+<!-- 02 性格解析 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 02</div>
+    <h2>性格解析</h2>
+  </div>
+    <div class="content-block">
+    <h3>盖世英雄气</h3>
+    <p>乔峰在任何场合都自带慑人气场。聚贤庄数百英雄欲杀之，他端起酒碗说：「我乔峰要走，你们谁拦得住？」众人竟无一人敢上前。</p>
+  </div>
+  <div class="content-block">
+    <h3>光明磊落</h3>
+    <p>即使被冤枉、被背叛，乔峰从不使阴招。行事堂堂正正，面对杀父仇人也要问个明白。</p>
+  </div>
+  <div class="content-block">
+    <h3>情深义重</h3>
+    <p>对阿朱一往情深，亲手打死阿朱后痛不欲生。对段誉虚竹有情有义，对丐帮旧部亦不舍旧情。</p>
+  </div>
+</section>
+<!-- 03 成长轨迹 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 03</div>
+    <h2>成长轨迹</h2>
+  </div>
+    <div class="content-block">
+    <h3>丐帮之主</h3>
+    <p>自幼被汉人收养，少林玄苦传艺。后入丐帮，凭降龙十八掌成为帮主，「北乔峰南慕容」名震武林。</p>
+  </div>
+  <div class="content-block">
+    <h3>身份崩塌</h3>
+    <p>康敏揭露契丹身世，一夜之间从丐帮英雄变成「契丹狗贼」，摧毁了前半生所有自我认同。</p>
+  </div>
+  <div class="content-block">
+    <h3>追寻真相</h3>
+    <p>为查明身世踏上寻访之旅，途中遇段誉结拜、逢阿朱。在雁门关外找到「萧峰」碑文。</p>
+  </div>
+  <div class="content-block">
+    <h3>南院大王</h3>
+    <p>救辽帝耶律洪基，被封南院大王，内心始终在宋辽间摇摆。</p>
+  </div>
+  <div class="content-block">
+    <h3>雁门殉义</h3>
+    <p>挟持辽帝逼其不犯宋境，事后自认「不忠不义」，断箭自尽。</p>
+  </div>
+</section>
+<!-- 04 奇遇经历 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 04</div>
+    <h2>奇遇经历</h2>
+  </div>
+    <div class="content-block">
+    <h3>聚贤庄血战</h3>
+    <p>乔峰为救阿朱独闯聚贤庄，以降龙十八掌力战数百高手。此战奠定其不可战胜的神话。</p>
+  </div>
+  <div class="content-block">
+    <h3>少室山三英</h3>
+    <p>面对慕容复、游坦之、丁春秋三大高手围攻，段誉虚竹加入，三兄弟联手威震天下。</p>
+  </div>
+</section>
+<!-- 05 武功绝学 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 05</div>
+    <h2>武功绝学</h2>
+  </div>
+    <div class="content-block">
+    <h3>降龙十八掌</h3>
+    <p>乔峰的降龙十八掌刚猛霸道天下第一，「亢龙有悔」一出无人能挡。</p>
+  </div>
+  <div class="content-block">
+    <h3>打狗棒法</h3>
+    <p>丐帮镇帮之宝，三十六路棒法变化万千。</p>
+  </div>
+  <div class="content-block">
+    <h3>擒龙功</h3>
+    <p>极高明的隔空取物功夫，可凭空抓住对手兵刃。</p>
+  </div>
+</section>
+<!-- 06 情感世界 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 06</div>
+    <h2>情感世界</h2>
+  </div>
+    <div class="content-block">
+    <h3>阿朱</h3>
+    <p>乔峰一生唯一挚爱。为化解他对段正淳的仇恨，阿朱假扮段正淳被乔峰一掌打死。这个悲剧让他终身悔恨。</p>
+  </div>
+  <div class="content-block">
+    <h3>养父母</h3>
+    <p>对乔三槐夫妇感情深厚，养父母被杀后誓死追凶。</p>
+  </div>
+  <div class="content-block">
+    <h3>兄弟情</h3>
+    <p>与段誉虚竹结拜，三人在少室山联手抗敌，是天龙八部最热血的场景。</p>
+  </div>
+</section>
+<!-- 07 趣事典故 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 07</div>
+    <h2>趣事典故</h2>
+  </div>
+    <div class="content-block">
+    <h3>杏子林初试</h3>
+    <p>丐帮大会上乔峰举手投足展示降龙十八掌精妙，众人叹服。金庸用近乎神话笔法描写其英姿。</p>
+  </div>
+  <div class="content-block">
+    <h3>一吼退延庆</h3>
+    <p>乔峰一声怒吼震得段延庆浑身一颤，连大理皇宫的墙壁都嗡嗡作响。</p>
+  </div>
+</section>
+<!-- 08 江湖地位与启示 -->
+<section class="section">
+  <div class="section-header">
+    <div class="en">Chapter 08</div>
+    <h2>江湖地位与启示</h2>
+  </div>
+    <div class="content-block">
+    <h3>悲壮英雄原型</h3>
+    <p>乔峰开创金庸武侠中「悲剧英雄」范式。一切不幸非自身过错而是命运捉弄，这种宿命感深刻影响后来武侠创作。</p>
+  </div>
+  <div class="content-block">
+    <h3>超越民族的侠</h3>
+    <p>乔峰超越了「为国为民」的传统框架。他为天下苍生而牺牲，胸怀超越国族界限。</p>
+  </div>
+  <div class="quote-block">
+    <div class="quote-text">「萧某大好男儿，竟和你这种人齐名！」——少室山对慕容复之怒吼</div>
+  </div>
+</section>
+
+<!-- BOTTOM NAV -->
+<div class="container">
+  <div class="bottom-nav">
+    <span></span>
+    <a href="../../index.html" class="back-all">返回人物总览</a>
+    <a href="duanyu.html" class="nav-next">段誉 →</a>
+  </div>
+</div>
+
+</div>
+
+<footer class="footer">
+  <div class="brand">金庸人物志研究院</div>
+  <p>Jin Yong Character Chronicles · 江湖百态，尽在其中</p>
+</footer>
+
+<!-- Three.js CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- 3D Hero 配置 -->
+<script>
+window.hero3dConfig = {
+  characterName: '乔峰',
+  characterTitle: '北乔峰 · 南院大王',
+  themeColor: '#c04030',
+  particleColor: '#c04030',
+  elements: ["palm", "staff", "dragon", "sword"]
+};
+</script>
+
+<script src="../../assets/ink-particles.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window.THREE = THREE;
+window.OrbitControls = OrbitControls;
+</script>
+<script src="../../assets/hero-3d.js"></script>
+
+</body>
+</html>
