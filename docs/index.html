@@ -75,6 +75,23 @@ a{color:var(--gold);text-decoration:none}
   .char-grid{padding:16px 18px}
   .main-content{padding:0 16px 40px}
 }
+
+/* Hero CTA */
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.hero-cta-btn{padding:14px 36px;border-radius:12px;font-size:.95rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:var(--serif);text-decoration:none;display:inline-block;border:none}
+.hero-cta-primary{background:var(--gold);color:#1a1a0a}
+.hero-cta-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
+.hero-cta-secondary{border:1px solid rgba(226,182,79,.3);background:transparent;color:var(--gold)}
+.hero-cta-secondary:hover{border-color:var(--gold);background:rgba(226,182,79,.06)}
+.free-stat-num{color:var(--green)}
+
+/* Membership badges */
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{margin-left:8px}
 </style>
 </head>
 <body>
@@ -87,7 +104,9 @@ a{color:var(--gold);text-decoration:none}
     </a>
     <div class="nav-links">
       <a href="#all" class="nav-link">全部人物</a>
+      <a href="certificate.html" class="nav-link">学习证书</a>
       <a href="courses/guojing.html" class="nav-link">开始学习</a>
+      <span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
     </div>
   </div>
 </nav>
@@ -112,6 +131,15 @@ a{color:var(--gold);text-decoration:none}
       <div class="hero-stat-num">8</div>
       <div class="hero-stat-label">维度解析</div>
     </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num free-stat-num">20</div>
+      <div class="hero-stat-label">免费课程</div>
+    </div>
+  </div>
+  <div class="hero-cta">
+    <a href="courses/guojing.html" class="hero-cta-btn hero-cta-primary">免费开始学习</a>
+    <button class="hero-cta-btn hero-cta-secondary" onclick="JYPaywall.showActivateModal()">激活会员(全库解锁)</button>
   </div>
   <div class="quick-nav">
     <a href="#shediao">射雕英雄传</a><a href="#shendiao">神雕侠侣</a><a href="#yitian">倚天屠龙记</a><a href="#tlbb">天龙八部</a><a href="#xajh">笑傲江湖</a><a href="#ldj">鹿鼎记</a><a href="#shujian">书剑恩仇录</a><a href="#bixue">碧血剑</a><a href="#feihu">飞狐外传</a><a href="#xueshan">雪山飞狐</a><a href="#liancheng">连城诀</a><a href="#xiake">侠客行</a><a href="#yuanyang">鸳鸯刀</a><a href="#baima">白马啸西风</a><a href="#yuenv">越女剑</a>
@@ -410,6 +438,69 @@ a{color:var(--gold);text-decoration:none}
   <p>金庸武侠人物谱研究院 | 金庸武侠人物全谱系课程 | 15部小说 151位人物</p>
   <p>所有内容仅供学习交流使用 | &copy; 金庸武侠人物谱研究院</p>
 </footer>
+
+<!-- Membership Activation Modal -->
+<div id="jy-activate-modal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:none;align-items:center;justify-content:center;backdrop-filter:blur(10px);">
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px 36px;max-width:440px;width:90%;text-align:center;">
+    <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--gold);margin-bottom:8px;">激活会员</h3>
+    <p style="color:var(--text2);font-size:.9rem;margin-bottom:8px;">全库151门课程无限畅学</p>
+    <p style="color:var(--text3);font-size:.8rem;margin-bottom:24px;">前20门主角课程免费 | 激活码解锁全部</p>
+    <div style="display:flex;gap:10px;margin-bottom:12px;">
+      <input type="text" id="jy-key-input-main" placeholder="输入激活码" autocomplete="off" style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;">
+      <button onclick="JYPaywall.activateModal()" style="padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;white-space:nowrap;">激活</button>
+    </div>
+    <p style="color:var(--text3);font-size:.75rem;margin-bottom:16px;">获取激活码请联系客服</p>
+    <button onclick="JYPaywall.closeActivateModal()" style="background:none;border:none;color:var(--text3);font-size:.85rem;cursor:pointer;text-decoration:underline;">关闭</button>
+    <div id="jy-modal-toast" style="margin-top:12px;font-size:.85rem;"></div>
+  </div>
+</div>
+
+<script src="js/quiz-data.js"></script>
+<script src="js/app.js"></script>
+<script>
+// Homepage-specific membership UI
+window.JYPaywall = {
+  showActivateModal: function() {
+    document.getElementById('jy-activate-modal').style.display = 'flex';
+    setTimeout(function() {
+      document.getElementById('jy-key-input-main').focus();
+    }, 100);
+  },
+  closeActivateModal: function() {
+    document.getElementById('jy-activate-modal').style.display = 'none';
+  },
+  activateModal: function() {
+    var input = document.getElementById('jy-key-input-main');
+    if (!input.value.trim()) {
+      document.getElementById('jy-modal-toast').innerHTML = '<span style="color:#f59e0b;">请输入激活码</span>';
+      return;
+    }
+    var result = window.JYMembership.activate(input.value.trim());
+    if (result.success) {
+      document.getElementById('jy-modal-toast').innerHTML = '<span style="color:#22c55e;">' + result.message + '</span>';
+      setTimeout(function() { location.reload(); }, 800);
+    } else {
+      document.getElementById('jy-modal-toast').innerHTML = '<span style="color:#ef4444;">' + result.message + '</span>';
+    }
+  }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  var status = window.JYMembership.getStatus();
+  var badge = document.getElementById('jy-member-badge');
+  if (badge) {
+    badge.textContent = status.name;
+    badge.className = 'jy-badge jy-badge-' + status.type;
+  }
+});
+
+// Keyboard: Esc to close
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('jy-activate-modal').style.display = 'none';
+  }
+});
+</script>
 
 </body>
 </html>

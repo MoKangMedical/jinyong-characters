@@ -88,9 +88,58 @@ a{color:var(--gold);text-decoration:none}
   .wisdom-grid{grid-template-columns:1fr}
   .bottom-nav a{padding:12px 18px;font-size:.85rem}
 }
+
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+
 </style>
 </head>
-<body>
+<body data-course-id="yuanchengzhi" data-course-index="15">
 
 <nav class="nav">
   <div class="nav-inner">
@@ -100,6 +149,7 @@ a{color:var(--gold);text-decoration:none}
     </a>
     <div class="nav-info">第 95 位 / 共 151 位</div>
   </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
 </nav>
 
 <div class="progress-bar"><div class="progress-fill" style="width:62.9%"></div></div>
@@ -122,7 +172,7 @@ a{color:var(--gold);text-decoration:none}
     <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
   </div>
   <audio controls>
-    <source src="../audio/yuanchengzhi.mp3" type="audio/mpeg">
+    <source src="../../audio/yuanchengzhi.mp3" type="audio/mpeg">
     您的浏览器不支持音频播放。
   </audio>
 </div>
@@ -214,31 +264,11 @@ a{color:var(--gold);text-decoration:none}
   <p>金庸武侠人物谱研究院，今日人物：袁承志。金蛇传人 · 华山弟子，出自金庸先生的名著《碧血剑》。袁承志是这部小说中的主角，其精彩的人生故事和独特的性格魅力，给无数读者留下了深刻印象。在本课程中，我们将系统讲解袁承志的人物小传、性格特征、命运轨迹、武功绝学、情感世界，以及其江湖趣事和现实启示。欢迎走进金庸武侠人物谱研究院，让我们一起深入探索金庸武侠世界中的精彩人生。</p>
 </div>
 
-<div class="exercise">
-  <h3>思考题一</h3>
-  <p class="q">在《碧血剑》中，袁承志的命运受到哪些关键事件的影响？请结合具体情节，分析袁承志性格与命运的互动关系。</p>
-  <textarea placeholder="请在此写下你的思考与回答..."></textarea>
-</div>
-
-<div class="exercise">
-  <h3>思考题二</h3>
-  <p class="q">从现代社会的视角来看，袁承志的处事原则与人生态度对当代人有哪些启示？请结合自己的生活经验谈谈理解。</p>
-  <textarea placeholder="请在此写下你的思考与回答..."></textarea>
-</div>
-
-<div class="exercise">
-  <h3>思考题三</h3>
-  <p class="q">袁承志与其他金庸武侠人物相比，最独特的魅力在哪里？如果要向一个从未读过金庸小说的人推荐袁承志的故事，你会如何介绍？</p>
-  <textarea placeholder="请在此写下你的思考与回答..."></textarea>
-  <details>
-    <summary>参考答案提示</summary>
-    <p>建议结合课程中提到的袁承志的性格特征、关键经历和情感脉络进行思考。没有标准答案，重要的是形成自己的独立见解。</p>
-  </details>
-</div>
-
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
 <nav class="bottom-nav">
   <div><a href="xiaqingqing.html" class="prev"><span aria-hidden="true">&larr;</span> 夏青青</a></div>
   <div><a href="ajiu.html" class="next">阿九 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
 </nav>
 
 <div class="course-footer">
@@ -260,5 +290,8 @@ window.addEventListener('scroll',()=>{
 });
 </script>
 
+
+<script src="../../js/quiz-data.js"></script>
+<script src="../../js/app.js"></script>
 </body>
 </html>

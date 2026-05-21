@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>结业证书 — 金庸武侠人物谱研究院</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased;min-height:100vh}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold);text-decoration:none}
+.nav-links{display:flex;gap:24px}
+.nav-links a{color:var(--text3);font-size:.85rem;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.main{max-width:900px;margin:0 auto;padding:90px 28px 60px}
+
+/* Hero */
+.cert-hero{text-align:center;margin-bottom:48px}
+.cert-hero h1{font-family:var(--serif);font-size:clamp(2rem,5vw,3rem);font-weight:900;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+.cert-hero p{color:var(--text2);font-size:1.05rem;max-width:600px;margin:0 auto}
+
+/* Progress Overview */
+.progress-overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:32px 0}
+.progress-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center;transition:border-color .3s}
+.progress-card:hover{border-color:rgba(226,182,79,.2)}
+.progress-card .num{font-family:var(--serif);font-size:2.5rem;font-weight:900;color:var(--gold);line-height:1}
+.progress-card .label{color:var(--text3);font-size:.82rem;margin-top:8px}
+.progress-card .sub{color:var(--text2);font-size:.78rem;margin-top:4px}
+
+/* Progress Bar */
+.progress-bar-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.progress-bar-wrap h3{font-family:var(--serif);color:var(--text);font-size:1.1rem;margin-bottom:16px}
+.progress-bar-outer{height:8px;background:var(--border);border-radius:4px;overflow:hidden;margin-bottom:8px}
+.progress-bar-inner{height:100%;background:linear-gradient(90deg,var(--gold-dark),var(--gold));border-radius:4px;transition:width .6s;width:0}
+.progress-stats{display:flex;justify-content:space-between;color:var(--text3);font-size:.8rem}
+
+/* Novel Grid */
+.novel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin:32px 0}
+.novel-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 24px;transition:all .3s}
+.novel-card:hover{border-color:rgba(226,182,79,.2)}
+.novel-card.completed{border-color:rgba(34,197,94,.2);background:linear-gradient(135deg,rgba(34,197,94,.04),rgba(34,197,94,.01))}
+.novel-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.novel-card-title{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--text)}
+.novel-card-badge{font-size:.7rem;padding:3px 10px;border-radius:12px;font-weight:600}
+.novel-card-badge.done{background:rgba(34,197,94,.1);color:#22c55e}
+.novel-card-badge.progress{background:rgba(226,182,79,.1);color:var(--gold)}
+.novel-card-badge.none{background:rgba(100,100,100,.1);color:var(--text3)}
+.novel-progress-bar{height:4px;background:var(--border);border-radius:2px;overflow:hidden;margin-bottom:6px}
+.novel-progress-fill{height:100%;border-radius:2px;transition:width .3s}
+.novel-progress-fill.done{background:var(--green)}
+.novel-progress-fill.progress{background:var(--gold)}
+.novel-progress-fill.none{background:var(--text3)}
+.novel-progress-text{font-size:.78rem;color:var(--text3)}
+
+/* Certificate Preview */
+.cert-preview{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:48px 40px;margin:40px 0;text-align:center;position:relative;overflow:hidden}
+.cert-preview::before{content:'';position:absolute;inset:8px;border:1px solid rgba(226,182,79,.15);border-radius:16px;pointer-events:none}
+.cert-preview .cert-seal{font-family:var(--serif);font-size:2rem;color:var(--gold);margin-bottom:8px}
+.cert-preview .cert-title{font-family:var(--serif);font-size:1.8rem;font-weight:900;color:var(--text);margin-bottom:8px}
+.cert-preview .cert-subtitle{color:var(--text2);font-size:.95rem;margin-bottom:24px}
+.cert-preview .cert-name{font-family:var(--serif);font-size:1.5rem;color:var(--gold);font-weight:700;margin-bottom:8px}
+.cert-preview .cert-text{color:var(--text2);font-size:.9rem;max-width:500px;margin:0 auto 20px;line-height:1.8}
+.cert-preview .cert-line{width:80px;height:1px;background:var(--gold);margin:16px auto}
+.cert-preview .cert-date{color:var(--text3);font-size:.82rem}
+
+/* CTA */
+.cta-section{text-align:center;margin:40px 0}
+.cta-primary{padding:14px 40px;background:var(--gold);color:#1a1a0a;border:none;border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:var(--serif);text-decoration:none;display:inline-block}
+.cta-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
+.cta-secondary{padding:14px 40px;border:1px solid var(--border);border-radius:12px;color:var(--text2);font-size:1rem;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block;margin-left:12px}
+.cta-secondary:hover{border-color:var(--gold);color:var(--gold)}
+
+.cert-footer{text-align:center;padding:40px 0;border-top:1px solid var(--border);margin-top:48px;color:var(--text3);font-size:.8rem}
+.cert-footer a{color:var(--gold)}
+
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .cert-preview{padding:32px 20px}
+  .cert-preview .cert-title{font-size:1.3rem}
+  .novel-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸武侠人物谱研究院
+    </a>
+    <div class="nav-links">
+      <a href="index.html">课程首页</a>
+      <a href="certificate.html">学习证书</a>
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+  <div class="cert-hero">
+    <h1>学习证书</h1>
+    <p>完成课程学习，通过每门课的测验，获取金庸武侠人物谱研究认证证书。追踪你的学习进度，解锁全部15部小说的成就徽章。</p>
+  </div>
+
+  <div class="progress-overview" id="progress-overview">
+    <div class="progress-card">
+      <div class="num" id="stat-completed">0</div>
+      <div class="label">已完成课程</div>
+      <div class="sub">共151门</div>
+    </div>
+    <div class="progress-card">
+      <div class="num" id="stat-novels">0</div>
+      <div class="label">已通关小说</div>
+      <div class="sub">共15部</div>
+    </div>
+    <div class="progress-card">
+      <div class="num" id="stat-percentage">0%</div>
+      <div class="label">总进度</div>
+      <div class="sub">完成所有测验解锁证书</div>
+    </div>
+  </div>
+
+  <div class="progress-bar-wrap">
+    <h3>总体学习进度</h3>
+    <div class="progress-bar-outer">
+      <div class="progress-bar-inner" id="main-progress-bar"></div>
+    </div>
+    <div class="progress-stats">
+      <span id="progress-text">0 / 151 已解锁</span>
+      <span id="progress-pct">0%</span>
+    </div>
+  </div>
+
+  <div class="novel-grid" id="novel-grid">
+  </div>
+
+  <div class="cert-preview" id="cert-preview" style="display:none;">
+    <div class="cert-seal">&#9733;</div>
+    <div class="cert-title">金庸武侠人物谱研究认证</div>
+    <div class="cert-subtitle">Jin Yong Character Research Certificate</div>
+    <div class="cert-line"></div>
+    <div class="cert-name" id="cert-student-name">武侠学友</div>
+    <div class="cert-text">
+      经金庸武侠人物谱研究院认证，该学员已完成全部<strong>151门</strong>金庸武侠人物课程的学习，并通过所有测验考核。
+      涵盖<strong>飞雪连天射白鹿，笑书神侠倚碧鸳</strong>及<strong>越女剑</strong>十五部金庸武侠经典著作，
+      系统掌握了金庸武侠世界的人物谱系、武功体系、命运轨迹与人文精神。
+    </div>
+    <div class="cert-line"></div>
+    <div class="cert-date" id="cert-date"></div>
+  </div>
+
+  <div class="cta-section" id="cta-section">
+    <a href="index.html" class="cta-primary">继续学习</a>
+    <a href="#" class="cta-secondary" id="download-cert" style="display:none;">下载证书</a>
+  </div>
+
+  <div class="cert-footer">
+    <p>金庸武侠人物谱研究院 | <a href="index.html">返回首页</a></p>
+    <p>所有课程内容仅供学习交流使用</p>
+  </div>
+</main>
+
+<script>
+(function() {
+  var STORAGE_KEY = 'jinyong_academy';
+  var NOVELS = {
+    'shendiao': { name: '射雕英雄传', chars: ['guojing','huangrong','huangyaoshi','ouyangfeng','hongqigong','zhoubotong','yidengdashi'] },
+    'shendiaox': { name: '神雕侠侣', chars: ['yangguo','xiaolongnv','guofu','guoxiang','jinlunfawang'] },
+    'yitian': { name: '倚天屠龙记', chars: ['zhangwuji','zhaomin','zhangcuishan','xiexun','zhouzhiruo','zhangsanfeng'] },
+    'tianglong': { name: '天龙八部', chars: ['qiaofeng','duanyu','xuzhu','wangyuyan','azhu','azi','murongfu','duanzhengchun','daobaifeng','qiaofeng','liqiushui','tianshantonglao','wuyazi','jiumozhi','dingchunqiu','youzhi','yidengdashi','zhongling','mufei','yeluqi','xingxiu'] },
+    'xiaoao': { name: '笑傲江湖', chars: ['linghuchong','renyingying','dongfangbubai','yuebuqun','renwoxing','linpinzhi','yilin','xiangwentian','fengqingyang','tianboguang','yuebingshan','pingyizhi','laotouzi','zubaishou','buyi','laobusi','wufuren','huangzhonggong'] },
+    'luding': { name: '鹿鼎记', chars: ['weixiaobao','kangxi','chenjinnan','aobai','ake','jiunan','shuang\'er','jianning','mujianping','fangyi','zengrou','sumei','suquan','maoshiba','liuchun','wuyingxiong','chenyuanyuan','wuqi','wuwei','lijun','ajiu'] },
+    'shujian': { name: '书剑恩仇录', chars: ['chenjialuo','huoqingtong','xiangxianggongzhu','wenhuanghou','zhangzhaozhong','liyuanzhi','yuyutong','changbozhi','changhezhi','xutianhong','wentailai','yuanshixiao','zhaobanshan','luobing','afanti'] },
+    'bixue': { name: '碧血剑', chars: ['yuanchengzhi','xiaqingqing','a\'jiu','xiangxianggongzhu','wenhuanghou','hetieshou','murenqing'] },
+    'feihu': { name: '飞狐外传', chars: ['hufei','yuanziyi','chenglingsu','miaorenfeng','tianqingwen','shanglian','ma\'chunhua','xueque','fukang\'an','fukang\'an\'s','madamehuma'] },
+    'xueshan': { name: '雪山飞狐', chars: ['hufei','miaorenfeng','tianqingwen','fukang\'an','tianqingnong'] },
+    'liancheng': { name: '连城诀', chars: ['diyun','qifang','shuisheng','wan\'gui','xuehua','yanshi','lingtuisi','dingdian'] },
+    'xiake': { name: '侠客行', chars: ['shitiantian','ayou','dingbusan','dingdang','shijiapo','zhangsanlisi','baizizai','xieyanji','bei\'hai','shiqing','minrou'] },
+    'baima': { name: '白马啸西风', chars: ['liwenxiu','sapu','liang','ma\'jiajun','huayin','aji'] },
+    'yuanyang': { name: '鸳鸯刀', chars: ['xiaozhonghui','yuanguannan','renfeiyan','lin\'yulong','xiaobanhe','yuanshixiao'] },
+    'yuenv': { name: '越女剑', chars: ['aqing','fanli','xishi','gou'] }
+  };
+
+  function getState() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) { return {}; }
+  }
+
+  function getCompleted() {
+    var state = getState();
+    return state.completed || [];
+  }
+
+  function renderProgress() {
+    var completed = getCompleted();
+    var totalChars = 151;
+    var percentage = Math.round((completed.length / totalChars) * 100);
+
+    document.getElementById('stat-completed').textContent = completed.length;
+    document.getElementById('stat-percentage').textContent = percentage + '%';
+    document.getElementById('main-progress-bar').style.width = percentage + '%';
+    document.getElementById('progress-text').textContent = completed.length + ' / ' + totalChars + ' 已解锁';
+    document.getElementById('progress-pct').textContent = percentage + '%';
+
+    // Count completed novels
+    var completedNovels = 0;
+    for (var key in NOVELS) {
+      var chars = NOVELS[key].chars;
+      var allDone = chars.every(function(c) { return completed.indexOf(c) !== -1; });
+      if (allDone) completedNovels++;
+    }
+    document.getElementById('stat-novels').textContent = completedNovels;
+
+    // Render novel cards
+    var grid = document.getElementById('novel-grid');
+    grid.innerHTML = '';
+
+    for (var nkey in NOVELS) {
+      var novel = NOVELS[nkey];
+      var chars = novel.chars;
+      var done = chars.filter(function(c) { return completed.indexOf(c) !== -1; }).length;
+      var total = chars.length;
+      var pct = Math.round((done / total) * 100);
+      var complete = done === total;
+
+      var card = document.createElement('div');
+      card.className = 'novel-card' + (complete ? ' completed' : '');
+
+      var badgeClass = complete ? 'done' : (done > 0 ? 'progress' : 'none');
+      var badgeText = complete ? '已通关' : (done > 0 ? done + '/' + total : '未开始');
+      var fillClass = complete ? 'done' : (done > 0 ? 'progress' : 'none');
+
+      card.innerHTML =
+        '<div class="novel-card-header">' +
+        '<span class="novel-card-title">' + novel.name + '</span>' +
+        '<span class="novel-card-badge ' + badgeClass + '">' + badgeText + '</span>' +
+        '</div>' +
+        '<div class="novel-progress-bar">' +
+        '<div class="novel-progress-fill ' + fillClass + '" style="width:' + pct + '%"></div>' +
+        '</div>' +
+        '<div class="novel-progress-text">共' + total + '位人物 | 进度 ' + pct + '%</div>';
+
+      grid.appendChild(card);
+    }
+
+    // Show certificate if 100%
+    var certPreview = document.getElementById('cert-preview');
+    var downloadBtn = document.getElementById('download-cert');
+    if (percentage >= 100) {
+      certPreview.style.display = 'block';
+      downloadBtn.style.display = 'inline-block';
+      document.getElementById('cert-student-name').textContent = '武侠学友';
+      var now = new Date();
+      document.getElementById('cert-date').textContent = '颁发日期 ' + now.getFullYear() + '年' + (now.getMonth()+1) + '月' + now.getDate() + '日';
+    } else if (percentage >= 50) {
+      certPreview.style.display = 'block';
+      certPreview.style.opacity = '0.5';
+      document.getElementById('cert-student-name').textContent = '进度未满 (还需努力)';
+      downloadBtn.style.display = 'none';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', renderProgress);
+
+  // Download certificate
+  document.getElementById('download-cert').addEventListener('click', function(e) {
+    e.preventDefault();
+    var name = prompt('请输入你的姓名以生成证书：', '武侠学友');
+    if (!name) return;
+
+    var now = new Date();
+    var dateStr = now.getFullYear() + '年' + (now.getMonth()+1) + '月' + now.getDate() + '日';
+    
+    var certHTML =
+      '<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>金庸武侠人物谱研究认证</title>' +
+      '<style>body{font-family:"Noto Serif SC",serif;background:#07070a;color:#f5f5f7;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}' +
+      '.cert{width:800px;padding:60px 80px;border:2px solid #e2b64f;border-radius:4px;text-align:center;position:relative}' +
+      '.cert-inner{border:1px solid rgba(226,182,79,.3);padding:40px;border-radius:4px}' +
+      'h1{font-size:2rem;color:#e2b64f;margin-bottom:8px}h2{font-size:1.2rem;color:#a0a0ab;font-weight:400;margin-bottom:24px}' +
+      '.name{font-size:1.5rem;color:#e2b64f;font-weight:700;margin:16px 0}' +
+      '.text{color:#a0a0ab;font-size:.9rem;max-width:500px;margin:0 auto 24px;line-height:1.8}' +
+      '.line{width:80px;height:1px;background:#e2b64f;margin:16px auto}' +
+      '.date{color:#656570;font-size:.85rem;margin-top:24px}' +
+      '.seal{font-size:3rem;color:#e2b64f;margin-bottom:12px}' +
+      '@media print{body{background:#fff;color:#000}.cert{border-color:#b8922e}h1{color:#b8922e}}</style></head><body>' +
+      '<div class="cert"><div class="cert-inner">' +
+      '<div class="seal">&#9733;</div>' +
+      '<h1>金庸武侠人物谱研究认证</h1>' +
+      '<h2>Jin Yong Character Research Certificate</h2>' +
+      '<div class="line"></div>' +
+      '<div class="name">' + name + '</div>' +
+      '<div class="text">经金庸武侠人物谱研究院认证，该学员已完成全部151门金庸武侠人物课程，涵盖十五部经典著作。系统掌握了金庸武侠世界的人物谱系、武功体系与人文精神。</div>' +
+      '<div class="line"></div>' +
+      '<div class="date">' + dateStr + '</div>' +
+      '</div></div></body></html>';
+
+    var w = window.open('', '_blank');
+    w.document.write(certHTML);
+    w.document.close();
+    setTimeout(function() { w.print(); }, 500);
+  });
+})();
+</script>
+
+</body>
+</html>

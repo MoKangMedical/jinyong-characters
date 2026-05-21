@@ -1,0 +1,1361 @@
+[
+  {
+    "id": "guojing",
+    "name": "郭靖",
+    "title": "北侠",
+    "novel": "射雕英雄传",
+    "novel_key": "shediao",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "huangrong",
+    "name": "黄蓉",
+    "title": "蓉儿",
+    "novel": "射雕英雄传",
+    "novel_key": "shediao",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "xiaolongnv",
+    "name": "小龙女",
+    "title": "龙儿",
+    "novel": "神雕侠侣",
+    "novel_key": "shendiao",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "yangguo",
+    "name": "杨过",
+    "title": "神雕大侠",
+    "novel": "神雕侠侣",
+    "novel_key": "shendiao",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "zhangwuji",
+    "name": "张无忌",
+    "title": "曾阿牛",
+    "novel": "倚天屠龙记",
+    "novel_key": "yitian",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "qiaofeng",
+    "name": "乔峰",
+    "title": "北乔峰 · 南院大王",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "duanyu",
+    "name": "段誉",
+    "title": "大理世子 · 痴情公子",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "xuzhu",
+    "name": "虚竹",
+    "title": "灵鹫宫主 · 逍遥派掌门",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "linghuchong",
+    "name": "令狐冲",
+    "title": "华山弃徒 · 浪子剑客",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "renyingying",
+    "name": "任盈盈",
+    "title": "日月神教圣姑 · 笑傲江湖",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "weixiaobao",
+    "name": "韦小宝",
+    "title": "扬州小宝 · 通天韦爵爷",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "chenjialuo",
+    "name": "陈家洛",
+    "title": "红花会总舵主",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "huoqingtong",
+    "name": "霍青桐",
+    "title": "翠羽黄衫 · 回疆女杰",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "xiangxiang",
+    "name": "香香公主",
+    "title": "喀丝丽 · 回疆之花",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "xiaqingqing",
+    "name": "夏青青",
+    "title": "金蛇之女 · 温家后人",
+    "novel": "碧血剑",
+    "novel_key": "bixue",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "yuanchengzhi",
+    "name": "袁承志",
+    "title": "金蛇传人 · 华山弟子",
+    "novel": "碧血剑",
+    "novel_key": "bixue",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "chenglingsu",
+    "name": "程灵素",
+    "title": "毒手药王 · 至情至性",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "hufei",
+    "name": "胡斐",
+    "title": "雪山飞狐 · 辽东大侠之子",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "hufei_feihu",
+    "name": "胡斐",
+    "title": "少年飞狐 · 侠义初成",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "yuanziyi",
+    "name": "袁紫衣",
+    "title": "紫衣女侠 · 峨眉弟子",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "hufei_xueshan",
+    "name": "胡斐",
+    "title": "雪山飞狐 · 胡一刀之子",
+    "novel": "雪山飞狐",
+    "novel_key": "xueshan",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "diyun",
+    "name": "狄云",
+    "title": "淳朴少年 · 连城剑传人",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "shipotian",
+    "name": "石破天",
+    "title": "狗杂种 · 长乐帮帮主",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "liwenxiu",
+    "name": "李文秀",
+    "title": "白马女侠 · 高昌遗孤",
+    "novel": "白马啸西风",
+    "novel_key": "baima",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "xiaozhonghui",
+    "name": "萧中慧",
+    "title": "鸳鸯刀传人 · 萧半和之女",
+    "novel": "鸳鸯刀",
+    "novel_key": "yuanyang",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "yuanguannan",
+    "name": "袁冠南",
+    "title": "书生侠客",
+    "novel": "鸳鸯刀",
+    "novel_key": "yuanyang",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "aqing",
+    "name": "阿青",
+    "title": "越女剑仙 · 牧羊女",
+    "novel": "越女剑",
+    "novel_key": "yuenv",
+    "role_type": "主角",
+    "priority": 0
+  },
+  {
+    "id": "ouyangfeng",
+    "name": "ouyangfeng",
+    "title": "",
+    "novel": "射雕英雄传",
+    "novel_key": "shediao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhoubotong",
+    "name": "zhoubotong",
+    "title": "",
+    "novel": "射雕英雄传",
+    "novel_key": "shediao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "yangkang",
+    "name": "杨康",
+    "title": "小王爷",
+    "novel": "射雕英雄传",
+    "novel_key": "shediao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "hongqigong",
+    "name": "洪七公",
+    "title": "北丐",
+    "novel": "射雕英雄传",
+    "novel_key": "shediao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "huangyaoshi",
+    "name": "黄药师",
+    "title": "东邪",
+    "novel": "射雕英雄传",
+    "novel_key": "shediao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "guoxiang",
+    "name": "guoxiang",
+    "title": "",
+    "novel": "神雕侠侣",
+    "novel_key": "shendiao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "jinlunfawang",
+    "name": "jinlunfawang",
+    "title": "",
+    "novel": "神雕侠侣",
+    "novel_key": "shendiao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "limochou",
+    "name": "limochou",
+    "title": "",
+    "novel": "神雕侠侣",
+    "novel_key": "shendiao",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xiexun",
+    "name": "xiexun",
+    "title": "",
+    "novel": "倚天屠龙记",
+    "novel_key": "yitian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "yinsusu",
+    "name": "yinsusu",
+    "title": "",
+    "novel": "倚天屠龙记",
+    "novel_key": "yitian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhangsanfeng",
+    "name": "zhangsanfeng",
+    "title": "",
+    "novel": "倚天屠龙记",
+    "novel_key": "yitian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhouruiruo",
+    "name": "zhouruiruo",
+    "title": "",
+    "novel": "倚天屠龙记",
+    "novel_key": "yitian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhaomin",
+    "name": "敏敏特穆尔",
+    "title": "绍敏郡主",
+    "novel": "倚天屠龙记",
+    "novel_key": "yitian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "dingchunqiu",
+    "name": "丁春秋",
+    "title": "星宿老怪 · 化功大法",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "daobaifeng",
+    "name": "刀白凤",
+    "title": "大理王妃 · 摆夷女子",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "tianshantonglao",
+    "name": "天山童姥",
+    "title": "灵鹫宫主 · 唯我独尊",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "kangmin",
+    "name": "康敏",
+    "title": "马夫人 · 天下第一毒妇",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "murongfu",
+    "name": "慕容复",
+    "title": "南慕容 · 以彼之道还施彼身",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "saodiseng",
+    "name": "扫地僧",
+    "title": "少林无名老僧 · 武功第一",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "wuyazi",
+    "name": "无崖子",
+    "title": "逍遥派掌门 · 玉洞仙人",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "muwanqing",
+    "name": "木婉清",
+    "title": "修罗刀 · 冷面美人",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "liqiushui",
+    "name": "李秋水",
+    "title": "西夏皇太妃 · 逍遥仙子",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "duanyanqing",
+    "name": "段延庆",
+    "title": "四大恶人之首 · 恶贯满盈",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "duanzhengchun",
+    "name": "段正淳",
+    "title": "大理镇南王 · 多情王爷",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "youtanzhi",
+    "name": "游坦之",
+    "title": "铁头人 · 痴情至愚",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "wangyuyan",
+    "name": "王语嫣",
+    "title": "神仙姐姐 · 武学活字典",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xiaoyuanshan",
+    "name": "萧远山",
+    "title": "雁门关血仇 · 契丹武士",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "azhu",
+    "name": "阿朱",
+    "title": "易容大师 · 慕容家丫鬟",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "azi",
+    "name": "阿紫",
+    "title": "星宿派小师妹 · 毒辣少女",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "jiumozhi",
+    "name": "鸠摩智",
+    "title": "吐蕃国师 · 大轮明王",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "dongfangbubai",
+    "name": "东方不败",
+    "title": "日月神教教主 · 天下第一",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "yilin",
+    "name": "仪琳",
+    "title": "恒山小尼姑 · 纯真之爱",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "renwoxing",
+    "name": "任我行",
+    "title": "日月神教前教主 · 吸星大法",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xiangwentian",
+    "name": "向问天",
+    "title": "天王老子 · 左使",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "ningzhongze",
+    "name": "宁中则",
+    "title": "华山女侠 · 宁氏一剑",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "yuebuqun",
+    "name": "岳不群",
+    "title": "君子剑 · 伪君子",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "yuelingshan",
+    "name": "岳灵珊",
+    "title": "华山小师妹 · 移情林平之",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zuolengchan",
+    "name": "左冷禅",
+    "title": "嵩山派掌门 · 五岳盟主",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "linpingzhi",
+    "name": "林平之",
+    "title": "福威镖局少主 · 辟邪剑法",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "moda",
+    "name": "莫大",
+    "title": "潇湘夜雨 · 衡山掌门",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "fengqingyang",
+    "name": "风清扬",
+    "title": "华山剑宗 · 独孤传人",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "jiunanshitai",
+    "name": "九难师太",
+    "title": "独臂神尼 · 前朝公主",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "shuang'er",
+    "name": "双儿",
+    "title": "天下第一丫鬟 · 韦氏贤内助",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "wusangui",
+    "name": "吴三桂",
+    "title": "平西王 · 引清入关",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "kangxi",
+    "name": "康熙",
+    "title": "清圣祖 · 少年天子",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "jianninggongzhu",
+    "name": "建宁公主",
+    "title": "大清长公主 · 刁蛮千金",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "fangyi",
+    "name": "方怡",
+    "title": "沐王府义女 · 口是心非",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "hongantong",
+    "name": "洪安通",
+    "title": "神龙教教主 · 仙福永享",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "haidafu",
+    "name": "海大富",
+    "title": "太监总管 · 化骨绵掌",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "suquan",
+    "name": "苏荃",
+    "title": "神龙教主夫人 · 最烈夫人",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "ake",
+    "name": "阿珂",
+    "title": "天下第一美人 · 陈圆圆之女",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "chenyuanyuan",
+    "name": "陈圆圆",
+    "title": "秦淮八艳 · 倾国倾城",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "chenjinnan",
+    "name": "陈近南",
+    "title": "平生不识陈近南 · 天地会总舵主",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "aobai",
+    "name": "鳌拜",
+    "title": "满洲第一勇士 · 顾命大臣",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "qianlong",
+    "name": "乾隆皇帝",
+    "title": "大清天子 · 陈家之子",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhangzhaozhong",
+    "name": "张召重",
+    "title": "火手判官 · 清廷爪牙",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "wentailai",
+    "name": "文泰来",
+    "title": "奔雷手 · 红花会四当家",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhaobanshan",
+    "name": "赵半山",
+    "title": "千臂如来 · 红花会三当家",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "hetieshou",
+    "name": "何铁手",
+    "title": "五毒教主 · 独手女侠",
+    "novel": "碧血剑",
+    "novel_key": "bixue",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xiaxueyi",
+    "name": "夏雪宜(金蛇郎君)",
+    "title": "金蛇郎君 · 绝世邪侠",
+    "novel": "碧血剑",
+    "novel_key": "bixue",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "ajiu",
+    "name": "阿九",
+    "title": "长平公主 · 独臂神尼",
+    "novel": "碧血剑",
+    "novel_key": "bixue",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "fengtiannan",
+    "name": "凤天南",
+    "title": "五虎门掌门",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "huyidao",
+    "name": "胡一刀",
+    "title": "辽东大侠",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "miao_renfeng_feihu",
+    "name": "苗人凤",
+    "title": "金面佛",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhaobanshan_feihu",
+    "name": "赵半山",
+    "title": "千臂如来",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "tianguinong",
+    "name": "田归农",
+    "title": "天龙门掌门",
+    "novel": "雪山飞狐",
+    "novel_key": "xueshan",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "miaorenfeng",
+    "name": "苗人凤",
+    "title": "金面佛 · 打遍天下无敌手",
+    "novel": "雪山飞狐",
+    "novel_key": "xueshan",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "miaoruolan",
+    "name": "苗若兰",
+    "title": "雪山之莲",
+    "novel": "雪山飞狐",
+    "novel_key": "xueshan",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "dingdian",
+    "name": "丁典",
+    "title": "神照经传人 · 情痴",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "wanjue",
+    "name": "万圭",
+    "title": "万家大少爷",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "qifang",
+    "name": "戚芳",
+    "title": "空心菜 · 狄云青梅",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "shuisheng",
+    "name": "水笙",
+    "title": "南四奇之女 · 雪谷知己",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "huatiegan",
+    "name": "花铁干",
+    "title": "南四奇之一 · 伪君子",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xuedaolaozu",
+    "name": "血刀老祖",
+    "title": "血刀门掌门 · 恶贯满盈",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "dingdang",
+    "name": "丁珰",
+    "title": "丁不三孙女 · 小妖女",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "baizizai",
+    "name": "白自在",
+    "title": "威德先生 · 雪山掌门",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "shizhongyu",
+    "name": "石中玉",
+    "title": "雪山派叛徒 · 花花公子",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "shiqing_minrou",
+    "name": "石清与闵柔",
+    "title": "玄素双剑 · 江南侠侣",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xieyanke",
+    "name": "谢烟客",
+    "title": "玄铁令主 · 青袍怪客",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "beihaishi",
+    "name": "贝海石",
+    "title": "长乐帮军师 · 幕后操盘手",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "axiu",
+    "name": "阿绣",
+    "title": "雪山派孙女 · 白家明珠",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "huahui_baima",
+    "name": "华辉",
+    "title": "高昌迷宫守护者",
+    "novel": "白马啸西风",
+    "novel_key": "baima",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "supu",
+    "name": "苏普",
+    "title": "哈萨克少年 · 草原勇士",
+    "novel": "白马啸西风",
+    "novel_key": "baima",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "jilaoren",
+    "name": "马家骏(计老人)",
+    "title": "计老人 · 隐姓埋名",
+    "novel": "白马啸西风",
+    "novel_key": "baima",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhuotianxiong",
+    "name": "卓天雄",
+    "title": "大内高手 · 清廷鹰犬",
+    "novel": "鸳鸯刀",
+    "novel_key": "yuanyang",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xiaobanhe",
+    "name": "萧半和",
+    "title": "鸳鸯刀之主",
+    "novel": "鸳鸯刀",
+    "novel_key": "yuanyang",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "goujian",
+    "name": "勾践",
+    "title": "越王 · 卧薪尝胆",
+    "novel": "越女剑",
+    "novel_key": "yuenv",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "fanli",
+    "name": "范蠡",
+    "title": "越国大夫 · 陶朱公",
+    "novel": "越女剑",
+    "novel_key": "yuenv",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "xishi",
+    "name": "西施",
+    "title": "四大美女之首 · 沉鱼",
+    "novel": "越女剑",
+    "novel_key": "yuenv",
+    "role_type": "重要人物",
+    "priority": 1
+  },
+  {
+    "id": "zhongling",
+    "name": "钟灵",
+    "title": "闪电貂 · 烂漫少女",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "abi",
+    "name": "阿碧",
+    "title": "江南碧玉 · 最后守护者",
+    "novel": "天龙八部",
+    "novel_key": "tlbb",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "bujieheshang",
+    "name": "不戒和尚",
+    "title": "另类高僧 · 仪琳之父",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "dingyishitai",
+    "name": "定逸师太",
+    "title": "恒山三定 · 铁面神尼",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "pingyizhi",
+    "name": "平一指",
+    "title": "杀人名医 · 医一人杀一人",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "tianboguang",
+    "name": "田伯光",
+    "title": "万里独行 · 采花大盗",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "lanfenghuang",
+    "name": "蓝凤凰",
+    "title": "五毒教主 · 苗疆凤凰",
+    "novel": "笑傲江湖",
+    "novel_key": "xajh",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "duolong",
+    "name": "多隆",
+    "title": "御前侍卫总管 · 忠勇可嘉",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "zengrou",
+    "name": "曾柔",
+    "title": "王屋派弟子 · 柔情似水",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "yangyizhi",
+    "name": "杨溢之",
+    "title": "吴应熊部将 · 忠义之士",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "maodongzhu",
+    "name": "毛东珠",
+    "title": "假太后 · 神龙教密探",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "mujianping",
+    "name": "沐剑屏",
+    "title": "沐王府小郡主 · 天真娇憨",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "zhengkeshuang",
+    "name": "郑克塽",
+    "title": "延平郡王 · 败家子",
+    "novel": "鹿鼎记",
+    "novel_key": "ldj",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "yushitong",
+    "name": "余鱼同",
+    "title": "金笛书生 · 红花会十四当家",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "changbozhi",
+    "name": "常伯志",
+    "title": "白无常 · 红花会六当家",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "changhezhi",
+    "name": "常赫志",
+    "title": "黑无常 · 红花会五当家",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "xutianhong",
+    "name": "徐天宏",
+    "title": "武诸葛 · 红花会七当家",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "liyuanzhi",
+    "name": "李沅芷",
+    "title": "情痴少女 · 提督之女",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "yuanshixiao",
+    "name": "袁士霄",
+    "title": "天池怪侠",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "afanti",
+    "name": "阿凡提",
+    "title": "回疆智者",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "luobing",
+    "name": "骆冰",
+    "title": "鸳鸯刀 · 红花会十一当家",
+    "novel": "书剑恩仇录",
+    "novel_key": "shujian",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "yuzhenzi",
+    "name": "玉真子",
+    "title": "铁剑门叛徒",
+    "novel": "碧血剑",
+    "novel_key": "bixue",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "murenqing",
+    "name": "穆人清",
+    "title": "神剑仙猿 · 华山掌门",
+    "novel": "碧血剑",
+    "novel_key": "bixue",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "bingxueer",
+    "name": "冰雪儿(胡夫人)",
+    "title": "辽东女侠",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "shangbaozhen",
+    "name": "商宝震",
+    "title": "商家堡少主",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "machunhua",
+    "name": "马春花",
+    "title": "镖局之女 · 情缘悲歌",
+    "novel": "飞狐外传",
+    "novel_key": "feihu",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "nanlan",
+    "name": "南兰",
+    "title": "苗人凤之妻",
+    "novel": "雪山飞狐",
+    "novel_key": "xueshan",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "lingshuanghua",
+    "name": "凌霜华",
+    "title": "凌知府之女 · 金波旬花之殇",
+    "novel": "连城诀",
+    "novel_key": "liancheng",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "dingsan",
+    "name": "丁不三",
+    "title": "一日不过三",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "shixiaocui",
+    "name": "史小翠(史婆婆)",
+    "title": "金乌刀法传人",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "zhangsanlisi",
+    "name": "张三李四",
+    "title": "侠客岛使者",
+    "novel": "侠客行",
+    "novel_key": "xiake",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "waerlaqi",
+    "name": "瓦尔拉齐",
+    "title": "高昌迷宫黑手",
+    "novel": "白马啸西风",
+    "novel_key": "baima",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "aman",
+    "name": "阿曼",
+    "title": "草原之花",
+    "novel": "白马啸西风",
+    "novel_key": "baima",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "renfeiyan",
+    "name": "任飞燕",
+    "title": "鸳鸯刀争夺者",
+    "novel": "鸳鸯刀",
+    "novel_key": "yuanyang",
+    "role_type": "配角",
+    "priority": 2
+  },
+  {
+    "id": "linyulong",
+    "name": "林玉龙",
+    "title": "鸳鸯刀争夺者",
+    "novel": "鸳鸯刀",
+    "novel_key": "yuanyang",
+    "role_type": "配角",
+    "priority": 2
+  }
+]
