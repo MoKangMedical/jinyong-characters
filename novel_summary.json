@@ -1,0 +1,998 @@
+{
+  "baima": {
+    "name": "白马啸西风",
+    "count": 6,
+    "chars": [
+      {
+        "slug": "liwenxiu",
+        "name": "李文秀",
+        "title": "白马女侠 · 高昌遗孤",
+        "role_type": "主角"
+      },
+      {
+        "slug": "supu",
+        "name": "苏普",
+        "title": "哈萨克少年 · 草原勇士",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "jilaoren",
+        "name": "马家骏(计老人)",
+        "title": "计老人 · 隐姓埋名",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "huahui_baima",
+        "name": "华辉",
+        "title": "高昌迷宫守护者",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "aman",
+        "name": "阿曼",
+        "title": "草原之花",
+        "role_type": "配角"
+      },
+      {
+        "slug": "waerlaqi",
+        "name": "瓦尔拉齐",
+        "title": "高昌迷宫黑手",
+        "role_type": "配角"
+      }
+    ]
+  },
+  "yuanyang": {
+    "name": "鸳鸯刀",
+    "count": 6,
+    "chars": [
+      {
+        "slug": "xiaozhonghui",
+        "name": "萧中慧",
+        "title": "鸳鸯刀传人 · 萧半和之女",
+        "role_type": "主角"
+      },
+      {
+        "slug": "yuanguannan",
+        "name": "袁冠南",
+        "title": "书生侠客",
+        "role_type": "主角"
+      },
+      {
+        "slug": "zhuotianxiong",
+        "name": "卓天雄",
+        "title": "大内高手 · 清廷鹰犬",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "xiaobanhe",
+        "name": "萧半和",
+        "title": "鸳鸯刀之主",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "renfeiyan",
+        "name": "任飞燕",
+        "title": "鸳鸯刀争夺者",
+        "role_type": "配角"
+      },
+      {
+        "slug": "linyulong",
+        "name": "林玉龙",
+        "title": "鸳鸯刀争夺者",
+        "role_type": "配角"
+      }
+    ]
+  },
+  "yuenv": {
+    "name": "越女剑",
+    "count": 4,
+    "chars": [
+      {
+        "slug": "aqing",
+        "name": "阿青",
+        "title": "越女剑仙 · 牧羊女",
+        "role_type": "主角"
+      },
+      {
+        "slug": "fanli",
+        "name": "范蠡",
+        "title": "越国大夫 · 陶朱公",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "xishi",
+        "name": "西施",
+        "title": "四大美女之首 · 沉鱼",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "goujian",
+        "name": "勾践",
+        "title": "越王 · 卧薪尝胆",
+        "role_type": "重要人物"
+      }
+    ]
+  },
+  "shediao": {
+    "name": "射雕英雄传",
+    "count": 7,
+    "chars": [
+      {
+        "slug": "guojing",
+        "name": "郭靖",
+        "title": "北侠",
+        "role_type": "主角"
+      },
+      {
+        "slug": "hongqigong",
+        "name": "洪七公",
+        "title": "北丐",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "huangrong",
+        "name": "黄蓉",
+        "title": "蓉儿",
+        "role_type": "主角"
+      },
+      {
+        "slug": "huangyaoshi",
+        "name": "黄药师",
+        "title": "东邪",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "ouyangfeng",
+        "name": "ouyangfeng",
+        "title": "",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "yangkang",
+        "name": "杨康",
+        "title": "小王爷",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhoubotong",
+        "name": "zhoubotong",
+        "title": "",
+        "role_type": "重要人物"
+      }
+    ]
+  },
+  "shendiao": {
+    "name": "神雕侠侣",
+    "count": 5,
+    "chars": [
+      {
+        "slug": "guoxiang",
+        "name": "guoxiang",
+        "title": "",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "jinlunfawang",
+        "name": "jinlunfawang",
+        "title": "",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "limochou",
+        "name": "limochou",
+        "title": "",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "xiaolongnv",
+        "name": "小龙女",
+        "title": "龙儿",
+        "role_type": "主角"
+      },
+      {
+        "slug": "yangguo",
+        "name": "杨过",
+        "title": "神雕大侠",
+        "role_type": "主角"
+      }
+    ]
+  },
+  "yitian": {
+    "name": "倚天屠龙记",
+    "count": 6,
+    "chars": [
+      {
+        "slug": "xiexun",
+        "name": "xiexun",
+        "title": "",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "yinsusu",
+        "name": "yinsusu",
+        "title": "",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhangsanfeng",
+        "name": "zhangsanfeng",
+        "title": "",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhangwuji",
+        "name": "张无忌",
+        "title": "曾阿牛",
+        "role_type": "主角"
+      },
+      {
+        "slug": "zhaomin",
+        "name": "敏敏特穆尔",
+        "title": "绍敏郡主",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhouruiruo",
+        "name": "zhouruiruo",
+        "title": "",
+        "role_type": "重要人物"
+      }
+    ]
+  },
+  "feihu": {
+    "name": "飞狐外传",
+    "count": 11,
+    "chars": [
+      {
+        "slug": "hufei",
+        "name": "胡斐",
+        "title": "雪山飞狐 · 辽东大侠之子",
+        "role_type": "主角"
+      },
+      {
+        "slug": "chenglingsu",
+        "name": "程灵素",
+        "title": "毒手药王 · 至情至性",
+        "role_type": "主角"
+      },
+      {
+        "slug": "yuanziyi",
+        "name": "袁紫衣",
+        "title": "紫衣女侠 · 峨眉弟子",
+        "role_type": "主角"
+      },
+      {
+        "slug": "fengtiannan",
+        "name": "凤天南",
+        "title": "五虎门掌门",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "hufei_feihu",
+        "name": "胡斐",
+        "title": "少年飞狐 · 侠义初成",
+        "role_type": "主角"
+      },
+      {
+        "slug": "miao_renfeng_feihu",
+        "name": "苗人凤",
+        "title": "金面佛",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhaobanshan_feihu",
+        "name": "赵半山",
+        "title": "千臂如来",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "machunhua",
+        "name": "马春花",
+        "title": "镖局之女 · 情缘悲歌",
+        "role_type": "配角"
+      },
+      {
+        "slug": "shangbaozhen",
+        "name": "商宝震",
+        "title": "商家堡少主",
+        "role_type": "配角"
+      },
+      {
+        "slug": "huyidao",
+        "name": "胡一刀",
+        "title": "辽东大侠",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "bingxueer",
+        "name": "冰雪儿(胡夫人)",
+        "title": "辽东女侠",
+        "role_type": "配角"
+      }
+    ]
+  },
+  "xueshan": {
+    "name": "雪山飞狐",
+    "count": 5,
+    "chars": [
+      {
+        "slug": "miaorenfeng",
+        "name": "苗人凤",
+        "title": "金面佛 · 打遍天下无敌手",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "tianguinong",
+        "name": "田归农",
+        "title": "天龙门掌门",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "nanlan",
+        "name": "南兰",
+        "title": "苗人凤之妻",
+        "role_type": "配角"
+      },
+      {
+        "slug": "hufei_xueshan",
+        "name": "胡斐",
+        "title": "雪山飞狐 · 胡一刀之子",
+        "role_type": "主角"
+      },
+      {
+        "slug": "miaoruolan",
+        "name": "苗若兰",
+        "title": "雪山之莲",
+        "role_type": "重要人物"
+      }
+    ]
+  },
+  "shujian": {
+    "name": "书剑恩仇录",
+    "count": 15,
+    "chars": [
+      {
+        "slug": "zhaobanshan",
+        "name": "赵半山",
+        "title": "千臂如来 · 红花会三当家",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "chenjialuo",
+        "name": "陈家洛",
+        "title": "红花会总舵主",
+        "role_type": "主角"
+      },
+      {
+        "slug": "huoqingtong",
+        "name": "霍青桐",
+        "title": "翠羽黄衫 · 回疆女杰",
+        "role_type": "主角"
+      },
+      {
+        "slug": "xiangxiang",
+        "name": "香香公主",
+        "title": "喀丝丽 · 回疆之花",
+        "role_type": "主角"
+      },
+      {
+        "slug": "qianlong",
+        "name": "乾隆皇帝",
+        "title": "大清天子 · 陈家之子",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhangzhaozhong",
+        "name": "张召重",
+        "title": "火手判官 · 清廷爪牙",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "wentailai",
+        "name": "文泰来",
+        "title": "奔雷手 · 红花会四当家",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "luobing",
+        "name": "骆冰",
+        "title": "鸳鸯刀 · 红花会十一当家",
+        "role_type": "配角"
+      },
+      {
+        "slug": "yushitong",
+        "name": "余鱼同",
+        "title": "金笛书生 · 红花会十四当家",
+        "role_type": "配角"
+      },
+      {
+        "slug": "liyuanzhi",
+        "name": "李沅芷",
+        "title": "情痴少女 · 提督之女",
+        "role_type": "配角"
+      },
+      {
+        "slug": "yuanshixiao",
+        "name": "袁士霄",
+        "title": "天池怪侠",
+        "role_type": "配角"
+      },
+      {
+        "slug": "changhezhi",
+        "name": "常赫志",
+        "title": "黑无常 · 红花会五当家",
+        "role_type": "配角"
+      },
+      {
+        "slug": "changbozhi",
+        "name": "常伯志",
+        "title": "白无常 · 红花会六当家",
+        "role_type": "配角"
+      },
+      {
+        "slug": "xutianhong",
+        "name": "徐天宏",
+        "title": "武诸葛 · 红花会七当家",
+        "role_type": "配角"
+      },
+      {
+        "slug": "afanti",
+        "name": "阿凡提",
+        "title": "回疆智者",
+        "role_type": "配角"
+      }
+    ]
+  },
+  "xiake": {
+    "name": "侠客行",
+    "count": 11,
+    "chars": [
+      {
+        "slug": "shipotian",
+        "name": "石破天",
+        "title": "狗杂种 · 长乐帮帮主",
+        "role_type": "主角"
+      },
+      {
+        "slug": "shizhongyu",
+        "name": "石中玉",
+        "title": "雪山派叛徒 · 花花公子",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "dingdang",
+        "name": "丁珰",
+        "title": "丁不三孙女 · 小妖女",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "axiu",
+        "name": "阿绣",
+        "title": "雪山派孙女 · 白家明珠",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "xieyanke",
+        "name": "谢烟客",
+        "title": "玄铁令主 · 青袍怪客",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "baizizai",
+        "name": "白自在",
+        "title": "威德先生 · 雪山掌门",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhangsanlisi",
+        "name": "张三李四",
+        "title": "侠客岛使者",
+        "role_type": "配角"
+      },
+      {
+        "slug": "shixiaocui",
+        "name": "史小翠(史婆婆)",
+        "title": "金乌刀法传人",
+        "role_type": "配角"
+      },
+      {
+        "slug": "dingsan",
+        "name": "丁不三",
+        "title": "一日不过三",
+        "role_type": "配角"
+      },
+      {
+        "slug": "shiqing_minrou",
+        "name": "石清与闵柔",
+        "title": "玄素双剑 · 江南侠侣",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "beihaishi",
+        "name": "贝海石",
+        "title": "长乐帮军师 · 幕后操盘手",
+        "role_type": "重要人物"
+      }
+    ]
+  },
+  "liancheng": {
+    "name": "连城诀",
+    "count": 8,
+    "chars": [
+      {
+        "slug": "diyun",
+        "name": "狄云",
+        "title": "淳朴少年 · 连城剑传人",
+        "role_type": "主角"
+      },
+      {
+        "slug": "qifang",
+        "name": "戚芳",
+        "title": "空心菜 · 狄云青梅",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "shuisheng",
+        "name": "水笙",
+        "title": "南四奇之女 · 雪谷知己",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "dingdian",
+        "name": "丁典",
+        "title": "神照经传人 · 情痴",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "lingshuanghua",
+        "name": "凌霜华",
+        "title": "凌知府之女 · 金波旬花之殇",
+        "role_type": "配角"
+      },
+      {
+        "slug": "xuedaolaozu",
+        "name": "血刀老祖",
+        "title": "血刀门掌门 · 恶贯满盈",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "wanjue",
+        "name": "万圭",
+        "title": "万家大少爷",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "huatiegan",
+        "name": "花铁干",
+        "title": "南四奇之一 · 伪君子",
+        "role_type": "重要人物"
+      }
+    ]
+  },
+  "ldj": {
+    "name": "鹿鼎记",
+    "count": 20,
+    "chars": [
+      {
+        "slug": "weixiaobao",
+        "name": "韦小宝",
+        "title": "扬州小宝 · 通天韦爵爷",
+        "role_type": "主角"
+      },
+      {
+        "slug": "kangxi",
+        "name": "康熙",
+        "title": "清圣祖 · 少年天子",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "chenjinnan",
+        "name": "陈近南",
+        "title": "平生不识陈近南 · 天地会总舵主",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "ake",
+        "name": "阿珂",
+        "title": "天下第一美人 · 陈圆圆之女",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "shuang'er",
+        "name": "双儿",
+        "title": "天下第一丫鬟 · 韦氏贤内助",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "jianninggongzhu",
+        "name": "建宁公主",
+        "title": "大清长公主 · 刁蛮千金",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "suquan",
+        "name": "苏荃",
+        "title": "神龙教主夫人 · 最烈夫人",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "aobai",
+        "name": "鳌拜",
+        "title": "满洲第一勇士 · 顾命大臣",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "wusangui",
+        "name": "吴三桂",
+        "title": "平西王 · 引清入关",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "jiunanshitai",
+        "name": "九难师太",
+        "title": "独臂神尼 · 前朝公主",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "hongantong",
+        "name": "洪安通",
+        "title": "神龙教教主 · 仙福永享",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "fangyi",
+        "name": "方怡",
+        "title": "沐王府义女 · 口是心非",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "mujianping",
+        "name": "沐剑屏",
+        "title": "沐王府小郡主 · 天真娇憨",
+        "role_type": "配角"
+      },
+      {
+        "slug": "zengrou",
+        "name": "曾柔",
+        "title": "王屋派弟子 · 柔情似水",
+        "role_type": "配角"
+      },
+      {
+        "slug": "zhengkeshuang",
+        "name": "郑克塽",
+        "title": "延平郡王 · 败家子",
+        "role_type": "配角"
+      },
+      {
+        "slug": "haidafu",
+        "name": "海大富",
+        "title": "太监总管 · 化骨绵掌",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "maodongzhu",
+        "name": "毛东珠",
+        "title": "假太后 · 神龙教密探",
+        "role_type": "配角"
+      },
+      {
+        "slug": "duolong",
+        "name": "多隆",
+        "title": "御前侍卫总管 · 忠勇可嘉",
+        "role_type": "配角"
+      },
+      {
+        "slug": "chenyuanyuan",
+        "name": "陈圆圆",
+        "title": "秦淮八艳 · 倾国倾城",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "yangyizhi",
+        "name": "杨溢之",
+        "title": "吴应熊部将 · 忠义之士",
+        "role_type": "配角"
+      }
+    ]
+  },
+  "bixue": {
+    "name": "碧血剑",
+    "count": 7,
+    "chars": [
+      {
+        "slug": "yuanchengzhi",
+        "name": "袁承志",
+        "title": "金蛇传人 · 华山弟子",
+        "role_type": "主角"
+      },
+      {
+        "slug": "xiaqingqing",
+        "name": "夏青青",
+        "title": "金蛇之女 · 温家后人",
+        "role_type": "主角"
+      },
+      {
+        "slug": "xiaxueyi",
+        "name": "夏雪宜(金蛇郎君)",
+        "title": "金蛇郎君 · 绝世邪侠",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "ajiu",
+        "name": "阿九",
+        "title": "长平公主 · 独臂神尼",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "hetieshou",
+        "name": "何铁手",
+        "title": "五毒教主 · 独手女侠",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "murenqing",
+        "name": "穆人清",
+        "title": "神剑仙猿 · 华山掌门",
+        "role_type": "配角"
+      },
+      {
+        "slug": "yuzhenzi",
+        "name": "玉真子",
+        "title": "铁剑门叛徒",
+        "role_type": "配角"
+      }
+    ]
+  },
+  "tlbb": {
+    "name": "天龙八部",
+    "count": 22,
+    "chars": [
+      {
+        "slug": "qiaofeng",
+        "name": "乔峰",
+        "title": "北乔峰 · 南院大王",
+        "role_type": "主角"
+      },
+      {
+        "slug": "duanyu",
+        "name": "段誉",
+        "title": "大理世子 · 痴情公子",
+        "role_type": "主角"
+      },
+      {
+        "slug": "xuzhu",
+        "name": "虚竹",
+        "title": "灵鹫宫主 · 逍遥派掌门",
+        "role_type": "主角"
+      },
+      {
+        "slug": "wangyuyan",
+        "name": "王语嫣",
+        "title": "神仙姐姐 · 武学活字典",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "murongfu",
+        "name": "慕容复",
+        "title": "南慕容 · 以彼之道还施彼身",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "azhu",
+        "name": "阿朱",
+        "title": "易容大师 · 慕容家丫鬟",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "azi",
+        "name": "阿紫",
+        "title": "星宿派小师妹 · 毒辣少女",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "jiumozhi",
+        "name": "鸠摩智",
+        "title": "吐蕃国师 · 大轮明王",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "tianshantonglao",
+        "name": "天山童姥",
+        "title": "灵鹫宫主 · 唯我独尊",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "duanzhengchun",
+        "name": "段正淳",
+        "title": "大理镇南王 · 多情王爷",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "duanyanqing",
+        "name": "段延庆",
+        "title": "四大恶人之首 · 恶贯满盈",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "liqiushui",
+        "name": "李秋水",
+        "title": "西夏皇太妃 · 逍遥仙子",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "wuyazi",
+        "name": "无崖子",
+        "title": "逍遥派掌门 · 玉洞仙人",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "dingchunqiu",
+        "name": "丁春秋",
+        "title": "星宿老怪 · 化功大法",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "youtanzhi",
+        "name": "游坦之",
+        "title": "铁头人 · 痴情至愚",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "muwanqing",
+        "name": "木婉清",
+        "title": "修罗刀 · 冷面美人",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "zhongling",
+        "name": "钟灵",
+        "title": "闪电貂 · 烂漫少女",
+        "role_type": "配角"
+      },
+      {
+        "slug": "kangmin",
+        "name": "康敏",
+        "title": "马夫人 · 天下第一毒妇",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "saodiseng",
+        "name": "扫地僧",
+        "title": "少林无名老僧 · 武功第一",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "xiaoyuanshan",
+        "name": "萧远山",
+        "title": "雁门关血仇 · 契丹武士",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "daobaifeng",
+        "name": "刀白凤",
+        "title": "大理王妃 · 摆夷女子",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "abi",
+        "name": "阿碧",
+        "title": "江南碧玉 · 最后守护者",
+        "role_type": "配角"
+      }
+    ]
+  },
+  "xajh": {
+    "name": "笑傲江湖",
+    "count": 18,
+    "chars": [
+      {
+        "slug": "linghuchong",
+        "name": "令狐冲",
+        "title": "华山弃徒 · 浪子剑客",
+        "role_type": "主角"
+      },
+      {
+        "slug": "renyingying",
+        "name": "任盈盈",
+        "title": "日月神教圣姑 · 笑傲江湖",
+        "role_type": "主角"
+      },
+      {
+        "slug": "yuebuqun",
+        "name": "岳不群",
+        "title": "君子剑 · 伪君子",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "dongfangbubai",
+        "name": "东方不败",
+        "title": "日月神教教主 · 天下第一",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "renwoxing",
+        "name": "任我行",
+        "title": "日月神教前教主 · 吸星大法",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "fengqingyang",
+        "name": "风清扬",
+        "title": "华山剑宗 · 独孤传人",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "xiangwentian",
+        "name": "向问天",
+        "title": "天王老子 · 左使",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "linpingzhi",
+        "name": "林平之",
+        "title": "福威镖局少主 · 辟邪剑法",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "yuelingshan",
+        "name": "岳灵珊",
+        "title": "华山小师妹 · 移情林平之",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "yilin",
+        "name": "仪琳",
+        "title": "恒山小尼姑 · 纯真之爱",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "tianboguang",
+        "name": "田伯光",
+        "title": "万里独行 · 采花大盗",
+        "role_type": "配角"
+      },
+      {
+        "slug": "zuolengchan",
+        "name": "左冷禅",
+        "title": "嵩山派掌门 · 五岳盟主",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "ningzhongze",
+        "name": "宁中则",
+        "title": "华山女侠 · 宁氏一剑",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "moda",
+        "name": "莫大",
+        "title": "潇湘夜雨 · 衡山掌门",
+        "role_type": "重要人物"
+      },
+      {
+        "slug": "lanfenghuang",
+        "name": "蓝凤凰",
+        "title": "五毒教主 · 苗疆凤凰",
+        "role_type": "配角"
+      },
+      {
+        "slug": "dingyishitai",
+        "name": "定逸师太",
+        "title": "恒山三定 · 铁面神尼",
+        "role_type": "配角"
+      },
+      {
+        "slug": "pingyizhi",
+        "name": "平一指",
+        "title": "杀人名医 · 医一人杀一人",
+        "role_type": "配角"
+      },
+      {
+        "slug": "bujieheshang",
+        "name": "不戒和尚",
+        "title": "另类高僧 · 仪琳之父",
+        "role_type": "配角"
+      }
+    ]
+  }
+}
