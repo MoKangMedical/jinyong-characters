@@ -1,5 +1,5 @@
 /**
- * 金庸武侠人物谱研究院 — 题库数据
+ * 金庸人物志 — 题库数据
  * Auto-generated, DO NOT EDIT
  */
 

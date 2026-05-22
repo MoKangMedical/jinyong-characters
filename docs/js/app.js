@@ -1,5 +1,5 @@
 /**
- * 金庸武侠人物谱研究院 — 商业化系统 v3.1
+ * 金庸人物志 — 商业化系统 v3.1
  * 包含：付费体系、互动答题、进度追踪、结业证书
  */
 
@@ -340,7 +340,7 @@
       overlay.innerHTML = 
         '<div class="jy-paywall">' +
         '<div class="jy-paywall-inner">' +
-        '<h2>金庸武侠人物谱研究院</h2>' +
+        '<h2>金庸人物志</h2>' +
         '<p class="jy-paywall-desc">' + (msg || '此课程需要会员才能访问') + '</p>' +
         '<p class="jy-paywall-info">前20门主角课程免费学习 | 全库151门仅需 <strong>$' + COURSE_PRICE + '</strong></p>' +
         '<div class="jy-paywall-keys">' +

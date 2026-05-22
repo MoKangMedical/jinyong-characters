@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>小龙女 — 龙儿 — 金庸武侠人物谱研究院</title>
+<title>小龙女 — 龙儿 — 金庸人物志</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -136,16 +136,22 @@ a{color:var(--gold);text-decoration:none}
 .jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
 .jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
 .nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
 
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
 </style>
+
 </head>
 <body data-course-id="xiaolongnv" data-course-index="2">
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="../../index.html" class="nav-brand">
+    <a href="../index.html" class="nav-brand">
       <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
-      金庸武侠人物谱研究院
+      金庸人物志
     </a>
     <div class="nav-info">第 8 位 / 共 151 位</div>
   </div>
@@ -158,7 +164,8 @@ a{color:var(--gold);text-decoration:none}
 
 <header class="lesson-header">
   <span class="lesson-phase">神雕</span>
-  <h1>小龙女<br><span style="font-size:.7em;font-weight:400">龙儿</span></h1>
+<div class="char-portrait-wrap" data-name="小龙女"><img class="char-portrait" src="../assets/characters/xiaolongnv.png" alt="小龙女" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>小龙女<span style="font-size:.7em;font-weight:400">龙儿</span></h1>
   <div class="lesson-meta">
     <span>神雕侠侣</span>
     <span class="badge badge-core">主角</span>
@@ -172,7 +179,7 @@ a{color:var(--gold);text-decoration:none}
     <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
   </div>
   <audio controls>
-    <source src="../../audio/xiaolongnv.mp3" type="audio/mpeg">
+    <source src="../audio/xiaolongnv.mp3" type="audio/mpeg">
     您的浏览器不支持音频播放。
   </audio>
 </div>
@@ -267,7 +274,7 @@ a{color:var(--gold);text-decoration:none}
 
 <div class="narration-block">
   <h3>口播稿</h3>
-  <p>金庸武侠人物谱研究院，今日人物：小龙女。龙儿，出自金庸先生的名著《神雕侠侣》。小龙女是这部小说中的主角，其精彩的人生故事和独特的性格魅力，给无数读者留下了深刻印象。在本课程中，我们将系统讲解小龙女的人物小传、性格特征、命运轨迹、武功绝学、情感世界，以及其江湖趣事和现实启示。欢迎走进金庸武侠人物谱研究院，让我们一起深入探索金庸武侠世界中的精彩人生。</p>
+  <p>金庸人物志，今日人物：小龙女。龙儿，出自金庸先生的名著《神雕侠侣》。小龙女是这部小说中的主角，其精彩的人生故事和独特的性格魅力，给无数读者留下了深刻印象。在本课程中，我们将系统讲解小龙女的人物小传、性格特征、命运轨迹、武功绝学、情感世界，以及其江湖趣事和现实启示。欢迎走进金庸人物志，让我们一起深入探索金庸武侠世界中的精彩人生。</p>
 </div>
 
 <div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
@@ -278,7 +285,7 @@ a{color:var(--gold);text-decoration:none}
 </nav>
 
 <div class="course-footer">
-  <p>金庸武侠人物谱研究院 | <a href="../../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
   <p>所有内容仅供学习交流使用</p>
 </div>
 
@@ -297,7 +304,7 @@ window.addEventListener('scroll',()=>{
 </script>
 
 
-<script src="../../js/quiz-data.js"></script>
-<script src="../../js/app.js"></script>
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
 </body>
 </html>
