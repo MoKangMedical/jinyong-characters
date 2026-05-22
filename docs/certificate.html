@@ -103,7 +103,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
 <main class="main">
   <div class="cert-hero">
     <h1>学习证书</h1>
-    <p>完成课程学习，通过每门课的测验，获取金庸武侠人物谱研究认证证书。追踪你的学习进度，解锁全部15部小说的成就徽章。</p>
+    <p>完成课程学习，通过每门课的测验，获取金庸人物志研究认证证书。追踪你的学习进度，解锁全部15部小说的成就徽章。</p>
   </div>
 
   <div class="progress-overview" id="progress-overview">
@@ -140,7 +140,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
 
   <div class="cert-preview" id="cert-preview" style="display:none;">
     <div class="cert-seal">&#9733;</div>
-    <div class="cert-title">金庸武侠人物谱研究认证</div>
+    <div class="cert-title">金庸人物志研究认证</div>
     <div class="cert-subtitle">Jin Yong Character Research Certificate</div>
     <div class="cert-line"></div>
     <div class="cert-name" id="cert-student-name">武侠学友</div>
@@ -275,7 +275,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
     var dateStr = now.getFullYear() + '年' + (now.getMonth()+1) + '月' + now.getDate() + '日';
     
     var certHTML =
-      '<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>金庸武侠人物谱研究认证</title>' +
+      '<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>金庸人物志研究认证</title>' +
       '<style>body{font-family:"Noto Serif SC",serif;background:#07070a;color:#f5f5f7;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}' +
       '.cert{width:800px;padding:60px 80px;border:2px solid #e2b64f;border-radius:4px;text-align:center;position:relative}' +
       '.cert-inner{border:1px solid rgba(226,182,79,.3);padding:40px;border-radius:4px}' +
@@ -288,7 +288,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
       '@media print{body{background:#fff;color:#000}.cert{border-color:#b8922e}h1{color:#b8922e}}</style></head><body>' +
       '<div class="cert"><div class="cert-inner">' +
       '<div class="seal">&#9733;</div>' +
-      '<h1>金庸武侠人物谱研究认证</h1>' +
+      '<h1>金庸人物志研究认证</h1>' +
       '<h2>Jin Yong Character Research Certificate</h2>' +
       '<div class="line"></div>' +
       '<div class="name">' + name + '</div>' +
