@@ -218,6 +218,16 @@
       container.innerHTML = html;
     },
 
+    getFiltered: function() {
+      var quizzes = window.JY_QUIZ_DATA;
+      if (!quizzes) return [];
+      var courseId = document.body.getAttribute('data-course-id');
+      if (courseId) {
+        return quizzes.filter(function(q) { return q.id === courseId; });
+      }
+      return quizzes;
+    },
+
     submitOne: function(index) {
       var selected = document.querySelector('input[name="jy-q' + index + '"]:checked');
       var feedback = document.getElementById('jy-fb-' + index);
@@ -228,22 +238,27 @@
         return;
       }
       
-      var result = window.JYQuiz.submit(index, selected.value);
-      if (result.error) {
-        feedback.innerHTML = '<p style="color:#ef4444;">' + result.error + '</p>';
+      // Use filtered quizzes (by course ID) instead of global index
+      var filtered = this.getFiltered();
+      if (index >= filtered.length) {
+        feedback.innerHTML = '<p style="color:#ef4444;">题库加载失败</p>';
+        feedback.style.display = 'block';
         return;
       }
       
-      if (result.correct) {
+      var q = filtered[index];
+      var correct = selected.value === q.answer;
+      
+      if (correct) {
         feedback.innerHTML = '<div class="jy-fb-correct"><span class="jy-fb-icon">&#10003;</span> 回答正确！</div>';
-        if (result.explanation) {
-          feedback.innerHTML += '<p class="jy-fb-explain">' + result.explanation + '</p>';
+        if (q.explanation) {
+          feedback.innerHTML += '<p class="jy-fb-explain">' + q.explanation + '</p>';
         }
       } else {
         feedback.innerHTML = '<div class="jy-fb-wrong"><span class="jy-fb-icon">&#10007;</span> 回答错误</div>';
-        feedback.innerHTML += '<p class="jy-fb-explain">正确答案：<strong>' + result.correctAnswer + '</strong></p>';
-        if (result.explanation) {
-          feedback.innerHTML += '<p class="jy-fb-explain">' + result.explanation + '</p>';
+        feedback.innerHTML += '<p class="jy-fb-explain">正确答案：<strong>' + q.answer + '. ' + q.options[q.answer.charCodeAt(0) - 65] + '</strong></p>';
+        if (q.explanation) {
+          feedback.innerHTML += '<p class="jy-fb-explain">' + q.explanation + '</p>';
         }
       }
       feedback.style.display = 'block';
@@ -261,15 +276,8 @@
     },
 
     submitAll: function() {
-      var courseId = document.body.getAttribute('data-course-id');
-      var quizzes = window.JY_QUIZ_DATA;
-      if (!quizzes) return;
-      
-      // Filter to this course only
-      var filtered = quizzes;
-      if (courseId) {
-        filtered = quizzes.filter(function(q) { return q.id === courseId; });
-      }
+      var filtered = this.getFiltered();
+      if (!filtered.length) return;
 
       var answers = [];
       for (var i = 0; i < filtered.length; i++) {
@@ -277,33 +285,41 @@
         answers.push(selected ? selected.value : null);
       }
       
-      var result = window.JYQuiz.gradeAll(answers);
+      var correct = 0;
+      var results = [];
+      for (var j = 0; j < filtered.length; j++) {
+        var q = filtered[j];
+        var isCorrect = answers[j] === q.answer;
+        if (isCorrect) correct++;
+        results.push({
+          correct: isCorrect,
+          question: q.question,
+          yourAnswer: answers[j],
+          correctAnswer: q.answer + '. ' + q.options[q.answer.charCodeAt(0) - 65]
+        });
+      }
       
       var summary = document.getElementById('jy-quiz-summary');
       if (summary) {
-        summary.innerHTML = '<h3>测验结果：' + result.score + '/' + result.total + ' (' + result.percentage + '%)</h3>';
-        for (var j = 0; j < result.results.length; j++) {
-          var r = result.results[j];
+        summary.innerHTML = '<h3>测验结果：' + correct + '/' + filtered.length + ' (' + Math.round((correct / filtered.length) * 100) + '%)</h3>';
+        for (var k = 0; k < results.length; k++) {
+          var r = results[k];
           var icon = r.correct ? '&#10003;' : '&#10007;';
           var cls = r.correct ? 'jy-fb-correct' : 'jy-fb-wrong';
           summary.innerHTML += '<div class="' + cls + '"><span class="jy-fb-icon">' + icon + '</span> ' + r.question + '</div>';
+          if (!r.correct) {
+            summary.innerHTML += '<p class="jy-fb-explain">正确答案：<strong>' + r.correctAnswer + '</strong></p>';
+          }
         }
         summary.style.display = 'block';
       }
       
-      return result;
+      return { score: correct, total: filtered.length, percentage: Math.round((correct / filtered.length) * 100), results: results };
     },
 
     checkAllComplete: function() {
-      var courseId = document.body.getAttribute('data-course-id');
-      var quizzes = window.JY_QUIZ_DATA;
-      if (!quizzes) return false;
-      
-      // Filter to this course only
-      var filtered = quizzes;
-      if (courseId) {
-        filtered = quizzes.filter(function(q) { return q.id === courseId; });
-      }
+      var filtered = this.getFiltered();
+      if (!filtered.length) return false;
 
       var allAnswered = true;
       for (var i = 0; i < filtered.length; i++) {
