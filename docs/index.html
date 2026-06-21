@@ -92,6 +92,54 @@ a{color:var(--gold);text-decoration:none}
 .jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
 .jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
 .nav-membership{margin-left:8px}
+
+/* Search & Sort Bar */
+.search-bar{display:flex;gap:10px;justify-content:center;align-items:center;margin-bottom:28px;flex-wrap:wrap;max-width:700px;margin-left:auto;margin-right:auto}
+.search-input{flex:1;min-width:200px;padding:10px 18px;background:var(--card2);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:.88rem;outline:none;transition:border-color .2s;font-family:var(--sans)}
+.search-input:focus{border-color:var(--gold)}
+.search-input::placeholder{color:var(--text3)}
+.sort-select{padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:.85rem;outline:none;cursor:pointer;font-family:var(--sans);min-width:120px}
+.sort-select:focus{border-color:var(--gold)}
+.sort-select option{background:var(--card);color:var(--text)}
+.fav-btn{padding:10px 18px;background:var(--card2);border:1px solid var(--border);border-radius:10px;color:var(--text2);font-size:.85rem;cursor:pointer;transition:all .2s;white-space:nowrap;font-family:var(--sans)}
+.fav-btn:hover{border-color:var(--gold);color:var(--gold)}
+.fav-btn.has-favs{color:var(--gold);border-color:var(--gold-dark)}
+.fav-count{font-weight:700}
+
+/* Star toggle on char-links */
+.char-link{position:relative}
+.char-star{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:transparent;border:1px solid var(--border2);cursor:pointer;font-size:11px;line-height:1;transition:all .2s;color:var(--text3);flex-shrink:0;padding:0;margin-left:2px}
+.char-star:hover{border-color:var(--gold);color:var(--gold)}
+.char-star.starred{border-color:var(--gold);background:rgba(226,182,79,.15);color:var(--gold)}
+
+/* Favorites modal */
+.fav-modal-overlay{display:none;position:fixed;inset:0;z-index:999;background:rgba(7,7,10,.9);align-items:center;justify-content:center;backdrop-filter:blur(8px)}
+.fav-modal-overlay.active{display:flex}
+.fav-modal{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;max-width:500px;width:90%;max-height:70vh;overflow-y:auto}
+.fav-modal h3{font-family:var(--serif);font-size:1.2rem;color:var(--gold);margin-bottom:16px}
+.fav-modal-list{display:flex;flex-direction:column;gap:6px}
+.fav-modal-item{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--card2);border-radius:8px;font-size:.85rem}
+.fav-modal-item a{color:var(--text);flex:1}
+.fav-modal-item a:hover{color:var(--gold)}
+.fav-modal-remove{background:none;border:none;color:var(--text3);cursor:pointer;font-size:.8rem;padding:4px 8px;border-radius:4px}
+.fav-modal-remove:hover{color:#ef4444;background:rgba(239,68,68,.1)}
+.fav-modal-close{display:block;margin:16px auto 0;padding:8px 28px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text2);cursor:pointer;font-size:.85rem}
+.fav-modal-empty{color:var(--text3);text-align:center;padding:20px;font-size:.9rem}
+
+/* Mobile hamburger */
+.nav-hamburger{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:4px;font-size:1.3rem;line-height:1}
+@media(max-width:768px){
+  .nav-hamburger{display:block}
+  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:rgba(7,7,10,.95);backdrop-filter:blur(24px);flex-direction:column;gap:0;padding:12px 0;border-bottom:1px solid var(--border)}
+  .nav-links.open{display:flex}
+  .nav-links .nav-link{padding:12px 28px;font-size:.9rem;border-bottom:1px solid rgba(255,255,255,.04)}
+  .nav-membership{padding:12px 28px;margin-left:0}
+  .search-bar{flex-direction:column;gap:8px;padding:0 16px}
+  .search-input{width:100%}
+  .sort-select{width:100%}
+  .fav-btn{width:100%}
+  .char-grid{overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
 </style>
 </head>
 <body>
@@ -108,13 +156,14 @@ a{color:var(--gold);text-decoration:none}
       <a href="courses/guojing.html" class="nav-link">开始学习</a>
       <span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
     </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
   </div>
 </nav>
 
 <section class="hero">
   <span class="hero-badge">JIN YONG CHARACTER INSTITUTE</span>
   <h1>金庸人物志</h1>
-  <p class="hero-tagline">走进金庸武侠世界，读懂151个不朽人物</p>
+  <p class="hero-tagline">走进金庸武侠世界，读懂160个不朽人物</p>
   <p class="hero-desc">精选金庸先生全部十五部武侠小说中的主角、重要人物与配角，为每一位人物打造深度课程。八维解析人物小传、性格、命运、武功、情感、趣事与现实启示，带你重读金庸，重识江湖。</p>
   <div class="hero-stats">
     <div class="hero-stat">
@@ -123,7 +172,7 @@ a{color:var(--gold);text-decoration:none}
     </div>
     <div class="hero-divider"></div>
     <div class="hero-stat">
-      <div class="hero-stat-num">151</div>
+      <div class="hero-stat-num">160</div>
       <div class="hero-stat-label">人物课程</div>
     </div>
     <div class="hero-divider"></div>
@@ -141,6 +190,17 @@ a{color:var(--gold);text-decoration:none}
     <a href="courses/guojing.html" class="hero-cta-btn hero-cta-primary">免费开始学习</a>
     <button class="hero-cta-btn hero-cta-secondary" onclick="JYPaywall.showActivateModal()">激活会员(全库解锁)</button>
   </div>
+  <div class="search-bar">
+    <input type="text" class="search-input" id="char-search" placeholder="搜索人物名、拼音或小说名...">
+    <select class="sort-select" id="char-sort">
+      <option value="default">默认(按小说分组)</option>
+      <option value="az">A-Z 排序</option>
+      <option value="novel">按小说名排序</option>
+    </select>
+    <button class="fav-btn" id="fav-btn" onclick="JYFavorites.showModal()">
+      <span class="fav-count" id="fav-count">0</span> 收藏
+    </button>
+  </div>
   <div class="quick-nav">
     <a href="#shediao">射雕英雄传</a><a href="#shendiao">神雕侠侣</a><a href="#yitian">倚天屠龙记</a><a href="#tlbb">天龙八部</a><a href="#xajh">笑傲江湖</a><a href="#ldj">鹿鼎记</a><a href="#shujian">书剑恩仇录</a><a href="#bixue">碧血剑</a><a href="#feihu">飞狐外传</a><a href="#xueshan">雪山飞狐</a><a href="#liancheng">连城诀</a><a href="#xiake">侠客行</a><a href="#yuanyang">鸳鸯刀</a><a href="#baima">白马啸西风</a><a href="#yuenv">越女剑</a>
   </div>
@@ -151,7 +211,7 @@ a{color:var(--gold);text-decoration:none}
     <section class="novel-section">
       <div class="novel-header">
         <h2 class="novel-title">射雕英雄传</h2>
-        <span class="novel-count">7位人物</span>
+        <span class="novel-count">9位人物</span>
       </div>
       <div class="char-grid">
         <div class="char-section">
@@ -160,14 +220,14 @@ a{color:var(--gold);text-decoration:none}
         </div>
         <div class="char-section">
           <h3 class="char-section-label label-major">重要人物</h3>
-          <div class="char-links"><a href="courses/hongqigong.html" class="char-link">洪七公<span class="char-title">北丐</span></a><a href="courses/huangyaoshi.html" class="char-link">黄药师<span class="char-title">东邪</span></a><a href="courses/ouyangfeng.html" class="char-link">ouyangfeng<span class="char-title"></span></a><a href="courses/yangkang.html" class="char-link">杨康<span class="char-title">小王爷</span></a><a href="courses/zhoubotong.html" class="char-link">zhoubotong<span class="char-title"></span></a></div>
+          <div class="char-links"><a href="courses/hongqigong.html" class="char-link">洪七公<span class="char-title">北丐</span></a><a href="courses/huangyaoshi.html" class="char-link">黄药师<span class="char-title">东邪</span></a><a href="courses/ouyangfeng.html" class="char-link">欧阳锋<span class="char-title">西毒</span></a><a href="courses/yangkang.html" class="char-link">杨康<span class="char-title">小王爷</span></a><a href="courses/zhoubotong.html" class="char-link">周伯通<span class="char-title">老顽童</span></a><a href="courses/ouyangke.html" class="char-link">欧阳克<span class="char-title">白驼山少主</span></a><a href="courses/wanyanhonglie.html" class="char-link">完颜洪烈<span class="char-title">金国王爷</span></a></div>
         </div>
       </div>
     </section>
     <section class="novel-section">
       <div class="novel-header">
         <h2 class="novel-title">神雕侠侣</h2>
-        <span class="novel-count">5位人物</span>
+        <span class="novel-count">7位人物</span>
       </div>
       <div class="char-grid">
         <div class="char-section">
@@ -176,23 +236,23 @@ a{color:var(--gold);text-decoration:none}
         </div>
         <div class="char-section">
           <h3 class="char-section-label label-major">重要人物</h3>
-          <div class="char-links"><a href="courses/guoxiang.html" class="char-link">guoxiang<span class="char-title"></span></a><a href="courses/jinlunfawang.html" class="char-link">jinlunfawang<span class="char-title"></span></a><a href="courses/limochou.html" class="char-link">limochou<span class="char-title"></span></a></div>
+          <div class="char-links"><a href="courses/guoxiang.html" class="char-link">郭襄<span class="char-title">小东邪</span></a><a href="courses/jinlunfawang.html" class="char-link">金轮法王<span class="char-title">蒙古国师</span></a><a href="courses/limochou.html" class="char-link">李莫愁<span class="char-title">赤练仙子</span></a><a href="courses/gongsunzhi.html" class="char-link">公孙止<span class="char-title">绝情谷主</span></a><a href="courses/qiuqianchi.html" class="char-link">裘千尺<span class="char-title">铁掌莲花</span></a></div>
         </div>
       </div>
     </section>
     <section class="novel-section">
       <div class="novel-header">
         <h2 class="novel-title">倚天屠龙记</h2>
-        <span class="novel-count">6位人物</span>
+        <span class="novel-count">10位人物</span>
       </div>
       <div class="char-grid">
         <div class="char-section">
           <h3 class="char-section-label label-main">主角</h3>
-          <div class="char-links"><a href="courses/zhangwuji.html" class="char-link">张无忌<span class="char-title">曾阿牛</span></a></div>
+          <div class="char-links"><a href="courses/zhangwuji.html" class="char-link">张无忌<span class="char-title">曾阿牛</span></a><a href="courses/zhouruiruo.html" class="char-link">周芷若<span class="char-title">峨眉掌门</span></a></div>
         </div>
         <div class="char-section">
           <h3 class="char-section-label label-major">重要人物</h3>
-          <div class="char-links"><a href="courses/xiexun.html" class="char-link">xiexun<span class="char-title"></span></a><a href="courses/yinsusu.html" class="char-link">yinsusu<span class="char-title"></span></a><a href="courses/zhangsanfeng.html" class="char-link">zhangsanfeng<span class="char-title"></span></a><a href="courses/zhaomin.html" class="char-link">敏敏特穆尔<span class="char-title">绍敏郡主</span></a><a href="courses/zhouruiruo.html" class="char-link">zhouruiruo<span class="char-title"></span></a></div>
+          <div class="char-links"><a href="courses/xiexun.html" class="char-link">谢逊<span class="char-title">金毛狮王</span></a><a href="courses/yinsusu.html" class="char-link">殷素素<span class="char-title">白眉鹰王之女</span></a><a href="courses/zhangsanfeng.html" class="char-link">张三丰<span class="char-title">武当祖师</span></a><a href="courses/zhaomin.html" class="char-link">敏敏特穆尔<span class="char-title">绍敏郡主</span></a><a href="courses/zhangcuishan.html" class="char-link">张翠山<span class="char-title">武当五侠</span></a><a href="courses/daixisi.html" class="char-link">黛绮丝<span class="char-title">紫衫龙王</span></a><a href="courses/jixiaofu.html" class="char-link">纪晓芙<span class="char-title">峨眉女侠</span></a><a href="courses/songqingshu.html" class="char-link">宋青书<span class="char-title">玉面孟尝</span></a></div>
         </div>
       </div>
     </section>
@@ -259,7 +319,7 @@ a{color:var(--gold);text-decoration:none}
     <section class="novel-section">
       <div class="novel-header">
         <h2 class="novel-title">书剑恩仇录</h2>
-        <span class="novel-count">15位人物</span>
+        <span class="novel-count">17位人物</span>
       </div>
       <div class="char-grid">
         <div class="char-section">
@@ -272,7 +332,7 @@ a{color:var(--gold);text-decoration:none}
         </div>
         <div class="char-section">
           <h3 class="char-section-label label-minor">配角</h3>
-          <div class="char-links"><a href="courses/luobing.html" class="char-link">骆冰<span class="char-title">鸳鸯刀 · 红花会十一当家</span></a><a href="courses/yushitong.html" class="char-link">余鱼同<span class="char-title">金笛书生 · 红花会十四当家</span></a><a href="courses/liyuanzhi.html" class="char-link">李沅芷<span class="char-title">情痴少女 · 提督之女</span></a><a href="courses/yuanshixiao.html" class="char-link">袁士霄<span class="char-title">天池怪侠</span></a><a href="courses/changhezhi.html" class="char-link">常赫志<span class="char-title">黑无常 · 红花会五当家</span></a><a href="courses/changbozhi.html" class="char-link">常伯志<span class="char-title">白无常 · 红花会六当家</span></a><span class="more-chars">+2位</span></div>
+          <div class="char-links"><a href="courses/luobing.html" class="char-link">骆冰<span class="char-title">鸳鸯刀 · 红花会十一当家</span></a><a href="courses/yushitong.html" class="char-link">余鱼同<span class="char-title">金笛书生 · 红花会十四当家</span></a><a href="courses/liyuanzhi.html" class="char-link">李沅芷<span class="char-title">情痴少女 · 提督之女</span></a><a href="courses/yuanshixiao.html" class="char-link">袁士霄<span class="char-title">天池怪侠</span></a><a href="courses/changhezhi.html" class="char-link">常赫志<span class="char-title">黑无常 · 红花会五当家</span></a><a href="courses/changbozhi.html" class="char-link">常伯志<span class="char-title">白无常 · 红花会六当家</span></a><a href="courses/afanti.html" class="char-link">阿凡提<span class="char-title">回疆智者</span></a><a href="courses/xutianhong.html" class="char-link">徐天宏<span class="char-title">武诸葛</span></a></div>
         </div>
       </div>
     </section>
@@ -435,7 +495,7 @@ a{color:var(--gold);text-decoration:none}
 </main>
 
 <footer class="footer">
-  <p>金庸人物志 | 金庸武侠人物全谱系课程 | 15部小说 151位人物</p>
+  <p>金庸人物志 | 金庸武侠人物全谱系课程 | 15部小说 160位人物</p>
   <p>所有内容仅供学习交流使用 | &copy; 金庸人物志</p>
 </footer>
 
@@ -443,7 +503,7 @@ a{color:var(--gold);text-decoration:none}
 <div id="jy-activate-modal" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:none;align-items:center;justify-content:center;backdrop-filter:blur(10px);">
   <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px 36px;max-width:440px;width:90%;text-align:center;">
     <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--gold);margin-bottom:8px;">激活会员</h3>
-    <p style="color:var(--text2);font-size:.9rem;margin-bottom:8px;">全库151门课程无限畅学</p>
+    <p style="color:var(--text2);font-size:.9rem;margin-bottom:8px;">全库160门课程无限畅学</p>
     <p style="color:var(--text3);font-size:.8rem;margin-bottom:24px;">前20门主角课程免费 | 激活码解锁全部</p>
     <div style="display:flex;gap:10px;margin-bottom:12px;">
       <input type="text" id="jy-key-input-main" placeholder="输入激活码" autocomplete="off" style="flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;">
@@ -500,6 +560,401 @@ document.addEventListener('keydown', function(e) {
     document.getElementById('jy-activate-modal').style.display = 'none';
   }
 });
+</script>
+
+<!-- Favorites Modal -->
+<div class="fav-modal-overlay" id="fav-modal-overlay">
+  <div class="fav-modal">
+    <h3>我的收藏</h3>
+    <div class="fav-modal-list" id="fav-modal-list"></div>
+    <p class="fav-modal-empty" id="fav-modal-empty" style="display:none">还没有收藏任何人物</p>
+    <button class="fav-modal-close" onclick="JYFavorites.closeModal()">关闭</button>
+  </div>
+</div>
+
+<script>
+// =========== HAMBURGER MENU ===========
+(function() {
+  var btn = document.getElementById('nav-hamburger');
+  var links = document.querySelector('.nav-links');
+  if (btn && links) {
+    btn.addEventListener('click', function() {
+      links.classList.toggle('open');
+      btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+    });
+    // Close on outside click
+    document.addEventListener('click', function(e) {
+      if (!btn.contains(e.target) && !links.contains(e.target)) {
+        links.classList.remove('open');
+        btn.textContent = '☰';
+      }
+    });
+    // Close on link click
+    links.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        links.classList.remove('open');
+        btn.textContent = '☰';
+      });
+    });
+  }
+})();
+
+// =========== FAVORITES SYSTEM ===========
+window.JYFavorites = {
+  STORAGE_KEY: 'jy_favorites',
+
+  getAll: function() {
+    try {
+      return JSON.parse(localStorage.getItem(this.STORAGE_KEY)) || [];
+    } catch(e) { return []; }
+  },
+
+  save: function(list) {
+    localStorage.setItem(this.STORAGE_KEY, JSON.stringify(list));
+  },
+
+  isFavorite: function(href) {
+    return this.getAll().indexOf(href) !== -1;
+  },
+
+  toggle: function(href) {
+    var list = this.getAll();
+    var idx = list.indexOf(href);
+    if (idx === -1) {
+      list.push(href);
+    } else {
+      list.splice(idx, 1);
+    }
+    this.save(list);
+    this.updateUI();
+  },
+
+  updateUI: function() {
+    var list = this.getAll();
+    var count = list.length;
+    var countEl = document.getElementById('fav-count');
+    var favBtn = document.getElementById('fav-btn');
+    if (countEl) countEl.textContent = count;
+    if (favBtn) {
+      if (count > 0) favBtn.classList.add('has-favs');
+      else favBtn.classList.remove('has-favs');
+    }
+    // Update all star buttons
+    var stars = document.querySelectorAll('.char-star');
+    for (var i = 0; i < stars.length; i++) {
+      var href = stars[i].getAttribute('data-href');
+      if (list.indexOf(href) !== -1) {
+        stars[i].classList.add('starred');
+        stars[i].textContent = '★';
+      } else {
+        stars[i].classList.remove('starred');
+        stars[i].textContent = '☆';
+      }
+    }
+  },
+
+  showModal: function() {
+    var overlay = document.getElementById('fav-modal-overlay');
+    var listEl = document.getElementById('fav-modal-list');
+    var emptyEl = document.getElementById('fav-modal-empty');
+    if (!overlay) return;
+
+    var list = this.getAll();
+    if (list.length === 0) {
+      listEl.innerHTML = '';
+      emptyEl.style.display = 'block';
+    } else {
+      emptyEl.style.display = 'none';
+      var html = '';
+      for (var i = 0; i < list.length; i++) {
+        var href = list[i];
+        // Find the corresponding link to get the name
+        var link = document.querySelector('.char-link[href="' + href + '"]');
+        var name = link ? (link.childNodes[0] && link.childNodes[0].nodeType === 3 ? link.childNodes[0].textContent.trim() : href) : href;
+        // Better name extraction - get text content excluding the star and title
+        if (link) {
+          var clone = link.cloneNode(true);
+          var stars = clone.querySelectorAll('.char-star');
+          for (var s = 0; s < stars.length; s++) stars[s].remove();
+          var titles = clone.querySelectorAll('.char-title');
+          for (var t = 0; t < titles.length; t++) titles[t].remove();
+          name = clone.textContent.trim();
+        }
+        html += '<div class="fav-modal-item"><a href="' + href + '">' + name + '</a><button class="fav-modal-remove" onclick="JYFavorites.removeAndRefresh(\'' + href.replace(/'/g, "\\'") + '\')">移除</button></div>';
+      }
+      listEl.innerHTML = html;
+    }
+    overlay.classList.add('active');
+  },
+
+  closeModal: function() {
+    var overlay = document.getElementById('fav-modal-overlay');
+    if (overlay) overlay.classList.remove('active');
+  },
+
+  removeAndRefresh: function(href) {
+    var list = this.getAll();
+    var idx = list.indexOf(href);
+    if (idx !== -1) list.splice(idx, 1);
+    this.save(list);
+    this.updateUI();
+    this.showModal();
+  }
+};
+
+// Initialize favorites UI after DOM loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Add star buttons to all char-links
+  var links = document.querySelectorAll('.char-link');
+  for (var i = 0; i < links.length; i++) {
+    var link = links[i];
+    var href = link.getAttribute('href');
+    if (!href) continue;
+    var star = document.createElement('span');
+    star.className = 'char-star';
+    star.setAttribute('data-href', href);
+    star.textContent = '☆';
+    star.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      JYFavorites.toggle(this.getAttribute('data-href'));
+    });
+    link.appendChild(star);
+  }
+
+  JYFavorites.updateUI();
+
+  // Close fav modal on overlay click
+  var overlay = document.getElementById('fav-modal-overlay');
+  if (overlay) {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) JYFavorites.closeModal();
+    });
+  }
+
+  // Close fav modal on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      var favOverlay = document.getElementById('fav-modal-overlay');
+      if (favOverlay && favOverlay.classList.contains('active')) {
+        JYFavorites.closeModal();
+      }
+    }
+  });
+});
+
+// =========== SEARCH & SORT ===========
+(function() {
+  var searchInput = document.getElementById('char-search');
+  var sortSelect = document.getElementById('char-sort');
+  var mainContent = document.querySelector('.main-content');
+
+  if (!searchInput || !sortSelect || !mainContent) return;
+
+  // Build index of all characters
+  function buildIndex() {
+    var sections = mainContent.querySelectorAll('.novel-section');
+    var index = [];
+    for (var i = 0; i < sections.length; i++) {
+      var sec = sections[i];
+      var novelTitle = sec.querySelector('.novel-title');
+      var novelName = novelTitle ? novelTitle.textContent.trim() : '';
+      var links = sec.querySelectorAll('.char-link');
+      for (var j = 0; j < links.length; j++) {
+        var link = links[j];
+        var href = link.getAttribute('href') || '';
+        // Extract text without star/title
+        var clone = link.cloneNode(true);
+        var stars = clone.querySelectorAll('.char-star');
+        for (var s = 0; s < stars.length; s++) stars[s].remove();
+        var titles = clone.querySelectorAll('.char-title');
+        for (var t = 0; t < titles.length; t++) titles[t].remove();
+        var displayName = clone.textContent.trim();
+
+        var titleEl = link.querySelector('.char-title');
+        var title = titleEl ? titleEl.textContent.trim() : '';
+
+        index.push({
+          section: sec,
+          link: link,
+          href: href,
+          name: displayName,
+          title: title,
+          novel: novelName,
+          sectionIndex: i
+        });
+      }
+    }
+    return index;
+  }
+
+  var charIndex = buildIndex();
+
+  function filterAndSort() {
+    var query = searchInput.value.trim().toLowerCase();
+    var sortMode = sortSelect.value;
+
+    var sections = mainContent.querySelectorAll('.novel-section');
+
+    if (!query && sortMode === 'default') {
+      // Show all sections in original order
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = '';
+      }
+      // Show all links
+      var allLinks = mainContent.querySelectorAll('.char-link');
+      for (var l = 0; l < allLinks.length; l++) {
+        allLinks[l].style.display = '';
+      }
+      // Show all section labels
+      var allLabels = mainContent.querySelectorAll('.char-section');
+      for (var lb = 0; lb < allLabels.length; lb++) {
+        allLabels[lb].style.display = '';
+      }
+      return;
+    }
+
+    if (sortMode === 'az') {
+      // A-Z mode: collect all matching chars, sort alphabetically
+      var filtered = [];
+      for (var fi = 0; fi < charIndex.length; fi++) {
+        var item = charIndex[fi];
+        if (!query || item.name.toLowerCase().indexOf(query) !== -1 || item.href.toLowerCase().indexOf(query) !== -1 || item.novel.toLowerCase().indexOf(query) !== -1 || item.title.toLowerCase().indexOf(query) !== -1) {
+          filtered.push(item);
+        }
+      }
+      filtered.sort(function(a, b) {
+        return a.name.localeCompare(b.name, 'zh-CN');
+      });
+
+      // Hide all sections, create a temporary one
+      for (var hi = 0; hi < sections.length; hi++) {
+        sections[hi].style.display = 'none';
+      }
+
+      // Create or reuse a result container
+      var resultSec = document.getElementById('search-result-section');
+      if (!resultSec) {
+        resultSec = document.createElement('section');
+        resultSec.className = 'novel-section';
+        resultSec.id = 'search-result-section';
+        resultSec.innerHTML = '<div class="novel-header"><h2 class="novel-title">搜索结果</h2><span class="novel-count" id="result-count"></span></div><div class="char-grid"><div class="char-section"><div class="char-links" id="result-links"></div></div></div>';
+        mainContent.insertBefore(resultSec, mainContent.firstChild);
+      }
+      resultSec.style.display = '';
+
+      var resultLinks = document.getElementById('result-links');
+      var resultCount = document.getElementById('result-count');
+      if (resultCount) resultCount.textContent = filtered.length + '位人物';
+
+      var html = '';
+      for (var ri = 0; ri < filtered.length; ri++) {
+        var r = filtered[ri];
+        html += '<a href="' + r.href + '" class="char-link">' + r.name + '<span class="char-title">' + (r.title || r.novel) + '</span></a>';
+      }
+      resultLinks.innerHTML = html;
+
+      // Re-add stars
+      setTimeout(function() { JYFavorites.updateUI(); }, 50);
+      return;
+    }
+
+    if (sortMode === 'novel') {
+      // Sort by novel, hide empty sections
+      var novelMap = {};
+      for (var ni = 0; ni < charIndex.length; ni++) {
+        var nItem = charIndex[ni];
+        if (!query || nItem.name.toLowerCase().indexOf(query) !== -1 || nItem.href.toLowerCase().indexOf(query) !== -1 || nItem.novel.toLowerCase().indexOf(query) !== -1 || nItem.title.toLowerCase().indexOf(query) !== -1) {
+          if (!novelMap[nItem.novel]) novelMap[nItem.novel] = { section: nItem.section, chars: [] };
+          novelMap[nItem.novel].chars.push(nItem);
+        }
+      }
+
+      // Show/hide sections based on match
+      for (var si = 0; si < sections.length; si++) {
+        var sec = sections[si];
+        var novelTitle = sec.querySelector('.novel-title');
+        var novelName = novelTitle ? novelTitle.textContent.trim() : '';
+        if (novelMap[novelName] && novelMap[novelName].chars.length > 0) {
+          sec.style.display = '';
+          // Show only matching links
+          var secLinks = sec.querySelectorAll('.char-link');
+          var matchingHrefs = {};
+          for (var mc = 0; mc < novelMap[novelName].chars.length; mc++) {
+            matchingHrefs[novelMap[novelName].chars[mc].href] = true;
+          }
+          for (var sl = 0; sl < secLinks.length; sl++) {
+            secLinks[sl].style.display = matchingHrefs[secLinks[sl].getAttribute('href')] ? '' : 'none';
+          }
+          // Show/hide section labels if all children hidden
+          var charSections = sec.querySelectorAll('.char-section');
+          for (var cs = 0; cs < charSections.length; cs++) {
+            var visLinks = charSections[cs].querySelectorAll('.char-link');
+            var anyVis = false;
+            for (var vl = 0; vl < visLinks.length; vl++) {
+              if (visLinks[vl].style.display !== 'none') { anyVis = true; break; }
+            }
+            charSections[cs].style.display = anyVis ? '' : 'none';
+          }
+        } else {
+          sec.style.display = 'none';
+        }
+      }
+
+      // Hide temp result section if exists
+      var tempSec = document.getElementById('search-result-section');
+      if (tempSec) tempSec.style.display = 'none';
+      return;
+    }
+
+    // Default mode: filter within sections
+    for (var di = 0; di < sections.length; di++) {
+      var dSec = sections[di];
+      var dNovelTitle = dSec.querySelector('.novel-title');
+      var dNovelName = dNovelTitle ? dNovelTitle.textContent.trim() : '';
+      var anyMatch = false;
+      var dLinks = dSec.querySelectorAll('.char-link');
+      for (var dl = 0; dl < dLinks.length; dl++) {
+        var dHref = dLinks[dl].getAttribute('href') || '';
+        var dClone = dLinks[dl].cloneNode(true);
+        var dStars = dClone.querySelectorAll('.char-star');
+        for (var ds = 0; ds < dStars.length; ds++) dStars[ds].remove();
+        var dTitles = dClone.querySelectorAll('.char-title');
+        for (var dt = 0; dt < dTitles.length; dt++) dTitles[dt].remove();
+        var dName = dClone.textContent.trim();
+        var dTitleEl = dLinks[dl].querySelector('.char-title');
+        var dTitle = dTitleEl ? dTitleEl.textContent.trim() : '';
+
+        if (!query || dName.toLowerCase().indexOf(query) !== -1 || dHref.toLowerCase().indexOf(query) !== -1 || dNovelName.toLowerCase().indexOf(query) !== -1 || dTitle.toLowerCase().indexOf(query) !== -1) {
+          dLinks[dl].style.display = '';
+          anyMatch = true;
+        } else {
+          dLinks[dl].style.display = 'none';
+        }
+      }
+      dSec.style.display = anyMatch ? '' : 'none';
+
+      // Show/hide section labels
+      if (anyMatch) {
+        var dCharSections = dSec.querySelectorAll('.char-section');
+        for (var dcs = 0; dcs < dCharSections.length; dcs++) {
+          var dVisLinks = dCharSections[dcs].querySelectorAll('.char-link');
+          var dAnyVis = false;
+          for (var dvl = 0; dvl < dVisLinks.length; dvl++) {
+            if (dVisLinks[dvl].style.display !== 'none') { dAnyVis = true; break; }
+          }
+          dCharSections[dcs].style.display = dAnyVis ? '' : 'none';
+        }
+      }
+    }
+
+    var tempSec2 = document.getElementById('search-result-section');
+    if (tempSec2) tempSec2.style.display = 'none';
+  }
+
+  searchInput.addEventListener('input', filterAndSort);
+  sortSelect.addEventListener('change', filterAndSort);
+})();
 </script>
 
 </body>

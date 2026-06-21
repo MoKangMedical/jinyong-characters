@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欧阳克 — 白驼山少主 · 风流孽缘 — 金庸人物志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold)}
+.nav-info{font-size:.78rem;color:var(--text3);background:var(--card2);padding:4px 14px;border-radius:20px}
+.progress-bar{position:fixed;top:60px;left:0;right:0;height:3px;background:var(--border);z-index:99}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .1s;width:0}
+.main{max-width:800px;margin:0 auto;padding:90px 28px 60px}
+.lesson-header{text-align:center;margin-bottom:48px}
+.lesson-phase{display:inline-block;font-size:.7rem;font-weight:600;color:var(--gold);background:rgba(226,182,79,.08);border:1px solid rgba(226,182,79,.15);padding:5px 16px;border-radius:20px;margin-bottom:16px;letter-spacing:.08em}
+.lesson-header h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900;line-height:1.25;margin-bottom:14px;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lesson-meta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--text3);font-size:.82rem}
+.lesson-meta span{display:flex;align-items:center;gap:5px}
+.lesson-meta .badge{padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:500}
+.lesson-meta .badge-core{background:rgba(59,130,246,.1);color:#60a5fa}
+.audio-player{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:14px;transition:border-color .3s}
+.audio-player:hover{border-color:rgba(226,182,79,.2)}
+.audio-player audio{width:100%;height:36px;filter:sepia(100%) saturate(300%) hue-rotate(350deg)}
+.audio-label{font-size:.78rem;color:var(--text3);margin-bottom:2px}
+.audio-title-mini{font-size:.9rem;font-weight:600;color:var(--text)}
+.content h2{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin:40px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.content h2::before{content:'';width:3px;height:20px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.content h3{font-size:1.1rem;font-weight:600;color:var(--gold-light);margin:28px 0 10px}
+.content h4{font-size:1rem;font-weight:600;color:var(--text);margin:20px 0 8px}
+.content p{color:var(--text2);font-size:1rem;margin-bottom:12px;line-height:1.9}
+.content strong{color:var(--text);font-weight:600}
+.content em{color:var(--gold)}
+.content blockquote{background:linear-gradient(135deg,rgba(226,182,79,.06),rgba(226,182,79,.02));border-left:3px solid var(--gold);padding:16px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--text);font-size:.95rem;line-height:1.8}
+.content ul,.content ol{padding-left:24px;margin:12px 0;color:var(--text2)}
+.content li{margin:6px 0}
+.content li::marker{color:var(--gold-dark)}
+.identity-table{width:100%;border-collapse:collapse;margin:28px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.identity-table th{background:rgba(226,182,79,.08);color:var(--gold);font-weight:600;text-align:left;padding:11px 15px;border-bottom:2px solid rgba(226,182,79,.2);font-size:.78rem;letter-spacing:.04em}
+.identity-table td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text2);font-size:.9rem}
+.identity-table .id-label{width:12%;min-width:60px}
+.timeline{position:relative;margin:24px 0;padding-left:24px;border-left:2px solid var(--border)}
+.timeline-item{position:relative;margin-bottom:24px}
+.timeline-dot{position:absolute;left:-30px;top:4px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.timeline-content h4{color:var(--gold-light);font-size:.95rem;font-weight:600;margin-bottom:4px}
+.timeline-content p{font-size:.9rem;color:var(--text3)}
+.wisdom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.wisdom-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .3s}
+.wisdom-card:hover{border-color:rgba(226,182,79,.25)}
+.wisdom-card h4{color:var(--gold);font-size:.88rem;margin-bottom:8px}
+.wisdom-card p{font-size:.85rem;color:var(--text3);line-height:1.7}
+.anecdote-list{list-style:none;padding-left:0;margin:16px 0}
+.anecdote-list li{padding:12px 16px;margin:8px 0;background:var(--card2);border-left:3px solid var(--gold-dark);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.anecdote-list li strong{color:var(--gold-light)}
+.narration-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0}
+.narration-block h3{color:var(--gold);font-family:var(--serif);font-size:1.1rem;margin-bottom:12px}
+.narration-block p{color:var(--text2);font-size:.93rem;line-height:1.9}
+.exercise{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0}
+.exercise:nth-of-type(odd){border-left:3px solid var(--blue)}
+.exercise:nth-of-type(even){border-left:3px solid var(--gold)}
+.exercise h3{color:var(--text);font-size:1.05rem;margin-bottom:10px}
+.exercise .q{color:var(--text);font-weight:500;margin-bottom:10px}
+.exercise textarea{width:100%;min-height:80px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:.93rem;resize:vertical;transition:border-color .2s;line-height:1.8}
+.exercise textarea:focus{outline:none;border-color:var(--gold)}
+.exercise textarea::placeholder{color:var(--text3)}
+.exercise details{margin-top:12px;padding:12px 16px;background:var(--card2);border-radius:8px}
+.exercise details summary{cursor:pointer;color:var(--gold);font-weight:500;font-size:.88rem}
+.exercise details[open] summary{margin-bottom:8px}
+.exercise details p{font-size:.85rem;color:var(--text3)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:40px 0;margin-top:48px;border-top:1px solid var(--border)}
+.bottom-nav a{display:flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:500;transition:all .25s;font-size:.93rem}
+.bottom-nav .prev{color:var(--text3);border:1px solid var(--border)}
+.bottom-nav .prev:hover{border-color:var(--gold);color:var(--gold)}
+.bottom-nav .next{background:var(--gold);color:#1a1a0a}
+.bottom-nav .next:hover{background:var(--gold-light);transform:translateY(-1px)}
+.course-footer{text-align:center;padding:32px 0 16px;border-top:1px solid var(--border);margin-top:24px;color:var(--text3);font-size:.8rem}
+.course-footer a{color:var(--gold)}
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .lesson-header h1{font-size:1.5rem}
+  .wisdom-grid{grid-template-columns:1fr}
+  .bottom-nav a{padding:12px 18px;font-size:.85rem}
+}
+
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
+
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
+</style>
+
+</head>
+<body data-course-id="ouyangke" data-course-index="4">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸人物志
+    </a>
+    <div class="nav-info">第 4 位 / 共 151 位</div>
+  </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="progress-bar"><div class="progress-fill" style="width:2.6%"></div></div>
+
+<main class="main">
+
+<header class="lesson-header">
+  <span class="lesson-phase">射雕</span>
+<div class="char-portrait-wrap" data-name="欧阳克"><img class="char-portrait" src="../assets/characters/ouyangke.png" alt="欧阳克" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>欧阳克<span style="font-size:.7em;font-weight:400">白驼山少主 · 风流孽缘</span></h1>
+  <div class="lesson-meta">
+    <span>射雕英雄传</span>
+    <span class="badge badge-core">反派</span>
+    <span>第 4 / 151 位</span>
+  </div>
+</header>
+
+<div class="audio-player">
+  <div>
+    <div class="audio-title-mini">欧阳克 课程音频</div>
+    <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
+  </div>
+  <audio controls>
+    <source src="../audio/ouyangke.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</div>
+
+<div class="content">
+<table class="identity-table">
+<tr><th class="id-label">姓名</th><td>欧阳克</td><th class="id-label">称号</th><td>白驼山少主 · 风流孽缘</td></tr>
+<tr><th class="id-label">身份</th><td>西毒欧阳锋之侄（实为私生子）· 白驼山少主</td><th class="id-label">擅长</th><td>灵蛇拳法、驱蛇术、蛤蟆功（基础）</td></tr>
+<tr><th class="id-label">出处</th><td colspan="3">金庸《射雕英雄传》（南宋年间，西域白驼山）</td></tr>
+</table>
+
+<h2>第一章 白驼山的秘密继承人</h2>
+
+<p>欧阳克是谁？明面上，他是西毒欧阳锋的侄子——西域白驼山的少主，一袭白衣、手持折扇，身后永远跟着一群西域美女和白驼山的蛇阵。但<strong>江湖上从来没有人见过他的父母</strong>。金庸用最隐晦的笔法揭开了真相：他是欧阳锋与嫂子的私生子。"叔父"待他的好，早已超出了叔侄之情——不仅倾囊相授蛤蟆功，更将白驼山少主之位传给了他。这个秘密，欧阳克自己或许知道，或许不知道，但它注定了他的命运：<strong>他活在一个谎言铸就的身份里，却从未有机会打破它</strong>。</p>
+
+<p>白驼山是什么地方？西域戈壁深处，寸草不生，蛇虫横行。在那里长大的孩子，不知道什么叫"温柔"。欧阳克自幼见惯了毒蛇和杀戮，学会了用实力说话。他武功不弱——灵蛇拳法变幻莫测，驱蛇术令中原武林闻风丧胆，蛤蟆功虽未大成却也有欧阳锋亲传的底子。但他最大的特点不是武功，而是<strong>好色</strong>。他带着姬妾云游中原，一路上见到美貌女子就掳掠而来，白驼山的蛇阵所到之处，多少良家女子闻风丧胆。他不是一个低级的淫贼——他是带着"格调"来作恶的：白衣胜雪、谈吐文雅、出手阔绰，甚至在掳人之前还会先送礼物、说几句好话。但本质没有区别：<strong>他要的就是占有</strong>。</p>
+
+<p>这一切，在他遇到黄蓉之后彻底改变了。桃花岛上初相见，他看到一个十五六岁的小姑娘，明眸皓齿、机灵狡黠。他照例上前搭讪："<em>姑娘姓甚名谁？</em>"黄蓉眼珠一转："我姓黄。"他笑道："<em>黄姑娘……</em>"话还没说完，黄蓉一把沙子扬进了他的眼睛。从这一刻开始，<strong>欧阳克的人生像被诅咒了一样</strong>——他中了黄蓉的"毒"，比任何蛇毒都要命。他不再满足于那些顺从的姬妾，他一心只想得到这个调皮到令人发指的小姑娘。讽刺的是，这正是他走向毁灭的开端。</p>
+
+<p>黄蓉用计谋把他整得死去活来——骗他吃毒药、用计引他跳进粪坑、设计让他被巨石压住双腿。在牛家村的废屋里，巨石之下，欧阳克的双腿被压得粉碎。他痛得几乎昏厥，但求生的本能让他撑着一口气。这时，一个人影出现在他面前——<strong>杨康</strong>。欧阳克用尽最后的力气伸出手："<em>杨兄弟……救我……</em>"杨康没有说话，只是冷笑了一声，然后一刀刺进了他的胸口。临死前，欧阳克挣扎着抬起头，他想告诉欧阳锋杀他的是谁——<em>"杀我的人是……"</em>话没说完，气绝身亡。就因为这句话没说完，欧阳锋误以为是郭靖下的毒手，引发了后来一连串的悲剧。欧阳克的故事，从谎言开始，以误会结束——<strong>连死亡都模糊不清</strong>。</p>
+
+<h2>第二章 天生的反派——坏，但有"格调"</h2>
+
+<p>金庸笔下的反派很多，但欧阳克是<strong>最特殊的一个</strong>。他不是那种"坏到骨子里"的枭雄——他没有欧阳锋那种称霸武林的野心，没有杨康那种在两个身份之间挣扎的痛苦，甚至没有完颜洪烈那种为国为家的宏大叙事。欧阳克的核心驱动力只有两个：<strong>女人，和体面</strong>。他是一个"天生的反派"——不伪善、不纠结、不找借口，坏得坦坦荡荡。但他坏得"有格调"。白驼山少主的身份给了他一种西域贵公子的优雅气质：一身白衣、精致折扇、出口成章。如果不是身边那二十四个姬妾和满地毒蛇提醒你，你可能会以为遇到了一位西域来的文人雅士。</p>
+
+<p>这种"格调"在他对黄蓉的执念中表现得最为淋漓尽致。江湖上觊觎黄蓉的人不少——有人想通过她拉拢黄药师，有人想得到桃花岛的武功秘籍，有人只是想利用她的聪明才智。但欧阳克不一样。他清清楚楚地说过：<em>"我不要你的武功，我要你的人。"</em>这句话，在武侠小说里<strong>比想要武功更高一个层次</strong>——因为武功是可以修炼的，但"人"是独一无二的。但这句话也暴露了他最本质的问题：在他的世界观里，"人"是可以被"要"的——就像他白驼山上那些姬妾一样，是一个可以被占有的物件。黄蓉不是物件，黄蓉是黄药师的女儿、郭靖的爱人、天底下最聪明的女子。欧阳克用对待姬妾的方式对待黄蓉——送礼、献殷勤、炫耀武功和地位——而黄蓉回报他的，是一次比一次更狠的教训。</p>
+
+<p>有人说欧阳克爱黄蓉。也许吧。但他的"爱"本质上仍然是<strong>占有欲的精致包装</strong>。他从未真正尊重过黄蓉的意愿，从未问过"你想要什么"，从未试图理解这个少女的灵魂。他只是被她的美貌和狡黠迷住了，就像猎人被一只难以捕获的猎物吸引。黄蓉越是不理他，他就越想要。这种执念最终毁了他——他被黄蓉设计压断了双腿，被杨康一刀结束了性命，临死前连凶手是谁都没能说清楚。天底下最讽刺的事情莫过于此：<strong>一个把女人当猎物的人，最终死在了两个"猎物"的设计之下</strong>——黄蓉的计谋加上杨康的刀。</p>
+
+<h2>第三章 白驼山武学与风流劫</h2>
+
+<p>欧阳克的武功被很多人低估了。作为白驼山少主，他得到了欧阳锋的真传，功力绝非寻常。白驼山武学以<strong>"毒"字为魂</strong>，欧阳克的武学体系分为三大部分：其一，<strong>蛤蟆功的基础</strong>——虽未练到欧阳锋那种"蹲伏蓄力、陡然暴起"的化境，但根基扎实，寻常高手难以近身；其二，<strong>灵蛇拳法</strong>——这是他最拿手的绝技，出拳如灵蛇吐信，角度刁钻、变幻莫测，曾让郭靖在比武中手忙脚乱；其三，<strong>驱蛇术</strong>——白驼山驯养的毒蛇阵，所过之处万蛇涌动，是西域武林最令人胆寒的场面。如果欧阳克把心思都放在武学上，他的成就不可限量。但问题是——<strong>他从来没有把心思放在武学上</strong>。</p>
+
+<p>他的姬妾、他的排场、他对美色的追逐，消耗了他大半的精力。白驼山上下，与其说是一个武学门派，不如说是他的"温柔乡"。二十四名西域美女随行，走到哪里都是莺歌燕舞、香风阵阵。江湖中人提起欧阳克，第一个想到的不是"灵蛇拳法"，而是"那二十四个姬妾"。这本身就是一个巨大的悲剧：<strong>他拥有成为一流高手的全部条件，却把所有天赋浪费在了追逐女色上</strong>。在牛家村废屋的最后一刻，当他被巨石压住双腿、动弹不得的时候，他有没有后悔过？有没有想过——如果自己不那么好色，如果自己能多花点时间练功，是不是就不会落到这个下场？金庸没有写，但我们读者可以替他回答：是的，他本来可以很强。好色，是他最大的弱点，是他的阿喀琉斯之踵，是他所有悲剧的根源。</p>
+
+<blockquote>欧阳克最后还有一个谜：临死前，他挣扎着要说出凶手的名字——"杀我的人是……"——然后断气了。他为什么没有说完？是真的来不及，还是他<strong>故意没有说出来</strong>？杨康曾与他在赵王府共事，两人表面上是"兄弟"相称。也许在生命的最后一瞬，他选择了沉默——既是为了给这段虚假的兄弟情留下最后一点体面，也是因为他骨子里那个"优雅反派"的骄傲不允许他以告密的方式离开这个世界。当然，更大的可能是他真的来不及。但无论如何，他的死亡制造了一个致命的误会——欧阳锋认定郭靖是凶手，由此引发了无数的恩怨纠葛。一个活在谎言里的人，最终用自己的死亡制造了另一个谎言。</blockquote>
+
+<div class="timeline">
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>西域白驼山少主</h4>
+        <p>欧阳克自幼在西域白驼山长大，表面是欧阳锋之侄，实则为其私生子。他学会了蛤蟆功基础、灵蛇拳法和驱蛇术，并豢养二十四名姬妾随行，以白衣贵公子的形象纵横西域。</p>
+    </div>
+</div>
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>初遇黄蓉 · 桃花岛</h4>
+        <p>欧阳克随欧阳锋登上桃花岛为黄药师祝寿，初见黄蓉便神魂颠倒。他上前搭讪问姓名，黄蓉回以一把沙子和一句"我姓黄"——从此他的人生急转直下，开始被黄蓉用各种计策反复折腾。</p>
+    </div>
+</div>
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>牛家村 · 巨石之劫</h4>
+        <p>黄蓉设计之下，欧阳克被巨石压住双腿，骨骼粉碎。他在废屋中痛苦挣扎，却等来了杨康的冷刀。这是他生命的终点——从风流少主到无助废人，只隔着一块黄蓉推下来的石头。</p>
+    </div>
+</div>
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>未竟的遗言</h4>
+        <p>杨康一刀刺入后，欧阳克用尽最后一口气想说出凶手之名——"杀我的人是……"话未说完便气绝。这句未竟的遗言让欧阳锋误判郭靖为凶手，在江湖中埋下了新的血海深仇。</p>
+    </div>
+</div>
+</div>
+
+<ul class="anecdote-list">
+<li><strong>初见："姑娘姓甚名谁？"</strong> —— 桃花岛上，欧阳克整了整白衣，优雅地走到黄蓉面前，折扇轻摇："姑娘姓甚名谁？"黄蓉大眼睛一转："我姓黄。"欧阳克笑道："黄姑娘……"话音未落，一把沙子迎面扑来。这是欧阳克人生中第一次——也可能是唯一一次——被一个女人在初次见面时就整得灰头土脸。他非但没有恼怒，反而更加着迷了。</li>
+<li><strong>粪坑之辱</strong> —— 黄蓉骗他说某处藏有绝世武功秘籍，欧阳克将信将疑地跟了过去，结果一脚踏空，跌入了不知哪个农家后院的大粪坑。白衣胜雪的白驼山少主从粪坑里爬出来的时候，姬妾们都捂住了鼻子。黄蓉在远处笑得直不起腰——这大概是她整人史上最得意的作品之一。</li>
+<li><strong>"杨兄弟……救我"</strong> —— 牛家村废屋中，欧阳克的双腿被巨石压得粉碎，他疼得满脸是汗。看到杨康出现的那一刻，他眼中闪过了希望——毕竟他们在赵王府同处过，至少算半个"自己人"。他伸出手，声音沙哑："杨兄弟……救我……"杨康没有说话，只是冷笑了一声，然后拔出了刀。欧阳克的眼神从希望变成了惊愕——他可能到死都没想明白，这个"兄弟"为什么会杀自己。</li>
+</ul>
+
+<div class="wisdom-grid">
+<div class="wisdom-card"><h4>启示一：好色是最大的弱点</h4><p>欧阳克如果不好色，他本可以成为一个令人敬畏的武者。他有最好的师父、最深厚的武学传承、最得天独厚的修炼条件。但女色像毒药一样侵蚀了他的天赋和精力。黄蓉看穿了他这个弱点，每一次出手都精准地打在这个命门上。武侠世界里，欧阳克用性命告诉我们：最强的武功也救不了一个管不住自己的人。</p></div>
+<div class="wisdom-card"><h4>启示二：坏人也有"底线"</h4><p>欧阳克临死前没有说出杨康的名字——不管是因为来不及，还是他有意选择了沉默——都指向了一个耐人寻味的可能性：即使是坏人也可能有自己的底线。也许他想保护这个曾经的"兄弟"，也许他的骄傲不允许他做告密者，也许他单纯地认为说不说都一样。无论如何，在生命的最后时刻，他没有像一个彻底的卑劣之徒那样死去，这给他这个"优雅的反派"画上了一个模糊的句号。</p></div>
+<div class="wisdom-card"><h4>启示三：占有欲不是爱</h4><p>欧阳克对黄蓉的执念常被解读为"爱情"——但真正的爱情是平等、尊重和愿意为对方付出，而欧阳克从头到尾只想"得到"。他把一个自由聪慧的灵魂当作战利品来追逐，结果被战利品反噬。他的故事提醒我们：当你把一个人当作"目标"而不是"人"去对待时，你注定会输。黄蓉不是他的猎物，黄蓉是他的审判者。</p></div>
+</div>
+
+<p>欧阳克的一生是一场华丽的悲剧。他出身不低、武功不弱、相貌不差——<strong>他什么都有，唯独没有一个正确的活法</strong>。金庸用这个人物告诉我们：天赋和资源决定你的起点，但你怎么活，决定你的终点在哪里。欧阳克的终点，是牛家村一间废屋里的血泊，是一句没有说完的遗言，是一个永远解不开的误会。而最讽刺的是：<strong>他一生追逐女色，最终死在了一个女人的计谋和一个男人的刀下</strong>——这两个人，恰好印证了他全部的人生弱点。</p>
+</div>
+
+<div class="narration-block">
+  <h3>口播稿</h3>
+  <p>金庸人物志，今日人物：欧阳克。白驼山少主，西毒欧阳锋的私生子，一袭白衣风度翩翩的西域贵公子——但也是《射雕英雄传》里最著名的好色之徒。他最大的悲剧不是死得惨，而是他本来可以不死的。他有最好的师父，最好的武学传承，足以在中原武林立足的实力——但一个"色"字，毁了一切。他遇到黄蓉之后神魂颠倒，说了一句让人又好笑又细思极恐的话："我不要你的武功，我要你的人。"然后他就被这个十五六岁的小姑娘用沙子迷眼、骗吃毒药、设计跳进粪坑，最后被巨石压断双腿。更讽刺的是，在他命悬一线的时候，是杨康——他以为是兄弟的人——一刀结果了他。临死前，他想说出凶手的名字："杀我的人是……"话没说完，气绝身亡。欧阳锋因此误以为是郭靖杀了他亲儿子，江湖血债又添一笔。欧阳克的故事是一个关于"弱点"的终极寓言：天赋再高、靠山再硬，管不住自己的欲望，终究是自取灭亡。但他也不是一个彻底的烂人——临死前他或许有意没有说出杨康的名字，给这个风流又悲剧的一生留下了最后一丝模糊的体面。欢迎走进金庸人物志，今天我们来聊聊这个"坏得有格调"的反派——欧阳克。</p>
+</div>
+
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
+<nav class="bottom-nav">
+  <div><a href="ouyangfeng.html" class="prev"><span aria-hidden="true">&larr;</span> 欧阳锋</a></div>
+  <div><a href="yangkang.html" class="next">杨康 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="course-footer">
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>所有内容仅供学习交流使用</p>
+</div>
+
+</main>
+
+<script>
+// Progress bar update on scroll
+window.addEventListener('scroll',()=>{
+  const doc=document.documentElement;
+  const scrollTop=doc.scrollTop;
+  const scrollHeight=doc.scrollHeight-doc.clientHeight;
+  const progress=scrollHeight>0?(scrollTop/scrollHeight)*100:2.6;
+  const bar=document.querySelector('.progress-fill');
+  if(bar) bar.style.width=`${Math.min(100,progress)}%`;
+});
+</script>
+
+
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>张翠山 — 武当五侠 · 铁钩银划 — 金庸人物志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold)}
+.nav-info{font-size:.78rem;color:var(--text3);background:var(--card2);padding:4px 14px;border-radius:20px}
+.progress-bar{position:fixed;top:60px;left:0;right:0;height:3px;background:var(--border);z-index:99}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .1s;width:0}
+.main{max-width:800px;margin:0 auto;padding:90px 28px 60px}
+.lesson-header{text-align:center;margin-bottom:48px}
+.lesson-phase{display:inline-block;font-size:.7rem;font-weight:600;color:var(--gold);background:rgba(226,182,79,.08);border:1px solid rgba(226,182,79,.15);padding:5px 16px;border-radius:20px;margin-bottom:16px;letter-spacing:.08em}
+.lesson-header h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900;line-height:1.25;margin-bottom:14px;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lesson-meta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--text3);font-size:.82rem}
+.lesson-meta span{display:flex;align-items:center;gap:5px}
+.lesson-meta .badge{padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:500}
+.lesson-meta .badge-core{background:rgba(59,130,246,.1);color:#60a5fa}
+.audio-player{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:14px;transition:border-color .3s}
+.audio-player:hover{border-color:rgba(226,182,79,.2)}
+.audio-player audio{width:100%;height:36px;filter:sepia(100%) saturate(300%) hue-rotate(350deg)}
+.audio-label{font-size:.78rem;color:var(--text3);margin-bottom:2px}
+.audio-title-mini{font-size:.9rem;font-weight:600;color:var(--text)}
+.content h2{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin:40px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.content h2::before{content:'';width:3px;height:20px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.content h3{font-size:1.1rem;font-weight:600;color:var(--gold-light);margin:28px 0 10px}
+.content h4{font-size:1rem;font-weight:600;color:var(--text);margin:20px 0 8px}
+.content p{color:var(--text2);font-size:1rem;margin-bottom:12px;line-height:1.9}
+.content strong{color:var(--text);font-weight:600}
+.content em{color:var(--gold)}
+.content blockquote{background:linear-gradient(135deg,rgba(226,182,79,.06),rgba(226,182,79,.02));border-left:3px solid var(--gold);padding:16px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--text);font-size:.95rem;line-height:1.8}
+.content ul,.content ol{padding-left:24px;margin:12px 0;color:var(--text2)}
+.content li{margin:6px 0}
+.content li::marker{color:var(--gold-dark)}
+/* Character-specific styles */
+.identity-table{width:100%;border-collapse:collapse;margin:28px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.identity-table th{background:rgba(226,182,79,.08);color:var(--gold);font-weight:600;text-align:left;padding:11px 15px;border-bottom:2px solid rgba(226,182,79,.2);font-size:.78rem;letter-spacing:.04em}
+.identity-table td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text2);font-size:.9rem}
+.identity-table .id-label{width:12%;min-width:60px}
+.timeline{position:relative;margin:24px 0;padding-left:24px;border-left:2px solid var(--border)}
+.timeline-item{position:relative;margin-bottom:24px}
+.timeline-dot{position:absolute;left:-30px;top:4px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.timeline-content h4{color:var(--gold-light);font-size:.95rem;font-weight:600;margin-bottom:4px}
+.timeline-content p{font-size:.9rem;color:var(--text3)}
+.wisdom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.wisdom-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .3s}
+.wisdom-card:hover{border-color:rgba(226,182,79,.25)}
+.wisdom-card h4{color:var(--gold);font-size:.88rem;margin-bottom:8px}
+.wisdom-card p{font-size:.85rem;color:var(--text3);line-height:1.7}
+.anecdote-list{list-style:none;padding-left:0;margin:16px 0}
+.anecdote-list li{padding:12px 16px;margin:8px 0;background:var(--card2);border-left:3px solid var(--gold-dark);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.anecdote-list li strong{color:var(--gold-light)}
+.narration-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0}
+.narration-block h3{color:var(--gold);font-family:var(--serif);font-size:1.1rem;margin-bottom:12px}
+.narration-block p{color:var(--text2);font-size:.93rem;line-height:1.9}
+.exercise{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0}
+.exercise:nth-of-type(odd){border-left:3px solid var(--blue)}
+.exercise:nth-of-type(even){border-left:3px solid var(--gold)}
+.exercise h3{color:var(--text);font-size:1.05rem;margin-bottom:10px}
+.exercise .q{color:var(--text);font-weight:500;margin-bottom:10px}
+.exercise textarea{width:100%;min-height:80px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:.93rem;resize:vertical;transition:border-color .2s;line-height:1.8}
+.exercise textarea:focus{outline:none;border-color:var(--gold)}
+.exercise textarea::placeholder{color:var(--text3)}
+.exercise details{margin-top:12px;padding:12px 16px;background:var(--card2);border-radius:8px}
+.exercise details summary{cursor:pointer;color:var(--gold);font-weight:500;font-size:.88rem}
+.exercise details[open] summary{margin-bottom:8px}
+.exercise details p{font-size:.85rem;color:var(--text3)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:40px 0;margin-top:48px;border-top:1px solid var(--border)}
+.bottom-nav a{display:flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:500;transition:all .25s;font-size:.93rem}
+.bottom-nav .prev{color:var(--text3);border:1px solid var(--border)}
+.bottom-nav .prev:hover{border-color:var(--gold);color:var(--gold)}
+.bottom-nav .next{background:var(--gold);color:#1a1a0a}
+.bottom-nav .next:hover{background:var(--gold-light);transform:translateY(-1px)}
+.course-footer{text-align:center;padding:32px 0 16px;border-top:1px solid var(--border);margin-top:24px;color:var(--text3);font-size:.8rem}
+.course-footer a{color:var(--gold)}
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .lesson-header h1{font-size:1.5rem}
+  .wisdom-grid{grid-template-columns:1fr}
+  .bottom-nav a{padding:12px 18px;font-size:.85rem}
+}
+
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
+
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
+</style>
+
+</head>
+<body data-course-id="zhangcuishan" data-course-index="39">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸人物志
+    </a>
+    <div class="nav-info">第 39 位 / 共 151 位</div>
+  </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="progress-bar"><div class="progress-fill" style="width:25.8%"></div></div>
+
+<main class="main">
+
+<header class="lesson-header">
+  <span class="lesson-phase">倚天</span>
+<div class="char-portrait-wrap" data-name="张翠山"><img class="char-portrait" src="../assets/characters/zhangcuishan.png" alt="张翠山" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>张翠山<span style="font-size:.7em;font-weight:400"> 铁钩银划 · 武当五侠</span></h1>
+  <div class="lesson-meta">
+    <span>倚天屠龙记</span>
+    <span class="badge badge-core">核心人物</span>
+    <span>第 39 / 151 位</span>
+  </div>
+</header>
+
+<div class="audio-player">
+  <div>
+    <div class="audio-title-mini">张翠山 课程音频</div>
+    <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
+  </div>
+  <audio controls>
+    <source src="../audio/zhangcuishan.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</div>
+
+<div class="content">
+<table class="identity-table">
+<tr><th class="id-label">姓名</th><td>张翠山</td><th class="id-label">称号</th><td>铁钩银划 / 武当五侠</td></tr>
+<tr><th class="id-label">门派</th><td>武当派</td><th class="id-label">师父</th><td>张三丰</td></tr>
+<tr><th class="id-label">出处</th><td colspan="3">金庸《倚天屠龙记》——武当七侠之第五侠，张无忌之父</td></tr>
+<tr><th class="id-label">武学</th><td colspan="3">倚天屠龙笔法、武当九阳功、武当绵掌、梯云纵、太极拳（师从张三丰）</td></tr>
+<tr><th class="id-label">配偶</th><td>殷素素（天鹰教教主殷天正之女）</td><th class="id-label">子</th><td>张无忌</td></tr>
+</table>
+
+<h2>第一章 人物小传：铁钩银划，一诺千金</h2>
+<p>张翠山，<strong>武当七侠之第五侠</strong>，江湖人称<em>"铁钩银划"</em>。他出身武林圣地武当山，是张三丰座下最得意弟子之一。与大师兄宋远桥的沉稳、二师兄俞莲舟的刚毅不同，张翠山性格温润如玉却又刚烈入骨——文能挥毫泼墨、笔走龙蛇，武能使倚天屠龙笔法、惊风雨泣鬼神。"铁钩银划"四字，既是他书法功力的写照，更是他剑法风格的灵魂：每一笔落下都如铁钩入木三分，每一剑刺出皆有银划破空之音。</p>
+
+<p>他的人生，被一场意外的相遇彻底改写。天鹰教教主殷天正之女<strong>殷素素</strong>——一个被称为"魔教妖女"的女子——闯入了他的世界。从初见的刀光剑影，到王盘山扬刀大会上的并肩作战，再到扬帆出海后的生死相依，两人从敌人变成知己，又从知己成为爱人。一场海难将他们抛到了极北之地的<strong>冰火岛</strong>——一半冰川、一半火山的荒绝之境。在那里，没有江湖纷争，没有正邪对立，只有两个漂泊的灵魂和渐渐燃起的炉火。他们在冰火岛上拜了天地，对着冰川与火山发下海誓山盟，生下了儿子<strong>张无忌</strong>。岛上的十年，是张翠山一生中最平静也最幸福的时光：教无忌识字、练剑，和素素一起看极光漫天、听海潮起落——那个被冰雪与熔岩包围的小天地，成了他们一家三口与世隔绝的桃花源。</p>
+
+<p>十年后，一家人造筏归来。然而回到中原的那一刻，命运的绞索便已悄然收紧。整个武林都在追问同一个问题：<strong>金毛狮王谢逊在哪里？</strong>谢逊是张翠山在冰火岛上结拜的义兄，手握屠龙刀，身负无数血债。六大派齐聚武当山，逼张翠山说出谢逊下落。一边是义结金兰的兄弟情义，一边是师门武当的清誉安危；说出来，是对义兄的背叛；不说，是将武当置于天下武林的刀尖之上。张翠山在这两道无法调和的绳索之间，被越勒越紧。最终，在武当大殿之上、恩师张三丰与天下英雄面前，他拔出长剑——<em>"我张翠山，对得起朋友，对不起师门。"</em>话音未落，剑刃已划过咽喉。鲜血溅上武当的青石地砖，一代豪侠的生命定格在了这句话上。金庸先生后来说，这是他笔下<strong>写得最痛的一幕</strong>——不是因为惨烈，而是因为无奈。一个顶天立地的好人，被命运的齿轮碾成了粉末。</p>
+
+<h2>第二章 "侠"与"义"的绝境：当忠诚互相矛盾</h2>
+<p>张翠山的悲剧，本质上是<strong>双重身份的撕裂</strong>。他是武当弟子——师父张三丰视他如子，六位师兄弟情同手足，武当的清誉是他拼了命也要守护的东西。他同时又是谢逊的结拜兄弟——在冰火岛上，谢逊对着刚出生的张无忌说"这孩子是我的义子"，那一刻的盟誓，比任何刀剑都重。这两个身份在绝大多数时候可以和平共处，直到那个致命的问题被摆上台面：<strong>谁杀了龙门镖局满门七十一口？</strong></p>
+
+<p>这个问题像一把刀，精确地插在了两个身份的正中间。龙门镖局灭门惨案，正是殷素素所为——那是她遇到张翠山之前，以天鹰教紫薇堂主的身份做下的事。而龙门镖局总镖头都大锦，恰恰是受武当派之托护送三侠俞岱岩的镖师。殷素素杀都大锦，是为了给俞岱岩报仇（都大锦护送失职导致俞岱岩落入奸人之手、终身残废），但手段之狠辣——灭人满门——又绝非正派所为。张翠山面对这个真相时，内心被撕成了两半：作为丈夫，他理解妻子的动机；作为武当弟子，他无法接受这样的血腥手段；而作为谢逊的义弟，他更不能出卖义兄的下落来换取自己的清白。</p>
+
+<blockquote>"我活着，就是正确答案——你们可以从我嘴里撬出谢逊的下落。我死了，你们就不用再问了。"</blockquote>
+
+<p>张翠山最终选择了<strong>用死亡来回答所有问题</strong>。他的自刎，不是懦弱，而是一种极度悲壮的两全法：对谢逊，他守住了兄弟的秘密，兑现了结拜时的承诺；对武当，他以死谢罪，让天下英雄再没有理由为难师门。但这份"两全"的背后，是一个残忍的逻辑——他把所有的痛苦留给了活着的人。殷素素紧随其后殉情而死，年仅十岁的张无忌在一天之内失去了双亲。他在大殿上抱着父母的尸体，撕心裂肺地喊着"爹——娘——"，那个画面让在场每一个江湖豪客都低下了头。张翠山用一死证明了"侠"的重量，却也用这一死，亲手撕碎了儿子的整个世界。</p>
+
+<h2>第三章 武当绝学：从倚天屠龙笔到太极之道</h2>
+<p>张翠山的武学根基，深深扎在武当派的正宗传承之中。作为张三丰的亲传弟子，他自幼修炼<strong>武当九阳功</strong>——这门脱胎于觉远大师所诵《九阳真经》的内功心法，以纯和绵长见长，讲究以柔克刚、后发制人。武当九阳功为他打下了浑厚的内功底子，也奠定了他日后剑法飘逸而不失刚劲的独特风格。此外，他精通<strong>武当绵掌</strong>，看似轻飘飘的一掌推出，实则内力暗涌，中者五脏俱震；轻功<strong>梯云纵</strong>更是武当一绝，能在空中二次借力，如踏云而上，飘逸至极。</p>
+
+<p>但他最具标志性的武功，是<em>"倚天屠龙笔法"</em>。这套武功是从书法中化出来的——张翠山的书法造诣在武当七侠中首屈一指，他写字时笔锋如铁钩入纸，笔势似银划破空，力透纸背、气势如虹。"铁钩银划"的称号正是由此而来。张三丰看出了徒弟的天赋，指导他将书法的笔意融入剑法：横如千里阵云，点如高峰坠石，撇如利剑断犀，捺如崩浪奔雷——每一个书法中的笔触，到了张翠山手中都化作一道剑气。他使剑时，不像在战斗，更像在写一幅狂草——酣畅淋漓、一气呵成。这套<strong>倚天屠龙笔法</strong>，是张翠山将书法与剑术融为一体的独创，前无古人。</p>
+
+<p>此外，张翠山还从张三丰处习得了<strong>太极拳与太极剑法</strong>的入门功夫。太极之道讲究"以静制动、以柔克刚"，画一个圆圈，将对方的力道引入、化解、再返还——这正是武当武学的最高哲学。张翠山天资聪颖，对太极心法的领悟远超同门，若非英年早逝，假以时日必成一代宗师。可惜他的武学之路，在武当大殿上戛然而止。那一剑自刎，斩断的不只是他自己的生命，还有一门尚未大成的绝世武功。</p>
+
+<h2>趣事典故：冰火岛上的温暖与江湖中的传说</h2>
+<ul class="anecdote-list">
+<li><strong>冰火岛上最温暖的对话</strong> —— 这是张翠山在冰火岛上对殷素素说过的最动人的情话。那天风雪交加，两人围着篝火，张翠山轻声唤道："素素……"殷素素却故意别过脸："不要叫我素素，我是魔教的人。"张翠山笑了，伸手握住她的手说："那把我也变成魔教的人就好了。"殷素素怔住了，眼眶一红——"你……"——然后就再也说不出话来。这种对话在冰火岛的十年里发生过无数次，每一次都像冰天雪地里的一杯热酒，暖到心里去。在正邪不两立的江湖中，所有人都告诉他们不能在一起；但在这座与世隔绝的岛上，他们证明了"正"与"邪"不过是标签——真正的情义，从来不问出身。</li>
+<li><strong>"铁钩银划"的来由</strong> —— 张翠山这个称号的由来颇具传奇色彩。据说他年轻时在武当山上练字，写的是王羲之的《兰亭序》。张三丰路过看了一眼，抚须笑道："你这字，笔力如钩划，已经不是写字了——是在写剑气。"后来张翠山将书法的笔意融入剑法，出剑时每一招都带着书法的起承转合：横如千里阵云，点如高峰坠石，竖如万岁枯藤，钩如百钧弩发。江湖人看了叹为观止，送的称号"铁钩银划"——铁钩是笔力，银划是剑气，合在一起就是张翠山这个人：文人风骨，侠者肝胆。</li>
+<li><strong>王盘山扬刀大会</strong> —— 张翠山与殷素素真正产生交集的起点。天鹰教在王盘山举办扬刀大会，展示屠龙宝刀。张翠山以武当五侠的身份赴会，殷素素以紫薇堂主的身份主持大会。两人初见时剑拔弩张，但谢逊突然闯入、以狮吼功震晕全场后掳走二人——这一掳，掳出了一段姻缘。命运的荒诞与浪漫在此处交汇：若不是谢逊这个"恶人"，张翠山和殷素素永远不会被命运推到一起。</li>
+<li><strong>大殿上最后一眼</strong> —— 张翠山自刎前，最后看了一眼殷素素。那一眼里，有歉疚，有不舍，有对冰火岛上十年岁月的无声告别。殷素素读懂了那一眼——所以她在他倒下后的片刻之间，也用匕首刺入了自己的心脏。他们从冰火岛上携手归来，也在武当大殿上并肩而去。张无忌后来在光明顶上对六大派说："我爹娘没有做错任何事。"这句话的分量，只有读过张翠山故事的人才能掂量出来。</li>
+</ul>
+
+<h2>现实启示：尊严之死与代价之重</h2>
+<div class="wisdom-grid">
+<div class="wisdom-card"><h4>启示一：最难的不是活，是有尊严的死</h4><p>张翠山用一把剑回答了所有问题。六大派逼问他谢逊的下落，殷素素的过往被人翻出来审判——他可以选择辩解、可以选择屈服、可以选择逃回冰火岛。但他选择了自刎。这不是逃避，而是用最后的方式告诉世界：有些底线值得用命去守。在今天的职场和生活中，我们或许不会面对生死抉择，但"有尊严地坚持原则"——这种精神，在任何时代都不过时。</p></div>
+<div class="wisdom-card"><h4>启示二：有些"对"是错的</h4><p>张翠山以为自己自刎可以保全一切——保全谢逊的秘密，保全武当的清誉，保全自己的名节。但他的死毁掉了张无忌的整个童年，让一个十岁的孩子在同一天失去父母。他的出发点是"对"的——守护义气、承担罪责——但结果却是"错"的：他用一个悲剧制造了另一个更大的悲剧。这提醒我们：做决策时不能只考虑自己的道义感，还要看到道义背后的代价——尤其是那些将由你爱的人来承担的代价。</p></div>
+<div class="wisdom-card"><h4>启示三：正邪之外有人心</h4><p>张翠山与殷素素的爱情，是对"正邪不两立"最有力的反驳。一个武当正派弟子，一个天鹰教"妖女"——按照江湖规矩，他们应该互相厮杀。但冰火岛上的十年证明了：人与人之间的情义，远比门派标签更真实。张翠山用一生告诉我们：不要用标签去判断一个人——正派里面有人渣，魔教里面也有好人。真正重要的不是一个人来自哪里，而是他做了什么、守住了什么。</p></div>
+</div>
+</div>
+
+<div class="narration-block">
+  <h3>口播稿</h3>
+  <p>金庸人物志，今日人物：<strong>张翠山</strong>。他是武当七侠之第五侠，江湖人称"铁钩银划"，也是《倚天屠龙记》主角张无忌的父亲。他的一生，是金庸笔下最令人心碎的悲剧——一个顶天立地的好人，被"侠"与"义"两条绳索活活绞死。他本是武当山上挥毫泼墨的翩翩君子，剑法如书法、笔笔惊风雷。一场海难将他与天鹰教"妖女"殷素素抛到了极北的冰火岛——在那里，没有正邪、没有门派，只有两颗心在冰川与火山之间渐渐靠近。他们成了亲，生了张无忌，过了十年与世无争的日子。但回到中原后，整个武林都在逼问同一个问题：谢逊在哪里？一边是结义兄弟的情义，一边是师门武当的安危——张翠山被夹在中间，无路可走。最终在武当大殿之上，他拔出长剑，留下一句"我张翠山，对得起朋友，对不起师门"，然后自刎而死。殷素素紧随其后殉情，十岁的张无忌在同一天失去了双亲。金庸先生说，张翠山之死是他写得最痛的一幕——不是惨烈，是无奈。张翠山以为用死可以保全一切，但他的死恰恰毁掉了一切。今天，让我们一起走进这个用尊严回答世界的男人，解读他短暂而炽烈的一生中，关于情义、选择与代价的终极命题。</p>
+</div>
+
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
+<nav class="bottom-nav">
+  <div><a href="zhangsanfeng.html" class="prev"><span aria-hidden="true">&larr;</span> 张三丰</a></div>
+  <div><a href="zhangwuji.html" class="next">张无忌 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="course-footer">
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>所有内容仅供学习交流使用</p>
+</div>
+
+</main>
+
+<script>
+// Progress bar update on scroll
+window.addEventListener('scroll',()=>{
+  const doc=document.documentElement;
+  const scrollTop=doc.scrollTop;
+  const scrollHeight=doc.scrollHeight-doc.clientHeight;
+  const progress=scrollHeight>0?(scrollTop/scrollHeight)*100:25.8;
+  const bar=document.querySelector('.progress-fill');
+  if(bar) bar.style.width=`${Math.min(100,progress)}%`;
+});
+</script>
+
+
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

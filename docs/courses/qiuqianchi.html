@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>裘千尺 — 地洞复仇女神 · 枣核钉 — 金庸人物志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold)}
+.nav-info{font-size:.78rem;color:var(--text3);background:var(--card2);padding:4px 14px;border-radius:20px}
+.progress-bar{position:fixed;top:60px;left:0;right:0;height:3px;background:var(--border);z-index:99}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .1s;width:0}
+.main{max-width:800px;margin:0 auto;padding:90px 28px 60px}
+.lesson-header{text-align:center;margin-bottom:48px}
+.lesson-phase{display:inline-block;font-size:.7rem;font-weight:600;color:var(--gold);background:rgba(226,182,79,.08);border:1px solid rgba(226,182,79,.15);padding:5px 16px;border-radius:20px;margin-bottom:16px;letter-spacing:.08em}
+.lesson-header h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900;line-height:1.25;margin-bottom:14px;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lesson-meta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--text3);font-size:.82rem}
+.lesson-meta span{display:flex;align-items:center;gap:5px}
+.lesson-meta .badge{padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:500}
+.lesson-meta .badge-core{background:rgba(59,130,246,.1);color:#60a5fa}
+.audio-player{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:14px;transition:border-color .3s}
+.audio-player:hover{border-color:rgba(226,182,79,.2)}
+.audio-player audio{width:100%;height:36px;filter:sepia(100%) saturate(300%) hue-rotate(350deg)}
+.audio-label{font-size:.78rem;color:var(--text3);margin-bottom:2px}
+.audio-title-mini{font-size:.9rem;font-weight:600;color:var(--text)}
+.content h2{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin:40px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.content h2::before{content:'';width:3px;height:20px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.content h3{font-size:1.1rem;font-weight:600;color:var(--gold-light);margin:28px 0 10px}
+.content h4{font-size:1rem;font-weight:600;color:var(--text);margin:20px 0 8px}
+.content p{color:var(--text2);font-size:1rem;margin-bottom:12px;line-height:1.9}
+.content strong{color:var(--text);font-weight:600}
+.content em{color:var(--gold)}
+.content blockquote{background:linear-gradient(135deg,rgba(226,182,79,.06),rgba(226,182,79,.02));border-left:3px solid var(--gold);padding:16px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--text);font-size:.95rem;line-height:1.8}
+.content ul,.content ol{padding-left:24px;margin:12px 0;color:var(--text2)}
+.content li{margin:6px 0}
+.content li::marker{color:var(--gold-dark)}
+/* Character-specific styles */
+.identity-table{width:100%;border-collapse:collapse;margin:28px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.identity-table th{background:rgba(226,182,79,.08);color:var(--gold);font-weight:600;text-align:left;padding:11px 15px;border-bottom:2px solid rgba(226,182,79,.2);font-size:.78rem;letter-spacing:.04em}
+.identity-table td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text2);font-size:.9rem}
+.identity-table .id-label{width:12%;min-width:60px}
+.timeline{position:relative;margin:24px 0;padding-left:24px;border-left:2px solid var(--border)}
+.timeline-item{position:relative;margin-bottom:24px}
+.timeline-dot{position:absolute;left:-30px;top:4px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.timeline-content h4{color:var(--gold-light);font-size:.95rem;font-weight:600;margin-bottom:4px}
+.timeline-content p{font-size:.9rem;color:var(--text3)}
+.wisdom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.wisdom-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .3s}
+.wisdom-card:hover{border-color:rgba(226,182,79,.25)}
+.wisdom-card h4{color:var(--gold);font-size:.88rem;margin-bottom:8px}
+.wisdom-card p{font-size:.85rem;color:var(--text3);line-height:1.7}
+.anecdote-list{list-style:none;padding-left:0;margin:16px 0}
+.anecdote-list li{padding:12px 16px;margin:8px 0;background:var(--card2);border-left:3px solid var(--gold-dark);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.anecdote-list li strong{color:var(--gold-light)}
+.narration-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0}
+.narration-block h3{color:var(--gold);font-family:var(--serif);font-size:1.1rem;margin-bottom:12px}
+.narration-block p{color:var(--text2);font-size:.93rem;line-height:1.9}
+.exercise{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0}
+.exercise:nth-of-type(odd){border-left:3px solid var(--blue)}
+.exercise:nth-of-type(even){border-left:3px solid var(--gold)}
+.exercise h3{color:var(--text);font-size:1.05rem;margin-bottom:10px}
+.exercise .q{color:var(--text);font-weight:500;margin-bottom:10px}
+.exercise textarea{width:100%;min-height:80px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:.93rem;resize:vertical;transition:border-color .2s;line-height:1.8}
+.exercise textarea:focus{outline:none;border-color:var(--gold)}
+.exercise textarea::placeholder{color:var(--text3)}
+.exercise details{margin-top:12px;padding:12px 16px;background:var(--card2);border-radius:8px}
+.exercise details summary{cursor:pointer;color:var(--gold);font-weight:500;font-size:.88rem}
+.exercise details[open] summary{margin-bottom:8px}
+.exercise details p{font-size:.85rem;color:var(--text3)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:40px 0;margin-top:48px;border-top:1px solid var(--border)}
+.bottom-nav a{display:flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:500;transition:all .25s;font-size:.93rem}
+.bottom-nav .prev{color:var(--text3);border:1px solid var(--border)}
+.bottom-nav .prev:hover{border-color:var(--gold);color:var(--gold)}
+.bottom-nav .next{background:var(--gold);color:#1a1a0a}
+.bottom-nav .next:hover{background:var(--gold-light);transform:translateY(-1px)}
+.course-footer{text-align:center;padding:32px 0 16px;border-top:1px solid var(--border);margin-top:24px;color:var(--text3);font-size:.8rem}
+.course-footer a{color:var(--gold)}
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .lesson-header h1{font-size:1.5rem}
+  .wisdom-grid{grid-template-columns:1fr}
+  .bottom-nav a{padding:12px 18px;font-size:.85rem}
+}
+
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
+
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
+</style>
+
+</head>
+<body data-course-id="qiuqianchi" data-course-index="100">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸人物志
+    </a>
+    <div class="nav-info">第 95 位 / 共 151 位</div>
+  </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="progress-bar"><div class="progress-fill" style="width:62.9%"></div></div>
+
+<main class="main">
+
+<header class="lesson-header">
+  <span class="lesson-phase">神雕</span>
+<div class="char-portrait-wrap" data-name="裘千尺"><img class="char-portrait" src="../assets/characters/qiuqianchi.png" alt="裘千尺" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>裘千尺<span style="font-size:.7em;font-weight:400">地洞复仇女神 · 枣核钉</span></h1>
+  <div class="lesson-meta">
+    <span>神雕侠侣</span>
+    <span class="badge badge-core">配角</span>
+    <span>第 95 / 151 位</span>
+  </div>
+</header>
+
+<div class="audio-player">
+  <div>
+    <div class="audio-title-mini">裘千尺 课程音频</div>
+    <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
+  </div>
+  <audio controls>
+    <source src="../audio/qiuqianchi.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</div>
+
+<div class="content">
+<table class="identity-table">
+<tr><th class="id-label">姓名</th><td>裘千尺</td><th class="id-label">称号</th><td>地洞复仇女神 · 枣核钉</td></tr>
+<tr><th class="id-label">身份</th><td>铁掌帮帮主裘千仞之妹 · 绝情谷谷主夫人</td><th class="id-label">擅长</th><td>枣核钉（口中暗器）、铁掌帮武学</td></tr>
+<tr><th class="id-label">出处</th><td colspan="3">金庸《神雕侠侣》（南宋末年，绝情谷）</td></tr>
+</table>
+
+<h2>第一章 从绝情谷夫人到地洞囚徒</h2>
+
+<p>裘千尺是谁？在《神雕侠侣》里，她出场极晚，却一出场就震住了所有人。她是<strong>铁掌帮帮主裘千仞的亲妹妹</strong>——这个出身本身就意味着她从小在武林顶尖高手的阴影与庇护下长大。铁掌帮当年横行湘西，裘千仞一双铁掌打遍江南无敌手，连华山论剑都有他一席之地。有这样的哥哥，裘千尺的少女时代想必是金尊玉贵、不可一世的。</p>
+
+<p>后来她嫁给了绝情谷谷主公孙止。在外人看来，这是门当户对的好姻缘——一方是武林大豪的妹妹，一方是深谷幽居的一方之主。起初也许确实有过一段恩爱时光，公孙止对她敬重有加，她也将铁掌帮的武学心得倾囊相授，补足了公孙止武功中的许多缺陷。但好景不长——<strong>公孙止和丫鬟柔儿偷情</strong>，这件事彻底击碎了裘千尺的世界。她是什么人？铁掌帮的大小姐，从小到大只有她俯视别人的份。丈夫的背叛对她而言不仅是感情的伤害，更是一种不可容忍的羞辱。她大怒之下，<strong>亲手杀了柔儿</strong>。</p>
+
+<p>杀柔儿的那一刻，裘千尺可能觉得这是正义的复仇。但她低估了公孙止的狠毒。公孙止表面上不动声色，暗中却策划了最残忍的报复——他趁裘千尺不备，<strong>挑断了她的手脚筋</strong>，然后把她推进了绝情谷深处一个暗无天日的地洞。手脚筋一断，四肢便彻底废了。她从一个叱咤风云的武林高手，变成了一个连爬都爬不动的废人。地洞深不见底，四周是冰冷的石壁，头顶只有一线微光。公孙止以为她必死无疑——没有人能在这种地方活下来。但他错了。</p>
+
+<p>地洞上方恰好长着一棵枣树。枣子熟了，随风坠入洞中——这就是裘千尺赖以生存的全部食物。<strong>十几年，四千多个日夜，她靠一颗枣树的落果活了下来。</strong>但仅仅活着是不够的。她的手脚废了，可她还有一张嘴。她用嘴接枣、用嘴吐核——日复一日，年复一年，她开始练一门天下独一无二的武功：<strong>枣核钉</strong>。口中含枣核，以真气激射而出，百发百中，威力不输任何暗器高手。十几年后，当杨过和公孙绿萼意外发现了这个地洞，把她从深渊中拉上来的时候，他们看到的不是一个垂死的废人，而是一个浑身污垢、头发结块，但目光中燃烧着不灭仇恨的复仇者。她被救上来后只做了一件事——找公孙止复仇。最终，两人在绝情谷悬崖边同归于尽。裘千尺用一生写完了她的复仇剧本，最后一句台词是：<strong>"你跑不掉了。"</strong></p>
+
+<h2>第二章 地洞里的复仇女神</h2>
+
+<p>如果要评选金庸笔下<strong>最"惨烈"的女性角色</strong>，裘千尺毫无悬念地名列前茅。金庸写了很多悲剧女性——李莫愁为情所伤成为杀人不眨眼的女魔头，梅超风为练九阴白骨爪弄得人不人鬼不鬼，瑛姑一夜白头苦等二十年。但她们的"惨"和裘千尺比起来，都还差着一个维度。李莫愁至少还能在江湖上行走，梅超风至少还有一双能打能杀的手，瑛姑至少还能在泥潭里研究奇门遁甲。而裘千尺呢？<strong>四肢被废，只剩一张嘴。</strong>她连自杀的能力都没有——这就是公孙止最恶毒的地方，他要让她求生不得、求死不能。</p>
+
+<p>但裘千尺做了一件所有人都想不到的事：她活下来了，而且把<strong>唯一能动的器官变成了杀人利器</strong>。四肢废了？没关系，我还有嘴。嘴不能走路，但嘴能吐枣核。十几年时间，一个地洞，一棵枣树，一个女人，一颗接一颗的枣核从她嘴里射出，钉在石壁上，弹回来，再射出去。她对着石壁练，对着空气练，对着头顶那一线天光练。没有人教她，没有秘籍可看，没有任何人可以交流——她只有仇恨。仇恨是她唯一的口粮，比枣子更管饱。她说了一句话，平平淡淡却让人脊背发凉：<em>"我在地洞里没有别的事，就练这个。"</em></p>
+
+<p>这句话的背后是什么？是四千多个日夜里，每一次张嘴吐核的时候，脑海里浮现的都是公孙止的脸。<strong>十几年的仇恨凝聚在一颗小小的枣核里</strong>——这颗枣核不再是枣核，它是四千多天的怨恨、痛苦、屈辱压缩成的子弹。金庸用这个细节告诉我们：当一个人把全部生命能量聚焦在唯一一件事情上的时候，她能爆发出多么可怕的力量。裘千尺不是天赋最高的人，但她拥有任何人都无法比拟的"练功条件"——绝对专注、绝对孤独、绝对仇恨。没有任何干扰，没有任何退路，没有任何其他选择。她的人生只剩下一件事：活着，然后复仇。这种极致的专注，让她在地洞里练成了别人穷尽一生也练不成的绝学。这就是裘千尺——<strong>地洞里的复仇女神</strong>，金庸笔下最黑暗也最耀眼的女性传奇。</p>
+
+<h2>第三章 枣核钉、坠崖与仇恨的代价</h2>
+
+<p>裘千尺的武学根基来自铁掌帮。她的哥哥裘千仞以"铁掌水上漂"名震江湖，铁掌功夫刚猛霸道，在射雕时代足以与五绝争锋。裘千尺作为裘千仞的妹妹，自幼耳濡目染，武功底子极为扎实——这也是为什么公孙止早年对她毕恭毕敬的原因之一，他的许多武功缺陷都是靠裘千尺指点才得以弥补。但铁掌帮的武功靠的是一双手，而裘千尺的手已经被废了。于是她创造性地将铁掌帮的<strong>真气运行法门</strong>从手臂转移到口腔——以内力裹挟枣核，从唇齿之间激射而出。这看似荒诞的武功，实则暗合了武学中"真气外放、以气御物"的上乘原理。枣核虽小，灌注真气之后威力惊人，近距离可以打穿木板、击碎茶杯，中距离可中穴道、致人晕眩。更可怕的是它的隐蔽性——谁能想到一个看起来奄奄一息的老妇人，张嘴一"呸"就能要人命？</p>
+
+<p>裘千尺身上有三件事让人过目不忘。第一件：她从地洞里被拉上来的时候——<strong>头发结块、浑身污垢</strong>，整个人蜷缩如一团破布。她抬起浑浊的眼睛，沙哑地说了一句：<em>"公孙止，你还认得我吗？"</em>公孙止当场吓得倒退三步——他以为她早就死了，没想到这个被他亲手废掉的女人，在地底下活了十几年，而且活着回来了。第二件：她当众展示枣核钉——张嘴"呸"的一声，<strong>枣核如子弹般射出，直接打穿了木板</strong>。在场所有人，包括杨过在内，都大惊失色。这是什么武功？天下哪有从嘴里吐出来的暗器？第三件：也是最震撼的一件——绝情谷悬崖边，她死死抓住公孙止，两人一起坠入万丈深渊。她说的最后一句话是：<em>"你跑不掉了。"</em>这是金庸笔下最"解恨"的同归于尽，也是最悲伤的结局。</p>
+
+<p>解恨吗？解恨。一个被丈夫背叛、废掉四肢、囚禁十几年的女人，终于亲手拉着仇人一起下地狱——换谁看了不说一句"报应不爽"。但悲伤吗？也悲伤。因为<strong>裘千尺用同归于尽证明了一件事：仇恨已经占据了她活着的全部意义。</strong>她在地洞里之所以没有死，不是因为留恋生命，而是因为还没报仇。报仇就是她呼吸的理由。当公孙止终于要死了，她的人生意义也随之终结——她没有想过报仇之后要做什么，因为不需要。她的生命剧本只有两幕：第一幕，被伤害；第二幕，复仇。没有第三幕。这就是裘千尺最深的悲剧——不是被伤害，而是被伤害之后，她把自己全部的人生活成了一颗枣核钉，尖锐、致命、但只有毁灭这一个方向。</p>
+
+<div class="timeline">
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>铁掌帮大小姐</h4>
+        <p>裘千尺自幼在铁掌帮长大，哥哥裘千仞威震江南。她武功扎实、性格刚烈，是湘西武林响当当的人物。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>下嫁绝情谷</h4>
+        <p>嫁给公孙止成为绝情谷夫人。早期夫妻和睦，她以铁掌武学心法补足了公孙止武功的短板，在谷中地位尊崇。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>杀柔儿·遭毒手</h4>
+        <p>发现公孙止与丫鬟柔儿偷情，盛怒之下杀死柔儿。公孙止表面隐忍，暗中报复——挑断她手脚筋，推入绝情谷地洞。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>地洞十四年</h4>
+        <p>靠洞顶枣树落下的枣子维持生命。四肢俱废，以口接枣、吐核为技，在绝对孤独中练成天下无双的"枣核钉"绝技。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>重见天日</h4>
+        <p>杨过与公孙绿萼发现地洞，将她救出。她以枣核钉震慑众人，开始向公孙止展开复仇，最终在悬崖边同归于尽。</p>
+    </div>
+</div>
+</div>
+
+<ul class="anecdote-list">
+<li><strong>一"呸"惊四座</strong> —— 裘千尺当众展示枣核钉绝技，张嘴"呸"的一声，枣核破空而出，直接将木板打穿。在场所有人目瞪口呆——天下竟有这等从嘴里吐出来的暗器功夫？这一招，让所有人都记住了"枣核钉"三个字。</li>
+<li><strong>"公孙止，你还认得我吗"</strong> —— 从地洞里被拉上来时，裘千尺头发结块、浑身污垢、蜷曲如一团烂布。她抬起浑浊的双眼，用沙哑到几乎听不清的声音说出这句话。公孙止吓得倒退三步——他万万没想到，这个被他亲手废掉的女人，在暗无天日的地洞里活了十几年。</li>
+<li><strong>"你跑不掉了"</strong> —— 绝情谷悬崖边，裘千尺用尽最后的力气死死抓住公孙止，两人一同坠入万丈深渊。这是她留在这个世界上的最后一句话。最解恨的同归于尽，也是最悲伤的告别——因为她的死，意味着仇恨是她活着唯一做过的事。</li>
+</ul>
+
+<div class="wisdom-grid">
+<div class="wisdom-card"><h4>启示一：仇恨是最好的"武功催化剂"</h4><p>裘千尺在地洞里练成了别人穷尽一生也练不成的枣核钉绝学。不是因为她天赋异禀，而是因为她的专注达到了极限——没有退路、没有选择、没有干扰。极致的仇恨催生了极致的力量。但这也是一把双刃剑：仇恨让她活下来，也让她只为了复仇而活。</p></div>
+<div class="wisdom-card"><h4>启示二：不要让自己的悲惨变成人生的全部</h4><p>裘千尺从地洞出来的那一刻，她本可以重新开始。但她没有——她的全部人生已经被仇恨定义。她选择同归于尽，意味着除了复仇，她的生命已经没有任何其他意义。被伤害不是她的错，但让仇恨吞噬一切，是她给自己判的终身监禁。</p></div>
+<div class="wisdom-card"><h4>启示三：极境出绝学</h4><p>枣核钉这门武功的本质启示是：人在极端处境下反而能迸发出惊人的创造力。裘千尺四肢被废，反而逼她把真气运行法门从手臂转移到口腔。金庸用这个荒诞而震撼的设定告诉我们：所谓绝境，有时恰恰是突破常规的契机。</p></div>
+</div>
+
+<p>读裘千尺，读的不是一个复仇故事，而是一个关于<strong>"人可以被摧毁到什么程度，又能从废墟中爆发出什么力量"</strong>的极限命题。金庸用这个蜷缩在地洞里十四年的女人告诉我们：最可怕的不是敌人有多强，而是一个人把自己的全部生命压缩成了一颗子弹——这颗子弹一定能击中目标，但子弹本身，也注定粉身碎骨。</p>
+</div>
+
+<div class="narration-block">
+  <h3>口播稿</h3>
+  <p>金庸人物志，今日人物：裘千尺。她是铁掌帮帮主裘千仞的亲妹妹，绝情谷谷主公孙止的夫人——但如果你只记住这两个身份，你就不算真正认识她。她真正让人记住的，是金庸笔下最惨烈也最震撼的一个画面：一个女人，被自己的丈夫挑断手脚筋，推进暗无天日的地洞，靠着洞顶一棵枣树落下的果子活了整整十几年。十几年里她四肢全废，只剩一张嘴能动——于是她日复一日地用嘴接枣、用嘴吐核，硬生生在黑暗中练成了一门天下独一无二的绝学：枣核钉。当杨过把她从地洞里拉上来的时候，她浑身污垢、头发结块、蜷曲如一团破布，但她说的第一句话让公孙止吓得倒退三步——"公孙止，你还认得我吗？"本期课程，我们从那个暗无天日的地洞出发，走到绝情谷的万丈悬崖边，一起走进裘千尺的故事——一个女人如何把十几年的仇恨凝聚在一颗小小的枣核里，又如何在复仇完成的那一刻，选择和仇人一起坠入深渊。欢迎来到金庸人物志。</p>
+</div>
+
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
+<nav class="bottom-nav">
+  <div><a href="qifang.html" class="prev"><span aria-hidden="true">&larr;</span> 戚芳</a></div>
+  <div><a href="renfeiyan.html" class="next">任飞燕 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="course-footer">
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>所有内容仅供学习交流使用</p>
+</div>
+
+</main>
+
+<script>
+// Progress bar update on scroll
+window.addEventListener('scroll',()=>{
+  const doc=document.documentElement;
+  const scrollTop=doc.scrollTop;
+  const scrollHeight=doc.scrollHeight-doc.clientHeight;
+  const progress=scrollHeight>0?(scrollTop/scrollHeight)*100:62.9;
+  const bar=document.querySelector('.progress-fill');
+  if(bar) bar.style.width=`${Math.min(100,progress)}%`;
+});
+</script>
+
+
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

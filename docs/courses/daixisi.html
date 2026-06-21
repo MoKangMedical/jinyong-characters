@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黛绮丝 — 紫衫龙王 · 波斯圣女 — 金庸人物志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold)}
+.nav-info{font-size:.78rem;color:var(--text3);background:var(--card2);padding:4px 14px;border-radius:20px}
+.progress-bar{position:fixed;top:60px;left:0;right:0;height:3px;background:var(--border);z-index:99}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .1s;width:0}
+.main{max-width:800px;margin:0 auto;padding:90px 28px 60px}
+.lesson-header{text-align:center;margin-bottom:48px}
+.lesson-phase{display:inline-block;font-size:.7rem;font-weight:600;color:var(--gold);background:rgba(226,182,79,.08);border:1px solid rgba(226,182,79,.15);padding:5px 16px;border-radius:20px;margin-bottom:16px;letter-spacing:.08em}
+.lesson-header h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900;line-height:1.25;margin-bottom:14px;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lesson-meta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--text3);font-size:.82rem}
+.lesson-meta span{display:flex;align-items:center;gap:5px}
+.lesson-meta .badge{padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:500}
+.lesson-meta .badge-core{background:rgba(59,130,246,.1);color:#60a5fa}
+.audio-player{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:14px;transition:border-color .3s}
+.audio-player:hover{border-color:rgba(226,182,79,.2)}
+.audio-player audio{width:100%;height:36px;filter:sepia(100%) saturate(300%) hue-rotate(350deg)}
+.audio-label{font-size:.78rem;color:var(--text3);margin-bottom:2px}
+.audio-title-mini{font-size:.9rem;font-weight:600;color:var(--text)}
+.content h2{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin:40px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.content h2::before{content:'';width:3px;height:20px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.content h3{font-size:1.1rem;font-weight:600;color:var(--gold-light);margin:28px 0 10px}
+.content h4{font-size:1rem;font-weight:600;color:var(--text);margin:20px 0 8px}
+.content p{color:var(--text2);font-size:1rem;margin-bottom:12px;line-height:1.9}
+.content strong{color:var(--text);font-weight:600}
+.content em{color:var(--gold)}
+.content blockquote{background:linear-gradient(135deg,rgba(226,182,79,.06),rgba(226,182,79,.02));border-left:3px solid var(--gold);padding:16px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--text);font-size:.95rem;line-height:1.8}
+.content ul,.content ol{padding-left:24px;margin:12px 0;color:var(--text2)}
+.content li{margin:6px 0}
+.content li::marker{color:var(--gold-dark)}
+.identity-table{width:100%;border-collapse:collapse;margin:28px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.identity-table th{background:rgba(226,182,79,.08);color:var(--gold);font-weight:600;text-align:left;padding:11px 15px;border-bottom:2px solid rgba(226,182,79,.2);font-size:.78rem;letter-spacing:.04em}
+.identity-table td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text2);font-size:.9rem}
+.identity-table .id-label{width:12%;min-width:60px}
+.timeline{position:relative;margin:24px 0;padding-left:24px;border-left:2px solid var(--border)}
+.timeline-item{position:relative;margin-bottom:24px}
+.timeline-dot{position:absolute;left:-30px;top:4px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.timeline-content h4{color:var(--gold-light);font-size:.95rem;font-weight:600;margin-bottom:4px}
+.timeline-content p{font-size:.9rem;color:var(--text3)}
+.wisdom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.wisdom-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .3s}
+.wisdom-card:hover{border-color:rgba(226,182,79,.25)}
+.wisdom-card h4{color:var(--gold);font-size:.88rem;margin-bottom:8px}
+.wisdom-card p{font-size:.85rem;color:var(--text3);line-height:1.7}
+.anecdote-list{list-style:none;padding-left:0;margin:16px 0}
+.anecdote-list li{padding:12px 16px;margin:8px 0;background:var(--card2);border-left:3px solid var(--gold-dark);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.anecdote-list li strong{color:var(--gold-light)}
+.narration-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0}
+.narration-block h3{color:var(--gold);font-family:var(--serif);font-size:1.1rem;margin-bottom:12px}
+.narration-block p{color:var(--text2);font-size:.93rem;line-height:1.9}
+.exercise{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0}
+.exercise:nth-of-type(odd){border-left:3px solid var(--blue)}
+.exercise:nth-of-type(even){border-left:3px solid var(--gold)}
+.exercise h3{color:var(--text);font-size:1.05rem;margin-bottom:10px}
+.exercise .q{color:var(--text);font-weight:500;margin-bottom:10px}
+.exercise textarea{width:100%;min-height:80px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:.93rem;resize:vertical;transition:border-color .2s;line-height:1.8}
+.exercise textarea:focus{outline:none;border-color:var(--gold)}
+.exercise textarea::placeholder{color:var(--text3)}
+.exercise details{margin-top:12px;padding:12px 16px;background:var(--card2);border-radius:8px}
+.exercise details summary{cursor:pointer;color:var(--gold);font-weight:500;font-size:.88rem}
+.exercise details[open] summary{margin-bottom:8px}
+.exercise details p{font-size:.85rem;color:var(--text3)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:40px 0;margin-top:48px;border-top:1px solid var(--border)}
+.bottom-nav a{display:flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:500;transition:all .25s;font-size:.93rem}
+.bottom-nav .prev{color:var(--text3);border:1px solid var(--border)}
+.bottom-nav .prev:hover{border-color:var(--gold);color:var(--gold)}
+.bottom-nav .next{background:var(--gold);color:#1a1a0a}
+.bottom-nav .next:hover{background:var(--gold-light);transform:translateY(-1px)}
+.course-footer{text-align:center;padding:32px 0 16px;border-top:1px solid var(--border);margin-top:24px;color:var(--text3);font-size:.8rem}
+.course-footer a{color:var(--gold)}
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .lesson-header h1{font-size:1.5rem}
+  .wisdom-grid{grid-template-columns:1fr}
+  .bottom-nav a{padding:12px 18px;font-size:.85rem}
+}
+
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
+
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
+</style>
+
+</head>
+<body data-course-id="daixisi" data-course-index="19">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸人物志
+    </a>
+    <div class="nav-info">第 19 位 / 共 151 位</div>
+  </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="progress-bar"><div class="progress-fill" style="width:12.6%"></div></div>
+
+<main class="main">
+
+<header class="lesson-header">
+  <span class="lesson-phase">倚天</span>
+<div class="char-portrait-wrap" data-name="黛绮丝"><img class="char-portrait" src="../assets/characters/daixisi.png" alt="黛绮丝" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>黛绮丝<span style="font-size:.7em;font-weight:400"> — 紫衫龙王 · 波斯圣女</span></h1>
+  <div class="lesson-meta">
+    <span>倚天屠龙记</span>
+    <span class="badge badge-core">重要人物</span>
+    <span>第 19 / 151 位</span>
+  </div>
+</header>
+
+<div class="audio-player">
+  <div>
+    <div class="audio-title-mini">黛绮丝 课程音频</div>
+    <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
+  </div>
+  <audio controls>
+    <source src="../audio/daixisi.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</div>
+
+<div class="content">
+<table class="identity-table">
+<tr><th class="id-label">姓名</th><td>黛绮丝</td><th class="id-label">称号</th><td>紫衫龙王 · 波斯圣女</td></tr>
+<tr><th class="id-label">身份</th><td>明教四大法王之首（唯一女性）· 波斯明教圣女</td><th class="id-label">擅长</th><td>圣火令武功、水下功夫、易容术</td></tr>
+<tr><th class="id-label">出处</th><td colspan="3">金庸《倚天屠龙记》（明教四大护教法王之首，波斯总教圣女）</td></tr>
+</table>
+
+<h2>第一章 紫衫龙王：江湖最美的叛徒</h2>
+
+<p>黛绮丝，明教四大护教法王之<strong>"紫衫龙王"</strong>——金庸笔下公认最美的女人之一。她是波斯与中土的混血，眼眸深邃如波斯湾的夜空，肤白胜雪，却又有着东方女子的婉约风韵。一袭紫衫从光明顶大殿走过，整个武林都安静了。战功赫赫的白眉鹰王殷天正、桀骜不驯的金毛狮王谢逊、来去如风的青翼蝠王韦一笑——三大法王在她面前，纷纷低头。紫白金青，她排第一，<strong>无人不服</strong>。</p>
+
+<p>但她的命运，早在波斯就被写好了。身为波斯明教总教圣女，她的身体属于明尊，终身不得嫁人——这是铁律，是烙印，是一出生就戴上的镣铐。可她偏偏爱上了<strong>韩千叶</strong>——江湖人称"银叶先生"。那场寒潭比武之后，她做了一个疯狂的决定：嫁给这个让她心动的男人。明教震怒——紫衫龙王违抗教令，与外人通婚。曾经的荣耀一夜之间化为乌有，她被逐出明教，从万人之上跌落尘埃。她不在乎。韩千叶给了她一个女儿——<strong>小昭</strong>。</p>
+
+<p>她曾把小昭藏在光明顶上，以为那座万丈高崖能护住她一世周全。可是波斯总教的手，太长了。那一天终于来了。小昭站在她面前，眼眶里噙着泪水，声音却异常平静：<em>"娘，我必须去波斯了。"</em>黛绮丝看着她——看着她从一个婴儿长成一个少女的那张脸——沉默了许久，最后只说了三个字：<em>"我知道。"</em>没有哭，没有闹，没有阻拦。因为她太清楚了——她自己逃了一辈子的命运，终于追上了她的女儿。这三个字，是她一生中最沉重的认命。</p>
+
+<h2>第二章 最美的人最孤独</h2>
+
+<p>金庸写过很多绝世美人——小龙女、王语嫣、香香公主——但没有一个像黛绮丝这样：<strong>美到极致，却孤独到极致</strong>。"最美的女人，最孤独的人生"——这十个字，是她一生的注脚。她这辈子只为一件事所困：<strong>情</strong>。一个"情"字，改写了她所有的命运轨迹。</p>
+
+<p>和韩千叶在一起的日子，是她人生中唯一的暖色。灵蛇岛上，海风轻拂，她曾靠在他肩头说过一句话：<em>"你让我第一次觉得，我可以不是紫衫龙王，只是一个女人。"</em>在韩千叶面前，她卸下了所有的铠甲——不再是那个让江湖闻风丧胆的龙王，只是一个会笑、会害羞、会为他煮茶缝衣的普通女子。可这段爱情像一把双刃剑——给了她从不敢奢望的幸福，也夺走了她拥有的一切。教职没了，地位没了，连最心爱的女儿也留不住。波斯总教带走小昭的那一刻，她才真正懂得：<em>"爱一个人要付出一切——原来是真的。"</em>这不是一句情话，这是一句命运的判决书。</p>
+
+<p>有人问她后不后悔。她从来没有回答过。但我们都知道答案——如果让她重来一次，她还是会走进那片冰寒刺骨的碧水寒潭，还是会对那个男人说"你我的命是绑在一起的"。因为对她而言，做"紫衫龙王"是一辈子的囚禁——万人敬仰又如何？而做韩千叶的妻子，哪怕只有一天，也是一辈子的自由。她失去了一切，却赢得了做自己的权利。<strong>这世上有一种胜利，叫输掉全世界。</strong></p>
+
+<h2>第三章 龙王之威：水下无敌，圣火不灭</h2>
+
+<p><strong>"紫衫龙王"</strong>四个字，不是随便叫的。龙王——水中之王。黛绮丝的水下功夫，<strong>金庸全书第一</strong>，无人能出其右。她的成名之战在光明顶后山的<strong>"碧水寒潭"</strong>——潭水终年冰寒彻骨，常人下去片刻便四肢僵硬、气息凝滞。而黛绮丝在水中如同蛟龙入海，来去自如，剑光在水下折射出冷冽的寒芒，身姿比陆地之上更加灵动飘逸。那一战，她和韩千叶在寒潭深处缠斗数个时辰，两道身影如同水中游龙，上下翻飞，看得围观者屏息凝神。从此之后，江湖上再无人敢在水上与紫衫龙王一较高下——<strong>因为在水下，她就是真正的龙王，不是比喻，是事实。</strong></p>
+
+<p>除了冠绝天下的水性，黛绮丝还身怀波斯明教的至高武学——<strong>圣火令武功</strong>。圣火令是波斯明教圣物，上面刻着来自波斯的诡异招式，每一招都匪夷所思，完全打破中土武学的常理框架。明明是刺向胸口的剑，半途却忽然拐弯刺向膝盖；明明身体向左倾斜，却在瞬间从右侧出手；明明看起来是破绽，迎上去却发现是杀招。这种反常规、反直觉的武功路数，让无数中土高手在她面前吃尽了苦头——你的每一招都在她预料之中，她的每一招都在你的理解之外。水下的绝对统治加上圣火令的诡异武功——<strong>这两样本事，成就了黛绮丝"紫衫龙王"的不朽威名。</strong>她被称为"龙王"，不是因为一件紫衫好看，而是因为在水下，她就是无可争议的王。</p>
+
+<div class="timeline">
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>波斯圣女东来</h4>
+        <p>黛绮丝以波斯明教圣女身份远赴中土，凭借绝世容颜与高强武功，被阳顶天封为明教四大法王之首——"紫衫龙王"。紫白金青，她排第一，一袭紫衫从此名动江湖。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>碧水寒潭定情</h4>
+        <p>韩千叶上光明顶挑战阳顶天，黛绮丝代教主出战。两人在碧水寒潭中比剑，立下赌约——"你输了当我老婆""你输了当我老公"。潭水冰寒刺骨，两人缠斗数个时辰，双双中了寒毒，却在生死一线间迸发出炽热的爱情。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>私奔灵蛇岛</h4>
+        <p>黛绮丝不顾波斯明教铁律，甘愿被逐出明教，嫁给韩千叶。两人隐居灵蛇岛，生下了女儿小昭。岛上的海风、月光和小昭的笑声——这是她一生中最幸福的时光，也是最短暂的时光。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>母女永别</h4>
+        <p>波斯总教使者追至中土，黛绮丝被处以"圣女焚火"之刑。张无忌与小昭联手将她从火刑柱上救下，但代价是小昭必须代替母亲回波斯继任圣女。小昭含泪离去，黛绮丝从此失去了女儿。那个"走"字，她用了一生去承受。</p>
+    </div>
+</div>
+</div>
+
+<ul class="anecdote-list">
+<li><strong>碧水寒潭赌约——"你输了，当我老公"</strong> —— 碧水寒潭比武之前，韩千叶盯着黛绮丝，一字一顿："你输了，当我老婆。"黛绮丝冷笑："你输了，当我……"韩千叶愣住了："当你什么？"黛绮丝忽然笑了——那一笑，整个寒潭的冰都化了："当我老公。"比武结束后，两人手牵手从寒潭里爬了上来。明教全教都懵了——白眉鹰王摸了摸胡子，金毛狮王瞪大了那只没瞎的眼睛，青翼蝠王差点从梁上掉下来。"紫衫龙王被拐跑了？"——这是明教史上最大的"意外事件"。</li>
+<li><strong>母女永别——一个"走"字，一生去承受</strong> —— 波斯总教追上门来，要带走小昭。小昭哭着说："娘，我不走。"黛绮丝只回了一个字："走。"小昭不肯："娘——"黛绮丝的声音平静得可怕："走，你才能安全。"小昭走了，一步三回头，海平面一点一点吞没了她的背影。黛绮丝站在原地，一动不动。她自己从波斯逃了一辈子，最后亲手把女儿送回了波斯。那个"走"字——她从嘴里吐出来只用了一秒，却用了整整一生去承受。命运和她开了一个最残忍的玩笑：她用逃跑换了一辈子的自由，最后用放手成全了女儿的安全。</li>
+</ul>
+
+<h2>现实启示：从黛绮丝身上学到的事</h2>
+<p>黛绮丝的故事是金庸笔下关于美貌、爱情与自由最深刻的寓言。从这个一袭紫衫、一生漂泊的女子身上，我们可以学到两件至关重要的事。</p>
+<div class="wisdom-grid">
+<div class="wisdom-card"><h4>启示一：最美的女人，不一定最幸福</h4><p>黛绮丝用自己的整个生命证明了这件事。她的美貌是天生的——波斯混血的血统给了她惊世容颜，让整个武林为之倾倒。但美貌给了她什么？波斯总教因为她的美貌选中她做圣女——终身不得嫁人。明教因为她的美貌敬仰她——却没有人真正问过她想要什么。江湖因为她的美貌记住了"紫衫龙王"——却没人关心紫衫之下那颗孤独的心。美貌是别人眼中的风景，却是她自己身上的枷锁。她一生最大的愿望，不过是做一个普通的妻子、一个普通的母亲——她没做到。读黛绮丝，读的不是一个英雄的传奇，而是一个女人的悲剧。</p></div>
+<div class="wisdom-card"><h4>启示二：爱比美更难——美是天生的，爱需要勇气</h4><p>美貌是上天给的，每个人都能看见。但爱——真正的爱——需要勇气，只有自己知道。黛绮丝爱上韩千叶的那一刻，她比任何人都清楚代价是什么：失去圣女身份、被逐出明教、被波斯总教追杀、甚至可能是火刑。但她还是爱了。因为对她来说，做"紫衫龙王"是一辈子的囚禁，而做韩千叶的妻子——哪怕只有一天——也是一辈子的自由。她用行动证明：爱比美更难。美是天生的礼物，爱却是后天的选择——而且是最需要勇气的那个选择。她输掉了全世界，却赢得了做自己的权利。这世上有一种胜利，叫输掉全世界；有一种勇气，叫明知会失去一切，还是选择去爱。</p></div>
+</div>
+
+<p>读黛绮丝，读的不是一个威震江湖的法王，而是一个被命运反复捉弄、却从未放弃自由的女人。在"紫衫龙王"的赫赫威名下，我们看见的是一个母亲——在说出"走"那个字的时候心碎成千万片；是一个妻子——在寒潭冰水中握住爱人的手就再也没松开过；是一个女人——为了爱情不惜背叛全世界，却最终被世界夺走了一切。金庸用黛绮丝告诉我们：有些人的一生，就是一场漫长的逃亡——<strong>但他们逃的不是敌人，而是那个被安排好的自己。</strong>而最美的女人，往往也是最孤独的人。</p>
+</div>
+
+<div class="narration-block">
+  <h3>口播稿</h3>
+  <p>金庸人物志，今日人物：黛绮丝——紫衫龙王。她是明教四大护教法王之首，紫白金青，她排第一。一袭紫衫走过光明顶，整个武林都不敢大声喘气。可你翻开她的故事，看到的不是威风，是一层一层的伤口。</p>
+  <p>她是波斯混血，金庸笔下最美的女人之一。但她最大的悲剧，恰恰就是太美了。因为美，被选为波斯明教圣女——终身不得嫁人。因为美，被所有人仰望——却没有人问过她想要什么。直到韩千叶出现。碧水寒潭那一战——她和韩千叶在冰水中比剑，立下赌约。"你输了，当我老婆。""你输了，当我……老公。"两人双双中了寒毒，差点冻死在潭底。可就在那个濒死的瞬间，她做了一个改变一生的决定——不做紫衫龙王了，做韩千叶的妻子。</p>
+  <p>明教震怒——紫衫龙王被除名，她从万人之上跌落尘埃。但她不在乎。两人隐居灵蛇岛，生下了女儿小昭。那是她一生中最幸福的时光，也是最短暂的时光。波斯总教还是来了。他们要带走小昭。小昭哭着说："娘，我不走。"黛绮丝只说了一个字："走。"小昭不肯。她又说了一句："走，你才能安全。"那个"走"字，像一把刀，插在她心口——插了一辈子。她自己从波斯逃了一辈子，最后亲手把女儿送回了波斯。命运就是这么残忍。</p>
+  <p>有人问：黛绮丝后悔过吗？她从来没有回答。但我想，如果时光倒流，她还是会走进那片碧水寒潭。因为对她来说，做"紫衫龙王"是一辈子的囚禁，做韩千叶的妻子——哪怕只有一天——也是一辈子的自由。最美的女人，不一定最幸福。黛绮丝用自己的故事证明：爱比美更难。欢迎走进金庸人物志，今天我们一起读懂紫衫龙王黛绮丝。</p>
+</div>
+
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
+<nav class="bottom-nav">
+  <div><a href="zhouruiruo.html" class="prev"><span aria-hidden="true">&larr;</span> 周芷若</a></div>
+  <div><a href="duanyu.html" class="next">段誉 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="course-footer">
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>所有内容仅供学习交流使用</p>
+</div>
+
+</main>
+
+<script>
+// Progress bar update on scroll
+window.addEventListener('scroll',()=>{
+  const doc=document.documentElement;
+  const scrollTop=doc.scrollTop;
+  const scrollHeight=doc.scrollHeight-doc.clientHeight;
+  const progress=scrollHeight>0?(scrollTop/scrollHeight)*100:12.6;
+  const bar=document.querySelector('.progress-fill');
+  if(bar) bar.style.width=`${Math.min(100,progress)}%`;
+});
+</script>
+
+
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

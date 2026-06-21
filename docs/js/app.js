@@ -152,7 +152,7 @@
       var completed = this.getCompleted().length;
       return {
         completed: completed,
-        total: totalCourses || 151,
+        total: totalCourses || 160,
         percentage: totalCourses ? Math.round((completed / totalCourses) * 100) : 0
       };
     },
@@ -358,7 +358,7 @@
         '<div class="jy-paywall-inner">' +
         '<h2>金庸人物志</h2>' +
         '<p class="jy-paywall-desc">' + (msg || '此课程需要会员才能访问') + '</p>' +
-        '<p class="jy-paywall-info">前20门主角课程免费学习 | 全库151门仅需 <strong>$' + COURSE_PRICE + '</strong></p>' +
+        '<p class="jy-paywall-info">前20门主角课程免费学习 | 全库160门仅需 <strong>$' + COURSE_PRICE + '</strong></p>' +
         '<div class="jy-paywall-keys">' +
         '<input type="text" id="jy-key-input" placeholder="输入激活码" autocomplete="off">' +
         '<button onclick="JYPaywall.activate()">激活会员</button>' +

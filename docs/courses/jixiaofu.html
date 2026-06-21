@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纪晓芙 — 不悔仲子逾我墙 — 金庸人物志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold)}
+.nav-info{font-size:.78rem;color:var(--text3);background:var(--card2);padding:4px 14px;border-radius:20px}
+.progress-bar{position:fixed;top:60px;left:0;right:0;height:3px;background:var(--border);z-index:99}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .1s;width:0}
+.main{max-width:800px;margin:0 auto;padding:90px 28px 60px}
+.lesson-header{text-align:center;margin-bottom:48px}
+.lesson-phase{display:inline-block;font-size:.7rem;font-weight:600;color:var(--gold);background:rgba(226,182,79,.08);border:1px solid rgba(226,182,79,.15);padding:5px 16px;border-radius:20px;margin-bottom:16px;letter-spacing:.08em}
+.lesson-header h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900;line-height:1.25;margin-bottom:14px;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lesson-meta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--text3);font-size:.82rem}
+.lesson-meta span{display:flex;align-items:center;gap:5px}
+.lesson-meta .badge{padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:500}
+.lesson-meta .badge-core{background:rgba(59,130,246,.1);color:#60a5fa}
+.audio-player{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:14px;transition:border-color .3s}
+.audio-player:hover{border-color:rgba(226,182,79,.2)}
+.audio-player audio{width:100%;height:36px;filter:sepia(100%) saturate(300%) hue-rotate(350deg)}
+.audio-label{font-size:.78rem;color:var(--text3);margin-bottom:2px}
+.audio-title-mini{font-size:.9rem;font-weight:600;color:var(--text)}
+.content h2{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin:40px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.content h2::before{content:'';width:3px;height:20px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.content h3{font-size:1.1rem;font-weight:600;color:var(--gold-light);margin:28px 0 10px}
+.content h4{font-size:1rem;font-weight:600;color:var(--text);margin:20px 0 8px}
+.content p{color:var(--text2);font-size:1rem;margin-bottom:12px;line-height:1.9}
+.content strong{color:var(--text);font-weight:600}
+.content em{color:var(--gold)}
+.content blockquote{background:linear-gradient(135deg,rgba(226,182,79,.06),rgba(226,182,79,.02));border-left:3px solid var(--gold);padding:16px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--text);font-size:.95rem;line-height:1.8}
+.content ul,.content ol{padding-left:24px;margin:12px 0;color:var(--text2)}
+.content li{margin:6px 0}
+.content li::marker{color:var(--gold-dark)}
+/* Character-specific styles */
+.identity-table{width:100%;border-collapse:collapse;margin:28px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.identity-table th{background:rgba(226,182,79,.08);color:var(--gold);font-weight:600;text-align:left;padding:11px 15px;border-bottom:2px solid rgba(226,182,79,.2);font-size:.78rem;letter-spacing:.04em}
+.identity-table td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text2);font-size:.9rem}
+.identity-table .id-label{width:12%;min-width:60px}
+.timeline{position:relative;margin:24px 0;padding-left:24px;border-left:2px solid var(--border)}
+.timeline-item{position:relative;margin-bottom:24px}
+.timeline-dot{position:absolute;left:-30px;top:4px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.timeline-content h4{color:var(--gold-light);font-size:.95rem;font-weight:600;margin-bottom:4px}
+.timeline-content p{font-size:.9rem;color:var(--text3)}
+.wisdom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.wisdom-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .3s}
+.wisdom-card:hover{border-color:rgba(226,182,79,.25)}
+.wisdom-card h4{color:var(--gold);font-size:.88rem;margin-bottom:8px}
+.wisdom-card p{font-size:.85rem;color:var(--text3);line-height:1.7}
+.anecdote-list{list-style:none;padding-left:0;margin:16px 0}
+.anecdote-list li{padding:12px 16px;margin:8px 0;background:var(--card2);border-left:3px solid var(--gold-dark);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.anecdote-list li strong{color:var(--gold-light)}
+.narration-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0}
+.narration-block h3{color:var(--gold);font-family:var(--serif);font-size:1.1rem;margin-bottom:12px}
+.narration-block p{color:var(--text2);font-size:.93rem;line-height:1.9}
+.exercise{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0}
+.exercise:nth-of-type(odd){border-left:3px solid var(--blue)}
+.exercise:nth-of-type(even){border-left:3px solid var(--gold)}
+.exercise h3{color:var(--text);font-size:1.05rem;margin-bottom:10px}
+.exercise .q{color:var(--text);font-weight:500;margin-bottom:10px}
+.exercise textarea{width:100%;min-height:80px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:.93rem;resize:vertical;transition:border-color .2s;line-height:1.8}
+.exercise textarea:focus{outline:none;border-color:var(--gold)}
+.exercise textarea::placeholder{color:var(--text3)}
+.exercise details{margin-top:12px;padding:12px 16px;background:var(--card2);border-radius:8px}
+.exercise details summary{cursor:pointer;color:var(--gold);font-weight:500;font-size:.88rem}
+.exercise details[open] summary{margin-bottom:8px}
+.exercise details p{font-size:.85rem;color:var(--text3)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:40px 0;margin-top:48px;border-top:1px solid var(--border)}
+.bottom-nav a{display:flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:500;transition:all .25s;font-size:.93rem}
+.bottom-nav .prev{color:var(--text3);border:1px solid var(--border)}
+.bottom-nav .prev:hover{border-color:var(--gold);color:var(--gold)}
+.bottom-nav .next{background:var(--gold);color:#1a1a0a}
+.bottom-nav .next:hover{background:var(--gold-light);transform:translateY(-1px)}
+.course-footer{text-align:center;padding:32px 0 16px;border-top:1px solid var(--border);margin-top:24px;color:var(--text3);font-size:.8rem}
+.course-footer a{color:var(--gold)}
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .lesson-header h1{font-size:1.5rem}
+  .wisdom-grid{grid-template-columns:1fr}
+  .bottom-nav a{padding:12px 18px;font-size:.85rem}
+}
+
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
+
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
+</style>
+
+</head>
+<body data-course-id="jixiaofu" data-course-index="48">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸人物志
+    </a>
+    <div class="nav-info">第 48 位 / 共 151 位</div>
+  </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="progress-bar"><div class="progress-fill" style="width:31.8%"></div></div>
+
+<main class="main">
+
+<header class="lesson-header">
+  <span class="lesson-phase">倚天</span>
+<div class="char-portrait-wrap" data-name="纪晓芙"><img class="char-portrait" src="../assets/characters/jixiaofu.png" alt="纪晓芙" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>纪晓芙<span style="font-size:.7em;font-weight:400">不悔仲子逾我墙</span></h1>
+  <div class="lesson-meta">
+    <span>倚天屠龙记</span>
+    <span class="badge badge-core">配角</span>
+    <span>第 48 / 151 位</span>
+  </div>
+</header>
+
+<div class="audio-player">
+  <div>
+    <div class="audio-title-mini">纪晓芙 课程音频</div>
+    <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
+  </div>
+  <audio controls>
+    <source src="../audio/jixiaofu.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</div>
+
+<div class="content">
+<table class="identity-table">
+<tr><th class="id-label">姓名</th><td>纪晓芙</td><th class="id-label">称号</th><td>不悔仲子逾我墙</td></tr>
+<tr><th class="id-label">身份</th><td>峨眉派弟子 · 灭绝师太爱徒</td><th class="id-label">武功</th><td>峨眉剑法、截手九式</td></tr>
+<tr><th class="id-label">出处</th><td colspan="3">金庸《倚天屠龙记》（元末明初，峨眉派）</td></tr>
+</table>
+
+<h2>第一章 峨眉弟子的不归路</h2>
+
+<p>纪晓芙，峨眉派第四代弟子中<strong>最受灭绝师太器重</strong>的一个。她出身名门——汉阳金鞭纪老英雄的女儿，自幼送入峨眉，拜在灭绝师太门下。在众弟子中，她天资聪颖、品性温良，灭绝师太对她寄予厚望，视如己出，甚至有传言说灭绝师太心中早已将她立为峨眉派未来的掌门人选。峨眉剑法在她手中使得行云流水，截手九式更是练到了第七式的火候。如果没有那一次意外，她的人生本该是一条笔直而光明的大道——继承衣钵、执掌峨眉、光大门楣。</p>
+
+<p>然而命运在蝴蝶谷附近的那条山路上，<strong>彻底转了一个弯</strong>。明教光明左使杨逍——那个英俊潇洒、武功卓绝、亦正亦邪的男人——将她掳走。没有人知道那段时间里究竟发生了什么。金庸没有写，读者只能猜测。但结果是确定的：纪晓芙爱上了这个"魔教妖人"。她不仅没有想办法逃脱，反而选择留在他身边，甚至为他生下了一个女儿。从峨眉派最受宠爱的弟子，到"魔教光明左使的女人"——这一步，在那个正邪不两立的江湖中，无异于自毁前程。</p>
+
+<p>但更大的考验还在后面。灭绝师太终于找到了她。师父看着这个曾经最疼爱的徒弟，给她指了一条"明路"：<strong>去杀了杨逍，以此为峨眉清理门户，为师门雪耻，你还可以回来。</strong>杀了他，一切都可以重来——你还是峨眉弟子，还是我的好徒儿，还是未来掌门的人选。这是灭绝师太给出的最后机会。纪晓芙跪在地上，沉默了许久，然后抬起头，说出了那句让整个武侠世界为之震动的话——<em>"弟子不能。"</em></p>
+
+<p>四个字。没有解释，没有争辩，没有求饶。她只是说"不能"——不是"不愿"，不是"不敢"，而是"不能"。这三个字的背后是一个女人全部的尊严：她爱杨逍，爱到无法举起剑对准他，无论师父开出什么条件。灭绝师太怔住了——她想不到自己最疼爱的徒弟竟会为了一个魔教妖人背叛师门。但更让她震惊的还在后面。灭绝师太一掌击出，纪晓芙倒在地上，临死之前她把女儿托付给了恰好在场的张无忌。张无忌问她女儿叫什么名字，她用尽最后的力气说出两个字——<strong>"不悔"</strong>。</p>
+
+<p>杨不悔。杨是杨逍的杨，不悔是永不后悔的意思。这个名字说出来，便是向整个世界宣告：<strong>我纪晓芙，不悔。</strong>从被掳走到相爱，从生下女儿到被师父一掌击毙，这一生每一步都是她自己选的。她没有解释为什么爱上杨逍，没有辩白自己的选择是否合理——她只是用生命回答了："做了就做了，我不后悔。"这是金庸笔下最短的遗言，也是最重的遗言。</p>
+
+<h2>第二章 "不悔"——两个字，一句话，一个女人的一生</h2>
+
+<p>在金庸十五部武侠小说中，有太多令人难忘的台词。乔峰的"阿朱就是阿朱，四海列国千秋万载，就只有这么一个阿朱"荡气回肠；杨过的"十六年后在此重会"催人泪下。但如果要问<strong>分量最重的两个字</strong>是什么，答案很可能是纪晓芙的——<em>"不悔"</em>。</p>
+
+<p>"不悔"这两个字，妙就妙在它<strong>不是在说"我做了对的事"</strong>。纪晓芙从来没有说过自己选择杨逍是"正确"的。她知道在峨眉派的规矩里，在师父的眼中，在江湖正道的评判中，她大错特错。她不仅失身于魔教妖人，还为对方生下孩子，甚至拒绝执行师父的命令——随便哪一条，放在当时的道德标准下都是不可饶恕的。"不悔"不是说她认为自己做对了——而是说："<strong>做了就做了，我不后悔。</strong>"这是一种比道德判断更深层的东西。它不寻求外界的理解，不等待历史的翻案，它是一种一个人面对自己内心时才能作出的宣告。</p>
+
+<p>她爱杨逍，但她比谁都清楚——<strong>灭绝师太永远不会接受</strong>。正邪之分是峨眉派的立足之本，灭绝师太一生以诛灭魔教为己任，自己的师兄孤鸿子就是被杨逍气死的。这样的深仇大恨之下，纪晓芙和杨逍之间根本没有"圆满"的可能性。她不可能带着杨逍回到峨眉，也不可能让师父祝福她的选择。她面前只有两条路：要么背叛自己的心，杀了杨逍换取重归师门；要么忠于自己的心，承受一切代价。纪晓芙选择了后者。她没有逃跑，没有求饶，没有编造"被迫"的谎言来换取同情——她只是跪下，说"弟子不能"，然后坦然赴死。</p>
+
+<p>放眼金庸笔下的所有女性，<strong>纪晓芙的"不悔"是最有分量的</strong>。黄蓉爱郭靖，从小被父亲反对，但她有郭靖陪她一起抗争；小龙女爱杨过，世俗不容，但杨过有勇气拉着她的手走出古墓；赵敏爱张无忌，背叛了自己的民族和家庭，但张无忌最终选择了她。这些爱情虽然艰难，但至少是"两个人"的事情。而纪晓芙呢？杨逍不在场。在她跪在师父面前说出"弟子不能"的那一刻，在灭绝师太一掌击落的那一刻，杨逍远在天边。她是<strong>一个人面对师父，一个人承受那致命的一掌，一个人用生命扛起了自己的选择</strong>。没有恋人并肩作战，没有朋友挺身而出，没有任何人能替她分担。这种孤独的勇气，在金庸的武侠世界里几乎是独一无二的。</p>
+
+<p>"不悔"还意味着另外一层：<strong>她甚至连"恨"都没有留给师父。</strong>灭绝师太是杀了她的人，但纪晓芙至死没有说一句恨师父的话。她说的是"弟子对不起师父，但弟子不悔"。这句话里包含着深深的内疚——她知道自己的选择让师父伤了心，但她依然不悔。不恨一个人已经很难，不悔比不恨更难。恨是向外释放的，不恨是放过了别人；而不悔是向内的，是放过了自己。纪晓芙用一个"不悔"，完成了对自己一生的交代。</p>
+
+<h2>第三章 峨眉绝学与师徒决裂</h2>
+
+<p>纪晓芙的武功师出峨眉，主修两门绝技：<strong>峨眉剑法和截手九式</strong>。峨眉剑法走的是轻灵飘逸一路，讲究"以柔克刚、后发制人"，剑招连绵如水，暗合峨眉山云雾缭绕的意境。这套剑法在灭绝师太手上变得凌厉狠辣，但在纪晓芙手中却多了几分温润——她的剑没有灭绝师太那样的杀气，却自有一种柔韧的坚持。截手九式则是峨眉派的擒拿功夫，以截断对手关节、封锁经脉为主，共有九式变化，环环相扣。纪晓芙练到了第七式，虽然未臻化境，但在同辈弟子中已是出类拔萃。如果她活着，也许有一天能练成全部九式，成为峨眉派的一代宗师。但命运没有给她这个时间。</p>
+
+<p>而真正让纪晓芙的故事在金庸读者心中烙下印记的，是那个最令人心碎的场面——<strong>师徒决裂</strong>。让我们还原那一段对白：灭绝师太问她"杨逍在哪里"，要她去杀了他。纪晓芙跪在地上，沉默良久，只说了四个字：<em>"弟子不能。"</em>灭绝师太脸色铁青："你对不起峨眉派！"纪晓芙泪流满面："弟子对不起师父，但弟子不悔。"灭绝师太又问她的女儿叫什么名字——"不悔。"灭绝师太听到这两个字，浑身一震："<strong>不悔？你竟然说不悔！</strong>"——话音未落，一掌击出，正中天灵盖。纪晓芙应声倒地，再也没能站起来。</p>
+
+<p>这一掌，是金庸全书中最让人心痛的<strong>师徒决裂</strong>。灭绝师太不是恶人——她一生刚正不阿，嫉恶如仇，对峨眉派忠心耿耿。她打死的不是仇人，而是自己最爱的徒弟。在那一掌击出的瞬间，灭绝师太的心恐怕比纪晓芙更痛。但她不能不杀——因为她是灭绝，是峨眉派的掌门，是正道武林的旗帜。如果不杀纪晓芙，峨眉派的规矩何在？正道武林的尊严何在？这一掌看似是师徒之间的私人恩怨，实际上是一个时代价值观的缩影——<strong>在那个正邪不两立的世界里，爱一个"魔教"的人，本身就是死罪。</strong></p>
+
+<div class="timeline">
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>峨眉学艺</h4>
+        <p>汉阳纪老英雄之女，自幼拜入峨眉派灭绝师太门下。天资聪颖、品性温良，深得师父器重，被视为未来掌门的不二人选。峨眉剑法、截手九式已臻上乘。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>蝴蝶谷之遇</h4>
+        <p>被明教光明左使杨逍掳走。金庸未细写期间经历，但结果清晰：两人相爱，纪晓芙为杨逍生下女儿。从峨眉最受宠的弟子变成了"魔教妖人"的女人。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>师徒对质</h4>
+        <p>灭绝师太找到纪晓芙，要她去杀杨逍以赎罪。纪晓芙跪地拒绝——"弟子不能"。灭绝追问女儿的名字，答曰"不悔"。灭绝大怒："不悔？你竟然说不悔！"</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>一掌毙命 · 托孤于无忌</h4>
+        <p>灭绝师太一掌击毙爱徒。纪晓芙临死前将女儿托付给张无忌，用最后的力气说出女儿的名字——"她叫不悔。"两个字，是她一生最重的交代。</p>
+    </div>
+</div>
+</div>
+
+<ul class="anecdote-list">
+<li><strong>「弟子不能」</strong> —— 灭绝师太命令纪晓芙去杀杨逍，这是她重回峨眉的唯一条件。纪晓芙跪在地上，没有争辩、没有求饶，只说了四个字："弟子不能。"不是"不愿"，不是"不敢"，而是"不能"——她爱杨逍，爱到举不起剑。这四个字，比任何长篇大论都更有力量。</li>
+<li><strong>「她叫不悔」</strong> —— 纪晓芙临死前把女儿托付给张无忌。张无忌问这女孩叫什么名字，她用尽最后的力气说出"不悔"两个字。杨不悔——杨是杨逍的杨，不悔是永不后悔的意思。这是金庸笔下最短的遗言，也是最重的遗言。它不是在解释，不是在辩白，而是在宣告。</li>
+<li><strong>「不悔？你竟然说不悔！」</strong> —— 灭绝师太听到"不悔"这两个字时的反应，堪称金庸全书最令人心碎的瞬间。她一生最爱的徒弟，不仅跟了魔教妖人，还毫不悔改。灭绝师太在极度的愤怒和心碎中一掌击出——从此峨眉派失去了一位最好的弟子，也失去了一段最珍贵的师徒情谊。</li>
+</ul>
+
+<h2>现实启示：敢爱，是一种骨气</h2>
+<p>纪晓芙的故事距今已有数百年，但她留给我们的启示却穿越了时间，直击每一个读者的内心。在当今这个越来越精于计算的时代里，纪晓芙的选择也许显得"不理智"、"不划算"——但恰恰是这种"不划算"，让我们重新思考：人生中有些东西，是不是比"划算"更重要？</p>
+<div class="wisdom-grid">
+<div class="wisdom-card"><h4>启示一：选择所爱，即使付出生命</h4><p>纪晓芙是金庸笔下最"敢爱"的人之一。她不是不知道后果——她知道师父不会接受，知道江湖正道会唾弃她，知道自己可能会死。但她依然选择了爱。真正的勇气不是不怕死，而是明知道会死，依然选择忠于自己的心。在这个人人都在计算"投入产出比"的时代，纪晓芙的"不划算"是一种最珍贵的奢侈品。</p></div>
+<div class="wisdom-card"><h4>启示二：不悔比不恨更难</h4><p>恨一个人很容易——你只需要不断地回忆对方对你的伤害。不恨一个人需要胸怀。但不悔——尤其是为自己的选择付出生命代价之后依然不悔——需要骨气。纪晓芙至死没有恨师父，没有恨命运，没有恨自己爱上杨逍。她只是静静地接受了属于自己的结局。"不悔"两个字之所以重如泰山，是因为它意味着一个人对自己全部的接纳。</p></div>
+<div class="wisdom-card"><h4>启示三：敢于为自己而活</h4><p>纪晓芙的一生只有一次真正的选择——跪下说"弟子不能"的那一次。她本可以杀了杨逍，重回峨眉，当上掌门，功成名就。但她偏不。在那个女性几乎没有话语权的时代，纪晓芙用生命做出了完全属于自己的选择。她告诉我们：真正的体面不是符合所有人的期待，而是在生命的最后时刻，能对自己说一声"不悔"。</p></div>
+</div>
+
+<p>纪晓芙的一生很短——不到三十岁就死在了师父掌下。但她的一生也很长——她的"不悔"两个字传遍了整个江湖，穿越了几百年的时间，至今仍然在无数金庸读者的心中回响。她是灭绝师太最心爱的徒弟，也是灭绝师太亲手杀死的人。她是杨逍唯一的爱人，也是杨逍一生来不及保护的女人。她是杨不悔的母亲，用最后的力气给女儿取了这个名字——<strong>不只是名字，是一个母亲对女儿全部的期待：愿你此生，不悔。</strong></p>
+</div>
+
+<div class="narration-block">
+  <h3>口播稿</h3>
+  <p>金庸人物志，今日人物：纪晓芙。她是峨眉派弟子，灭绝师太最心爱的徒弟，也是《倚天屠龙记》里出场最短却让人最难忘的女性。她被明教光明左使杨逍掳走，却爱上了这个"魔教妖人"，为他生下女儿杨不悔。灭绝师太找到她，给她一条生路——去杀了杨逍，你还是峨眉的好弟子。纪晓芙跪在地上，沉默许久，只说了四个字："弟子不能。"灭绝师太追问女儿叫什么名字，她说——"不悔。"灭绝师太浑身一震："不悔？你竟然说不悔！"一掌下去，击毙了自己最爱的徒弟。纪晓芙临死前把女儿托付给张无忌，用最后的力气说出那两个字——"她叫不悔。"杨不悔，永不后悔的意思。这两个字，是纪晓芙留给这个世界全部的答案——她不解释、不辩白、不求饶、不后悔。在金庸所有女性角色中，纪晓芙的"不悔"是最有分量的两个字。她用自己的死告诉我们：一个人最大的骨气，不是在全世界面前证明自己是对的，而是在生命的最后一刻，还能对自己说一声——我不后悔。欢迎走进金庸人物志，让我们一起聆听纪晓芙用生命写下的那句"不悔"。</p>
+</div>
+
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
+<nav class="bottom-nav">
+  <div><a href="zhouzhiruo.html" class="prev"><span aria-hidden="true">&larr;</span> 周芷若</a></div>
+  <div><a href="zhangwuji.html" class="next">张无忌 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="course-footer">
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>所有内容仅供学习交流使用</p>
+</div>
+
+</main>
+
+<script>
+// Progress bar update on scroll
+window.addEventListener('scroll',()=>{
+  const doc=document.documentElement;
+  const scrollTop=doc.scrollTop;
+  const scrollHeight=doc.scrollHeight-doc.clientHeight;
+  const progress=scrollHeight>0?(scrollTop/scrollHeight)*100:31.8;
+  const bar=document.querySelector('.progress-fill');
+  if(bar) bar.style.width=`${Math.min(100,progress)}%`;
+});
+</script>
+
+
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公孙止 — 儒雅的毒蛇 · 绝情谷主 — 金庸人物志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--red:#ef4444;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold)}
+.nav-info{font-size:.78rem;color:var(--text3);background:var(--card2);padding:4px 14px;border-radius:20px}
+.progress-bar{position:fixed;top:60px;left:0;right:0;height:3px;background:var(--border);z-index:99}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .1s;width:0}
+.main{max-width:800px;margin:0 auto;padding:90px 28px 60px}
+.lesson-header{text-align:center;margin-bottom:48px}
+.lesson-phase{display:inline-block;font-size:.7rem;font-weight:600;color:var(--gold);background:rgba(226,182,79,.08);border:1px solid rgba(226,182,79,.15);padding:5px 16px;border-radius:20px;margin-bottom:16px;letter-spacing:.08em}
+.lesson-header h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900;line-height:1.25;margin-bottom:14px;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lesson-meta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--text3);font-size:.82rem}
+.lesson-meta span{display:flex;align-items:center;gap:5px}
+.lesson-meta .badge{padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:500}
+.lesson-meta .badge-core{background:rgba(239,68,68,.1);color:#f87171}
+.audio-player{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:14px;transition:border-color .3s}
+.audio-player:hover{border-color:rgba(226,182,79,.2)}
+.audio-player audio{width:100%;height:36px;filter:sepia(100%) saturate(300%) hue-rotate(350deg)}
+.audio-label{font-size:.78rem;color:var(--text3);margin-bottom:2px}
+.audio-title-mini{font-size:.9rem;font-weight:600;color:var(--text)}
+.content h2{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin:40px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.content h2::before{content:'';width:3px;height:20px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.content h3{font-size:1.1rem;font-weight:600;color:var(--gold-light);margin:28px 0 10px}
+.content h4{font-size:1rem;font-weight:600;color:var(--text);margin:20px 0 8px}
+.content p{color:var(--text2);font-size:1rem;margin-bottom:12px;line-height:1.9}
+.content strong{color:var(--text);font-weight:600}
+.content em{color:var(--gold)}
+.content blockquote{background:linear-gradient(135deg,rgba(226,182,79,.06),rgba(226,182,79,.02));border-left:3px solid var(--gold);padding:16px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--text);font-size:.95rem;line-height:1.8}
+.content ul,.content ol{padding-left:24px;margin:12px 0;color:var(--text2)}
+.content li{margin:6px 0}
+.content li::marker{color:var(--gold-dark)}
+/* Character-specific styles */
+.identity-table{width:100%;border-collapse:collapse;margin:28px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.identity-table th{background:rgba(226,182,79,.08);color:var(--gold);font-weight:600;text-align:left;padding:11px 15px;border-bottom:2px solid rgba(226,182,79,.2);font-size:.78rem;letter-spacing:.04em}
+.identity-table td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text2);font-size:.9rem}
+.identity-table .id-label{width:12%;min-width:60px}
+.timeline{position:relative;margin:24px 0;padding-left:24px;border-left:2px solid var(--border)}
+.timeline-item{position:relative;margin-bottom:24px}
+.timeline-dot{position:absolute;left:-30px;top:4px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.timeline-content h4{color:var(--gold-light);font-size:.95rem;font-weight:600;margin-bottom:4px}
+.timeline-content p{font-size:.9rem;color:var(--text3)}
+.wisdom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.wisdom-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .3s}
+.wisdom-card:hover{border-color:rgba(226,182,79,.25)}
+.wisdom-card h4{color:var(--gold);font-size:.88rem;margin-bottom:8px}
+.wisdom-card p{font-size:.85rem;color:var(--text3);line-height:1.7}
+.anecdote-list{list-style:none;padding-left:0;margin:16px 0}
+.anecdote-list li{padding:12px 16px;margin:8px 0;background:var(--card2);border-left:3px solid var(--gold-dark);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.anecdote-list li strong{color:var(--gold-light)}
+.narration-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0}
+.narration-block h3{color:var(--gold);font-family:var(--serif);font-size:1.1rem;margin-bottom:12px}
+.narration-block p{color:var(--text2);font-size:.93rem;line-height:1.9}
+.exercise{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0}
+.exercise:nth-of-type(odd){border-left:3px solid var(--blue)}
+.exercise:nth-of-type(even){border-left:3px solid var(--gold)}
+.exercise h3{color:var(--text);font-size:1.05rem;margin-bottom:10px}
+.exercise .q{color:var(--text);font-weight:500;margin-bottom:10px}
+.exercise textarea{width:100%;min-height:80px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:.93rem;resize:vertical;transition:border-color .2s;line-height:1.8}
+.exercise textarea:focus{outline:none;border-color:var(--gold)}
+.exercise textarea::placeholder{color:var(--text3)}
+.exercise details{margin-top:12px;padding:12px 16px;background:var(--card2);border-radius:8px}
+.exercise details summary{cursor:pointer;color:var(--gold);font-weight:500;font-size:.88rem}
+.exercise details[open] summary{margin-bottom:8px}
+.exercise details p{font-size:.85rem;color:var(--text3)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:40px 0;margin-top:48px;border-top:1px solid var(--border)}
+.bottom-nav a{display:flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:500;transition:all .25s;font-size:.93rem}
+.bottom-nav .prev{color:var(--text3);border:1px solid var(--border)}
+.bottom-nav .prev:hover{border-color:var(--gold);color:var(--gold)}
+.bottom-nav .next{background:var(--gold);color:#1a1a0a}
+.bottom-nav .next:hover{background:var(--gold-light);transform:translateY(-1px)}
+.course-footer{text-align:center;padding:32px 0 16px;border-top:1px solid var(--border);margin-top:24px;color:var(--text3);font-size:.8rem}
+.course-footer a{color:var(--gold)}
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .lesson-header h1{font-size:1.5rem}
+  .wisdom-grid{grid-template-columns:1fr}
+  .bottom-nav a{padding:12px 18px;font-size:.85rem}
+}
+
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
+
+/* Villain-specific accent colors */
+.villain-badge{background:rgba(239,68,68,.12);color:#f87171;border:1px solid rgba(239,68,68,.15)}
+.duality-block{background:linear-gradient(135deg,rgba(239,68,68,.06),rgba(226,182,79,.04));border-left:3px solid #ef4444;padding:20px 24px;margin:24px 0;border-radius:0 12px 12px 0}
+.duality-block h4{color:#f87171;margin-bottom:8px;font-size:.95rem}
+.duality-block p{color:var(--text2);font-size:.9rem;line-height:1.8}
+</style>
+
+</head>
+<body data-course-id="gongsunzhi" data-course-index="46">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸人物志
+    </a>
+    <div class="nav-info">第 46 位 / 共 151 位</div>
+  </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="progress-bar"><div class="progress-fill" style="width:30.5%"></div></div>
+
+<main class="main">
+
+<header class="lesson-header">
+  <span class="lesson-phase villain-badge">反派 · 神雕</span>
+<div class="char-portrait-wrap" data-name="公孙止"><img class="char-portrait" src="../assets/characters/gongsunzhi.png" alt="公孙止" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>公孙止<span style="font-size:.7em;font-weight:400">儒雅的毒蛇 · 绝情谷主</span></h1>
+  <div class="lesson-meta">
+    <span>神雕侠侣</span>
+    <span class="badge badge-core">反派</span>
+    <span>第 46 / 151 位</span>
+  </div>
+</header>
+
+<div class="audio-player">
+  <div>
+    <div class="audio-title-mini">公孙止 课程音频</div>
+    <div class="audio-label">AI 语音讲解, 约 4 分钟</div>
+  </div>
+  <audio controls>
+    <source src="../audio/gongsunzhi.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</div>
+
+<div class="content">
+<table class="identity-table">
+<tr><th class="id-label">姓名</th><td>公孙止</td><th class="id-label">称号</th><td>儒雅的毒蛇 · 绝情谷主</td></tr>
+<tr><th class="id-label">身份</th><td>绝情谷谷主 · 裘千尺之夫 · 公孙绿萼之父</td><th class="id-label">擅长</th><td>阴阳倒乱刃法、闭穴功</td></tr>
+<tr><th class="id-label">出处</th><td colspan="3">金庸《神雕侠侣》（南宋末年，绝情谷）</td></tr>
+</table>
+
+<h2>第一章 绝情谷主：儒雅背后的深渊</h2>
+
+<p>绝情谷，一个名字就透着寒意的地方。谷中四季如春，花木繁盛，流水潺潺——这里的主人<strong>公孙止</strong>，一袭青衫，面容清癯，谈吐风雅，举手投足间散发着魏晋名士的气质。来访的江湖客无不赞叹：真是一位世外高人。然而，<strong>绝情谷最美的花，恰恰开在最深的罪恶之上</strong>。</p>
+
+<p>公孙止的原配夫人叫<strong>裘千尺</strong>——铁掌帮帮主裘千仞的妹妹，性格刚烈、武功高强。夫妻二人曾联手创出"阴阳倒乱刃法"，名震江湖。但公孙止的内心深处，藏着一条毒蛇。他厌倦了裘千尺的强势，更觊觎一个年轻美貌的丫鬟。于是，这个"儒雅"的谷主做了一件令人毛骨悚然的事——<strong>他挑断了裘千尺的手脚筋脉，将她推入绝情谷底最深的地洞</strong>。洞口藤蔓遮蔽，从外面看不出任何痕迹。他对所有人说："夫人病故了。"没有人怀疑。这一瞒，就是<strong>十几年</strong>。十几年里，公孙止在谷中广施仁义、结交豪杰，甚至被江湖中人视为德高望重的隐士。而地洞深处，裘千尺靠一棵枣树落下的枣子苟延残喘——手脚俱废、形如厉鬼。当杨过和小龙女闯入绝情谷时，揭开的不只是一段被掩埋的罪恶，更是人性最阴暗的深渊。</p>
+
+<p>但命运对公孙止开了一个最讽刺的玩笑。他看上了<strong>小龙女</strong>——那清冷绝尘、不食人间烟火的白衣女子，让他魂牵梦萦。他精心策划了一场盛大的婚礼：红烛高燃、宾客满堂，眼看就要抱得美人归。不料杨过闯入绝情谷，公孙止的亲生女儿<strong>公孙绿萼</strong>暗中相助杨过，婚礼被搅得天翻地覆。更致命的是——绝情谷底生长着一种奇花叫"<strong>绝情花</strong>"，花刺有剧毒，被刺中者终身不能动情。公孙止在混战中被绝情花刺伤，从此每一丝情欲都会引发锥心之痛。但即便身中绝情花毒，他对小龙女的执念依然未曾熄灭——<strong>一个被剥夺了情感能力的人，却比任何时候都更加疯狂地渴望占有</strong>。这就是公孙止的宿命：越是得不到，越要毁灭。</p>
+
+<p>最终，命运将所有账本摊在了绝情谷底。裘千尺从地洞中爬了出来——十几年的暗无天日让她变成了一个满头白发、面目狰狞的复仇者。她用残留的一口气，死死咬住公孙止，两人一起坠入绝情谷万丈深渊。<strong>同归于尽</strong>。那个曾经温文尔雅的谷主，最终和他亲手埋葬的妻子，一起被黑暗吞噬。绝情谷，不负其名。</p>
+
+<h2>第二章 "儒雅的毒蛇"：金庸笔下最双面的配角</h2>
+
+<p>在金庸的武侠宇宙里，反派形形色色：欧阳锋的毒辣写在脸上，金轮法王的野心一目了然，岳不群的虚伪至少还有迹可循。但公孙止是另一种存在——<strong>他是金庸笔下最"双面"的配角</strong>，他的可怕之处不在于他有多坏，而在于他"坏得太像好人"。</p>
+
+<p>在绝情谷的大厅里，公孙止招待宾客时，温文尔雅、礼数周全，每一句话都恰到好处，每一个微笑都真诚可亲。他会给来访的江湖后辈斟茶，会关心远客的舟车劳顿，会谦虚地表示自己"不过是一个避世之人"。但就是这个"避世之人"，亲手挑断了妻子的手脚筋，把她像垃圾一样丢进地洞，然后拍拍手上的灰，回到大厅继续做一个"好人"。<strong>他戴了十几年的面具，从未摘下来过。</strong></p>
+
+<div class="duality-block">
+<h4>🎭 公孙止的双面人生</h4>
+<p><strong>明面：</strong>"公孙谷主"——绝情谷主人，风雅隐士，武功高强的前辈，江湖中人人敬重的世外高人。他说话轻声细语，待人如春风拂面，来访者无不叹服其风骨。<br><strong>暗面：</strong>地洞里的凶手——挑断妻子筋脉、囚禁妻子十余年、觊觎年轻女子、为达目的不择手段。他做尽恶事，却从未在任何人面前露出过一丝破绽。</p>
+</div>
+
+<p>当裘千尺从地洞里爬出来，用嘶哑的声音喊出："<strong>公孙止，你还认得我吗？</strong>"那一刻，公孙止的脸色瞬间变得惨白如纸——那是他十几年来第一次在众人面前卸下面具。不是愤怒，不是悔恨，而是<strong>纯粹的恐惧</strong>——他怕的不是裘千尺的复仇，而是自己苦心经营了十几年的"好人形象"在这一刻崩塌。这比死亡更让他恐惧。</p>
+
+<p>公孙止最令人不寒而栗的地方在于：他让你根本分不清他的哪一面是真实的。也许连他自己都分不清了。<strong>面具戴久了，就长在了脸上。</strong>他装了一辈子好人，最后当他露出真面目时，那张真实的脸上写着的，是连他自己都不认识的表情。</p>
+
+<h2>第三章 阴阳倒乱刃法与闭穴功：武学中的"两面派"</h2>
+
+<p>公孙止的武功，和他的人一样充满了"双面性"。他的看家绝学是<strong>阴阳倒乱刃法</strong>——这门武功诡异至极：左手持黑剑，右手握金刀，刀剑交替、虚实互易。看似刀劈来，实则是剑刺；以为是剑削，却变成了刀砍。这种"颠倒阴阳、混淆虚实"的招式，恰恰是公孙止性格最精准的投射——他的人生就是一场永不停歇的"阴阳倒乱"：表面温良，内心阴毒；表面深情，实则绝情；表面是一个好丈夫，暗地里是杀妻凶手。</p>
+
+<p>杨过初入绝情谷时，曾与公孙止交手，几乎被这套刀剑交替的诡异武功逼入绝境。金刀黑剑在公孙止手中轮转如飞，刀法中藏着剑意，剑招里混着刀势，让人防不胜防。<strong>但杨过最终看破了一个关键——阴阳倒乱刃法的破绽恰恰在于它"太讲究对称"，一旦打乱节奏，刀剑之间的配合便会出现裂缝。</strong>这何尝不是公孙止人生的隐喻？他精心维持的"好人"与"恶人"两种身份之间的平衡，终究经不起一记重锤。</p>
+
+<p>除了阴阳倒乱刃法，公孙止还修炼了一门极其罕见的奇功——<strong>闭穴功</strong>。这门功夫能将全身穴道封闭，使敌人无法通过点穴来制住他。在武林中，点穴是最常见的制敌手段，而公孙止修炼闭穴功，就是要在任何情况下都不受制于人。这暗合了他的心理：他绝不允许任何人"抓住"他的弱点，绝不允许任何人在他身上找到突破口。但讽刺的是，闭穴功有一个致命的罩门——<strong>不能沾荤腥</strong>。一旦吃了肉类食物，闭穴功便会失效。公孙绿萼正是利用这一点，在关键时刻破了父亲的闭穴功，救了杨过一命。他的亲生女儿，成了他最致命的"穴道"。</p>
+
+<ul class="anecdote-list">
+<li><strong>🎎 史上最社死的婚礼</strong> —— 公孙止迎娶小龙女那天，绝情谷张灯结彩、红烛高燃，宾客云集，一派喜气洋洋。公孙止身着大红喜袍，满面春风地站在新娘身旁，正要说"送入洞房"。突然，杨过闯入喜堂，小龙女掀开盖头，与杨过四目相对——"<strong>姑姑</strong>！""<strong>过儿</strong>！"两人当场相认，旁若无人。公孙止站在原地，脸上的笑容一点一点僵硬："？？？"整个喜堂鸦雀无声。这是他一生中最社死的一天——堂堂绝情谷主，耗尽心机娶回来的新娘，婚礼上当着所有宾客的面跟别人跑了。而那个"别人"，还是他请来的"贵客"。</li>
+<li><strong>💀 地洞里的重逢</strong> —— "公孙止，你还认得我吗？"一个苍老嘶哑的声音从地洞深处传来。公孙止浑身一颤，转过身去——从黑暗中爬出一个满头白发、形如枯骨的女人。她的手脚扭曲变形，在地上艰难地蠕动着。那是裘千尺，被他亲手推入地洞的原配妻子。十几年的黑暗没有杀死她，反而把她变成了一头复仇的野兽。公孙止"<strong>吓得面如土色</strong>"——金庸用了这四个字，精准地写出了这个"儒雅谷主"的真实面目：在真正的恐惧面前，所有的伪装都土崩瓦解。</li>
+<li><strong>🌸 绝情花的诅咒</strong> —— 绝情谷底生长着一种奇异的毒花，花瓣血红，花刺有剧毒。一旦被刺中，中毒者终身不得动情——每有情感波动，浑身便如万针刺体。公孙止在混战中被绝情花刺伤，从此成为一个"不能有爱的人"。但命运的残酷在于：他对小龙女的执念反而更深了。一个被剥夺了情感权利的人，偏偏比任何人都渴望爱情。这就是绝情花的真正毒性——不是让人无情，而是让人<strong>有情而不能有</strong>。</li>
+</ul>
+
+<div class="wisdom-grid">
+<div class="wisdom-card"><h4>启示一：面具戴久了，就忘了自己长什么样</h4><p>公孙止装了一辈子好人，最后露出真面目时，连他自己都震惊。他杀妻、逼婚、残害女儿——但在他自己的叙事里，他一直是那个温文尔雅的谷主。"伪君子"最可怕的不是欺骗别人，而是欺骗自己。当你每天扮演一个角色，久而久之，你就不再是"扮演"——你变成了那个角色，而真实的自己已经被彻底遗忘。</p></div>
+<div class="wisdom-card"><h4>启示二：婚姻中最可怕的不是吵架，是"推下地洞"</h4><p>公孙止和裘千尺的婚姻，表面上是恩爱夫妻，实则是深渊。裘千尺强势、公孙止隐忍——直到那一天，他不再隐忍，而是直接挑断了她的筋脉。婚姻中最可怕的不是吵架，不是冷战，而是有一天你的伴侣不再想解决问题，而是想解决你。当你对伴侣的"好"变成了表演，当沟通变成了忍耐的倒计时——那就是绝情谷的地洞在向你招手。</p></div>
+<div class="wisdom-card"><h4>启示三：执念比绝情更可怕</h4><p>公孙止身中绝情花毒，本应变得"绝情绝义"。但他对小龙女的执念反而到了疯狂的地步——他明知得不到，却偏要抢；明知不可为，却偏要做。绝情花能剥夺一个人产生情感的能力，却剥夺不了执念。因为执念不是"情"，而是"欲"——是占有，是控制，是"我得不到，别人也休想得到"。公孙止的一生就是一场被执念驱动的悲剧。</p></div>
+</div>
+
+<p>公孙止的故事，是金庸对"伪善"最深刻的解剖。他不是一个简单的恶人——他是一个<strong>让你在看清他真面目之前真心相信他是好人</strong>的恶人。这才是最可怕的。绝情谷的绝情花，毒的是身体；而公孙止的"绝情"，毒的是人心。<strong>他用一生证明了一件事：真正的绝情，不是不爱，而是用爱的面具去行最冷酷的事。</strong></p>
+</div>
+
+<div class="narration-block">
+  <h3>口播稿</h3>
+  <p>金庸人物志，今日人物：公孙止。他是绝情谷的主人，是金庸笔下最会"装"的男人。一袭青衫、温文尔雅——每一个见过他的人都说："这真是一位世外高人。"但就是这位"高人"，亲手挑断了妻子的手脚筋脉，把她推进地洞，然后回到大厅，继续做一个"好人"。十几年，没有人发现。直到那一天，他看上了小龙女，大婚之日红烛高燃——结果新娘和杨过当场相认，一句"姑姑"、一句"过儿"，让这位谷主成了全江湖最社死的新郎。后来，被他推入地洞的原配夫人裘千尺爬了出来——"公孙止，你还认得我吗？"他看着那个满头白发、形如厉鬼的女人，吓得面如土色。最终，两人一起坠入绝情谷万丈深渊，同归于尽。公孙止的一生告诉我们：面具戴久了，你就会忘记自己长什么样。婚姻中最可怕的，不是吵架，是"把你推下地洞"。欢迎来到金庸人物志，今天，我们走进绝情谷，揭开金庸笔下最双面的配角——公孙止。</p>
+</div>
+
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
+<nav class="bottom-nav">
+  <div><a href="guoxiang.html" class="prev"><span aria-hidden="true">&larr;</span> 郭襄</a></div>
+  <div><a href="jinlunfawang.html" class="next">金轮法王 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="course-footer">
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>所有内容仅供学习交流使用</p>
+</div>
+
+</main>
+
+<script>
+// Progress bar update on scroll
+window.addEventListener('scroll',()=>{
+  const doc=document.documentElement;
+  const scrollTop=doc.scrollTop;
+  const scrollHeight=doc.scrollHeight-doc.clientHeight;
+  const progress=scrollHeight>0?(scrollTop/scrollHeight)*100:30.5;
+  const bar=document.querySelector('.progress-fill');
+  if(bar) bar.style.width=`${Math.min(100,progress)}%`;
+});
+</script>
+
+
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

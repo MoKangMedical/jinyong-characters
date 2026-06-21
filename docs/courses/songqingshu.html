@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宋青书 — 玉面孟尝 · 武当叛徒 — 金庸人物志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--bg2:#0a0a10;--card:#121218;--card2:#18181f;--card3:#1e1e27;--border:#22222d;--border2:#2e2e3a;--text:#f5f5f7;--text2:#a0a0ab;--text3:#656570;--gold:#e2b64f;--gold-light:#f0d478;--gold-dark:#b8922e;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--red:#ef4444;--serif:'Noto Serif SC',serif;--sans:'Inter',-apple-system,sans-serif;--radius:14px;--radius-lg:20px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.85;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);height:60px;display:flex;align-items:center}
+.nav-inner{max-width:960px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--gold)}
+.nav-info{font-size:.78rem;color:var(--text3);background:var(--card2);padding:4px 14px;border-radius:20px}
+.progress-bar{position:fixed;top:60px;left:0;right:0;height:3px;background:var(--border);z-index:99}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .1s;width:0}
+.main{max-width:800px;margin:0 auto;padding:90px 28px 60px}
+.lesson-header{text-align:center;margin-bottom:48px}
+.lesson-phase{display:inline-block;font-size:.7rem;font-weight:600;color:var(--gold);background:rgba(226,182,79,.08);border:1px solid rgba(226,182,79,.15);padding:5px 16px;border-radius:20px;margin-bottom:16px;letter-spacing:.08em}
+.lesson-header h1{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900;line-height:1.25;margin-bottom:14px;background:linear-gradient(135deg,var(--text) 30%,var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lesson-meta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--text3);font-size:.82rem}
+.lesson-meta span{display:flex;align-items:center;gap:5px}
+.lesson-meta .badge{padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:500}
+.lesson-meta .badge-core{background:rgba(59,130,246,.1);color:#60a5fa}
+.lesson-meta .badge-danger{background:rgba(239,68,68,.1);color:#ef4444}
+.audio-player{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 22px;margin:28px 0;display:flex;align-items:center;gap:14px;transition:border-color .3s}
+.audio-player:hover{border-color:rgba(226,182,79,.2)}
+.audio-player audio{width:100%;height:36px;filter:sepia(100%) saturate(300%) hue-rotate(350deg)}
+.audio-label{font-size:.78rem;color:var(--text3);margin-bottom:2px}
+.audio-title-mini{font-size:.9rem;font-weight:600;color:var(--text)}
+.content h2{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--text);margin:40px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.content h2::before{content:'';width:3px;height:20px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.content h3{font-size:1.1rem;font-weight:600;color:var(--gold-light);margin:28px 0 10px}
+.content h4{font-size:1rem;font-weight:600;color:var(--text);margin:20px 0 8px}
+.content p{color:var(--text2);font-size:1rem;margin-bottom:12px;line-height:1.9}
+.content strong{color:var(--text);font-weight:600}
+.content em{color:var(--gold)}
+.content blockquote{background:linear-gradient(135deg,rgba(226,182,79,.06),rgba(226,182,79,.02));border-left:3px solid var(--gold);padding:16px 20px;margin:20px 0;border-radius:0 10px 10px 0;color:var(--text);font-size:.95rem;line-height:1.8}
+.content ul,.content ol{padding-left:24px;margin:12px 0;color:var(--text2)}
+.content li{margin:6px 0}
+.content li::marker{color:var(--gold-dark)}
+.identity-table{width:100%;border-collapse:collapse;margin:28px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.identity-table th{background:rgba(226,182,79,.08);color:var(--gold);font-weight:600;text-align:left;padding:11px 15px;border-bottom:2px solid rgba(226,182,79,.2);font-size:.78rem;letter-spacing:.04em}
+.identity-table td{padding:11px 15px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text2);font-size:.9rem}
+.identity-table .id-label{width:12%;min-width:60px}
+.timeline{position:relative;margin:24px 0;padding-left:24px;border-left:2px solid var(--border)}
+.timeline-item{position:relative;margin-bottom:24px}
+.timeline-dot{position:absolute;left:-30px;top:4px;width:10px;height:10px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.timeline-dot.dot-dark{background:var(--red)}
+.timeline-content h4{color:var(--gold-light);font-size:.95rem;font-weight:600;margin-bottom:4px}
+.timeline-content p{font-size:.9rem;color:var(--text3)}
+.wisdom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+.wisdom-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .3s}
+.wisdom-card:hover{border-color:rgba(226,182,79,.25)}
+.wisdom-card h4{color:var(--gold);font-size:.88rem;margin-bottom:8px}
+.wisdom-card p{font-size:.85rem;color:var(--text3);line-height:1.7}
+.anecdote-list{list-style:none;padding-left:0;margin:16px 0}
+.anecdote-list li{padding:12px 16px;margin:8px 0;background:var(--card2);border-left:3px solid var(--gold-dark);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text2);line-height:1.7}
+.anecdote-list li strong{color:var(--gold-light)}
+.anecdote-list li em{color:var(--red)}
+.narration-block{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0}
+.narration-block h3{color:var(--gold);font-family:var(--serif);font-size:1.1rem;margin-bottom:12px}
+.narration-block p{color:var(--text2);font-size:.93rem;line-height:1.9}
+.exercise{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0}
+.exercise:nth-of-type(odd){border-left:3px solid var(--blue)}
+.exercise:nth-of-type(even){border-left:3px solid var(--gold)}
+.exercise h3{color:var(--text);font-size:1.05rem;margin-bottom:10px}
+.exercise .q{color:var(--text);font-weight:500;margin-bottom:10px}
+.exercise textarea{width:100%;min-height:80px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:.93rem;resize:vertical;transition:border-color .2s;line-height:1.8}
+.exercise textarea:focus{outline:none;border-color:var(--gold)}
+.exercise textarea::placeholder{color:var(--text3)}
+.exercise details{margin-top:12px;padding:12px 16px;background:var(--card2);border-radius:8px}
+.exercise details summary{cursor:pointer;color:var(--gold);font-weight:500;font-size:.88rem}
+.exercise details[open] summary{margin-bottom:8px}
+.exercise details p{font-size:.85rem;color:var(--text3)}
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;padding:40px 0;margin-top:48px;border-top:1px solid var(--border)}
+.bottom-nav a{display:flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:500;transition:all .25s;font-size:.93rem}
+.bottom-nav .prev{color:var(--text3);border:1px solid var(--border)}
+.bottom-nav .prev:hover{border-color:var(--gold);color:var(--gold)}
+.bottom-nav .next{background:var(--gold);color:#1a1a0a}
+.bottom-nav .next:hover{background:var(--gold-light);transform:translateY(-1px)}
+.course-footer{text-align:center;padding:32px 0 16px;border-top:1px solid var(--border);margin-top:24px;color:var(--text3);font-size:.8rem}
+.course-footer a{color:var(--gold)}
+@media(max-width:640px){
+  .main{padding:80px 16px 48px}
+  .lesson-header h1{font-size:1.5rem}
+  .wisdom-grid{grid-template-columns:1fr}
+  .bottom-nav a{padding:12px 18px;font-size:.85rem}
+}
+.jy-quiz-container{margin:24px 0}
+.jy-quiz{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;transition:border-color .3s}
+.jy-quiz:hover{border-color:rgba(226,182,79,.15)}
+.jy-quiz-title{color:var(--gold);font-size:1rem;font-weight:700;margin-bottom:12px;font-family:var(--serif)}
+.jy-quiz-question{color:var(--text);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.jy-quiz-options{display:flex;flex-direction:column;gap:10px}
+.jy-option{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--card2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;font-size:.9rem}
+.jy-option:hover{border-color:var(--gold-dark);background:var(--card3)}
+.jy-option input[type=radio]{display:none}
+.jy-option:has(input:checked){border-color:var(--gold);background:rgba(226,182,79,.08)}
+.jy-option-letter{width:24px;height:24px;border-radius:50%;background:var(--border);color:var(--text3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:all .2s}
+.jy-option:has(input:checked) .jy-option-letter{background:var(--gold);color:#1a1a0a}
+.jy-option-text{color:var(--text2);line-height:1.6;padding-top:1px}
+.jy-submit-btn{padding:10px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .2s;margin-top:16px}
+.jy-submit-btn:hover{background:var(--gold-light)}
+.jy-submit-btn:disabled{opacity:.4;cursor:not-allowed}
+.jy-feedback{display:none;margin-top:14px;padding:14px 18px;border-radius:10px;font-size:.9rem}
+.jy-fb-correct{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);color:#22c55e;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-wrong{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#ef4444;padding:10px 16px;border-radius:8px;font-weight:600}
+.jy-fb-explain{color:var(--text3);font-size:.85rem;margin-top:8px;line-height:1.7}
+.jy-completion-badge{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,rgba(34,197,94,.1),rgba(34,197,94,.04));border:1px solid rgba(34,197,94,.25);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0}
+.jy-badge-icon{font-size:1.8rem;color:#22c55e}
+.jy-badge-text strong{color:#22c55e;font-size:.95rem}
+.jy-badge-text p{color:var(--text3);font-size:.82rem;margin:0}
+.jy-quiz-summary{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0}
+.jy-quiz-summary h3{color:var(--gold);font-family:var(--serif);margin-bottom:16px}
+.jy-paywall-overlay{position:fixed;inset:0;z-index:1000;background:rgba(7,7,10,.95);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
+.jy-paywall{text-align:center;max-width:480px;padding:48px 40px}
+.jy-paywall h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:12px}
+.jy-paywall-desc{color:var(--text2);font-size:.95rem;margin-bottom:8px}
+.jy-paywall-info{color:var(--text3);font-size:.85rem;margin-bottom:24px}
+.jy-paywall-info strong{color:var(--gold);font-size:1.1rem}
+.jy-paywall-keys{display:flex;gap:10px;margin-bottom:12px}
+.jy-paywall-keys input{flex:1;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.jy-paywall-keys input:focus{border-color:var(--gold)}
+.jy-paywall-keys button{padding:12px 28px;background:var(--gold);color:#1a1a0a;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.jy-paywall-keys button:hover{background:var(--gold-light)}
+.jy-paywall-hint{color:var(--text3);font-size:.78rem;margin-bottom:20px}
+.jy-paywall-back{color:var(--gold);font-size:.85rem;text-decoration:underline}
+.jy-toast{position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:2000;background:var(--card);border:1px solid var(--gold);color:var(--gold);padding:12px 28px;border-radius:12px;font-size:.9rem;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.4);transition:opacity .3s}
+.jy-toast-hide{opacity:0}
+.jy-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600}
+.jy-badge-free{background:rgba(59,130,246,.1);color:#60a5fa}
+.jy-badge-lifetime{background:rgba(226,182,79,.1);color:var(--gold);border:1px solid rgba(226,182,79,.2)}
+.jy-badge-annual{background:rgba(34,197,94,.1);color:#22c55e}
+.jy-badge-expired{background:rgba(239,68,68,.08);color:#ef4444}
+.nav-membership{display:flex;align-items:center;gap:8px}
+.char-portrait-wrap{display:inline-block;position:relative;margin-bottom:24px}.char-portrait-wrap.missing::after{content:attr(data-name);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.2rem;color:var(--gold);background:linear-gradient(135deg,var(--card2),var(--card3));border:2px solid var(--gold);border-radius:16px;width:160px;height:240px}@media(max-width:640px){.char-portrait-wrap.missing::after{width:120px;height:180px;font-size:1rem}}
+
+.char-portrait{width:160px;height:240px;border-radius:16px;object-fit:cover;border:2px solid var(--gold);box-shadow:0 4px 24px rgba(226,182,79,.15);margin-bottom:24px;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,var(--card2),var(--card3))}
+.char-portrait:hover{transform:scale(1.02);box-shadow:0 8px 32px rgba(226,182,79,.25)}
+@media(max-width:640px){.char-portrait{width:120px;height:180px;margin-bottom:16px}}
+</style>
+
+</head>
+<body data-course-id="songqingshu" data-course-index="151">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#e2b64f" stroke-width="1.5"/><path d="M6 18c2-6 4-8 8-10s6 2 8 6" stroke="#e2b64f" stroke-width="1.5" fill="none"/><circle cx="14" cy="12" r="2.5" fill="#e2b64f"/></svg>
+      金庸人物志
+    </a>
+    <div class="nav-info">第 151+ 位（新增人物）</div>
+  </div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+
+<main class="main">
+
+<header class="lesson-header">
+  <span class="lesson-phase">倚天</span>
+<div class="char-portrait-wrap" data-name="宋青书"><img class="char-portrait" src="../assets/characters/songqingshu.png" alt="宋青书" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('missing')"></div>
+  <h1>宋青书<span style="font-size:.7em;font-weight:400">玉面孟尝 · 武当叛徒</span></h1>
+  <div class="lesson-meta">
+    <span>倚天屠龙记</span>
+    <span class="badge badge-danger">堕落天才</span>
+    <span>第 151+ 位（新增）</span>
+  </div>
+</header>
+
+<div class="audio-player">
+  <div>
+    <div class="audio-title-mini">宋青书 课程音频</div>
+    <div class="audio-label">AI 语音讲解, 约 3 分钟</div>
+  </div>
+  <audio controls>
+    <source src="../audio/songqingshu.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</div>
+
+<div class="content">
+<table class="identity-table">
+<tr><th class="id-label">姓名</th><td>宋青书</td><th class="id-label">称号</th><td>玉面孟尝</td></tr>
+<tr><th class="id-label">出处</th><td colspan="3">金庸《倚天屠龙记》</td></tr>
+<tr><th class="id-label">门派</th><td>武当派（第三代弟子）</td><th class="id-label">父亲</th><td>宋远桥（武当七侠之首）</td></tr>
+<tr><th class="id-label">结局</th><td colspan="3">被张三丰一掌击毙于武当山，临死前喊了一声"师祖……"</td></tr>
+</table>
+
+<h2>第一章 人物小传：从"玉面孟尝"到武当叛徒</h2>
+<p>宋青书，武当派第三代弟子中的翘楚，其父宋远桥乃是<strong>武当七侠之首</strong>、张三丰座下第一大弟子。他生得玉树临风、剑眉星目，江湖人称<strong>"玉面孟尝"</strong>——不仅因为他容貌出众，更因为他为人慷慨豪迈、交游广阔，仿佛战国四公子中的孟尝君再世。在武当山上，所有人都心照不宣：宋青书就是武当派未来的掌门人。张三丰亲自督导他的武功，宋远桥手把手传他剑法，整个武当派把最好的资源都倾注在了这个少年身上。他本来什么都有——武功、地位、前途、颜值，一切似乎都已经被命运慷慨地铺在了他的脚下。</p>
+<p>然而，这一切在他遇到周芷若之后，开始悄然崩塌。那一年光明顶之战，宋青书第一次见到了峨眉派的周芷若——清丽绝俗、楚楚动人。他不可救药地爱上了她。但周芷若的心里，早已住进了另一个人——<strong>张无忌</strong>。宋青书无法接受这个事实。他从小到大都是最优秀的那一个，为什么偏偏在感情上输给了张无忌？这个疑问像一根毒刺，深深扎进了他的心底。从嫉妒到怨恨，从怨恨到疯狂——宋青书的心魔，就在此刻被唤醒了。</p>
+<p>堕落的第一步，是一个荒唐而丑陋的夜晚。宋青书潜入峨眉派驻地，<strong>偷看峨眉女弟子洗澡</strong>，被当场抓获。他被峨眉派的人揪出来时，第一反应竟然是报出自己的名字——<strong>"我是宋青书！"</strong>他以为这个名号能震慑对方，却不知道这句话成了江湖上最大的笑柄。武当派的脸面，被他一个人丢尽了。更致命的是，他的七师叔<strong>莫声谷</strong>循迹追来，撞破了他的丑行。四目相对的那一刻，宋青书看到了莫声谷眼中的震惊、愤怒和失望。他慌了。他害怕回到武当山面对师祖和父亲的目光——于是，他逃了。</p>
+<p>逃离武当之后，宋青书投靠了丐帮长老<strong>陈友谅</strong>。陈友谅是一个精于算计的阴谋家，他一眼就看穿了宋青书的软弱和恐惧。他利用宋青书对张无忌的嫉妒、对武当派的怨恨，一步步将他拖入更深的泥潭。在陈友谅的操控下，宋青书做下了此生最不可饶恕的罪行——<strong>他亲手害死了自己的七师叔莫声谷</strong>。从那以后，他再也没有回头路可走。他彻底沦为武当叛徒，成为陈友谅手中的一枚棋子，甚至加入了屠狮大会，代表峨眉派出战——讽刺的是，他此时连自己的出身都要否定。当有人问他是谁时，他脱口而出："<strong>我是武当派的……不，我不是。</strong>"这句话比他偷看洗澡更令人心碎。一个连自己是谁都不敢承认的人，已经彻底失去了灵魂。</p>
+<p>最后的审判发生在武当山上。张三丰——这位鹤发童颜的武林泰斗，亲眼看着他最疼爱的徒孙跪在自己面前。宋青书满身血污，面容扭曲，再也没有当年"玉面孟尝"的风采。张三丰缓缓举起了手掌。那一掌凝聚了百年的功力与百年的悲悯，击在宋青书的胸口。宋青书倒下的那一刻，用尽最后一丝力气，叫了一声——<strong>"师祖……"</strong>就只有这两个字。但这短短两个字，让张三丰老泪纵横。他一生收过无数弟子，送走过无数故人，但亲手击毙自己的徒孙，这是第一次，也是最后一次。宋青书的故事，就在这一声"师祖"中，画上了最悲惨的句号。</p>
+
+<h2>第二章 性格分析：最令人扼腕的天才堕落</h2>
+<p>在金庸十五部小说数以千计的人物中，宋青书的堕落堪称<strong>最令人扼腕的悲剧之一</strong>。他不是生来就是恶人——恰恰相反，他起点之高，足以让绝大多数江湖人仰望。他是武当派第三代弟子中的第一人，父亲是武当七侠之首，师祖是武林神话张三丰。他的武功在同辈中出类拔萃，"玉面孟尝"的名号在江湖上传得响亮。他本可以成为一代大侠，接掌武当，名垂青史。但他偏偏走上了一条谁也没想到的路。</p>
+<p>宋青书堕落的根源，用他自己的话来说，就是<strong>"凭什么他样样都比我好？"</strong>这里的"他"，自然是张无忌。张无忌有什么？他自幼父母双亡，身中玄冥神掌，在冰火岛上长大，论出身、论教养、论门第，哪一样比得上宋青书？可偏偏就是这样一个"野孩子"，不仅练成了九阳神功和乾坤大挪移，还赢得了周芷若的芳心。宋青书想不通。他越是比较，就越是痛苦；越是痛苦，就越是嫉妒；越是嫉妒，就越是疯狂。他从来不知道，张无忌根本没想过要和他比——张无忌甚至从未将宋青书视为对手。这才是宋青书悲剧中最讽刺的地方：他觉得自己输了，但对方从来没跟他比过。</p>
+<p>宋青书的堕落，<strong>不是因为没有能力</strong>，而是因为他有一个心魔，这个心魔的名字叫"张无忌比我好"。这个心魔吞噬了他的理智、他的尊严、他的忠诚，最后吞噬了他的生命。人性中有一个残酷的定律：当你开始拿自己和别人比较的时候，你就已经输了。宋青书本可以成为武当掌门、一方豪侠，但他选择了一条最窄的路——被嫉妒驱动的自我毁灭之路。他告诉我们一个令人心寒的事实：有时候，最可怕的不是敌人，而是被嫉妒毁掉的"朋友"。</p>
+
+<h2>第三章 武功绝学：武当派正宗传承</h2>
+<p>宋青书出身武当，自幼修习武当派最正统的武功体系。他所学的每一门功夫，都是张三丰毕生心血的结晶。首先是<strong>武当九阳功</strong>——当年张三丰从觉远大师处习得部分九阳真经，结合自身领悟创制了这门内功心法。武当九阳功虽不及张无忌所练的完整版九阳神功，但在江湖上已属顶级内功。宋青书在父亲的督促下，从幼年便开始修习此功，内功根基极为扎实。其次是<strong>太极拳与太极剑</strong>——这是张三丰晚年所创的神功，以柔克刚、以静制动，讲究"以心行气、以气运身"。宋青书在张三丰的亲自指点下修习太极剑法，剑招圆转如意、绵绵不绝，在同辈中罕有敌手。光明顶上，他施展太极剑法时，连明教群雄都暗自喝彩。</p>
+<p>除此之外，宋青书还精通武当派的<strong>绕指柔剑、神门十三剑、梯云纵轻功</strong>等多项绝技。绕指柔剑以柔克刚，剑走偏锋；神门十三剑专攻敌人手腕穴道，诡异莫测；梯云纵则是一等一的轻功身法，纵跃如飞。单论武功造诣，宋青书在武当第三代弟子中无人能出其右。可惜的是，这些精妙的武功最终成了他为虎作伥的工具——投靠陈友谅之后，他用武当绝学杀害同门，玷污了张三丰一生的心血。武当派最正统的武功，落到了一个叛徒手中，这是宋青书悲剧中最令人痛心的细节之一。</p>
+
+<h2>第四章 命运轨迹：六步走向深渊</h2>
+<p>宋青书的一生，可以用六个关键节点来概括。每一步都像是命运的齿轮，无情地将他碾向深渊。</p>
+<div class="timeline">
+<div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>阶段1：天之骄子</h4>
+        <p>自幼在武当山长大，父亲宋远桥为武当七侠之首，师祖张三丰亲自授艺。"玉面孟尝"之名响彻江湖，被公认为武当派未来的接班人。少年得志，风光无限。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+        <h4>阶段2：情关难过</h4>
+        <p>光明顶之战后爱上峨眉派周芷若。然而周芷若心属张无忌，宋青书求而不得。嫉妒的种子在心底悄然生根——他第一次觉得"我不如张无忌"。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot dot-dark"></span>
+    <div class="timeline-content">
+        <h4>阶段3：身败名裂</h4>
+        <p>偷看峨眉女弟子洗澡被当场抓获。他大喊"我是宋青书"试图以名号压人，反而成了江湖笑柄。莫声谷闻讯赶来，撞破丑行——宋青书无颜面对，仓皇出逃。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot dot-dark"></span>
+    <div class="timeline-content">
+        <h4>阶段4：误入歧途</h4>
+        <p>投靠丐帮长老陈友谅。陈友谅看穿他的软弱与嫉妒，利用他对张无忌的仇恨，将他一步步拖入更深的泥沼。宋青书沦为他人手中的棋子，却浑然不觉。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot dot-dark"></span>
+    <div class="timeline-content">
+        <h4>阶段5：弑杀师叔</h4>
+        <p>在陈友谅的唆使和操控下，宋青书亲手害死了七师叔莫声谷。这是他永远无法被原谅的罪行——从这一刻起，他与武当派再无任何回旋的余地。叛徒之名，已不可洗刷。</p>
+    </div>
+</div><div class="timeline-item">
+    <span class="timeline-dot dot-dark"></span>
+    <div class="timeline-content">
+        <h4>阶段6：清理门户</h4>
+        <p>屠狮大会上，他被张无忌击败，身受重伤。最终被送上武当山，跪在张三丰面前。张三丰含泪一掌击毙徒孙。宋青书临死前喊出"师祖……"二字，成为金庸笔下最令人心碎的临终遗言之一。</p>
+    </div>
+</div>
+</div>
+<p>六步之间，一步比一步暗、一步比一步深。宋青书的命运让人感喟：如果他能在任何一个节点停下来回头，结局会不会不同？可惜，他从未回头。</p>
+
+<h2>第五章 趣事典故：武当派最丑的丑闻与最痛的原谅</h2>
+<ul class="anecdote-list">
+<li><strong>「我是宋青书！」</strong>——偷看峨眉女弟子洗澡被当场抓获后，宋青书第一反应竟然是报上名号。他大概以为"玉面孟尝"四个字能镇住场面，却不知道这句话传遍江湖后，所有人都笑掉了大牙。从此，"我是宋青书"成了江湖上一句经典的黑色幽默——人们用这句话来讽刺那些犯了错还想靠名头压人的蠢货。这桩丑闻至今仍是武当派历史上最不堪回首的一页。</li>
+<li><strong>「师叔……」</strong>——莫声谷循迹追来，站在宋青书面前的那一刻，空气仿佛凝固了。莫声谷是武当七侠中最耿直刚烈的一位，他看着自己最疼爱的师侄，目光中满是震惊和痛心。宋青书只来得及叫了一声"师叔"，就再也说不出一个字。两人相对无言的那几秒钟，是宋青书人生中最后一丝羞耻心的闪现。但很快，恐惧和求生欲压倒了羞耻——他选择了逃跑。这一跑，就跑到了万劫不复的深渊。</li>
+<li><strong>「我是武当派的……不，我不是。」</strong>——屠狮大会上，有人问宋青书出身何处。他习惯性地脱口而出"我是武当派的"，话到一半突然意识到自己早已被逐出师门，于是硬生生把话吞了回去，改口说"不，我不是"。这句话比任何长篇大论都更令人心碎。一个连自己出身都要否定的人，已经没有了根，没有了魂，只剩下一个空壳。在场的人无不动容——他们看到的不是叛徒，而是一个被嫉妒彻底毁掉的可怜人。</li>
+<li><strong>「师祖……」</strong>——这是宋青书留在人间的最后一句话。张三丰一掌击出，宋青书倒下。所有人都以为他就此无声无息地死去，但他用尽最后一丝力气，喊出了这两个字。这不是求饶，不是辩解，只是他在生命最后一刻，本能地喊出了从小叫到大的那个称呼。张三丰老泪纵横——他一生经历无数大风大浪，心如铁石，但这一声"师祖"，足以让他肝肠寸断。这是他最疼爱的徒孙，是他亲手培养的接班人，如今却要由他亲手了结。宋青书的死，成了张三丰心中永远的痛。</li>
+</ul>
+
+<h2>第六章 现实启示：嫉妒是最毒的毒药</h2>
+<p>宋青书的故事，剥开武侠的外壳，其实是一个关于<strong>嫉妒和自我毁灭</strong>的经典寓言。这个寓言穿越了时代，到今天依然有着震撼人心的力量。</p>
+<p>第一：<strong>嫉妒是最毒的毒药。</strong>张无忌从来没想过和宋青书比——他的人生目标从来不是"胜过宋青书"。他甚至从未将宋青书视为敌人或对手。但宋青书却把自己的一生都耗在了这场单方面的"竞争"上。他觉得自己输了，输得彻彻底底，但这个"输"只存在于他自己的想象中。嫉妒的可怕之处就在于此：它让你为一场根本不存在的战争付出真实的代价。宋青书本来什么都有——武功、地位、前途、颜值——但嫉妒让他觉得自己一无所有。他为了一个"比张无忌好"的执念，失去了他拥有的一切。记住：当你在嫉妒别人的时候，你已经在失去自己了。</p>
+<p>第二：<strong>人心不可测——最可怕的不是敌人，是被嫉妒毁掉的"朋友"。</strong>宋青书和张无忌之间的关系耐人寻味：他们并非敌人，甚至可以说是师出同门——武当派与张无忌渊源极深，张无忌的父亲张翠山是武当七侠之一，张无忌本人对武当派一向敬重。按理说，宋青书和张无忌本可以成为朋友、成为盟友。但嫉妒让宋青书把张无忌当成了最大的敌人，甚至不惜害死师叔、出卖同门，只为在这场虚幻的竞争中"赢"一局。宋青书告诉我们一个令人不寒而栗的真相：有时候对你最危险的人，不是明面上的敌人，而是那个被你无意中"比下去"的朋友。他可能在暗中嫉妒你，而你对此一无所知。</p>
+<div class="wisdom-grid">
+<div class="wisdom-card"><h4>启示一：嫉妒是最毒的毒药</h4><p>宋青书本可以拥有一切，却因为嫉妒张无忌而失去了所有。张无忌从来没想过和他比——这场"竞争"只存在于宋青书自己心中。嫉妒让你为不存在的战争付出真实的代价。</p></div>
+<div class="wisdom-card"><h4>启示二：人心不可测</h4><p>最可怕的不是敌人，是被嫉妒毁掉的"朋友"。宋青书和张无忌本可成为盟友，但嫉妒让宋青书将张无忌视为死敌。你永远不知道，谁在暗中嫉妒着你。</p></div>
+<div class="wisdom-card"><h4>启示三：身份是最珍贵的财富</h4><p>宋青书在屠狮大会上连"我是武当派的"都不敢承认——失去了身份认同的人，就已经失去了灵魂。永远珍惜你的根、你的身份、你的来处。</p></div>
+</div>
+</div>
+
+<div class="narration-block">
+  <h3>口播稿</h3>
+  <p>金庸人物志，今日人物：宋青书。武当派第三代弟子的第一人，江湖人称"玉面孟尝"，本是被当作武当掌门接班人培养的天之骄子——他的人生为什么会变成一场彻底的悲剧？今天我们来说说金庸笔下最令人扼腕的"天才堕落"。他本来什么都有：父亲是武当七侠之首宋远桥，师祖是武林神话张三丰，武功、地位、前途、颜值样样不缺。但他爱上了一个不爱他的女人——峨眉派的周芷若。而周芷若的心，早已属于张无忌。从那一刻开始，嫉妒像毒蛇一样缠绕住了宋青书的心：凭什么张无忌样样都比我好？他偷看峨眉女弟子洗澡被抓，逃出武当，投靠陈友谅，亲手害死师叔莫声谷，彻底沦为武当叛徒。最终，张三丰含泪一掌击毙了这个他最疼爱的徒孙——宋青书临死前只叫了一声"师祖"。这两个字，让百岁高龄的张三丰老泪纵横。宋青书的故事告诉我们：嫉妒是最毒的毒药，有时候最可怕的不是敌人，是被嫉妒毁掉的"朋友"。欢迎收听本期课程，看"玉面孟尝"如何一步步走向毁灭。</p>
+</div>
+
+<div class="exercise">
+  <h3>思考题</h3>
+  <p class="q">假如你是宋青书，在发现自己嫉妒张无忌的时候，你觉得有没有什么办法可以阻止自己的堕落？请写下你的答案。</p>
+  <textarea placeholder="写下你的思考……"></textarea>
+  <details>
+    <summary>参考思路</summary>
+    <p>嫉妒本身并不可怕，可怕的是被嫉妒驱动着做出不可挽回的事。如果宋青书能够正视自己的情感、接受"周芷若不喜欢我"这个事实，他可以回到武当继续修炼、成为一代宗师；他也可以和张无忌并肩作战、成为真正的朋友。可惜他选择了最糟的一条路。正视自己的不足、接受别人的优秀、把嫉妒转化为自我提升的动力——这才是真正的强者之道。</p>
+  </details>
+</div>
+
+<div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-container"></div><div class="jy-quiz-summary" id="jy-quiz-summary" style="display:none;"></div>
+<nav class="bottom-nav">
+  <div><a href="zhangsanfeng.html" class="prev"><span aria-hidden="true">&larr;</span> 张三丰</a></div>
+  <div><a href="zhouzhiruo.html" class="next">周芷若 <span aria-hidden="true">&rarr;</span></a></div>
+<span class="nav-membership"><span id="jy-member-badge" class="jy-badge jy-badge-free">免费用户</span></span>
+</nav>
+
+<div class="course-footer">
+  <p>金庸人物志 | <a href="../index.html">返回首页</a> | 金庸武侠人物系列课程</p>
+  <p>所有内容仅供学习交流使用</p>
+</div>
+
+</main>
+
+<script>
+// Progress bar update on scroll
+window.addEventListener('scroll',()=>{
+  const doc=document.documentElement;
+  const scrollTop=doc.scrollTop;
+  const scrollHeight=doc.scrollHeight-doc.clientHeight;
+  const progress=scrollHeight>0?(scrollTop/scrollHeight)*100:0;
+  const bar=document.querySelector('.progress-fill');
+  if(bar) bar.style.width=`${Math.min(100,progress)}%`;
+});
+</script>
+
+
+<script src="../js/quiz-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>
